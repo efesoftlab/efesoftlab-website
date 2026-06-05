@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<!-- Tasarım ve Geliştirme: Efesoftlab | Satış ve Dağıtım: Efesoftlab -->
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Efesoft Emlak Hizmetleri - Satılık, Kiralık, Danışmanlık, Değerleme ve daha fazlası">
+  <meta name="author" content="Efesoftlab">
+  <title data-i18n="services-hero-title">Hizmetlerimiz | Efesoft Emlak</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/site-config.js"></script>
+</head>
+<body>
+
+  <!-- ===== YÜKLEYİCİ EKRANI ===== -->
+  <div id="preloader">
+    <div class="preloader-logo">
+      <i class="fas fa-building" data-config="logo.icon"></i> <span data-config="logo.text">Efesoft Emlak</span>
+    </div>
+    <div class="preloader-bar">
+      <div class="preloader-bar-inner"></div>
+    </div>
+  </div>
+
+  <!-- ===== KAYDIRMA İLERLEME ÇUBUĞU ===== -->
+  <div id="scrollProgress"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar scrolled" role="navigation" aria-label="Ana navigasyon">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-building" data-config="logo.icon"></i> <span data-config="logo.text">Efesoft Emlak</span>
+      </a>
+      <button class="hamburger" aria-label="Menüyü aç/kapat">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav-home">Ana Sayfa</a></li>
+        <li><a href="about.html" data-i18n="nav-about">Hakkımızda</a></li>
+        <li><a href="services.html" class="active" data-i18n="nav-services">Hizmetler</a></li>
+        <li><a href="index.html#featured" data-i18n="nav-listings">İlanlar</a></li>
+        <li><a href="contact.html" data-i18n="nav-contact">İletişim</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="lang-toggle" aria-label="Dil değiştir">EN</button>
+        <button class="nav-theme-toggle" aria-label="Tema değiştir">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== WHATSAPP FLOATING ===== -->
+  <a href="#" class="whatsapp-float" aria-label="WhatsApp ile iletişim">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ===== YUKARI ÇIK BUTONU ===== -->
+  <button id="backToTop" aria-label="Yukarı çık">
+    <i class="fas fa-arrow-up"></i>
+    <svg viewBox="0 0 56 56">
+      <circle cx="28" cy="28" r="25"/>
+    </svg>
+  </button>
+
+  <!-- ===== BİLDİRİM KONTEYNERI ===== -->
+  <div id="toastContainer"></div>
+
+  <!-- ===== SAYFA BAŞLIĞI ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-subtitle" data-i18n="services-hero-subtitle">Hizmetlerimiz</p>
+      <h1 data-i18n="services-hero-title">Size Özel Çözümler</h1>
+      <p data-i18n="services-hero-desc">Premium gayrimenkul danışmanlığının her alanında yanınızdayız</p>
+      <p class="breadcrumb"><a href="index.html" data-i18n="nav-home">Ana Sayfa</a> / <span data-i18n="services-breadcrumb">Hizmetler</span></p>
+    </div>
+  </section>
+
+  <!-- ===== HİZMETLER ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title fade-up">
+        <p class="section-subtitle" data-i18n="services-section-subtitle">Neler Sunuyoruz</p>
+        <h2 data-i18n="services-section-title">Tüm Gayrimenkul Hizmetlerimiz</h2>
+        <p data-i18n="services-section-desc">İhtiyacınıza yönelik kapsamlı gayrimenkul çözümleri</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card fade-up" data-config-service="0">
+          <div class="service-icon">
+            <i class="card-icon fas fa-home" data-config="service-0-icon"></i>
+          </div>
+          <h3 class="service-title" data-i18n="services-1-title" data-config="service-0-title">Satılık Gayrimenkuller</h3>
+          <p class="service-desc" data-i18n="services-1-p" data-config="service-0-desc">Geniş portföyümüzle size en uygun satılık konut, villa, ofis ve arsaları sunuyoruz. Her bütçeye ve zevke uygun seçenekler.</p>
+        </div>
+
+        <div class="service-card fade-up" data-config-service="1">
+          <div class="service-icon">
+            <i class="card-icon fas fa-key" data-config="service-1-icon"></i>
+          </div>
+          <h3 class="service-title" data-i18n="services-2-title" data-config="service-1-title">Kiralık Gayrimenkuller</h3>
+          <p class="service-desc" data-i18n="services-2-p" data-config="service-1-desc">Kiralık daire, ofis, dükkan ve villa seçeneklerimizle size en uygun yaşam ve çalışma alanlarını buluyoruz.</p>
+        </div>
+
+        <div class="service-card fade-up" data-config-service="2">
+          <div class="service-icon">
+            <i class="card-icon fas fa-handshake" data-config="service-2-icon"></i>
+          </div>
+          <h3 class="service-title" data-i18n="services-3-title" data-config="service-2-title">Gayrimenkul Danışmanlığı</h3>
+          <p class="service-desc" data-i18n="services-3-p" data-config="service-2-desc">Uzman ekibimizle alım-satım, kiralama, yatırım ve portföy yönetimi konularında profesyonel danışmanlık hizmeti.</p>
+        </div>
+
+        <div class="service-card fade-up" data-config-service="3">
+          <div class="service-icon">
+            <i class="card-icon fas fa-balance-scale" data-config="service-3-icon"></i>
+          </div>
+          <h3 class="service-title" data-i18n="services-4-title" data-config="service-3-title">Değerleme Hizmeti</h3>
+          <p class="service-desc" data-i18n="services-4-p" data-config="service-3-desc">SPK lisanslı değerleme uzmanlarımızla gayrimenkullerinizin güncel piyasa değerini profesyonel olarak belirliyoruz.</p>
+        </div>
+
+        <div class="service-card fade-up" data-config-service="4">
+          <div class="service-icon">
+            <i class="card-icon fas fa-clipboard-list" data-config="service-4-icon"></i>
+          </div>
+          <h3 class="service-title" data-i18n="services-5-title" data-config="service-4-title">Proje Yönetimi</h3>
+          <p class="service-desc" data-i18n="services-5-p" data-config="service-4-desc">Gayrimenkul projelerinizin başından sonuna kadar tüm süreçlerini profesyonel ekibimizle yönetiyoruz.</p>
+        </div>
+
+        <div class="service-card fade-up" data-config-service="5">
+          <div class="service-icon">
+            <i class="card-icon fas fa-chart-pie" data-config="service-5-icon"></i>
+          </div>
+          <h3 class="service-title" data-i18n="services-6-title" data-config="service-5-title">Yatırım Danışmanlığı</h3>
+          <p class="service-desc" data-i18n="services-6-p" data-config="service-5-desc">Size özel hazırladığımız yatırım portföyleri ile gayrimenkul yatırımlarınızda maksimum getiriyi hedefliyoruz.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SÜREÇ ADIMLARI ===== -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-title fade-up">
+        <p class="section-subtitle" data-i18n="services-process-subtitle">Süreç</p>
+        <h2 data-i18n="services-process-title">Gayrimenkul Alım Süreci</h2>
+        <p data-i18n="services-process-desc">5 adımda hayalinizdeki eve kavuşun</p>
+      </div>
+      <div class="process-steps">
+
+        <div class="process-step fade-up">
+          <div class="step-number">1</div>
+          <h4 data-i18n="services-step-1-title">İhtiyaç Analizi</h4>
+          <p data-i18n="services-step-1-p">Size en uygun mülkü bulmak için ihtiyaçlarınızı ve bütçenizi belirliyoruz.</p>
+        </div>
+
+        <div class="process-step fade-up">
+          <div class="step-number">2</div>
+          <h4 data-i18n="services-step-2-title">Portföy Sunumu</h4>
+          <p data-i18n="services-step-2-p">Kriterlerinize uygun gayrimenkulleri özenle seçip size sunuyoruz.</p>
+        </div>
+
+        <div class="process-step fade-up">
+          <div class="step-number">3</div>
+          <h4 data-i18n="services-step-3-title">Gezinti & İnceleme</h4>
+          <p data-i18n="services-step-3-p">Beğendiğiniz mülkleri yerinde gezdiriyor ve tüm detayları gösteriyoruz.</p>
+        </div>
+
+        <div class="process-step fade-up">
+          <div class="step-number">4</div>
+          <h4 data-i18n="services-step-4-title">Pazarlık & Anlaşma</h4>
+          <p data-i18n="services-step-4-p">Sizin adınıza profesyonel pazarlık yaparak en iyi fiyatı almanızı sağlıyoruz.</p>
+        </div>
+
+        <div class="process-step fade-up">
+          <div class="step-number">5</div>
+          <h4 data-i18n="services-step-5-title">Tapu & Teslimat</h4>
+          <p data-i18n="services-step-5-p">Tapu işlemlerinden teslimata kadar tüm resmi süreçlerde yanınızdayız.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="fade-up">
+        <h2 data-i18n="services-cta-title">Hizmetlerimiz Hakkında Detaylı Bilgi Alın</h2>
+        <p data-i18n="services-cta-desc">Uzman danışmanlarımız size en uygun hizmeti sunmak için hazır.</p>
+        <a href="contact.html" class="btn btn-white">
+          <i class="fas fa-phone-alt"></i> <span data-i18n="services-cta-btn">İletişime Geçin</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ALT BİLGİ (FOOTER) ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-col footer-about">
+          <div class="logo">
+            <i class="fas fa-building"></i> Efesoft Emlak
+          </div>
+          <p data-i18n="footer-about">Premium gayrimenkul danışmanlığı hizmeti ile lüks konut, villa, ofis ve yatırımlık gayrimenkullerde Türkiye'nin lider platformu. 10 yılı aşkın deneyimimizle hayallerinize ortak oluyoruz.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col footer-links">
+          <h4 data-i18n="footer-quick-links">Hızlı Linkler</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav-home"><i class="fas fa-chevron-right"></i> Ana Sayfa</a></li>
+            <li><a href="about.html" data-i18n="nav-about"><i class="fas fa-chevron-right"></i> Hakkımızda</a></li>
+            <li><a href="services.html" data-i18n="nav-services"><i class="fas fa-chevron-right"></i> Hizmetler</a></li>
+            <li><a href="index.html#featured" data-i18n="nav-listings"><i class="fas fa-chevron-right"></i> İlanlar</a></li>
+            <li><a href="contact.html" data-i18n="nav-contact"><i class="fas fa-chevron-right"></i> İletişim</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-links">
+          <h4 data-i18n="footer-listing-types">İlan Türleri</h4>
+          <ul>
+            <li><a href="index.html#featured" data-i18n="filter-sale"><i class="fas fa-chevron-right"></i> Satılık Daire</a></li>
+            <li><a href="index.html#featured" data-i18n="badge-sale"><i class="fas fa-chevron-right"></i> Satılık Villa</a></li>
+            <li><a href="index.html#featured" data-i18n="filter-rent"><i class="fas fa-chevron-right"></i> Kiralık Daire</a></li>
+            <li><a href="index.html#featured"><i class="fas fa-chevron-right"></i> Kiralık Ofis</a></li>
+            <li><a href="index.html#featured"><i class="fas fa-chevron-right"></i> Lüks Konut</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <h4 data-i18n="footer-contact">İletişim</h4>
+          <p><i class="fas fa-map-marker-alt"></i> Levent Mah. Büyükdere Cad. No:123, Şişli / İstanbul</p>
+          <p><i class="fas fa-phone-alt"></i> +90 (212) 555 44 33</p>
+          <p><i class="fas fa-envelope"></i> info@efesoftemlak.com</p>
+          <p><i class="fas fa-clock"></i> Hafta içi: 09:00 - 19:00<br>Cumartesi: 10:00 - 17:00</p>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p data-i18n="footer-copyright">© 2024 Efesoftlab. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== RESİM GÖRÜNTÜLEYİCİ ===== -->
+  <div id="lightbox">
+    <button class="close-lightbox">&times;</button>
+    <img src="" alt="Büyük görsel">
+  </div>
+
+  <!-- ===== ÇEREZ İZİN BANNERI ===== -->
+  <div id="cookieConsent">
+    <div class="container">
+      <p data-i18n="cookie-text">Web sitemizde size en iyi deneyimi sunmak için çerezler kullanıyoruz. Devam ederek çerez kullanımını kabul etmiş olursunuz.</p>
+      <button class="btn btn-primary btn-sm" id="cookieAccept" data-i18n="cookie-btn">Kabul Et</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

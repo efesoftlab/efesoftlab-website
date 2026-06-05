@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<!-- Tasarım ve Geliştirme: Efesoftlab | Satış ve Dağıtım: Efesoftlab -->
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Modern Tıp Merkezi - Diş Hekimliği, Kardiyoloji, Göz Sağlığı, Fizyoterapi ve daha fazlası. Profesyonel sağlık hizmeti, randevu alın.">
+  <meta name="author" content="Efesoftlab">
+  <meta name="keywords" content="tıp merkezi, diş hekimi, kardiyoloji, göz sağlığı, fizyoterapi, dermatoloji, radyoloji, sağlık, randevu">
+  <title data-i18n="nav-home">Ana Sayfa | Modern Tıp Merkezi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/site-config.js"></script>
+</head>
+<body>
+
+  <!-- ===== Sayfa Ön Yükleyici ===== -->
+  <div class="preloader" role="status" aria-label="Yükleniyor">
+    <div class="preloader-content">
+      <div class="preloader-icon">
+        <i class="fas fa-heartbeat"></i>
+        <div class="preloader-ring"></div>
+      </div>
+      <p data-i18n="nav-home">Yükleniyor...</p>
+    </div>
+  </div>
+
+  <!-- ===== Navigasyon Çubuğu ===== -->
+  <nav class="navbar" role="navigation" aria-label="Ana navigasyon">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <i class="fas fa-heartbeat" data-config-icon="logo.icon"></i>
+        Modern<span>Tıp</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active"><span data-i18n="nav-home">Ana Sayfa</span></a></li>
+        <li><a href="about.html"><span data-i18n="nav-about">Hakkımızda</span></a></li>
+        <li><a href="services.html"><span data-i18n="nav-services">Hizmetler</span></a></li>
+        <li><a href="about.html#doctors"><span data-i18n="nav-doctors">Doktorlar</span></a></li>
+        <li><a href="contact.html"><span data-i18n="nav-contact">İletişim</span></a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="langToggle" class="lang-toggle" aria-label="Dil değiştir">
+          <i class="fas fa-globe"></i> EN
+        </button>
+        <button id="darkModeToggle" aria-label="Koyu mod aç/kapat">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="hamburger" aria-label="Menüyü aç/kapat">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Hero Bölümü ===== -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content animate-on-scroll">
+        <h1 data-i18n="hero-title" data-config="hero.title">Sağlığınız <span>Bizim Önceliğimiz</span></h1>
+        <p data-i18n="hero-desc" data-config="hero.description">Modern tıp merkezimizde, deneyimli kadromuz ve ileri teknolojik donanımımızla size en kaliteli sağlık hizmetini sunuyoruz. Sağlıklı bir yaşam için yanınızdayız.</p>
+        <div class="hero-buttons">
+          <a href="contact.html" class="btn btn-primary btn-pulse">
+            <i class="fas fa-calendar-check"></i> <span data-i18n="hero-btn-appointment">Randevu Al</span>
+          </a>
+          <a href="services.html" class="btn btn-outline">
+            <i class="fas fa-stethoscope"></i> <span data-i18n="hero-btn-services">Hizmetlerimiz</span>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image animate-on-scroll delay-2">
+        <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?w=600&q=80" alt="Modern tıp merkezi" loading="lazy" width="600" height="400" data-config-src="images.hero">
+      </div>
+    </div>
+    <!-- Dalga ayırıcı -->
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style="display: block; width: 100%; height: 60px;">
+        <path d="M0,30 C360,60 720,0 1080,30 C1260,45 1350,30 1440,30 L1440,60 L0,60 Z" fill="var(--bg-primary)"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===== Neden Biz Bölümü ===== -->
+  <section class="section-padding" id="about-preview">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 data-i18n="features-title">Neden <span>Biz?</span></h2>
+        <p data-i18n="features-desc">Sağlığınızı emanet edeceğiniz merkezimizde sizi bekleyen ayrıcalıklar</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card animate-on-scroll">
+          <div class="feature-icon"><i class="fas fa-user-md"></i></div>
+          <h3 data-i18n="feature-1-title">Deneyim</h3>
+          <p data-i18n="feature-1-desc">20 yılı aşkın deneyime sahip uzman kadromuzla hizmetinizdeyiz.</p>
+        </div>
+        <div class="feature-card animate-on-scroll delay-1">
+          <div class="feature-icon"><i class="fas fa-microscope"></i></div>
+          <h3 data-i18n="feature-2-title">Teknoloji</h3>
+          <p data-i18n="feature-2-desc">Son teknoloji cihazlarla doğru teşhis ve tedavi imkanı sunuyoruz.</p>
+        </div>
+        <div class="feature-card animate-on-scroll delay-2">
+          <div class="feature-icon"><i class="fas fa-hand-sparkles"></i></div>
+          <h3 data-i18n="feature-3-title">Hijyen</h3>
+          <p data-i18n="feature-3-desc">En üst düzey hijyen standartlarında steril bir ortam sağlıyoruz.</p>
+        </div>
+        <div class="feature-card animate-on-scroll delay-3">
+          <div class="feature-icon"><i class="fas fa-shield-heart"></i></div>
+          <h3 data-i18n="feature-4-title">Güven</h3>
+          <p data-i18n="feature-4-desc">Hasta mahremiyeti ve güvenliği öncelikli politikamızdır.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Bölümlerimiz ===== -->
+  <section class="section-padding bg-light" id="services">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 data-i18n="services-title">Bölümlerimiz & <span>Hizmetlerimiz</span></h2>
+        <p data-i18n="services-desc">Her biri kendi alanında uzmanlaşmış bölümlerimizle geniş kapsamlı sağlık hizmeti</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon"><i class="fas fa-tooth" data-config-icon="departments.0.icon"></i></div>
+          <h3 data-config="departments.0.title">Diş Hekimliği</h3>
+          <p data-config="departments.0.description">Ağız ve diş sağlığı alanında implant, kanal tedavisi, ortodonti ve estetik diş hekimliği hizmetleri.</p>
+          <a href="services.html" class="btn-sm"><span data-i18n="service-detail">Detaylı Bilgi</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card animate-on-scroll delay-1">
+          <div class="service-icon"><i class="fas fa-heart" data-config-icon="departments.1.icon"></i></div>
+          <h3 data-config="departments.1.title">Kardiyoloji</h3>
+          <p data-config="departments.1.description">Kalp ve damar hastalıkları tanı ve tedavisi, EKG, ekokardiyografi, anjiyo ve ritim bozuklukları.</p>
+          <a href="services.html" class="btn-sm"><span data-i18n="service-detail">Detaylı Bilgi</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card animate-on-scroll delay-2">
+          <div class="service-icon"><i class="fas fa-hand" data-config-icon="departments.2.icon"></i></div>
+          <h3 data-config="departments.2.title">Dermatoloji</h3>
+          <p data-config="departments.2.description">Cilt hastalıkları, alerjik reaksiyonlar, lazer tedavisi, cilt kanseri taraması ve estetik uygulamalar.</p>
+          <a href="services.html" class="btn-sm"><span data-i18n="service-detail">Detaylı Bilgi</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card animate-on-scroll delay-3">
+          <div class="service-icon"><i class="fas fa-eye" data-config-icon="departments.3.icon"></i></div>
+          <h3 data-config="departments.3.title">Göz Sağlığı</h3>
+          <p data-config="departments.3.description">Göz muayenesi, katarakt, glokom, lazer göz ameliyatları ve görme kusurları tedavisi.</p>
+          <a href="services.html" class="btn-sm"><span data-i18n="service-detail">Detaylı Bilgi</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card animate-on-scroll delay-4">
+          <div class="service-icon"><i class="fas fa-bone" data-config-icon="departments.4.icon"></i></div>
+          <h3 data-config="departments.4.title">Fizyoterapi</h3>
+          <p data-config="departments.4.description">Kas-iskelet sistemi rahatsızlıkları, spor yaralanmaları, rehabilitasyon ve manuel terapi.</p>
+          <a href="services.html" class="btn-sm"><span data-i18n="service-detail">Detaylı Bilgi</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card animate-on-scroll delay-5">
+          <div class="service-icon"><i class="fas fa-x-ray" data-config-icon="departments.5.icon"></i></div>
+          <h3 data-config="departments.5.title">Radyoloji</h3>
+          <p data-config="departments.5.description">MR, BT, ultrasonografi, direkt grafi ve mamografi gibi ileri görüntüleme hizmetleri.</p>
+          <a href="services.html" class="btn-sm"><span data-i18n="service-detail">Detaylı Bilgi</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Uzman Kadromuz ===== -->
+  <section class="section-padding" id="doctors">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 data-i18n="doctors-title">Uzman <span>Kadromuz</span></h2>
+        <p data-i18n="doctors-desc">Alanında deneyimli ve hasta odaklı yaklaşımı benimseyen uzman doktorlarımız</p>
+      </div>
+      <div class="doctor-carousel-wrapper">
+        <div class="doctor-carousel">
+          <div class="doctor-card glass animate-on-scroll">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=200&h=200&fit=crop&crop=face" alt="Dr. Ahmet Yılmaz" class="doctor-img" loading="lazy" width="130" height="130" data-config-src="doctors.0.image">
+            <h3 data-config="doctors.0.name">Dr. Ahmet Yılmaz</h3>
+            <p class="doctor-title" data-config="doctors.0.title">Başhekim - Kardiyoloji Uzmanı</p>
+            <p data-config="doctors.0.description">İstanbul Üniversitesi Tıp Fakültesi mezunu. 25 yıllık deneyimiyle kardiyoloji alanında uzmanlaşmıştır.</p>
+            <div class="doctor-social">
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="doctor-card glass animate-on-scroll delay-1">
+            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=200&h=200&fit=crop&crop=face" alt="Dr. Ayşe Kaya" class="doctor-img" loading="lazy" width="130" height="130" data-config-src="doctors.1.image">
+            <h3 data-config="doctors.1.name">Dr. Ayşe Kaya</h3>
+            <p class="doctor-title" data-config="doctors.1.title">Diş Hekimliği Uzmanı</p>
+            <p data-config="doctors.1.description">Hacettepe Üniversitesi Diş Hekimliği Fakültesi mezunu. İmplantoloji ve estetik diş hekimliği alanında 18 yıllık deneyim.</p>
+            <div class="doctor-social">
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="doctor-card glass animate-on-scroll delay-2">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=200&h=200&fit=crop&crop=face" alt="Uzm. Dr. Mehmet Demir" class="doctor-img" loading="lazy" width="130" height="130" data-config-src="doctors.2.image">
+            <h3 data-config="doctors.2.name">Uzm. Dr. Mehmet Demir</h3>
+            <p class="doctor-title" data-config="doctors.2.title">Göz Hastalıkları Uzmanı</p>
+            <p data-config="doctors.2.description">Cerrahpaşa Tıp Fakültesi mezunu. Katarakt cerrahisi, glokom tedavisi ve lazer göz ameliyatı alanlarında 20 yıllık deneyim.</p>
+            <div class="doctor-social">
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="doctor-card glass animate-on-scroll delay-3">
+            <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=200&h=200&fit=crop&crop=face" alt="Dr. Zeynep Şahin" class="doctor-img" loading="lazy" width="130" height="130" data-config-src="doctors.3.image">
+            <h3 data-config="doctors.3.name">Dr. Zeynep Şahin</h3>
+            <p class="doctor-title" data-config="doctors.3.title">Dermatoloji Uzmanı</p>
+            <p data-config="doctors.3.description">Ankara Üniversitesi Tıp Fakültesi mezunu. 15 yıllık dermatoloji deneyimi. Lazer tedavileri ve estetik dermatoloji alanlarında uzmanlaşmıştır.</p>
+            <div class="doctor-social">
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="doctor-card glass animate-on-scroll delay-4">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=200&h=200&fit=crop&crop=face" alt="Fzt. Ali Öztürk" class="doctor-img" loading="lazy" width="130" height="130" data-config-src="doctors.4.image">
+            <h3 data-config="doctors.4.name">Fzt. Ali Öztürk</h3>
+            <p class="doctor-title" data-config="doctors.4.title">Fizyoterapi Uzmanı</p>
+            <p data-config="doctors.4.description">Hacettepe Üniversitesi Fizyoterapi ve Rehabilitasyon mezunu. 12 yıllık deneyim. Manuel terapi ve spor yaralanmaları rehabilitasyonu alanlarında uzman.</p>
+            <div class="doctor-social">
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <button class="doctor-carousel-btn prev" aria-label="Önceki"><i class="fas fa-chevron-left"></i></button>
+        <button class="doctor-carousel-btn next" aria-label="Sonraki"><i class="fas fa-chevron-right"></i></button>
+        <div class="doctor-carousel-dots"></div>
+      </div>
+      <div class="text-center mt-3 animate-on-scroll">
+        <a href="about.html#doctors" class="btn btn-outline-primary"><span data-i18n="all-doctors">Tüm Doktorlarımız</span> <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Tedavi Sürecimiz ===== -->
+  <section class="section-padding process-section" id="process">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 data-i18n="process-title">Tedavi <span>Sürecimiz</span></h2>
+        <p data-i18n="process-desc">Adım adım sağlığınıza kavuşmanız için izlediğimiz tedavi süreci</p>
+      </div>
+      <div class="process-steps">
+        <div class="step-card animate-on-scroll">
+          <div class="step-number">1</div>
+          <h3 data-config="treatmentSteps.0.title">Muayene</h3>
+          <p data-config="treatmentSteps.0.description">Uzman doktorlarımızla detaylı muayene ve ön değerlendirme</p>
+        </div>
+        <div class="step-card animate-on-scroll delay-1">
+          <div class="step-number">2</div>
+          <h3 data-config="treatmentSteps.1.title">Tanı</h3>
+          <p data-config="treatmentSteps.1.description">Gelişmiş görüntüleme ve testlerle doğru teşhis</p>
+        </div>
+        <div class="step-card animate-on-scroll delay-2">
+          <div class="step-number">3</div>
+          <h3 data-config="treatmentSteps.2.title">Tedavi</h3>
+          <p data-config="treatmentSteps.2.description">Kişiye özel tedavi planı ve modern yöntemlerle uygulama</p>
+        </div>
+        <div class="step-card animate-on-scroll delay-3">
+          <div class="step-number">4</div>
+          <h3 data-config="treatmentSteps.3.title">Takip</h3>
+          <p data-config="treatmentSteps.3.description">Tedavi sonrası düzenli kontroller ve sürekli destek</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Hasta Görüşleri ===== -->
+  <section class="section-padding" id="testimonials">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 data-i18n="testimonials-title">Hasta <span>Görüşleri</span></h2>
+        <p data-i18n="testimonials-desc">Değerli hastalarımızın memnuniyetleri bizim için en önemli referans</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p data-config="testimonials.0.text">"Çok profesyonel bir ekip. Diş tedavim sırasında hiç ağrı hissetmedim ve sonuç harika oldu. Herkese tavsiye ediyorum."</p>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Ayşe K." loading="lazy" width="50" height="50" data-config-src="testimonials.0.image">
+            <div>
+              <h4 data-config="testimonials.0.name">Ayşe K.</h4>
+              <span data-config="testimonials.0.department">Diş Tedavisi</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card animate-on-scroll delay-1">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p data-config="testimonials.1.text">"Kardiyoloji bölümünde geçirdiğim anjiyo işlemi sonrası sağlığıma kavuştum. İlgili ve güler yüzlü personel için teşekkürler."</p>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Ali R." loading="lazy" width="50" height="50" data-config-src="testimonials.1.image">
+            <div>
+              <h4 data-config="testimonials.1.name">Ali R.</h4>
+              <span data-config="testimonials.1.department">Kardiyoloji</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card animate-on-scroll delay-2">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+          </div>
+          <p data-config="testimonials.2.text">"Fizyoterapi sürecimde gösterdikleri özen ve profesyonellik sayesinde kısa sürede sağlığıma kavuştum. Kesinlikle öneriyorum."</p>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Fatma T." loading="lazy" width="50" height="50" data-config-src="testimonials.2.image">
+            <div>
+              <h4 data-config="testimonials.2.name">Fatma T.</h4>
+              <span data-config="testimonials.2.department">Fizyoterapi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-dots"></div>
+    </div>
+  </section>
+
+  <!-- ===== İstatistikler ===== -->
+  <section class="stats-section" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item animate-on-scroll">
+          <i class="fas fa-user-injured" data-config-icon="stats.0.icon"></i>
+          <h3 data-target="5000" data-config-target="stats.0.value">0+</h3>
+          <p data-config="stats.0.label">Mutlu Hasta</p>
+        </div>
+        <div class="stat-item animate-on-scroll delay-1">
+          <i class="fas fa-user-md" data-config-icon="stats.1.icon"></i>
+          <h3 data-target="50" data-config-target="stats.1.value">0+</h3>
+          <p data-config="stats.1.label">Uzman Doktor</p>
+        </div>
+        <div class="stat-item animate-on-scroll delay-2">
+          <i class="fas fa-award" data-config-icon="stats.2.icon"></i>
+          <h3 data-target="15" data-config-target="stats.2.value">0+</h3>
+          <p data-config="stats.2.label">Yıllık Deneyim</p>
+        </div>
+        <div class="stat-item animate-on-scroll delay-3">
+          <i class="fas fa-smile" data-config-icon="stats.3.icon"></i>
+          <h3 data-target="98" data-config-target="stats.3.value">0+</h3>
+          <p data-config="stats.3.label">Memnuniyet Oranı</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA - Randevu ===== -->
+  <section class="cta-section" id="appointment-cta">
+    <div class="container">
+      <div class="animate-on-scroll">
+        <h2 data-i18n="cta-title">Sağlıklı Bir Gelecek İçin <br>Hemen Randevu Alın</h2>
+        <p data-i18n="cta-desc">Uzman kadromuzla tanışmak ve size özel tedavi planı oluşturmak için bizimle iletişime geçin.</p>
+        <a href="contact.html" class="btn btn-pulse">
+          <i class="fas fa-calendar-check"></i> <span data-i18n="cta-btn">Randevu Al</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SSS ===== -->
+  <section class="section-padding bg-light" id="faq">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 data-i18n="faq-title">Sıkça Sorulan <span>Sorular</span></h2>
+        <p data-i18n="faq-desc">Merak ettiğiniz konular hakkında sıkça sorulan sorulara cevaplar</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item animate-on-scroll">
+          <button class="accordion-header active">
+            <span data-config="faq.0.question">Randevu nasıl alabilirim?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner" data-config="faq.0.answer">
+              Randevu almak için web sitemizdeki iletişim formunu doldurabilir, 7/24 hizmet veren çağrı merkezimizi arayabilir veya merkezimize şahsen başvurabilirsiniz. Online randevu sistemimiz sayesinde istediğiniz bölüm ve doktora hızlıca randevu oluşturabilirsiniz.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll delay-1">
+          <button class="accordion-header">
+            <span data-config="faq.1.question">Hangi sigorta şirketleri ile anlaşmalısınız?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner" data-config="faq.1.answer">
+              Başlıca anlaşmalı olduğumuz sigorta şirketleri: Anadolu Sigorta, Axa Sigorta, Allianz, Groupama, Eureko Sigorta, Ak Sigorta ve diğer özel sağlık sigortaları. Tüm anlaşmalı kurumlar listesi için bizimle iletişime geçebilirsiniz.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll delay-2">
+          <button class="accordion-header">
+            <span data-config="faq.2.question">Acil durumlarda ne yapmalıyım?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner" data-config="faq.2.answer">
+              Acil durumlarda 7/24 hizmet veren acil servisimiz bulunmaktadır. Acil durumlarda 112'yi arayabilir veya doğrudan merkezimize başvurabilirsiniz. Acil durumlar için 7/24 açık telefon hattımız: 0212 444 0 123.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll delay-3">
+          <button class="accordion-header">
+            <span data-config="faq.3.question">Tedavi ücretleri hakkında bilgi alabilir miyim?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner" data-config="faq.3.answer">
+              Tedavi ücretlerimiz, sigorta kapsamınıza ve seçeceğiniz tedavi yöntemine göre değişiklik göstermektedir. Detaylı ücret bilgisi için web sitemizdeki fiyat listesini inceleyebilir veya bizimle iletişime geçebilirsiniz.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll delay-4">
+          <button class="accordion-header">
+            <span data-config="faq.4.question">Muayene öncesi hazırlık yapmalı mıyım?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner" data-config="faq.4.answer">
+              Bölüme göre değişmekle birlikte, genel olarak randevunuzdan önce varsa önceki tahlil ve görüntüleme sonuçlarınızı yanınızda getirmeniz önerilir. Bazı testler için aç karnına gelmeniz gerekebilir. Randevu sırasında bu konuda bilgilendirileceksiniz.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll delay-5">
+          <button class="accordion-header">
+            <span data-config="faq.5.question">Merkezinizde hangi dillerde hizmet veriliyor?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner" data-config="faq.5.answer">
+              Merkezimizde başta Türkçe olmak üzere İngilizce, Almanca ve Arapça dillerinde hizmet verilmektedir. Uluslararası hastalarımız için tercüman desteği de sağlamaktayız.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Altbilgi ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3><i class="fas fa-heartbeat"></i> <span data-i18n="footer-brand">Modern Tıp</span></h3>
+          <p data-config="footer.aboutText">Modern Tıp Merkezi olarak 15 yılı aşkın süredir, deneyimli kadromuz ve ileri teknolojik donanımımızla hastalarımıza en kaliteli sağlık hizmetini sunmaktayız.</p>
+          <div class="emergency-badge">
+            <i class="fas fa-phone-alt"></i> <span data-i18n="footer-emergency">Acil: 0212 444 0 123</span>
+          </div>
+          <div class="footer-social mt-2">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 data-i18n="footer-quick-links">Hızlı Linkler</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-home">Ana Sayfa</span></a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-about">Hakkımızda</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-services">Hizmetler</span></a></li>
+            <li><a href="about.html#doctors"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-doctors">Doktorlar</span></a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-contact">İletişim</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer-hours-title">Çalışma Saatleri</h4>
+          <ul class="footer-hours">
+            <li><span data-i18n="footer-weekdays">Pazartesi - Cuma</span><span>08:00 - 19:00</span></li>
+            <li><span data-i18n="footer-saturday">Cumartesi</span><span>09:00 - 17:00</span></li>
+            <li><span data-i18n="footer-sunday">Pazar</span><span>10:00 - 14:00</span></li>
+            <li><span data-i18n="footer-emergency-service">Acil Servis</span><span>7/24</span></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer-contact-title">İletişim</h4>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-map-marker-alt"></i> Atatürk Cad. No:123, Şişli/İstanbul</a></li>
+            <li><a href="tel:+902124440123"><i class="fas fa-phone"></i> 0212 444 0 123</a></li>
+            <li><a href="mailto:info@moderntip.com"><i class="fas fa-envelope"></i> info@moderntip.com</a></li>
+            <li><a href="#"><i class="fas fa-globe"></i> www.moderntip.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer-copyright">© 2024 Efesoftlab. Tüm hakları saklıdır.</p>
+        <p><span data-i18n="footer-design">Tasarım ve Geliştirme: Efesoftlab</span> | <a href="#" data-i18n="footer-policy">Gizlilik Politikası</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== WhatsApp浮动Buton ===== -->
+  <a href="#" class="whatsapp-btn" data-phone="905551234567" aria-label="WhatsApp üzerinden iletişim">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ===== Yukarı Çık Düğmesi ===== -->
+  <button class="back-to-top" aria-label="Yukarı çık">
+    <i class="fas fa-arrow-up"></i>
+    <svg width="48" height="48" viewBox="0 0 48 48">
+      <circle cx="24" cy="24" r="20"></circle>
+    </svg>
+  </button>
+
+  <!-- ===== Çerez Onayı ===== -->
+  <div class="cookie-consent" id="cookieConsent">
+    <div class="container">
+      <p data-i18n="cookie-text">Web sitemizde size en iyi deneyimi sunmak için çerezler kullanıyoruz. Devam ederek çerez kullanımını kabul etmiş olursunuz.</p>
+      <button class="btn btn-primary cookie-accept"><span data-i18n="cookie-accept">Kabul Et</span></button>
+    </div>
+  </div>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

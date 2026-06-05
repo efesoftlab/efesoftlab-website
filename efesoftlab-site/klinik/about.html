@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!-- Tasarım ve Geliştirme: Efesoftlab | Satış ve Dağıtım: Efesoftlab -->
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Modern Tıp Merkezi Hakkında - 15 yıllık deneyim, misyonumuz, vizyonumuz ve uzman doktor kadromuz.">
+  <meta name="author" content="Efesoftlab">
+  <title data-i18n="about-title">Hakkımızda | Modern Tıp Merkezi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/site-config.js"></script>
+</head>
+<body>
+
+  <!-- ===== Sayfa Ön Yükleyici ===== -->
+  <div class="preloader" role="status" aria-label="Yükleniyor">
+    <div class="preloader-content">
+      <div class="preloader-icon">
+        <i class="fas fa-heartbeat"></i>
+        <div class="preloader-ring"></div>
+      </div>
+      <p>Yükleniyor...</p>
+    </div>
+  </div>
+
+  <!-- ===== Navigasyon Çubuğu ===== -->
+  <nav class="navbar" role="navigation" aria-label="Ana navigasyon">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <i class="fas fa-heartbeat"></i>
+        Modern<span>Tıp</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html"><span data-i18n="nav-home">Ana Sayfa</span></a></li>
+        <li><a href="about.html" class="active"><span data-i18n="nav-about">Hakkımızda</span></a></li>
+        <li><a href="services.html"><span data-i18n="nav-services">Hizmetler</span></a></li>
+        <li><a href="about.html#doctors"><span data-i18n="nav-doctors">Doktorlar</span></a></li>
+        <li><a href="contact.html"><span data-i18n="nav-contact">İletişim</span></a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="langToggle" class="lang-toggle" aria-label="Dil değiştir">
+          <i class="fas fa-globe"></i> EN
+        </button>
+        <button id="darkModeToggle" aria-label="Koyu mod aç/kapat">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="hamburger" aria-label="Menüyü aç/kapat">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Sayfa Bannerı ===== -->
+  <section class="page-banner">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html"><span data-i18n="nav-home">Ana Sayfa</span></a> / <span data-i18n="about-breadcrumb">Hakkımızda</span>
+      </div>
+      <h1 data-i18n="about-title">Hakkımızda</h1>
+      <p data-i18n="about-desc">Modern Tıp Merkezi'nin hikayesi, misyonu ve vizyonu hakkında detaylı bilgi</p>
+    </div>
+  </section>
+
+  <!-- ===== Klinik Hikayemiz ===== -->
+  <section class="section-padding" id="story">
+    <div class="container">
+      <div class="about-story">
+        <div class="animate-on-scroll">
+          <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=600&q=80" alt="Kliniğimiz" loading="lazy" width="600" height="400" data-config-src="images.about">
+        </div>
+        <div class="animate-on-scroll delay-1">
+          <h2 data-i18n="story-title">Modern Tıp Merkezi'nin <span>Hikayesi</span></h2>
+          <p data-config="about.story">Modern Tıp Merkezi, 2010 yılında bir grup idealist doktorun hayaliyle yola çıktı. Küçük bir poliklinik olarak başlayan yolculuğumuz, bugün 50'den fazla uzman doktor ve 200'ü aşkın sağlık çalışanıyla hizmet veren modern bir sağlık kompleksine dönüştü.</p>
+          <p data-config="about.story2">Kurulduğumuz günden bu yana, hastalarımıza en kaliteli sağlık hizmetini sunmak için sürekli kendimizi yeniliyor, tıptaki son gelişmeleri yakından takip ediyoruz. Her yıl binlerce hastaya şifa olmanın gururunu yaşıyoruz.</p>
+          <p data-config="about.story3">Amacımız, sağlık alanında bölgenin en güvenilir ve tercih edilen merkezi olmaya devam etmek, hastalarımıza sadece tedavi değil, aynı zamanda sağlıklı bir yaşam için rehberlik etmektir.</p>
+          <a href="contact.html" class="btn btn-primary mt-2">
+            <i class="fas fa-calendar-check"></i> <span data-i18n="hero-btn-appointment">Randevu Al</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Misyon - Vizyon - Değerler ===== -->
+  <section class="section-padding bg-light" id="mvv">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 data-i18n="mvv-title">Misyon, Vizyon & <span>Değerlerimiz</span></h2>
+        <p data-i18n="mvv-desc">Sağlık hizmeti anlayışımızın temelini oluşturan ilkeler</p>
+      </div>
+      <div class="mvv-grid">
+        <div class="mvv-card animate-on-scroll">
+          <div class="mvv-icon"><i class="fas fa-bullseye"></i></div>
+          <h3 data-i18n="mission-title">Misyonumuz</h3>
+          <p data-config="about.mission">Hastalarımıza en güncel tıbbi bilgi ve teknolojilerle donanmış, etik değerlere bağlı, hasta odaklı ve kaliteli sağlık hizmeti sunmak; toplum sağlığının korunmasına ve geliştirilmesine katkıda bulunmak.</p>
+        </div>
+        <div class="mvv-card animate-on-scroll delay-1">
+          <div class="mvv-icon"><i class="fas fa-eye"></i></div>
+          <h3 data-i18n="vision-title">Vizyonumuz</h3>
+          <p data-config="about.vision">Sağlık alanında yenilikçi yaklaşımları benimseyen, ulusal ve uluslararası düzeyde tanınan, hasta memnuniyetinde öncü bir sağlık merkezi olmak ve sağlık turizminde tercih edilen bir marka haline gelmek.</p>
+        </div>
+        <div class="mvv-card animate-on-scroll delay-2">
+          <div class="mvv-icon"><i class="fas fa-heart"></i></div>
+          <h3 data-i18n="values-title">Değerlerimiz</h3>
+          <p data-config="about.values">Hasta odaklılık, etik değerlere bağlılık, sürekli gelişim ve yenilikçilik, ekip çalışması, şeffaflık, mahremiyete saygı, kalite standartlarına uygunluk, toplumsal sorumluluk bilinci.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Uzman Kadromuz ===== -->
+  <section class="section-padding" id="doctors">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 data-i18n="doctors-title">Uzman <span>Kadromuz</span></h2>
+        <p data-i18n="doctors-desc">Her biri alanında uzman, deneyimli ve hasta odaklı doktorlarımız</p>
+      </div>
+
+      <div class="doctor-detail animate-on-scroll">
+        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=200&h=200&fit=crop&crop=face" alt="Dr. Ahmet Yılmaz" class="doctor-img" loading="lazy" width="150" height="150" data-config-src="doctors.0.image">
+        <div class="doctor-info">
+          <h3 data-config="doctors.0.name">Dr. Ahmet Yılmaz</h3>
+          <p class="doctor-title" data-config="doctors.0.title">Başhekim - Kardiyoloji Uzmanı</p>
+          <p data-config="doctors.0.description">İstanbul Üniversitesi Tıp Fakültesi mezunu. 25 yıllık deneyimiyle kardiyoloji alanında uzmanlaşmıştır. Avrupa Kardiyoloji Derneği üyesidir. 5000'den fazla hastaya başarılı anjiyo ve kalp ameliyatı gerçekleştirmiştir. Özellikle kalp yetmezliği ve hipertansiyon tedavisinde uzmandır.</p>
+          <div class="doctor-social" style="justify-content: flex-start;">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="doctor-detail animate-on-scroll delay-1">
+        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=200&h=200&fit=crop&crop=face" alt="Dr. Ayşe Kaya" class="doctor-img" loading="lazy" width="150" height="150" data-config-src="doctors.1.image">
+        <div class="doctor-info">
+          <h3 data-config="doctors.1.name">Dr. Ayşe Kaya</h3>
+          <p class="doctor-title" data-config="doctors.1.title">Diş Hekimliği Uzmanı</p>
+          <p data-config="doctors.1.description">Hacettepe Üniversitesi Diş Hekimliği Fakültesi mezunu. İmplantoloji ve estetik diş hekimliği alanında yurt dışı sertifikalara sahiptir. 18 yıllık deneyimiyle binden fazla başarılı implant vakasına imza atmıştır. Gülüş tasarımı ve dijital diş hekimliği konularında uzmanlaşmıştır.</p>
+          <div class="doctor-social" style="justify-content: flex-start;">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="doctor-detail animate-on-scroll delay-2">
+        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=200&h=200&fit=crop&crop=face" alt="Uzm. Dr. Mehmet Demir" class="doctor-img" loading="lazy" width="150" height="150" data-config-src="doctors.2.image">
+        <div class="doctor-info">
+          <h3 data-config="doctors.2.name">Uzm. Dr. Mehmet Demir</h3>
+          <p class="doctor-title" data-config="doctors.2.title">Göz Hastalıkları Uzmanı</p>
+          <p data-config="doctors.2.description">Cerrahpaşa Tıp Fakültesi mezunu. 20 yıllık göz hastalıkları deneyimi. Katarakt cerrahisi, glokom tedavisi ve refraktif cerrahi (lazer göz ameliyatı) alanlarında uzmanlaşmıştır. Avrupa Katarakt ve Refraktif Cerrahi Derneği üyesidir. 10.000'den fazla başarılı göz ameliyatı gerçekleştirmiştir.</p>
+          <div class="doctor-social" style="justify-content: flex-start;">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="doctor-detail animate-on-scroll delay-3">
+        <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=200&h=200&fit=crop&crop=face" alt="Dr. Zeynep Şahin" class="doctor-img" loading="lazy" width="150" height="150" data-config-src="doctors.3.image">
+        <div class="doctor-info">
+          <h3 data-config="doctors.3.name">Dr. Zeynep Şahin</h3>
+          <p class="doctor-title" data-config="doctors.3.title">Dermatoloji Uzmanı</p>
+          <p data-config="doctors.3.description">Ankara Üniversitesi Tıp Fakültesi mezunu. 15 yıllık dermatoloji deneyimi bulunmaktadır. Lazer tedavileri, cilt kanseri taraması ve estetik dermatoloji alanlarında uzmanlaşmıştır. Amerikan Dermatoloji Akademisi üyesidir. Binlerce hastaya başarılı tedavi uygulamıştır.</p>
+          <div class="doctor-social" style="justify-content: flex-start;">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="doctor-detail animate-on-scroll delay-4">
+        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=200&h=200&fit=crop&crop=face" alt="Fzt. Ali Öztürk" class="doctor-img" loading="lazy" width="150" height="150" data-config-src="doctors.4.image">
+        <div class="doctor-info">
+          <h3 data-config="doctors.4.name">Fzt. Ali Öztürk</h3>
+          <p class="doctor-title" data-config="doctors.4.title">Fizyoterapi Uzmanı</p>
+          <p data-config="doctors.4.description">Hacettepe Üniversitesi Fizyoterapi ve Rehabilitasyon bölümü mezunu. 12 yıllık deneyime sahiptir. Manuel terapi, spor yaralanmaları rehabilitasyonu ve nörolojik rehabilitasyon alanlarında uzmanlaşmıştır. Türkiye Fizyoterapistler Derneği üyesidir.</p>
+          <div class="doctor-social" style="justify-content: flex-start;">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== Teknoloji ve Ekipmanlarımız ===== -->
+  <section class="section-padding bg-light" id="technology">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 data-i18n="tech-title">Teknoloji & <span>Ekipmanlarımız</span></h2>
+        <p data-i18n="tech-desc">En son teknolojik cihazlarla donatılmış merkezimizde doğru teşhis ve tedavi</p>
+      </div>
+      <div class="tech-grid">
+        <div class="tech-item animate-on-scroll">
+          <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=400&h=250&fit=crop" alt="MR Cihazı" loading="lazy" width="400" height="250">
+          <div class="tech-overlay">3 Tesla MR Cihazı</div>
+        </div>
+        <div class="tech-item animate-on-scroll delay-1">
+          <img src="https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=400&h=250&fit=crop" alt="BT Cihazı" loading="lazy" width="400" height="250">
+          <div class="tech-overlay">128 Kesitli BT</div>
+        </div>
+        <div class="tech-item animate-on-scroll delay-2">
+          <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&h=250&fit=crop" alt="Ameliyathane" loading="lazy" width="400" height="250">
+          <div class="tech-overlay">Modern Ameliyathaneler</div>
+        </div>
+        <div class="tech-item animate-on-scroll delay-3">
+          <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?w=400&h=250&fit=crop" alt="Ultrason" loading="lazy" width="400" height="250">
+          <div class="tech-overlay">4D Ultrason Cihazı</div>
+        </div>
+        <div class="tech-item animate-on-scroll delay-4">
+          <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=400&h=250&fit=crop" alt="Diş Ünitesi" loading="lazy" width="400" height="250">
+          <div class="tech-overlay">Dijital Diş Üniteleri</div>
+        </div>
+        <div class="tech-item animate-on-scroll delay-5">
+          <img src="https://images.unsplash.com/photo-1578496479914-7ef3b0193be3?w=400&h=250&fit=crop" alt="Laboratuvar" loading="lazy" width="400" height="250">
+          <div class="tech-overlay">Tam Otomatik Laboratuvar</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Altbilgi ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3><i class="fas fa-heartbeat"></i> <span data-i18n="footer-brand">Modern Tıp</span></h3>
+          <p data-config="footer.aboutText">Modern Tıp Merkezi olarak 15 yılı aşkın süredir, deneyimli kadromuz ve ileri teknolojik donanımımızla hastalarımıza en kaliteli sağlık hizmetini sunmaktayız.</p>
+          <div class="emergency-badge">
+            <i class="fas fa-phone-alt"></i> <span data-i18n="footer-emergency">Acil: 0212 444 0 123</span>
+          </div>
+          <div class="footer-social mt-2">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 data-i18n="footer-quick-links">Hızlı Linkler</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-home">Ana Sayfa</span></a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-about">Hakkımızda</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-services">Hizmetler</span></a></li>
+            <li><a href="about.html#doctors"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-doctors">Doktorlar</span></a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-contact">İletişim</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer-hours-title">Çalışma Saatleri</h4>
+          <ul class="footer-hours">
+            <li><span data-i18n="footer-weekdays">Pazartesi - Cuma</span><span>08:00 - 19:00</span></li>
+            <li><span data-i18n="footer-saturday">Cumartesi</span><span>09:00 - 17:00</span></li>
+            <li><span data-i18n="footer-sunday">Pazar</span><span>10:00 - 14:00</span></li>
+            <li><span data-i18n="footer-emergency-service">Acil Servis</span><span>7/24</span></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer-contact-title">İletişim</h4>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-map-marker-alt"></i> Atatürk Cad. No:123, Şişli/İstanbul</a></li>
+            <li><a href="tel:+902124440123"><i class="fas fa-phone"></i> 0212 444 0 123</a></li>
+            <li><a href="mailto:info@moderntip.com"><i class="fas fa-envelope"></i> info@moderntip.com</a></li>
+            <li><a href="#"><i class="fas fa-globe"></i> www.moderntip.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer-copyright">© 2024 Efesoftlab. Tüm hakları saklıdır.</p>
+        <p><span data-i18n="footer-design">Tasarım ve Geliştirme: Efesoftlab</span> | <a href="#" data-i18n="footer-policy">Gizlilik Politikası</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== WhatsApp Butonu ===== -->
+  <a href="#" class="whatsapp-btn" data-phone="905551234567" aria-label="WhatsApp üzerinden iletişim">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ===== Yukarı Çık Düğmesi ===== -->
+  <button class="back-to-top" aria-label="Yukarı çık">
+    <i class="fas fa-arrow-up"></i>
+    <svg width="48" height="48" viewBox="0 0 48 48">
+      <circle cx="24" cy="24" r="20"></circle>
+    </svg>
+  </button>
+
+  <!-- ===== Çerez Onayı ===== -->
+  <div class="cookie-consent" id="cookieConsent">
+    <div class="container">
+      <p data-i18n="cookie-text">Web sitemizde size en iyi deneyimi sunmak için çerezler kullanıyoruz. Devam ederek çerez kullanımını kabul etmiş olursunuz.</p>
+      <button class="btn btn-primary cookie-accept"><span data-i18n="cookie-accept">Kabul Et</span></button>
+    </div>
+  </div>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

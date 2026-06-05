@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tasarım ve Geliştirme: Efesoftlab | Satış ve Dağıtım: Efesoftlab -->
+  <meta name="description" content="Efes Hukuk Bürosu - 1978'den bu yana ceza, aile, ticaret, gayrimenkul, iş ve fikri mülkiyet hukuku alanlarında profesyonel hukuk danışmanlık hizmetleri.">
+  <meta name="author" content="Efesoftlab">
+  <meta name="keywords" content="hukuk bürosu, avukat, ceza hukuku, aile hukuku, ticaret hukuku, İstanbul avukat, hukuk danışmanlık">
+  <title data-i18n="nav-home">Ana Sayfa - Efes Hukuk Bürosu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+
+  <!-- ===== SAYFA ÖN YÜKLEYİCİ (Preloader) ===== -->
+  <div id="preloader">
+    <div style="text-align:center;">
+      <div class="preloader-icon">
+        <i class="fas fa-balance-scale"></i>
+      </div>
+      <span class="preloader-text">Efes Hukuk</span>
+    </div>
+  </div>
+
+  <!-- ===== BİLDİRİM KAPSAYICI (Toast Container) ===== -->
+  <div class="toast-container"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" role="navigation" aria-label="Ana navigasyon">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <i class="fas fa-balance-scale" data-config="logo.icon"></i>
+        <span data-config="logo.text">Efes</span><span>Hukuk</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link active" data-i18n="nav-home">Ana Sayfa</a></li>
+        <li><a href="about.html" class="nav-link" data-i18n="nav-about">Hakkımızda</a></li>
+        <li><a href="services.html" class="nav-link" data-i18n="nav-services">Uzmanlıklar</a></li>
+        <li><a href="about.html#team" class="nav-link" data-i18n="nav-attorneys">Avukatlar</a></li>
+        <li><a href="contact.html" class="nav-link" data-i18n="nav-contact">İletişim</a></li>
+      </ul>
+      <div class="nav-right">
+        <button id="langToggle" aria-label="Switch to English">
+          <i class="fas fa-globe"></i> EN
+        </button>
+        <button id="darkModeToggle" aria-label="Karanlık moda geç">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="hamburger" aria-label="Menüyü aç/kapa">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <img src="https://picsum.photos/1920/1080?random=1" alt="Efes Hukuk Bürosu" class="hero-bg" loading="lazy" data-config="hero.bgImage">
+    <div class="hero-overlay"></div>
+    <div class="hero-pattern"></div>
+    <div class="hero-decorative-line top"></div>
+    <div class="hero-decorative-line bottom"></div>
+    <div class="container">
+      <div class="hero-icon">
+        <i class="fas fa-gavel"></i>
+      </div>
+      <h1><span data-i18n="hero-title" data-config="hero.title">Adaletin Güvencesi</span></h1>
+      <span class="gold-accent"></span>
+      <div class="typing-container">
+        <span class="typing-text" data-i18n="hero-typing" data-config="hero.typingText">Adaletin Güvencesi</span>
+      </div>
+      <p data-i18n="hero-subtitle" data-config="hero.subtitle">45 yıllık tecrübemizle, hukuki sorunlarınızda yanınızdayız. Profesyonel avukat kadromuz ile size en uygun çözümü sunuyoruz.</p>
+      <div class="hero-buttons">
+        <a href="contact.html" class="btn btn-primary btn-pulse"><i class="fas fa-handshake"></i> <span data-i18n="hero-btn-consult">Danışmanlık Al</span></a>
+        <a href="services.html" class="btn btn-outline"><i class="fas fa-gavel"></i> <span data-i18n="hero-btn-services">Uzmanlıklarımız</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HAKKIMIZDA ÖNİZLEME (About Preview) ===== -->
+  <section class="about-preview section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image animate-on-scroll-left">
+          <img src="https://picsum.photos/600/450?random=2" alt="Efes Hukuk ofisi" loading="lazy" data-config="about.image">
+        </div>
+        <div class="about-content animate-on-scroll-right">
+          <h2 data-i18n="about-title" data-config="about.title">Kurumsal Hukuk Geleneği</h2>
+          <span class="gold-accent-left"></span>
+          <p data-i18n="about-desc" data-config="about.description">Efes Hukuk Bürosu, 1978 yılından bu yana Türk yargı sisteminde güvenilir bir çınar olarak hizmet vermektedir. Kurulduğu günden bugüne, adalete olan inancımız ve mesleki etik değerlerimizden ödün vermeden çalışıyoruz.</p>
+          <ul class="about-features">
+            <li><i class="fas fa-check-circle"></i> <span data-i18n="about-feature-1">45+ yıllık deneyim ve güven</span></li>
+            <li><i class="fas fa-check-circle"></i> <span data-i18n="about-feature-2">50+ uzman avukat kadrosu</span></li>
+            <li><i class="fas fa-check-circle"></i> <span data-i18n="about-feature-3">5000'den fazla başarılı dava</span></li>
+            <li><i class="fas fa-check-circle"></i> <span data-i18n="about-feature-4">6 farklı hukuk dalında uzmanlık</span></li>
+          </ul>
+          <a href="about.html" class="btn btn-outline-dark"><span data-i18n="about-read-more">Devamını Oku</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BÖLÜM AYIRICI ===== -->
+  <div class="section-divider"></div>
+
+  <!-- ===== UZMANLIK ALANLARI (Practice Areas) ===== -->
+  <section class="practice-areas section" id="practice">
+    <div class="container">
+      <h2 class="section-title gold-gradient-text animate-on-scroll" data-i18n="practice-title">Uzmanlık Alanlarımız</h2>
+      <span class="gold-accent"></span>
+      <p class="section-subtitle" data-i18n="practice-subtitle">Size en yakın hukuk dalında, deneyimli avukatlarımızla profesyonel destek sağlıyoruz.</p>
+      <div class="areas-grid">
+        <div class="area-card animate-on-scroll animate-delay-1">
+          <div class="area-icon"><i class="fas fa-gavel"></i></div>
+          <h3 data-i18n="area-criminal-title">Ceza Hukuku</h3>
+          <p data-i18n="area-criminal-desc">Ceza davalarında savunma ve müdafilik, ceza soruşturmaları, icra ceza mahkemeleri ve istinaf süreçlerinde uzman kadro.</p>
+          <a href="services.html" class="area-link"><span data-i18n="practice-detail">Detaylı Bilgi</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="area-card animate-on-scroll animate-delay-2">
+          <div class="area-icon"><i class="fas fa-users"></i></div>
+          <h3 data-i18n="area-family-title">Aile Hukuku</h3>
+          <p data-i18n="area-family-desc">Boşanma, velayet, nafaka, mal rejimi, soybağı kurulması ve aile içi uyuşmazlıklarda arabuluculuk hizmetleri.</p>
+          <a href="services.html" class="area-link"><span data-i18n="practice-detail">Detaylı Bilgi</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="area-card animate-on-scroll animate-delay-3">
+          <div class="area-icon"><i class="fas fa-handshake"></i></div>
+          <h3 data-i18n="area-commercial-title">Ticaret Hukuku</h3>
+          <p data-i18n="area-commercial-desc">Şirket kuruluşu, birleşme ve devralma, ticari sözleşmeler, iflas ve konkordato, ticari alacak davaları.</p>
+          <a href="services.html" class="area-link"><span data-i18n="practice-detail">Detaylı Bilgi</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="area-card animate-on-scroll animate-delay-4">
+          <div class="area-icon"><i class="fas fa-building"></i></div>
+          <h3 data-i18n="area-property-title">Gayrimenkul Hukuku</h3>
+          <p data-i18n="area-property-desc">Tapu iptali ve tescil, kamulaştırma, kira uyuşmazlıkları, kat mülkiyeti, imar hukuku ve inşaat sözleşmeleri.</p>
+          <a href="services.html" class="area-link"><span data-i18n="practice-detail">Detaylı Bilgi</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="area-card animate-on-scroll animate-delay-5">
+          <div class="area-icon"><i class="fas fa-briefcase"></i></div>
+          <h3 data-i18n="area-labor-title">İş Hukuku</h3>
+          <p data-i18n="area-labor-desc">İşe iade davaları, kıdem ve ihbar tazminatı, iş kazası tazminatı, toplu iş sözleşmeleri ve sendikal haklar.</p>
+          <a href="services.html" class="area-link"><span data-i18n="practice-detail">Detaylı Bilgi</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="area-card animate-on-scroll animate-delay-5">
+          <div class="area-icon"><i class="fas fa-copyright"></i></div>
+          <h3 data-i18n="area-ip-title">Fikri Mülkiyet Hukuku</h3>
+          <p data-i18n="area-ip-desc">Patent, marka, endüstriyel tasarım tescili, fikir ve sanat eserleri, haksız rekabet ve lisans sözleşmeleri.</p>
+          <a href="services.html" class="area-link"><span data-i18n="practice-detail">Detaylı Bilgi</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== İSTATİSTİKLER (Stats) ===== -->
+  <section class="stats section" id="stats">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll" data-i18n="stats-title">Rakamlarla Biz</h2>
+      <span class="gold-accent"></span>
+      <p class="section-subtitle" data-i18n="stats-subtitle">45 yılı aşkın süredir adalete hizmet ediyoruz.</p>
+      <div class="stats-grid">
+        <div class="stat-item animate-on-scroll">
+          <div class="stat-icon"><i class="fas fa-file-alt"></i></div>
+          <span class="stat-number" data-target="500" data-suffix="+">0+</span>
+          <span class="stat-label" data-i18n="stats-cases">Başarılı Dava</span>
+        </div>
+        <div class="stat-item animate-on-scroll">
+          <div class="stat-icon"><i class="fas fa-user-tie"></i></div>
+          <span class="stat-number" data-target="50" data-suffix="+">0+</span>
+          <span class="stat-label" data-i18n="stats-lawyers">Uzman Avukat</span>
+        </div>
+        <div class="stat-item animate-on-scroll">
+          <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
+          <span class="stat-number" data-target="95" data-suffix="%">0%</span>
+          <span class="stat-label" data-i18n="stats-rate">Başarı Oranı</span>
+        </div>
+        <div class="stat-item animate-on-scroll">
+          <div class="stat-icon"><i class="fas fa-calendar-alt"></i></div>
+          <span class="stat-number" data-target="45" data-suffix="+">0+</span>
+          <span class="stat-label" data-i18n="stats-years">Yıllık Deneyim</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AVUKATLAR (Attorneys - Carousel) ===== -->
+  <section class="attorneys section" id="attorneys">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll" data-i18n="attorneys-title">Ekibimiz</h2>
+      <span class="gold-accent"></span>
+      <p class="section-subtitle" data-i18n="attorneys-subtitle">Her biri alanında uzman avukatlarımızla hukuki sorunlarınıza çözüm üretiyoruz.</p>
+      <div class="attorney-carousel">
+        <button class="carousel-btn carousel-prev" aria-label="Önceki"><i class="fas fa-chevron-left"></i></button>
+        <div class="attorney-track">
+          <!-- Avukat 1 -->
+          <div class="attorney-card">
+            <div class="attorney-image-wrapper">
+              <img src="https://picsum.photos/400/300?random=3" alt="Av. Ahmet Yılmaz" class="attorney-image" loading="lazy">
+            </div>
+            <div class="attorney-info">
+              <h3 data-i18n="attorney-1-name">Av. Ahmet Yılmaz</h3>
+              <div class="attorney-title" data-i18n="attorney-1-title">Kurucu Ortak</div>
+              <span class="attorney-spec" data-i18n="attorney-1-spec">Ceza Hukuku</span>
+              <p data-i18n="attorney-1-desc">Ceza Hukuku uzmanı. İstanbul Üniversitesi Hukuk Fakültesi mezunu, 30 yıllık deneyim.</p>
+              <div class="attorney-social">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="E-posta"><i class="fas fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- Avukat 2 -->
+          <div class="attorney-card">
+            <div class="attorney-image-wrapper">
+              <img src="https://picsum.photos/400/300?random=4" alt="Av. Ayşe Kaya" class="attorney-image" loading="lazy">
+            </div>
+            <div class="attorney-info">
+              <h3 data-i18n="attorney-2-name">Av. Ayşe Kaya</h3>
+              <div class="attorney-title" data-i18n="attorney-2-title">Ortak Avukat</div>
+              <span class="attorney-spec" data-i18n="attorney-2-spec">Aile Hukuku</span>
+              <p data-i18n="attorney-2-desc">Aile Hukuku uzmanı. Ankara Üniversitesi Hukuk Fakültesi mezunu, 25 yıllık deneyim.</p>
+              <div class="attorney-social">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="E-posta"><i class="fas fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- Avukat 3 -->
+          <div class="attorney-card">
+            <div class="attorney-image-wrapper">
+              <img src="https://picsum.photos/400/300?random=5" alt="Av. Mehmet Demir" class="attorney-image" loading="lazy">
+            </div>
+            <div class="attorney-info">
+              <h3 data-i18n="attorney-3-name">Av. Mehmet Demir</h3>
+              <div class="attorney-title" data-i18n="attorney-3-title">Kıdemli Avukat</div>
+              <span class="attorney-spec" data-i18n="attorney-3-spec">Ticaret Hukuku</span>
+              <p data-i18n="attorney-3-desc">Ticaret Hukuku uzmanı. Marmara Üniversitesi Hukuk Fakültesi mezunu, 20 yıllık deneyim.</p>
+              <div class="attorney-social">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="E-posta"><i class="fas fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- Avukat 4 -->
+          <div class="attorney-card">
+            <div class="attorney-image-wrapper">
+              <img src="https://picsum.photos/400/300?random=6" alt="Av. Zeynep Şahin" class="attorney-image" loading="lazy">
+            </div>
+            <div class="attorney-info">
+              <h3 data-i18n="attorney-4-name">Av. Zeynep Şahin</h3>
+              <div class="attorney-title" data-i18n="attorney-4-title">Avukat</div>
+              <span class="attorney-spec" data-i18n="attorney-4-spec">Gayrimenkul Hukuku</span>
+              <p data-i18n="attorney-4-desc">Gayrimenkul Hukuku uzmanı. İstanbul Üniversitesi Hukuk Fakültesi mezunu, 15 yıllık deneyim.</p>
+              <div class="attorney-social">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="E-posta"><i class="fas fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- Avukat 5 -->
+          <div class="attorney-card">
+            <div class="attorney-image-wrapper">
+              <img src="https://picsum.photos/400/300?random=7" alt="Av. Ali Öztürk" class="attorney-image" loading="lazy">
+            </div>
+            <div class="attorney-info">
+              <h3 data-i18n="attorney-5-name">Av. Ali Öztürk</h3>
+              <div class="attorney-title" data-i18n="attorney-5-title">Avukat</div>
+              <span class="attorney-spec" data-i18n="attorney-5-spec">İş Hukuku</span>
+              <p data-i18n="attorney-5-desc">İş Hukuku uzmanı. Koç Üniversitesi Hukuk Fakültesi mezunu, 12 yıllık deneyim.</p>
+              <div class="attorney-social">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="E-posta"><i class="fas fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn carousel-next" aria-label="Sonraki"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div class="carousel-dots">
+        <button class="carousel-dot active" aria-label="Sayfa 1"></button>
+        <button class="carousel-dot" aria-label="Sayfa 2"></button>
+        <button class="carousel-dot" aria-label="Sayfa 3"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BAŞARI HİKAYELERİ (Success Stories) ===== -->
+  <section class="success-stories section" id="success-stories">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll" data-i18n="success-title">Başarı Hikayelerimiz</h2>
+      <span class="gold-accent"></span>
+      <p class="section-subtitle" data-i18n="success-subtitle">Kazandığımız davalarla adalete olan inancımızı pekiştiriyoruz.</p>
+      <div class="stories-grid">
+        <div class="story-card animate-on-scroll animate-delay-1">
+          <span class="story-badge" data-i18n="story-1-badge">Ticaret Hukuku</span>
+          <h3 data-i18n="story-1-title">Tazminat Davası</h3>
+          <p data-i18n="story-1-desc">Sanayi devi şirketimize 50 milyon TL'lik tazminat davasında %100 başarı sağlandı.</p>
+          <div class="story-result"><i class="fas fa-trophy"></i> <span data-i18n="story-1-result">%100 Başarı & Tazminat</span></div>
+        </div>
+        <div class="story-card animate-on-scroll animate-delay-2">
+          <span class="story-badge" data-i18n="story-2-badge">Ticaret Hukuku</span>
+          <h3 data-i18n="story-2-title">Uluslararası Tahkim</h3>
+          <p data-i18n="story-2-desc">Uluslararası tahkim sürecinde müvekkilimizin hakları başarıyla korundu.</p>
+          <div class="story-result"><i class="fas fa-trophy"></i> <span data-i18n="story-2-result">Başarılı Tahkim Süreci</span></div>
+        </div>
+        <div class="story-card animate-on-scroll animate-delay-3">
+          <span class="story-badge" data-i18n="story-3-badge">Aile Hukuku</span>
+          <h3 data-i18n="story-3-title">Velayet Davası</h3>
+          <p data-i18n="story-3-desc">Aile hukuku davasında çocuk velayeti ve nafaka konusunda olumlu sonuç.</p>
+          <div class="story-result"><i class="fas fa-trophy"></i> <span data-i18n="story-3-result">Velayet & Nafaka Kazanımı</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MÜVEKKİL YORUMLARI (Testimonials - Carousel) ===== -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll" data-i18n="testimonials-title">Müvekkillerimiz Ne Diyor?</h2>
+      <span class="gold-accent"></span>
+      <p class="section-subtitle" data-i18n="testimonials-subtitle">Memnuniyetiniz bizim en büyük referansımızdır.</p>
+      <div class="testimonial-carousel">
+        <div class="testimonial-track">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p>"Boşanma sürecimde Av. Ayşe Kaya'nın profesyonel yaklaşımı ve hukuki desteği sayesinde hak ettiğim sonucu aldım. Herkese tavsiye ederim."</p>
+            <div class="testimonial-author">
+              <img src="https://picsum.photos/100/100?random=8" alt="Zeynep A." loading="lazy">
+              <div>
+                <h4>Zeynep A.</h4>
+                <span>İstanbul</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p>"Ticari alacak davamda Efes Hukuk'un deneyimi sayesinde 2 yıl süren hukuki süreci lehimize çevirdik. Profesyonel ekibe teşekkürler."</p>
+            <div class="testimonial-author">
+              <img src="https://picsum.photos/100/100?random=9" alt="Ahmet K." loading="lazy">
+              <div>
+                <h4>Ahmet K.</h4>
+                <span>Ankara</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p>"İşe iade davamda gösterdikleri özveri ve hukuki başarı sayesinde işime geri döndüm. Her aşamada yanımda oldular."</p>
+            <div class="testimonial-author">
+              <img src="https://picsum.photos/100/100?random=10" alt="Elif Y." loading="lazy">
+              <div>
+                <h4>Elif Y.</h4>
+                <span>İzmir</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-dots">
+          <button class="testimonial-dot active" aria-label="Yorum 1"></button>
+          <button class="testimonial-dot" aria-label="Yorum 2"></button>
+          <button class="testimonial-dot" aria-label="Yorum 3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA (Harekete Geçirici Mesaj) ===== -->
+  <section class="cta-section" id="cta">
+    <img src="https://picsum.photos/1920/600?random=11" alt="Hukuki danışmanlık" class="cta-bg" loading="lazy" data-config="cta.bgImage">
+    <div class="cta-overlay"></div>
+    <div class="container">
+      <h2 class="animate-on-scroll" data-i18n="cta-title" data-config="cta.title">Hukuki Destek İçin Bize Ulaşın</h2>
+      <span class="gold-accent"></span>
+      <p data-i18n="cta-desc" data-config="cta.description">Profesyonel ekibimiz, hukuki sorunlarınıza en kısa sürede çözüm bulmak için hazır. Hemen randevu alın.</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn btn-primary btn-pulse"><i class="fas fa-calendar-alt"></i> <span data-i18n="cta-btn-appointment">Randevu Al</span></a>
+        <a href="tel:+902122345678" class="btn btn-outline"><i class="fas fa-phone"></i> (0212) 234 56 78</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SSS (FAQ) ===== -->
+  <section class="faq section" id="faq">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll" data-i18n="faq-title">Sıkça Sorulan Sorular</h2>
+      <span class="gold-accent"></span>
+      <p class="section-subtitle" data-i18n="faq-subtitle">Hukuki süreçler hakkında merak ettikleriniz.</p>
+      <div class="faq-list">
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-question">
+            <span>1. İlk danışmanlık görüşmesi ücretli mi?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Evet, ilk danışmanlık görüşmemiz ücretlidir. Ancak bu görüşme sonrasında avukatlık sözleşmesi imzalamanız durumunda danışmanlık ücreti sözleşme bedelinden düşülmektedir. İlk görüşmede davanızı detaylıca analiz ediyor ve size en uygun hukuki stratejiyi belirliyoruz.</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-question">
+            <span>2. Bir davada avukatlık ücreti nasıl belirlenir?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Avukatlık ücretimiz, davanın niteliği, karmaşıklığı, süresi ve avukatlık asgari ücret tarifesi dikkate alınarak belirlenmektedir. Kural olarak sabit ücret veya dava sonucuna göre nispi ücret şeklinde iki farklı model sunuyoruz. Detaylı bilgi için bizimle iletişime geçebilirsiniz.</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-question">
+            <span>3. Boşanma davası ne kadar sürer?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Anlaşmalı boşanma davaları genellikle 2-4 ay içerisinde sonuçlanmaktadır. Çekişmeli boşanma davaları ise davanın karmaşıklığına bağlı olarak 1-3 yıl arasında sürebilmektedir. Süreç hakkında detaylı bilgiyi ilk danışmanlık görüşmesinde paylaşıyoruz.</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-question">
+            <span>4. Arabuluculuk zorunlu mu?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>İş hukuku ve ticari davaların bir kısmında arabuluculuk dava şartı olarak zorunludur. Dava açmadan önce arabulucuya başvurulması gerekmektedir. Arabuluculuk sürecinde de profesyonel hukuki destek almanız, hak kaybı yaşamamanız açısından önemlidir.</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-question">
+            <span>5. Hangi durumlarda adli yardım talep edebilirim?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Maddi durumu yetersiz olan kişiler, hukuki yardım alabilmek için adli yardım talebinde bulunabilir. Bu kapsamda devlet tarafından avukat atanması ve yargılama giderlerinden muafiyet sağlanabilir. Başvuru koşulları ve gerekli belgeler hakkında ofisimizden bilgi alabilirsiniz.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHATSAPP FLOATING ===== -->
+  <div class="whatsapp-float" role="button" aria-label="WhatsApp üzerinden iletişim" data-phone="905551234567" title="WhatsApp'tan bize yazın">
+    <i class="fab fa-whatsapp"></i>
+  </div>
+
+  <!-- ===== YUKARI ÇIK (Back to Top) ===== -->
+  <button id="backToTop" aria-label="Yukarı çık">
+    <svg viewBox="0 0 44 44">
+      <circle cx="22" cy="22" r="20"/>
+    </svg>
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- ===== ÇEREZ ONAY BANNERI ===== -->
+  <div class="cookie-consent">
+    <div class="container">
+      <div class="cookie-content">
+        <i class="fas fa-cookie-bite"></i>
+        <span data-i18n="cookie-text">Size daha iyi hizmet verebilmek için çerezleri kullanıyoruz.</span>
+      </div>
+      <div class="cookie-buttons">
+        <button class="btn cookie-btn-accept" data-i18n="cookie-accept">Kabul Et</button>
+        <button class="btn cookie-btn-decline" data-i18n="cookie-decline">Reddet</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-brand">
+            <i class="fas fa-balance-scale"></i>
+            Efes<span>Hukuk</span>
+          </a>
+          <p data-i18n="footer-desc" data-config="footer.description">1978 yılından bu yana İstanbul merkezli olarak hukukun her alanında profesyonel danışmanlık ve dava takibi hizmeti sunmaktayız. Adalete olan inancımızla çalışıyoruz.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3 data-i18n="footer-practices">Uzmanlıklar</h3>
+          <ul class="footer-links">
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="area-criminal-title">Ceza Hukuku</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="area-family-title">Aile Hukuku</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="area-commercial-title">Ticaret Hukuku</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="area-property-title">Gayrimenkul Hukuku</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="area-labor-title">İş Hukuku</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="area-ip-title">Fikri Mülkiyet Hukuku</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 data-i18n="footer-links">Hızlı Linkler</h3>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-home">Ana Sayfa</span></a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-about">Hakkımızda</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-services">Uzmanlıklar</span></a></li>
+            <li><a href="about.html#team"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-attorneys">Avukatlar</span></a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-contact">İletişim</span></a></li>
+            <li><a href="#faq"><i class="fas fa-chevron-right"></i> SSS</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 data-i18n="footer-contact">İletişim</h3>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> Levent Mah. Büyükdere Cad. No:100 K:15 Şişli / İstanbul</li>
+            <li><i class="fas fa-phone-alt"></i> <a href="tel:+902122345678">(0212) 234 56 78</a></li>
+            <li><i class="fas fa-phone-alt"></i> <a href="tel:+905551234567">(0555) 123 45 67</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:info@efeshukuk.com">info@efeshukuk.com</a></li>
+            <li><i class="fas fa-clock"></i> Hafta içi: 09:00 - 18:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footer-copyright" data-config="footer.copyright">© 2024 Efesoftlab. Tüm hakları saklıdır.</span>
+        <span><span class="footer-credit" data-i18n="footer-credit">Satış: Efesoftlab</span> | <a href="#">KVKK Aydınlatma Metni</a> | <a href="#">Çerez Politikası</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

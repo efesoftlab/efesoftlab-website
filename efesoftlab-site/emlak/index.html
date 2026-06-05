@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<!-- Tasarım ve Geliştirme: Efesoftlab | Satış ve Dağıtım: Efesoftlab -->
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Efesoft Emlak - Premium gayrimenkul danışmanlığı. Lüks konut, villa ve yatırımlık gayrimenkuller.">
+  <meta name="author" content="Efesoftlab">
+  <meta name="keywords" content="emlak, gayrimenkul, satılık daire, kiralık villa, lüks konut, İstanbul emlak">
+  <title data-i18n="nav-home">Efesoft Emlak | Premium Gayrimenkul Danışmanlığı</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Site Config (Admin panel tarafından yönetilir) -->
+  <script src="js/site-config.js"></script>
+</head>
+<body>
+
+  <!-- ===== YÜKLEYİCİ EKRANI ===== -->
+  <div id="preloader">
+    <div class="preloader-logo">
+      <i class="fas fa-building" data-config="logo.icon"></i> <span data-config="logo.text">Efesoft Emlak</span>
+    </div>
+    <div class="preloader-bar">
+      <div class="preloader-bar-inner"></div>
+    </div>
+  </div>
+
+  <!-- ===== KAYDIRMA İLERLEME ÇUBUĞU ===== -->
+  <div id="scrollProgress"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" role="navigation" aria-label="Ana navigasyon" data-i18n-aria="nav-home">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-building" data-config="logo.icon"></i> <span data-config="logo.text">Efesoft Emlak</span>
+      </a>
+      <button class="hamburger" aria-label="Menüyü aç/kapat" data-i18n-aria="nav-home">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active" data-i18n="nav-home">Ana Sayfa</a></li>
+        <li><a href="about.html" data-i18n="nav-about">Hakkımızda</a></li>
+        <li><a href="services.html" data-i18n="nav-services">Hizmetler</a></li>
+        <li><a href="#featured" data-i18n="nav-listings">İlanlar</a></li>
+        <li><a href="contact.html" data-i18n="nav-contact">İletişim</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="lang-toggle" aria-label="Dil değiştir" data-i18n-aria="nav-home">EN</button>
+        <button class="nav-theme-toggle" aria-label="Tema değiştir" data-i18n-aria="nav-home">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== WHATSAPP FLOATING ===== -->
+  <a href="#" class="whatsapp-float" aria-label="WhatsApp ile iletişim" data-i18n-aria="nav-home">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ===== YUKARI ÇIK BUTONU ===== -->
+  <button id="backToTop" aria-label="Yukarı çık">
+    <i class="fas fa-arrow-up"></i>
+    <svg viewBox="0 0 56 56">
+      <circle cx="28" cy="28" r="25"/>
+    </svg>
+  </button>
+
+  <!-- ===== BİLDİRİM KONTEYNERI ===== -->
+  <div id="toastContainer"></div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="container">
+      <h1><span data-i18n="hero-title" data-config="hero.title">Hayalinizdeki</span> <span data-i18n="hero-title-span" data-config="hero.titleSpan" class="gold-text">Evi Bulun</span></h1>
+      <p data-i18n="hero-desc" data-config="hero.description">Premium gayrimenkul danışmanlığı ile lüks konut, villa ve yatırımlık gayrimenkuller</p>
+      <div id="typingText"></div>
+
+      <form class="hero-search" id="searchForm">
+        <select id="searchType" aria-label="İlan türü" data-i18n-aria="search-placeholder-type">
+          <option value="" data-i18n="search-placeholder-type">Tümü</option>
+          <option value="sale" data-i18n="filter-sale">Satılık</option>
+          <option value="rent" data-i18n="filter-rent">Kiralık</option>
+        </select>
+        <select id="searchLocation" aria-label="Lokasyon">
+          <option value="" data-i18n="search-placeholder-location">Tüm Lokasyonlar</option>
+          <option value="sariyer">Sarıyer</option>
+          <option value="levent">Levent</option>
+          <option value="cesme">Çeşme</option>
+          <option value="kadikoy">Kadıköy</option>
+          <option value="besiktas">Beşiktaş</option>
+          <option value="etiler">Etiler</option>
+          <option value="camlica">Çamlıca</option>
+          <option value="maslak">Maslak</option>
+          <option value="buyukada">Büyükada</option>
+          <option value="bebek">Bebek</option>
+          <option value="nisantasi">Nişantaşı</option>
+          <option value="polonezkoy">Polonezköy</option>
+          <option value="alanya">Alanya</option>
+          <option value="tarabya">Tarabya</option>
+          <option value="galata">Galata</option>
+          <option value="atasehir">Ataşehir</option>
+          <option value="bodrum">Bodrum</option>
+          <option value="antalya">Antalya</option>
+          <option value="uskudar">Üsküdar</option>
+          <option value="kemerburgaz">Kemerburgaz</option>
+          <option value="taksim">Taksim</option>
+          <option value="gokturk">Göktürk</option>
+          <option value="bagdat-caddesi">Bağdat Caddesi</option>
+        </select>
+        <input type="number" id="searchMinPrice" data-i18n-placeholder="search-min-price" placeholder="Min. Fiyat (TL)" min="0">
+        <input type="number" id="searchMaxPrice" data-i18n-placeholder="search-max-price" placeholder="Max. Fiyat (TL)" min="0">
+        <button type="submit" class="btn btn-primary">
+          <i class="fas fa-search"></i> <span data-i18n="search-btn">Ara</span>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== ÖNE ÇIKAN İLANLAR ===== -->
+  <section class="section" id="featured">
+    <div class="container">
+      <div class="section-title fade-up">
+        <p class="section-subtitle" data-i18n="featured-subtitle">Öne Çıkanlar</p>
+        <h2 data-i18n="featured-title">Öne Çıkan İlanlar</h2>
+        <p data-i18n="featured-desc">Size özel seçtiğimiz en lüks gayrimenkuller</p>
+      </div>
+
+      <!-- Filtre butonları -->
+      <div class="filter-buttons fade-up">
+        <button class="filter-btn active" data-filter="all" data-i18n="filter-all">Tümü</button>
+        <button class="filter-btn" data-filter="sale" data-i18n="filter-sale">Satılık</button>
+        <button class="filter-btn" data-filter="rent" data-i18n="filter-rent">Kiralık</button>
+      </div>
+
+      <div class="property-grid" id="propertyGrid">
+
+        <!-- 1. Boğaz Manzaralı Villa -->
+        <div class="property-card fade-up" data-config-property="0" data-type="sale" data-location="Sarıyer" data-price="12500000">
+          <div class="card-image">
+            <div class="property-carousel">
+              <div class="carousel-slides" data-config="property.0.images"></div>
+              <button class="carousel-prev" aria-label="Önceki"><i class="fas fa-chevron-left"></i></button>
+              <button class="carousel-next" aria-label="Sonraki"><i class="fas fa-chevron-right"></i></button>
+              <div class="carousel-dots"></div>
+              <div class="carousel-counter">1/1</div>
+            </div>
+            <span class="card-badge sale" data-i18n="badge-sale">Satılık</span>
+          </div>
+          <div class="card-body">
+            <div class="card-price price-glow" data-config="property.0.price">12.500.000 TL</div>
+            <h3 class="card-title" data-i18n="property-1-title" data-config="property.0.title">Boğaz Manzaralı Villa</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> <span data-config="property.0.location">Sarıyer, İstanbul</span></p>
+            <div class="card-features">
+              <span data-config="property.0.bed"><i class="fas fa-bed"></i> 5+1</span>
+              <span data-config="property.0.bath"><i class="fas fa-bath"></i> 4</span>
+              <span data-config="property.0.sqft"><i class="fas fa-vector-square"></i> 350 m²</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Merkez Ofis Dairesi -->
+        <div class="property-card fade-up" data-config-property="1" data-type="sale" data-location="Levent" data-price="4800000">
+          <div class="card-image">
+            <div class="property-carousel">
+              <div class="carousel-slides" data-config="property.1.images"></div>
+              <button class="carousel-prev" aria-label="Önceki"><i class="fas fa-chevron-left"></i></button>
+              <button class="carousel-next" aria-label="Sonraki"><i class="fas fa-chevron-right"></i></button>
+              <div class="carousel-dots"></div>
+              <div class="carousel-counter">1/1</div>
+            </div>
+            <span class="card-badge sale" data-i18n="badge-sale">Satılık</span>
+          </div>
+          <div class="card-body">
+            <div class="card-price" data-config="property.1.price">4.800.000 TL</div>
+            <h3 class="card-title" data-i18n="property-2-title" data-config="property.1.title">Merkez Ofis Dairesi</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> <span data-config="property.1.location">Levent, İstanbul</span></p>
+            <div class="card-features">
+              <span data-config="property.1.bed"><i class="fas fa-bed"></i> 3+1</span>
+              <span data-config="property.1.bath"><i class="fas fa-bath"></i> 2</span>
+              <span data-config="property.1.sqft"><i class="fas fa-vector-square"></i> 140 m²</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Sahil Kenarında Yazlık -->
+        <div class="property-card fade-up" data-config-property="2" data-type="sale" data-location="Çeşme" data-price="6200000">
+          <div class="card-image">
+            <div class="property-carousel">
+              <div class="carousel-slides" data-config="property.2.images"></div>
+              <button class="carousel-prev" aria-label="Önceki"><i class="fas fa-chevron-left"></i></button>
+              <button class="carousel-next" aria-label="Sonraki"><i class="fas fa-chevron-right"></i></button>
+              <div class="carousel-dots"></div>
+              <div class="carousel-counter">1/1</div>
+            </div>
+            <span class="card-badge sale" data-i18n="badge-sale">Satılık</span>
+          </div>
+          <div class="card-body">
+            <div class="card-price" data-config="property.2.price">6.200.000 TL</div>
+            <h3 class="card-title" data-i18n="property-3-title" data-config="property.2.title">Sahil Kenarında Yazlık</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> <span data-config="property.2.location">Çeşme, İzmir</span></p>
+            <div class="card-features">
+              <span data-config="property.2.bed"><i class="fas fa-bed"></i> 4+1</span>
+              <span data-config="property.2.bath"><i class="fas fa-bath"></i> 3</span>
+              <span data-config="property.2.sqft"><i class="fas fa-vector-square"></i> 200 m²</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Modern Rezidans Dairesi -->
+        <div class="property-card fade-up" data-config-property="3" data-type="sale" data-location="Etiler" data-price="3950000">
+          <div class="card-image">
+            <div class="property-carousel">
+              <div class="carousel-slides" data-config="property.3.images"></div>
+              <button class="carousel-prev" aria-label="Önceki"><i class="fas fa-chevron-left"></i></button>
+              <button class="carousel-next" aria-label="Sonraki"><i class="fas fa-chevron-right"></i></button>
+              <div class="carousel-dots"></div>
+              <div class="carousel-counter">1/1</div>
+            </div>
+            <span class="card-badge sale" data-i18n="badge-sale">Satılık</span>
+          </div>
+          <div class="card-body">
+            <div class="card-price" data-config="property.3.price">3.950.000 TL</div>
+            <h3 class="card-title" data-i18n="property-4-title" data-config="property.3.title">Modern Rezidans Dairesi</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> <span data-config="property.3.location">Etiler, İstanbul</span></p>
+            <div class="card-features">
+              <span data-config="property.3.bed"><i class="fas fa-bed"></i> 2+1</span>
+              <span data-config="property.3.bath"><i class="fas fa-bath"></i> 2</span>
+              <span data-config="property.3.sqft"><i class="fas fa-vector-square"></i> 110 m²</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Müstakil Bahçeli Ev -->
+        <div class="property-card fade-up" data-config-property="4" data-type="sale" data-location="Çamlıca" data-price="8750000">
+          <div class="card-image">
+            <div class="property-carousel">
+              <div class="carousel-slides" data-config="property.4.images"></div>
+              <button class="carousel-prev" aria-label="Önceki"><i class="fas fa-chevron-left"></i></button>
+              <button class="carousel-next" aria-label="Sonraki"><i class="fas fa-chevron-right"></i></button>
+              <div class="carousel-dots"></div>
+              <div class="carousel-counter">1/1</div>
+            </div>
+            <span class="card-badge sale" data-i18n="badge-sale">Satılık</span>
+          </div>
+          <div class="card-body">
+            <div class="card-price" data-config="property.4.price">8.750.000 TL</div>
+            <h3 class="card-title" data-i18n="property-5-title" data-config="property.4.title">Müstakil Bahçeli Ev</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> <span data-config="property.4.location">Çamlıca, İstanbul</span></p>
+            <div class="card-features">
+              <span data-config="property.4.bed"><i class="fas fa-bed"></i> 5+1</span>
+              <span data-config="property.4.bath"><i class="fas fa-bath"></i> 3</span>
+              <span data-config="property.4.sqft"><i class="fas fa-vector-square"></i> 400 m²</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Prestij Ofis Alanı -->
+        <div class="property-card fade-up" data-config-property="5" data-type="sale" data-location="Maslak" data-price="15000000">
+          <div class="card-image">
+            <div class="property-carousel">
+              <div class="carousel-slides" data-config="property.5.images"></div>
+              <button class="carousel-prev" aria-label="Önceki"><i class="fas fa-chevron-left"></i></button>
+              <button class="carousel-next" aria-label="Sonraki"><i class="fas fa-chevron-right"></i></button>
+              <div class="carousel-dots"></div>
+              <div class="carousel-counter">1/1</div>
+            </div>
+            <span class="card-badge sale" data-i18n="badge-sale">Satılık</span>
+          </div>
+          <div class="card-body">
+            <div class="card-price" data-config="property.5.price">15.000.000 TL</div>
+            <h3 class="card-title" data-i18n="property-6-title" data-config="property.5.title">Prestij Ofis Alanı</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> <span data-config="property.5.location">Maslak, İstanbul</span></p>
+            <div class="card-features">
+              <span data-config="property.5.bed"><i class="fas fa-bed"></i> 6+1</span>
+              <span data-config="property.5.bath"><i class="fas fa-bath"></i> 4</span>
+              <span data-config="property.5.sqft"><i class="fas fa-vector-square"></i> 500 m²</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Tarihi Taş Ev -->
+        <div class="property-card fade-up" data-config-property="6" data-type="sale" data-location="Büyükada" data-price="5200000">
+          <div class="card-image">
+            <div class="property-carousel">
+              <div class="carousel-slides" data-config="property.6.images"></div>
+              <button class="carousel-prev" aria-label="Önceki"><i class="fas fa-chevron-left"></i></button>
+              <button class="carousel-next" aria-label="Sonraki"><i class="fas fa-chevron-right"></i></button>
+              <div class="carousel-dots"></div>
+              <div class="carousel-counter">1/1</div>
+            </div>
+            <span class="card-badge sale" data-i18n="badge-sale">Satılık</span>
+          </div>
+          <div class="card-body">
+            <div class="card-price" data-config="property.6.price">5.200.000 TL</div>
+            <h3 class="card-title" data-i18n="property-7-title" data-config="property.6.title">Tarihi Taş Ev</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> <span data-config="property.6.location">Büyükada, İstanbul</span></p>
+            <div class="card-features">
+              <span data-config="property.6.bed"><i class="fas fa-bed"></i> 3+1</span>
+              <span data-config="property.6.bath"><i class="fas fa-bath"></i> 2</span>
+              <span data-config="property.6.sqft"><i class="fas fa-vector-square"></i> 180 m²</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Yalı Dairesi -->
+        <div class="property-card fade-up" data-config-property="7" data-type="sale" data-location="Bebek" data-price="11000000">
+          <div class="card-image">
+            <div class="property-carousel">
+              <div class="carousel-slides" data-config="property.7.images"></div>
+              <button class="carousel-prev" aria-label="Önceki"><i class="fas fa-chevron-left"></i></button>
+              <button class="carousel-next" aria-label="Sonraki"><i class="fas fa-chevron-right"></i></button>
+              <div class="carousel-dots"></div>
+              <div class="carousel-counter">1/1</div>
+            </div>
+            <span class="card-badge sale" data-i18n="badge-sale">Satılık</span>
+          </div>
+          <div class="card-body">
+            <div class="card-price" data-config="property.7.price">11.000.000 TL</div>
+            <h3 class="card-title" data-i18n="property-8-title" data-config="property.7.title">Yalı Dairesi</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> <span data-config="property.7.location">Bebek, İstanbul</span></p>
+            <div class="card-features">
+              <span data-config="property.7.bed"><i class="fas fa-bed"></i> 4+1</span>
+              <span data-config="property.7.bath"><i class="fas fa-bath"></i> 3</span>
+              <span data-config="property.7.sqft"><i class="fas fa-vector-square"></i> 250 m²</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Tripleks Çatı Dairesi -->
+        <div class="property-card fade-up" data-config-property="8" data-type="sale" data-location="Nişantaşı" data-price="9800000">
+          <div class="card-image">
+            <div class="property-carousel">
+              <div class="carousel-slides" data-config="property.8.images"></div>
+              <button class="carousel-prev" aria-label="Önceki"><i class="fas fa-chevron-left"></i></button>
+              <button class="carousel-next" aria-label="Sonraki"><i class="fas fa-chevron-right"></i></button>
+              <div class="carousel-dots"></div>
+              <div class="carousel-counter">1/1</div>
+            </div>
+            <span class="card-badge sale" data-i18n="badge-sale">Satılık</span>
+          </div>
+          <div class="card-body">
+            <div class="card-price" data-config="property.8.price">9.800.000 TL</div>
+            <h3 class="card-title" data-i18n="property-9-title" data-config="property.8.title">Tripleks Çatı Dairesi</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> <span data-config="property.8.location">Nişantaşı, İstanbul</span></p>
+            <div class="card-features">
+              <span data-config="property.8.bed"><i class="fas fa-bed"></i> 5+1</span>
+              <span data-config="property.8.bath"><i class="fas fa-bath"></i> 4</span>
+              <span data-config="property.8.sqft"><i class="fas fa-vector-square"></i> 320 m²</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. Doğa İçinde Villa -->
+        <div class="property-card fade-up" data-config-property="9" data-type="sale" data-location="Polonezköy" data-price="7500000">
+          <div class="card-image">
+            <div class="property-carousel">
+              <div class="carousel-slides" data-config="property.9.images"></div>
+              <button class="carousel-prev" aria-label="Önceki"><i class="fas fa-chevron-left"></i></button>
+              <button class="carousel-next" aria-label="Sonraki"><i class="fas fa-chevron-right"></i></button>
+              <div class="carousel-dots"></div>
+              <div class="carousel-counter">1/1</div>
+            </div>
+            <span class="card-badge sale" data-i18n="badge-sale">Satılık</span>
+          </div>
+          <div class="card-body">
+            <div class="card-price" data-config="property.9.price">7.500.000 TL</div>
+            <h3 class="card-title" data-i18n="property-10-title" data-config="property.9.title">Doğa İçinde Villa</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> <span data-config="property.9.location">Polonezköy, İstanbul</span></p>
+            <div class="card-features">
+              <span data-config="property.9.bed"><i class="fas fa-bed"></i> 6+1</span>
+              <span data-config="property.9.bath"><i class="fas fa-bath"></i> 4</span>
+              <span data-config="property.9.sqft"><i class="fas fa-vector-square"></i> 500 m²</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11. Kompakt Ofis -->
+        <div class="property-card fade-up" data-config-property="10" data-type="sale" data-location="Kadıköy" data-price="1850000">
+          <div class="card-image">
+            <div class="property-carousel">
+              <div class="carousel-slides" data-config="property.10.images"></div>
+              <button class="carousel-prev" aria-label="Önceki"><i class="fas fa-chevron-left"></i></button>
+              <button class="carousel-next" aria-label="Sonraki"><i class="fas fa-chevron-right"></i></button>
+              <div class="carousel-dots"></div>
+              <div class="carousel-counter">1/1</div>
+            </div>
+            <span class="card-badge sale" data-i18n="badge-sale">Satılık</span>
+          </div>
+          <div class="card-body">
+            <div class="card-price" data-config="property.10.price">1.850.000 TL</div>
+            <h3 class="card-title" data-i18n="property-11-title" data-config="property.10.title">Kompakt Ofis</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> <span data-config="property.10.location">Kadıköy, İstanbul</span></p>
+            <div class="card-features">
+              <span data-config="property.10.bed"><i class="fas fa-bed"></i> 2+1</span>
+              <span data-config="property.10.bath"><i class="fas fa-bath"></i> 1</span>
+              <span data-config="property.10.sqft"><i class="fas fa-vector-square"></i> 85 m²</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12. Deniz Manzaralı Apartman -->
+        <div class="property-card fade-up" data-config-property="11" data-type="sale" data-location="Alanya" data-price="2900000">
+          <div class="card-image">
+            <div class="property-carousel">
+              <div class="carousel-slides" data-config="property.11.images"></div>
+              <button class="carousel-prev" aria-label="Önceki"><i class="fas fa-chevron-left"></i></button>
+              <button class="carousel-next" aria-label="Sonraki"><i class="fas fa-chevron-right"></i></button>
+              <div class="carousel-dots"></div>
+              <div class="carousel-counter">1/1</div>
+            </div>
+            <span class="card-badge sale" data-i18n="badge-sale">Satılık</span>
+          </div>
+          <div class="card-body">
+            <div class="card-price" data-config="property.11.price">2.900.000 TL</div>
+            <h3 class="card-title" data-i18n="property-12-title" data-config="property.11.title">Deniz Manzaralı Apartman</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> <span data-config="property.11.location">Alanya, Antalya</span></p>
+            <div class="card-features">
+              <span data-config="property.11.bed"><i class="fas fa-bed"></i> 3+1</span>
+              <span data-config="property.11.bath"><i class="fas fa-bath"></i> 2</span>
+              <span data-config="property.11.sqft"><i class="fas fa-vector-square"></i> 150 m²</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 13. Köşk Konutu -->
+        <div class="property-card fade-up" data-config-property="12" data-type="sale" data-location="Tarabya" data-price="22000000">
+          <div class="card-image">
+            <div class="property-carousel">
+              <div class="carousel-slides" data-config="property.12.images"></div>
+              <button class="carousel-prev" aria-label="Önceki"><i class="fas fa-chevron-left"></i></button>
+              <button class="carousel-next" aria-label="Sonraki"><i class="fas fa-chevron-right"></i></button>
+              <div class="carousel-dots"></div>
+              <div class="carousel-counter">1/1</div>
+            </div>
+            <span class="card-badge sale" data-i18n="badge-sale">Satılık</span>
+          </div>
+          <div class="card-body">
+            <div class="card-price" data-config="property.12.price">22.000.000 TL</div>
+            <h3 class="card-title" data-i18n="property-13-title" data-config="property.12.title">Köşk Konutu</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> <span data-config="property.12.location">Tarabya, İstanbul</span></p>
+            <div class="card-features">
+              <span data-config="property.12.bed"><i class="fas fa-bed"></i> 7+1</span>
+              <span data-config="property.12.bath"><i class="fas fa-bath"></i> 5</span>
+              <span data-config="property.12.sqft"><i class="fas fa-vector-square"></i> 600 m²</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 14. Loft Daire -->
+        <div class="property-card fade-up" data-config-property="13" data-type="sale" data-location="Galata" data-price="2200000">
+          <div class="card-image">
+            <div class="property-carousel">
+              <div class="carousel-slides" data-config="property.13.images"></div>
+              <button class="carousel-prev" aria-label="Önceki"><i class="fas fa-chevron-left"></i></button>
+              <button class="carousel-next" aria-label="Sonraki"><i class="fas fa-chevron-right"></i></button>
+              <div class="carousel-dots"></div>
+              <div class="carousel-counter">1/1</div>
+            </div>
+            <span class="card-badge sale" data-i18n="badge-sale">Satılık</span>
+          </div>
+          <div class="card-body">
+            <div class="card-price" data-config="property.13.price">2.200.000 TL</div>
+            <h3 class="card-title" data-i18n="property-14-title" data-config="property.13.title">Loft Daire</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> <span data-config="property.13.location">Galata, İstanbul</span></p>
+            <div class="card-features">
+              <span data-config="property.13.bed"><i class="fas fa-bed"></i> 1+1</span>
+              <span data-config="property.13.bath"><i class="fas fa-bath"></i> 1</span>
+              <span data-config="property.13.sqft"><i class="fas fa-vector-square"></i> 65 m²</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 15. Residence Penthouse -->
+        <div class="property-card fade-up" data-config-property="14" data-type="sale" data-location="Ataşehir" data-price="7200000">
+          <div class="card-image">
+            <div class="property-carousel">
+              <div class="carousel-slides" data-config="property.14.images"></div>
+              <button class="carousel-prev" aria-label="Önceki"><i class="fas fa-chevron-left"></i></button>
+              <button class="carousel-next" aria-label="Sonraki"><i class="fas fa-chevron-right"></i></button>
+              <div class="carousel-dots"></div>
+              <div class="carousel-counter">1/1</div>
+            </div>
+            <span class="card-badge sale" data-i18n="badge-sale">Satılık</span>
+          </div>
+          <div class="card-body">
+            <div class="card-price" data-config="property.14.price">7.200.000 TL</div>
+            <h3 class="card-title" data-i18n="property-15-title" data-config="property.14.title">Residence Penthouse</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> <span data-config="property.14.location">Ataşehir, İstanbul</span></p>
+            <div class="card-features">
+              <span data-config="property.14.bed"><i class="fas fa-bed"></i> 4+1</span>
+              <span data-config="property.14.bath"><i class="fas fa-bath"></i> 3</span>
+              <span data-config="property.14.sqft"><i class="fas fa-vector-square"></i> 280 m²</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 16. Havuzlu Villa Bodrum -->
+        <div class="property-card fade-up" data-config-property="15" data-type="sale" data-location="Bodrum" data-price="9500000">
+          <div class="card-image">
+            <div class="property-carousel">
+              <div class="carousel-slides" data-config="property.15.images"></div>
+              <button class="carousel-prev" aria-label="Önceki"><i class="fas fa-chevron-left"></i></button>
+              <button class="carousel-next" aria-label="Sonraki"><i class="fas fa-chevron-right"></i></button>
+              <div class="carousel-dots"></div>
+              <div class="carousel-counter">1/1</div>
+            </div>
+            <span class="card-badge sale" data-i18n="badge-sale">Satılık</span>
+          </div>
+          <div class="card-body">
+            <div class="card-price" data-config="property.15.price">9.500.000 TL</div>
+            <h3 class="card-title" data-i18n="property-16-title" data-config="property.15.title">Havuzlu Villa</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> <span data-config="property.15.location">Bodrum, Muğla</span></p>
+            <div class="card-features">
+              <span data-config="property.15.bed"><i class="fas fa-bed"></i> 5+1</span>
+              <span data-config="property.15.bath"><i class="fas fa-bath"></i> 4</span>
+              <span data-config="property.15.sqft"><i class="fas fa-vector-square"></i> 380 m²</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 17. Tarihi Konak -->
+        <div class="property-card fade-up" data-config-property="16" data-type="sale" data-location="Büyükada" data-price="14000000">
+          <div class="card-image">
+            <div class="property-carousel">
+              <div class="carousel-slides" data-config="property.16.images"></div>
+              <button class="carousel-prev" aria-label="Önceki"><i class="fas fa-chevron-left"></i></button>
+              <button class="carousel-next" aria-label="Sonraki"><i class="fas fa-chevron-right"></i></button>
+              <div class="carousel-dots"></div>
+              <div class="carousel-counter">1/1</div>
+            </div>
+            <span class="card-badge sale" data-i18n="badge-sale">Satılık</span>
+          </div>
+          <div class="card-body">
+            <div class="card-price" data-config="property.16.price">14.000.000 TL</div>
+            <h3 class="card-title" data-i18n="property-17-title" data-config="property.16.title">Tarihi Konak</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> <span data-config="property.16.location">Büyükada, İstanbul</span></p>
+            <div class="card-features">
+              <span data-config="property.16.bed"><i class="fas fa-bed"></i> 6+1</span>
+              <span data-config="property.16.bath"><i class="fas fa-bath"></i> 4</span>
+              <span data-config="property.16.sqft"><i class="fas fa-vector-square"></i> 450 m²</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 18. Resort Apartman -->
+        <div class="property-card fade-up" data-config-property="17" data-type="sale" data-location="Antalya" data-price="2400000">
+          <div class="card-image">
+            <div class="property-carousel">
+              <div class="carousel-slides" data-config="property.17.images"></div>
+              <button class="carousel-prev" aria-label="Önceki"><i class="fas fa-chevron-left"></i></button>
+              <button class="carousel-next" aria-label="Sonraki"><i class="fas fa-chevron-right"></i></button>
+              <div class="carousel-dots"></div>
+              <div class="carousel-counter">1/1</div>
+            </div>
+            <span class="card-badge sale" data-i18n="badge-sale">Satılık</span>
+          </div>
+          <div class="card-body">
+            <div class="card-price" data-config="property.17.price">2.400.000 TL</div>
+            <h3 class="card-title" data-i18n="property-18-title" data-config="property.17.title">Resort Apartman</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> <span data-config="property.17.location">Antalya, Merkez</span></p>
+            <div class="card-features">
+              <span data-config="property.17.bed"><i class="fas fa-bed"></i> 2+1</span>
+              <span data-config="property.17.bath"><i class="fas fa-bath"></i> 1</span>
+              <span data-config="property.17.sqft"><i class="fas fa-vector-square"></i> 90 m²</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 19. Kiralık Ferah Aile Dairesi -->
+        <div class="property-card fade-up" data-config-property="18" data-type="rent" data-location="Üsküdar" data-price="18000">
+          <div class="card-image">
+            <div class="property-carousel">
+              <div class="carousel-slides" data-config="property.18.images"></div>
+              <button class="carousel-prev" aria-label="Önceki"><i class="fas fa-chevron-left"></i></button>
+              <button class="carousel-next" aria-label="Sonraki"><i class="fas fa-chevron-right"></i></button>
+              <div class="carousel-dots"></div>
+              <div class="carousel-counter">1/1</div>
+            </div>
+            <span class="card-badge rent" data-i18n="badge-rent">Kiralık</span>
+          </div>
+          <div class="card-body">
+            <div class="card-price" data-config="property.18.price">18.000 TL / <span data-i18n="month">Ay</span></div>
+            <h3 class="card-title" data-i18n="property-19-title" data-config="property.18.title">Ferah Aile Dairesi</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> <span data-config="property.18.location">Üsküdar, İstanbul</span></p>
+            <div class="card-features">
+              <span data-config="property.18.bed"><i class="fas fa-bed"></i> 3+1</span>
+              <span data-config="property.18.bath"><i class="fas fa-bath"></i> 2</span>
+              <span data-config="property.18.sqft"><i class="fas fa-vector-square"></i> 130 m²</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 20. Kiralık Plaza Katı Ofis -->
+        <div class="property-card fade-up" data-config-property="19" data-type="rent" data-location="Levent" data-price="25000">
+          <div class="card-image">
+            <div class="property-carousel">
+              <div class="carousel-slides" data-config="property.19.images"></div>
+              <button class="carousel-prev" aria-label="Önceki"><i class="fas fa-chevron-left"></i></button>
+              <button class="carousel-next" aria-label="Sonraki"><i class="fas fa-chevron-right"></i></button>
+              <div class="carousel-dots"></div>
+              <div class="carousel-counter">1/1</div>
+            </div>
+            <span class="card-badge rent" data-i18n="badge-rent">Kiralık</span>
+          </div>
+          <div class="card-body">
+            <div class="card-price" data-config="property.19.price">25.000 TL / <span data-i18n="month">Ay</span></div>
+            <h3 class="card-title" data-i18n="property-20-title" data-config="property.19.title">Plaza Katı Ofis</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> <span data-config="property.19.location">Levent, İstanbul</span></p>
+            <div class="card-features">
+              <span data-config="property.19.bed"><i class="fas fa-bed"></i> 0+1</span>
+              <span data-config="property.19.bath"><i class="fas fa-bath"></i> 1</span>
+              <span data-config="property.19.sqft"><i class="fas fa-vector-square"></i> 120 m²</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 21. Kiralık Lüks Havuzlu Villa -->
+        <div class="property-card fade-up" data-config-property="20" data-type="rent" data-location="Kemerburgaz" data-price="45000">
+          <div class="card-image">
+            <div class="property-carousel">
+              <div class="carousel-slides" data-config="property.20.images"></div>
+              <button class="carousel-prev" aria-label="Önceki"><i class="fas fa-chevron-left"></i></button>
+              <button class="carousel-next" aria-label="Sonraki"><i class="fas fa-chevron-right"></i></button>
+              <div class="carousel-dots"></div>
+              <div class="carousel-counter">1/1</div>
+            </div>
+            <span class="card-badge rent" data-i18n="badge-rent">Kiralık</span>
+          </div>
+          <div class="card-body">
+            <div class="card-price" data-config="property.20.price">45.000 TL / <span data-i18n="month">Ay</span></div>
+            <h3 class="card-title" data-i18n="property-21-title" data-config="property.20.title">Lüks Havuzlu Villa</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> <span data-config="property.20.location">Kemerburgaz, İstanbul</span></p>
+            <div class="card-features">
+              <span data-config="property.20.bed"><i class="fas fa-bed"></i> 5+1</span>
+              <span data-config="property.20.bath"><i class="fas fa-bath"></i> 4</span>
+              <span data-config="property.20.sqft"><i class="fas fa-vector-square"></i> 400 m²</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 22. Kiralık Stüdyo -->
+        <div class="property-card fade-up" data-config-property="21" data-type="rent" data-location="Taksim" data-price="8500">
+          <div class="card-image">
+            <div class="property-carousel">
+              <div class="carousel-slides" data-config="property.21.images"></div>
+              <button class="carousel-prev" aria-label="Önceki"><i class="fas fa-chevron-left"></i></button>
+              <button class="carousel-next" aria-label="Sonraki"><i class="fas fa-chevron-right"></i></button>
+              <div class="carousel-dots"></div>
+              <div class="carousel-counter">1/1</div>
+            </div>
+            <span class="card-badge rent" data-i18n="badge-rent">Kiralık</span>
+          </div>
+          <div class="card-body">
+            <div class="card-price" data-config="property.21.price">8.500 TL / <span data-i18n="month">Ay</span></div>
+            <h3 class="card-title" data-i18n="property-22-title" data-config="property.21.title">Stüdyo Daire</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> <span data-config="property.21.location">Taksim, İstanbul</span></p>
+            <div class="card-features">
+              <span data-config="property.21.bed"><i class="fas fa-bed"></i> 1+0</span>
+              <span data-config="property.21.bath"><i class="fas fa-bath"></i> 1</span>
+              <span data-config="property.21.sqft"><i class="fas fa-vector-square"></i> 45 m²</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 23. Kiralık Gölet Manzaralı Daire -->
+        <div class="property-card fade-up" data-config-property="22" data-type="rent" data-location="Göktürk" data-price="12000">
+          <div class="card-image">
+            <div class="property-carousel">
+              <div class="carousel-slides" data-config="property.22.images"></div>
+              <button class="carousel-prev" aria-label="Önceki"><i class="fas fa-chevron-left"></i></button>
+              <button class="carousel-next" aria-label="Sonraki"><i class="fas fa-chevron-right"></i></button>
+              <div class="carousel-dots"></div>
+              <div class="carousel-counter">1/1</div>
+            </div>
+            <span class="card-badge rent" data-i18n="badge-rent">Kiralık</span>
+          </div>
+          <div class="card-body">
+            <div class="card-price" data-config="property.22.price">12.000 TL / <span data-i18n="month">Ay</span></div>
+            <h3 class="card-title" data-i18n="property-23-title" data-config="property.22.title">Gölet Manzaralı Daire</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> <span data-config="property.22.location">Göktürk, İstanbul</span></p>
+            <div class="card-features">
+              <span data-config="property.22.bed"><i class="fas fa-bed"></i> 2+1</span>
+              <span data-config="property.22.bath"><i class="fas fa-bath"></i> 1</span>
+              <span data-config="property.22.sqft"><i class="fas fa-vector-square"></i> 100 m²</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 24. Kiralık Cadde Üzeri Dükkan -->
+        <div class="property-card fade-up" data-config-property="23" data-type="rent" data-location="Bağdat Caddesi" data-price="30000">
+          <div class="card-image">
+            <div class="property-carousel">
+              <div class="carousel-slides" data-config="property.23.images"></div>
+              <button class="carousel-prev" aria-label="Önceki"><i class="fas fa-chevron-left"></i></button>
+              <button class="carousel-next" aria-label="Sonraki"><i class="fas fa-chevron-right"></i></button>
+              <div class="carousel-dots"></div>
+              <div class="carousel-counter">1/1</div>
+            </div>
+            <span class="card-badge rent" data-i18n="badge-rent">Kiralık</span>
+          </div>
+          <div class="card-body">
+            <div class="card-price" data-config="property.23.price">30.000 TL / <span data-i18n="month">Ay</span></div>
+            <h3 class="card-title" data-i18n="property-24-title" data-config="property.23.title">Cadde Üzeri Dükkan</h3>
+            <p class="card-location"><i class="fas fa-map-marker-alt"></i> <span data-config="property.23.location">Bağdat Caddesi, İstanbul</span></p>
+            <div class="card-features">
+              <span data-config="property.23.bed"><i class="fas fa-bed"></i> 0+1</span>
+              <span data-config="property.23.bath"><i class="fas fa-bath"></i> 1</span>
+              <span data-config="property.23.sqft"><i class="fas fa-vector-square"></i> 80 m²</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Sonuç bulunamadı mesajı -->
+      <div id="noResults" class="no-results" style="display:none;">
+        <i class="fas fa-search"></i>
+        <h3 data-i18n="no-results-title">İlan Bulunamadı</h3>
+        <p data-i18n="no-results-text">Arama kriterlerinize uygun ilan bulunamadı. Lütfen farklı kriterler deneyin.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DANIŞMANLAR ===== -->
+  <section class="section section-light" id="agents">
+    <div class="container">
+      <div class="section-title fade-up">
+        <p class="section-subtitle" data-i18n="agents-subtitle">Uzman Kadro</p>
+        <h2 data-i18n="agents-title">Danışmanlarımız</h2>
+        <p data-i18n="agents-desc">Sektörün deneyimli ve güvenilir gayrimenkul danışmanları</p>
+      </div>
+      <div class="agent-grid">
+
+        <div class="agent-card fade-up" data-config-agent="0">
+          <div class="agent-image">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&q=80" alt="Ahmet Yılmaz" loading="lazy">
+          </div>
+          <h4 data-i18n="agent-1-name" data-config="agent.0.name">Ahmet Yılmaz</h4>
+          <p class="agent-title" data-i18n="agent-1-title" data-config="agent.0.title">Kurucu & CEO</p>
+          <p class="agent-desc" data-i18n="agent-1-desc" data-config="agent.0.desc">15 yıl gayrimenkul deneyimi. Boğaziçi Üniversitesi İşletme mezunu. 3000+ satış.</p>
+          <div class="agent-social">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="agent-card fade-up" data-config-agent="1">
+          <div class="agent-image">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&q=80" alt="Zeynep Kaya" loading="lazy">
+          </div>
+          <h4 data-i18n="agent-2-name" data-config="agent.1.name">Zeynep Kaya</h4>
+          <p class="agent-title" data-i18n="agent-2-title" data-config="agent.1.title">Satış Müdürü</p>
+          <p class="agent-desc" data-i18n="agent-2-desc" data-config="agent.1.desc">10+ yıl lüks konut satışı. ITÜ İnşaat Müh. mezunu. 500+ premium satış.</p>
+          <div class="agent-social">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="agent-card fade-up" data-config-agent="2">
+          <div class="agent-image">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&q=80" alt="Mehmet Demir" loading="lazy">
+          </div>
+          <h4 data-i18n="agent-3-name" data-config="agent.2.name">Mehmet Demir</h4>
+          <p class="agent-title" data-i18n="agent-3-title" data-config="agent.2.title">Kiralama Uzmanı</p>
+          <p class="agent-desc" data-i18n="agent-3-desc" data-config="agent.2.desc">8 yıl kurumsal kiralama deneyimi. Marmara Üniv. İktisat mezunu.</p>
+          <div class="agent-social">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="agent-card fade-up" data-config-agent="3">
+          <div class="agent-image">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&q=80" alt="Elif Arslan" loading="lazy">
+          </div>
+          <h4 data-i18n="agent-4-name" data-config="agent.3.name">Elif Arslan</h4>
+          <p class="agent-title" data-i18n="agent-4-title" data-config="agent.3.title">Değerleme Uzmanı</p>
+          <p class="agent-desc" data-i18n="agent-4-desc" data-config="agent.3.desc">12 yıl gayrimenkul değerleme. SPK lisanslı değerleme uzmanı.</p>
+          <div class="agent-social">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MÜŞTERİ YORUMLARI ===== -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-title fade-up">
+        <p class="section-subtitle" data-i18n="testimonials-subtitle">Müşteri Yorumları</p>
+        <h2 data-i18n="testimonials-title">Mutlu Müşterilerimiz</h2>
+        <p data-i18n="testimonials-desc">Binlerce memnun müşterimizin görüşleri</p>
+      </div>
+      <div class="testimonial-carousel fade-up">
+        <div class="testimonial-track">
+          <div class="testimonial-slide">
+            <div class="testimonial-card" data-config-testimonial="0">
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p data-i18n="testimonial-1-text" data-config="testimonial.0.text">Efesoft Emlak sayesinde hayalimdeki villayı buldum. Profesyonel yaklaşımları ve ilgileri gerçekten takdire şayan. Kesinlikle tavsiye ediyorum.</p>
+              <div class="customer">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80" alt="Ali Öztürk" loading="lazy">
+                <div>
+                  <h5 data-i18n="testimonial-1-name" data-config="testimonial.0.name">Ali Öztürk</h5>
+                  <span data-i18n="testimonial-1-role" data-config="testimonial.0.role">Villa Alıcısı</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-card" data-config-testimonial="1">
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p data-i18n="testimonial-2-text" data-config="testimonial.1.text">Yatırımlık gayrimenkul ararken Efesoft Emlak ile tanıştık. Bize özel hazırladıkları portföy ile en doğru yatırımı yapmamızı sağladılar.</p>
+              <div class="customer">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Ayşe Yıldız" loading="lazy">
+                <div>
+                  <h5 data-i18n="testimonial-2-name" data-config="testimonial.1.name">Ayşe Yıldız</h5>
+                  <span data-i18n="testimonial-2-role" data-config="testimonial.1.role">Yatırımcı</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-card" data-config-testimonial="2">
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p data-i18n="testimonial-3-text" data-config="testimonial.2.text">Ofis taşınma sürecimizde Efesoft Emlak mükemmel bir hizmet sundu. İhtiyaçlarımıza uygun ofisi bulmak hiç bu kadar kolay olmamıştı.</p>
+              <div class="customer">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Can Özkan" loading="lazy">
+                <div>
+                  <h5 data-i18n="testimonial-3-name" data-config="testimonial.2.name">Can Özkan</h5>
+                  <span data-i18n="testimonial-3-role" data-config="testimonial.2.role">Kurumsal Müşteri</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-nav">
+          <button class="carousel-dot active" aria-label="Slide 1"></button>
+          <button class="carousel-dot" aria-label="Slide 2"></button>
+          <button class="carousel-dot" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-arrows">
+          <button class="carousel-arrow" aria-label="Önceki"><i class="fas fa-chevron-left"></i></button>
+          <button class="carousel-arrow" aria-label="Sonraki"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== İSTATİSTİKLER ===== -->
+  <section class="stats-section section" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+
+        <div class="stat-item fade-up" data-config-stat="0">
+          <i class="fas fa-home"></i>
+          <h3 data-target="500" data-config="stat.0.number">0+</h3>
+          <p data-i18n="stat-listings" data-config="stat.0.label">Satılık & Kiralık İlan</p>
+        </div>
+
+        <div class="stat-item fade-up" data-config-stat="1">
+          <i class="fas fa-user-tie"></i>
+          <h3 data-target="50" data-config="stat.1.number">0+</h3>
+          <p data-i18n="stat-agents" data-config="stat.1.label">Uzman Danışman</p>
+        </div>
+
+        <div class="stat-item fade-up" data-config-stat="2">
+          <i class="fas fa-smile"></i>
+          <h3 data-target="1000" data-config="stat.2.number">0+</h3>
+          <p data-i18n="stat-clients" data-config="stat.2.label">Mutlu Müşteri</p>
+        </div>
+
+        <div class="stat-item fade-up" data-config-stat="3">
+          <i class="fas fa-calendar-alt"></i>
+          <h3 data-target="10" data-config="stat.3.number">0+</h3>
+          <p data-i18n="stat-years" data-config="stat.3.label">Yıllık Deneyim</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SSS ===== -->
+  <section class="section section-light" id="faq">
+    <div class="container">
+      <div class="section-title fade-up">
+        <p class="section-subtitle" data-i18n="faq-subtitle">Merak Edilenler</p>
+        <h2 data-i18n="faq-title">Sıkça Sorulan Sorular</h2>
+        <p data-i18n="faq-desc">Gayrimenkul hakkında en çok merak edilen sorular</p>
+      </div>
+      <div class="faq-list">
+
+        <div class="faq-item fade-up" data-config-faq="0">
+          <div class="faq-question" data-config="faq.0.question">
+            <span>Emlak alım-satım süreci ne kadar sürer?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer" data-config="faq.0.answer">
+            <p>Ortalama bir emlak alım-satım işlemi, finansman durumuna ve resmi işlemlere bağlı olarak 30-60 gün arasında tamamlanmaktadır.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-up" data-config-faq="1">
+          <div class="faq-question" data-config="faq.1.question">
+            <span>Gayrimenkul değerleme nasıl yapılır?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer" data-config="faq.1.answer">
+            <p>Uzman ekibimiz, emsal karşılaştırma, bölgesel analiz ve güncel piyasa verilerini kullanarak profesyonel değerleme raporu hazırlar.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-up" data-config-faq="2">
+          <div class="faq-question" data-config="faq.2.question">
+            <span>Kiralama sürecinde hangi masraflar var?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer" data-config="faq.2.answer">
+            <p>Kiralama sürecinde genellikle depozito (1-2 kira bedeli), emlak komisyonu (1 kira bedeli + KDV) ve noter masrafları bulunmaktadır.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-up" data-config-faq="3">
+          <div class="faq-question" data-config="faq.3.question">
+            <span>Yatırımlık gayrimenkul nasıl seçilir?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer" data-config="faq.3.answer">
+            <p>Konum, bölgenin gelişim potansiyeli, ulaşım altyapısı ve kira getiri oranları gibi kriterleri analiz ederek size özel yatırım stratejisi belirliyoruz.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-up" data-config-faq="4">
+          <div class="faq-question" data-config="faq.4.question">
+            <span>İlanınızda olmayan bir mülkü bulabilir misiniz?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer" data-config="faq.4.answer">
+            <p>Evet, geniş portföyümüz ve sektör bağlantılarımız sayesinde talebinize uygun mülkleri sizin için özel olarak araştırıp buluyoruz.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-section" id="cta">
+    <div class="container">
+      <div class="fade-up">
+        <h2 data-i18n="cta-title" data-config="cta.title">Hayalinizdeki Ev Sizi Bekliyor</h2>
+        <p data-i18n="cta-desc" data-config="cta.desc">Premium gayrimenkul danışmanlarımız size en uygun mülkü bulmak için hazır.</p>
+        <a href="contact.html" class="btn btn-white" data-config="cta.btnLink">
+          <i class="fas fa-phone-alt"></i> <span data-i18n="cta-btn" data-config="cta.btnText">Bize Ulaşın</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ALT BİLGİ (FOOTER) ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-col footer-about">
+          <div class="logo">
+            <i class="fas fa-building" data-config="logo.icon"></i> <span data-config="logo.text">Efesoft Emlak</span>
+          </div>
+          <p data-i18n="footer-about" data-config="footer.aboutText">Premium gayrimenkul danışmanlığı hizmeti ile lüks konut, villa, ofis ve yatırımlık gayrimenkullerde Türkiye'nin lider platformu. 10 yılı aşkın deneyimimizle hayallerinize ortak oluyoruz.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col footer-links">
+          <h4 data-i18n="footer-quick-links">Hızlı Linkler</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav-home"><i class="fas fa-chevron-right"></i> Ana Sayfa</a></li>
+            <li><a href="about.html" data-i18n="nav-about"><i class="fas fa-chevron-right"></i> Hakkımızda</a></li>
+            <li><a href="services.html" data-i18n="nav-services"><i class="fas fa-chevron-right"></i> Hizmetler</a></li>
+            <li><a href="#featured" data-i18n="nav-listings"><i class="fas fa-chevron-right"></i> İlanlar</a></li>
+            <li><a href="contact.html" data-i18n="nav-contact"><i class="fas fa-chevron-right"></i> İletişim</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-links">
+          <h4 data-i18n="footer-listing-types">İlan Türleri</h4>
+          <ul>
+            <li><a href="#featured" data-i18n="filter-sale"><i class="fas fa-chevron-right"></i> Satılık Daire</a></li>
+            <li><a href="#featured" data-i18n="badge-sale"><i class="fas fa-chevron-right"></i> Satılık Villa</a></li>
+            <li><a href="#featured" data-i18n="filter-rent"><i class="fas fa-chevron-right"></i> Kiralık Daire</a></li>
+            <li><a href="#featured"><i class="fas fa-chevron-right"></i> Kiralık Ofis</a></li>
+            <li><a href="#featured"><i class="fas fa-chevron-right"></i> Lüks Konut</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <h4 data-i18n="footer-contact">İletişim</h4>
+          <p><i class="fas fa-map-marker-alt"></i> <span data-config="contact.address">Levent Mah. Büyükdere Cad. No:123, Şişli / İstanbul</span></p>
+          <p><i class="fas fa-phone-alt"></i> <span data-config="contact.phone">+90 (212) 555 44 33</span></p>
+          <p><i class="fas fa-envelope"></i> <span data-config="contact.email">info@efesoftemlak.com</span></p>
+          <p><i class="fas fa-clock"></i> <span data-config="footer.workingHours">Hafta içi: 09:00 - 19:00<br>Cumartesi: 10:00 - 17:00</span></p>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p data-i18n="footer-copyright">© 2024 Efesoftlab. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== RESİM GÖRÜNTÜLEYİCİ ===== -->
+  <div id="lightbox">
+    <button class="close-lightbox">&times;</button>
+    <img src="" alt="Büyük görsel">
+  </div>
+
+  <!-- ===== ÇEREZ İZİN BANNERI ===== -->
+  <div id="cookieConsent">
+    <div class="container">
+      <p data-i18n="cookie-text">Web sitemizde size en iyi deneyimi sunmak için çerezler kullanıyoruz. Devam ederek çerez kullanımını kabul etmiş olursunuz.</p>
+      <button class="btn btn-primary btn-sm" id="cookieAccept" data-i18n="cookie-btn">Kabul Et</button>
+    </div>
+  </div>
+
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>

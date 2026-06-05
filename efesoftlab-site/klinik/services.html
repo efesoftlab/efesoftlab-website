@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<!-- Tasarım ve Geliştirme: Efesoftlab | Satış ve Dağıtım: Efesoftlab -->
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Modern Tıp Merkezi Hizmetlerimiz - Diş Hekimliği, Kardiyoloji, Dermatoloji, Göz Sağlığı, Fizyoterapi, Radyoloji. Tedavi fiyatları ve sigorta bilgileri.">
+  <meta name="author" content="Efesoftlab">
+  <title data-i18n="services-page-title">Hizmetlerimiz | Modern Tıp Merkezi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/site-config.js"></script>
+</head>
+<body>
+
+  <!-- ===== Sayfa Ön Yükleyici ===== -->
+  <div class="preloader" role="status" aria-label="Yükleniyor">
+    <div class="preloader-content">
+      <div class="preloader-icon">
+        <i class="fas fa-heartbeat"></i>
+        <div class="preloader-ring"></div>
+      </div>
+      <p>Yükleniyor...</p>
+    </div>
+  </div>
+
+  <!-- ===== Navigasyon Çubuğu ===== -->
+  <nav class="navbar" role="navigation" aria-label="Ana navigasyon">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <i class="fas fa-heartbeat"></i>
+        Modern<span>Tıp</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html"><span data-i18n="nav-home">Ana Sayfa</span></a></li>
+        <li><a href="about.html"><span data-i18n="nav-about">Hakkımızda</span></a></li>
+        <li><a href="services.html" class="active"><span data-i18n="nav-services">Hizmetler</span></a></li>
+        <li><a href="about.html#doctors"><span data-i18n="nav-doctors">Doktorlar</span></a></li>
+        <li><a href="contact.html"><span data-i18n="nav-contact">İletişim</span></a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="langToggle" class="lang-toggle" aria-label="Dil değiştir">
+          <i class="fas fa-globe"></i> EN
+        </button>
+        <button id="darkModeToggle" aria-label="Koyu mod aç/kapat">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="hamburger" aria-label="Menüyü aç/kapat">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Sayfa Bannerı ===== -->
+  <section class="page-banner">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html"><span data-i18n="nav-home">Ana Sayfa</span></a> / <span data-i18n="services-breadcrumb">Hizmetlerimiz</span>
+      </div>
+      <h1 data-i18n="services-page-title">Hizmetlerimiz</h1>
+      <p data-i18n="services-page-desc">Modern tanı ve tedavi yöntemleriyle sağlığınıza kavuşmanız için yanınızdayız</p>
+    </div>
+  </section>
+
+  <!-- ===== Tüm Bölümler ===== -->
+  <section class="section-padding" id="services-detail">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 data-i18n="services-all-title">Tüm <span>Bölümlerimiz</span></h2>
+        <p data-i18n="services-all-desc">Her biri kendi alanında uzmanlaşmış bölümlerimizle kapsamlı sağlık hizmeti</p>
+      </div>
+
+      <!-- Diş Hekimliği -->
+      <div class="detail-service-card animate-on-scroll">
+        <div>
+          <div class="detail-service-icon"><i class="fas fa-tooth" data-config-icon="departments.0.icon"></i></div>
+          <h3 data-config="departments.0.title">Diş Hekimliği</h3>
+          <p>Modern diş hekimliği yöntemleriyle ağız ve diş sağlığınızı koruyor, estetik gülüş tasarımlarıyla özgüveninizi artırıyoruz. Kanal tedavisinden implanta, ortodontiden beyazlatmaya kadar tüm diş tedavileri uzman kadromuz tarafından gerçekleştirilmektedir. Ağrısız diş tedavisi için son teknoloji anestezi yöntemleri kullanıyoruz.</p>
+          <ul class="detail-service-list">
+            <li><i class="fas fa-check-circle"></i> İmplant ve Protez Uygulamaları</li>
+            <li><i class="fas fa-check-circle"></i> Kanal Tedavisi</li>
+            <li><i class="fas fa-check-circle"></i> Ortodonti (Tel ve Şeffaf Plak)</li>
+            <li><i class="fas fa-check-circle"></i> Diş Beyazlatma</li>
+            <li><i class="fas fa-check-circle"></i> Gülüş Tasarımı</li>
+            <li><i class="fas fa-check-circle"></i> 20 Yaş Dişi Çekimi</li>
+          </ul>
+        </div>
+        <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=500&h=300&fit=crop" alt="Diş Hekimliği" loading="lazy" width="500" height="300">
+      </div>
+
+      <!-- Kardiyoloji -->
+      <div class="detail-service-card animate-on-scroll delay-1">
+        <div>
+          <div class="detail-service-icon"><i class="fas fa-heart" data-config-icon="departments.1.icon"></i></div>
+          <h3 data-config="departments.1.title">Kardiyoloji</h3>
+          <p>Kalp ve damar sağlığınızı korumak için kapsamlı kardiyoloji hizmetleri sunuyoruz. Deneyimli kardiyoloji ekibimiz, en güncel tanı ve tedavi yöntemleriyle kalp hastalıklarının teşhis ve tedavisini gerçekleştirmektedir. Hipertansiyon, kalp yetmezliği, ritim bozuklukları ve koroner arter hastalıkları başlıca ilgi alanlarımızdır.</p>
+          <ul class="detail-service-list">
+            <li><i class="fas fa-check-circle"></i> EKG ve Efor Testi</li>
+            <li><i class="fas fa-check-circle"></i> Ekokardiyografi</li>
+            <li><i class="fas fa-check-circle"></i> Koroner Anjiyografi</li>
+            <li><i class="fas fa-check-circle"></i> Kalp Pili Takılması</li>
+            <li><i class="fas fa-check-circle"></i> Hipertansiyon Takibi</li>
+            <li><i class="fas fa-check-circle"></i> Holter (Ritim Takibi)</li>
+          </ul>
+        </div>
+        <img src="https://images.unsplash.com/photo-1628595351029-c2bf17511435?w=500&h=300&fit=crop" alt="Kardiyoloji" loading="lazy" width="500" height="300">
+      </div>
+
+      <!-- Dermatoloji -->
+      <div class="detail-service-card animate-on-scroll delay-2">
+        <div>
+          <div class="detail-service-icon"><i class="fas fa-hand" data-config-icon="departments.2.icon"></i></div>
+          <h3 data-config="departments.2.title">Dermatoloji</h3>
+          <p>Cilt sağlığınız bizim için önemli. Dermatoloji bölümümüzde cilt hastalıklarının tanı ve tedavisinde en gelişmiş yöntemler kullanılmaktadır. Cilt kanseri taramasından alerjik reaksiyonlara, akne tedavisinden lazer uygulamalarına kadar geniş bir yelpazede hizmet sunuyoruz.</p>
+          <ul class="detail-service-list">
+            <li><i class="fas fa-check-circle"></i> Cilt Kanseri Taraması</li>
+            <li><i class="fas fa-check-circle"></i> Lazer Tedavileri</li>
+            <li><i class="fas fa-check-circle"></i> Akne ve Sivilce Tedavisi</li>
+            <li><i class="fas fa-check-circle"></i> Botoks ve Dolgu Uygulamaları</li>
+            <li><i class="fas fa-check-circle"></i> Alerji Testleri</li>
+            <li><i class="fas fa-check-circle"></i> Sedef ve Egzama Tedavisi</li>
+          </ul>
+        </div>
+        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=500&h=300&fit=crop" alt="Dermatoloji" loading="lazy" width="500" height="300">
+      </div>
+
+      <!-- Göz Sağlığı -->
+      <div class="detail-service-card animate-on-scroll delay-3">
+        <div>
+          <div class="detail-service-icon"><i class="fas fa-eye" data-config-icon="departments.3.icon"></i></div>
+          <h3 data-config="departments.3.title">Göz Sağlığı</h3>
+          <p>Göz sağlığınızı korumak ve görme kalitenizi artırmak için kapsamlı göz muayenesi ve tedavi hizmetleri sunuyoruz. Katarakt cerrahisinden lazer göz ameliyatına, glokom takibinden çocuk göz hastalıklarına kadar tüm göz sağlığı hizmetleri uzman kadromuz tarafından verilmektedir.</p>
+          <ul class="detail-service-list">
+            <li><i class="fas fa-check-circle"></i> Katarakt Cerrahisi</li>
+            <li><i class="fas fa-check-circle"></i> Lazer Göz Ameliyatı (No-Laser, Femto)</li>
+            <li><i class="fas fa-check-circle"></i> Glokom Takip ve Tedavisi</li>
+            <li><i class="fas fa-check-circle"></i> Göz Tansiyonu Ölçümü</li>
+            <li><i class="fas fa-check-circle"></i> Retina Hastalıkları</li>
+            <li><i class="fas fa-check-circle"></i> Çocuk Göz Muayenesi</li>
+          </ul>
+        </div>
+        <img src="https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?w=500&h=300&fit=crop" alt="Göz Sağlığı" loading="lazy" width="500" height="300">
+      </div>
+
+      <!-- Fizyoterapi -->
+      <div class="detail-service-card animate-on-scroll delay-4">
+        <div>
+          <div class="detail-service-icon"><i class="fas fa-bone" data-config-icon="departments.4.icon"></i></div>
+          <h3 data-config="departments.4.title">Fizyoterapi</h3>
+          <p>Kas ve iskelet sistemi rahatsızlıklarının tedavisinde fizyoterapi ve rehabilitasyon hizmetleri sunuyoruz. Uzman fizyoterapistlerimiz eşliğinde, kişiye özel egzersiz programları ve manuel terapi yöntemleriyle ağrısız ve sağlıklı bir yaşama kavuşmanızı sağlıyoruz.</p>
+          <ul class="detail-service-list">
+            <li><i class="fas fa-check-circle"></i> Bel ve Boyun Fıtığı Tedavisi</li>
+            <li><i class="fas fa-check-circle"></i> Spor Yaralanmaları Rehabilitasyonu</li>
+            <li><i class="fas fa-check-circle"></i> Manuel Terapi</li>
+            <li><i class="fas fa-check-circle"></i> Kuru İğneleme</li>
+            <li><i class="fas fa-check-circle"></i> Postür Düzeltme</li>
+            <li><i class="fas fa-check-circle"></i> Nörolojik Rehabilitasyon</li>
+          </ul>
+        </div>
+        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=300&fit=crop" alt="Fizyoterapi" loading="lazy" width="500" height="300">
+      </div>
+
+      <!-- Radyoloji -->
+      <div class="detail-service-card animate-on-scroll delay-5">
+        <div>
+          <div class="detail-service-icon"><i class="fas fa-x-ray" data-config-icon="departments.5.icon"></i></div>
+          <h3 data-config="departments.5.title">Radyoloji</h3>
+          <p>İleri görüntüleme teknolojileriyle donatılmış radyoloji bölümümüzde, hastalıkların doğru teşhisi için gerekli tüm görüntüleme hizmetleri sunulmaktadır. Deneyimli radyoloji ekibimiz, en güncel protokollerle güvenli ve hızlı görüntüleme yapmaktadır.</p>
+          <ul class="detail-service-list">
+            <li><i class="fas fa-check-circle"></i> Manyetik Rezonans (MR)</li>
+            <li><i class="fas fa-check-circle"></i> Bilgisayarlı Tomografi (BT)</li>
+            <li><i class="fas fa-check-circle"></i> Ultrasonografi</li>
+            <li><i class="fas fa-check-circle"></i> Mamografi</li>
+            <li><i class="fas fa-check-circle"></i> Direkt Grafi (Röntgen)</li>
+            <li><i class="fas fa-check-circle"></i> Kemik Dansitometrisi</li>
+          </ul>
+        </div>
+        <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=500&h=300&fit=crop" alt="Radyoloji" loading="lazy" width="500" height="300">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== Fiyat Tablosu ===== -->
+  <section class="section-padding bg-light" id="pricing">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 data-i18n="pricing-title">Tedavi <span>Fiyatları</span></h2>
+        <p data-i18n="pricing-desc">2026 yılı güncel tedavi fiyatlarımız. Kesin fiyat bilgisi için muayene olmanız gerekmektedir.</p>
+      </div>
+      <div class="pricing-table animate-on-scroll">
+        <div class="pricing-row header">
+          <span data-i18n="pricing-header-treatment">Tedavi</span>
+          <span data-i18n="pricing-header-price">Fiyat</span>
+          <span data-i18n="pricing-header-duration">Süre</span>
+        </div>
+        <div class="pricing-row">
+          <span>Diş İmplantı (Tek Diş)</span>
+          <span class="price">₺8.500</span>
+          <span class="duration">45-60 dk</span>
+        </div>
+        <div class="pricing-row">
+          <span>Kanal Tedavisi</span>
+          <span class="price">₺2.500</span>
+          <span class="duration">30-45 dk</span>
+        </div>
+        <div class="pricing-row">
+          <span>Kardiyoloji Muayenesi + EKG</span>
+          <span class="price">₺1.200</span>
+          <span class="duration">20-30 dk</span>
+        </div>
+        <div class="pricing-row">
+          <span>Göz Muayenesi</span>
+          <span class="price">₺800</span>
+          <span class="duration">15-20 dk</span>
+        </div>
+        <div class="pricing-row">
+          <span>Fizyoterapi Seansı</span>
+          <span class="price">₺600</span>
+          <span class="duration">45 dk</span>
+        </div>
+        <div class="pricing-row">
+          <span>Dermatoloji Muayenesi</span>
+          <span class="price">₺900</span>
+          <span class="duration">15-20 dk</span>
+        </div>
+        <div class="pricing-row">
+          <span>MR (Tek Bölge)</span>
+          <span class="price">₺2.000</span>
+          <span class="duration">20-30 dk</span>
+        </div>
+        <div class="pricing-row">
+          <span>Ultrasonografi</span>
+          <span class="price">₺700</span>
+          <span class="duration">15-20 dk</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Anlaşmalı Sigortalar ===== -->
+  <section class="section-padding" id="insurance">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 data-i18n="insurance-title">Anlaşmalı <span>Sigortalar</span></h2>
+        <p data-i18n="insurance-desc">Birçok özel sağlık sigortası ve kurumla anlaşmalı olarak hizmet vermekteyiz</p>
+      </div>
+      <div class="insurance-section animate-on-scroll">
+        <h3>Geniş Sigorta Ağı</h3>
+        <p>Başlıca anlaşmalı olduğumuz sigorta şirketleri ile sağlık güvencenizi kullanarak tedavi olabilirsiniz. Tam liste için bizimle iletişime geçiniz.</p>
+        <div class="insurance-logos">
+          <img src="https://via.placeholder.com/150x50/e2e8f0/475569?text=Anadolu+Sigorta" alt="Anadolu Sigorta" loading="lazy" width="150" height="50">
+          <img src="https://via.placeholder.com/150x50/e2e8f0/475569?text=Axa+Sigorta" alt="Axa Sigorta" loading="lazy" width="150" height="50">
+          <img src="https://via.placeholder.com/150x50/e2e8f0/475569?text=Allianz" alt="Allianz" loading="lazy" width="150" height="50">
+          <img src="https://via.placeholder.com/150x50/e2e8f0/475569?text=Groupama" alt="Groupama" loading="lazy" width="150" height="50">
+          <img src="https://via.placeholder.com/150x50/e2e8f0/475569?text=Eureko" alt="Eureko" loading="lazy" width="150" height="50">
+          <img src="https://via.placeholder.com/150x50/e2e8f0/475569?text=Ak+Sigorta" alt="Ak Sigorta" loading="lazy" width="150" height="50">
+        </div>
+        <p style="margin-top:1.5rem; font-size:0.9rem;">Ayrıca SGK, devlet hastaneleri ve özel sağlık kuruluşları ile de koordineli çalışmaktayız.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Altbilgi ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3><i class="fas fa-heartbeat"></i> <span data-i18n="footer-brand">Modern Tıp</span></h3>
+          <p data-config="footer.aboutText">Modern Tıp Merkezi olarak 15 yılı aşkın süredir, deneyimli kadromuz ve ileri teknolojik donanımımızla hastalarımıza en kaliteli sağlık hizmetini sunmaktayız.</p>
+          <div class="emergency-badge">
+            <i class="fas fa-phone-alt"></i> <span data-i18n="footer-emergency">Acil: 0212 444 0 123</span>
+          </div>
+          <div class="footer-social mt-2">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 data-i18n="footer-quick-links">Hızlı Linkler</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-home">Ana Sayfa</span></a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-about">Hakkımızda</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-services">Hizmetler</span></a></li>
+            <li><a href="about.html#doctors"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-doctors">Doktorlar</span></a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-contact">İletişim</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer-hours-title">Çalışma Saatleri</h4>
+          <ul class="footer-hours">
+            <li><span data-i18n="footer-weekdays">Pazartesi - Cuma</span><span>08:00 - 19:00</span></li>
+            <li><span data-i18n="footer-saturday">Cumartesi</span><span>09:00 - 17:00</span></li>
+            <li><span data-i18n="footer-sunday">Pazar</span><span>10:00 - 14:00</span></li>
+            <li><span data-i18n="footer-emergency-service">Acil Servis</span><span>7/24</span></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer-contact-title">İletişim</h4>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-map-marker-alt"></i> Atatürk Cad. No:123, Şişli/İstanbul</a></li>
+            <li><a href="tel:+902124440123"><i class="fas fa-phone"></i> 0212 444 0 123</a></li>
+            <li><a href="mailto:info@moderntip.com"><i class="fas fa-envelope"></i> info@moderntip.com</a></li>
+            <li><a href="#"><i class="fas fa-globe"></i> www.moderntip.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer-copyright">© 2024 Efesoftlab. Tüm hakları saklıdır.</p>
+        <p><span data-i18n="footer-design">Tasarım ve Geliştirme: Efesoftlab</span> | <a href="#" data-i18n="footer-policy">Gizlilik Politikası</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== WhatsApp Butonu ===== -->
+  <a href="#" class="whatsapp-btn" data-phone="905551234567" aria-label="WhatsApp üzerinden iletişim">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ===== Yukarı Çık Düğmesi ===== -->
+  <button class="back-to-top" aria-label="Yukarı çık">
+    <i class="fas fa-arrow-up"></i>
+    <svg width="48" height="48" viewBox="0 0 48 48">
+      <circle cx="24" cy="24" r="20"></circle>
+    </svg>
+  </button>
+
+  <!-- ===== Çerez Onayı ===== -->
+  <div class="cookie-consent" id="cookieConsent">
+    <div class="container">
+      <p data-i18n="cookie-text">Web sitemizde size en iyi deneyimi sunmak için çerezler kullanıyoruz. Devam ederek çerez kullanımını kabul etmiş olursunuz.</p>
+      <button class="btn btn-primary cookie-accept"><span data-i18n="cookie-accept">Kabul Et</span></button>
+    </div>
+  </div>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

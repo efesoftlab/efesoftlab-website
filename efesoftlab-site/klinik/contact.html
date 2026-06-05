@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<!-- Tasarım ve Geliştirme: Efesoftlab | Satış ve Dağıtım: Efesoftlab -->
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Modern Tıp Merkezi İletişim - Randevu almak için iletişim formu, adres, telefon ve çalışma saatleri bilgileri.">
+  <meta name="author" content="Efesoftlab">
+  <title data-i18n="contact-page-title">İletişim | Modern Tıp Merkezi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/site-config.js"></script>
+</head>
+<body>
+
+  <!-- ===== Sayfa Ön Yükleyici ===== -->
+  <div class="preloader" role="status" aria-label="Yükleniyor">
+    <div class="preloader-content">
+      <div class="preloader-icon">
+        <i class="fas fa-heartbeat"></i>
+        <div class="preloader-ring"></div>
+      </div>
+      <p>Yükleniyor...</p>
+    </div>
+  </div>
+
+  <!-- ===== Navigasyon Çubuğu ===== -->
+  <nav class="navbar" role="navigation" aria-label="Ana navigasyon">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <i class="fas fa-heartbeat"></i>
+        Modern<span>Tıp</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html"><span data-i18n="nav-home">Ana Sayfa</span></a></li>
+        <li><a href="about.html"><span data-i18n="nav-about">Hakkımızda</span></a></li>
+        <li><a href="services.html"><span data-i18n="nav-services">Hizmetler</span></a></li>
+        <li><a href="about.html#doctors"><span data-i18n="nav-doctors">Doktorlar</span></a></li>
+        <li><a href="contact.html" class="active"><span data-i18n="nav-contact">İletişim</span></a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="langToggle" class="lang-toggle" aria-label="Dil değiştir">
+          <i class="fas fa-globe"></i> EN
+        </button>
+        <button id="darkModeToggle" aria-label="Koyu mod aç/kapat">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="hamburger" aria-label="Menüyü aç/kapat">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Sayfa Bannerı ===== -->
+  <section class="page-banner">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html"><span data-i18n="nav-home">Ana Sayfa</span></a> / <span data-i18n="contact-breadcrumb">İletişim</span>
+      </div>
+      <h1 data-i18n="contact-page-title">İletişim</h1>
+      <p data-i18n="contact-page-desc">Randevu ve bilgi almak için bizimle iletişime geçin</p>
+    </div>
+  </section>
+
+  <!-- ===== İletişim Bilgi Kartları ===== -->
+  <section class="section-padding bg-light" id="contact-info">
+    <div class="container">
+      <div class="contact-info-grid">
+        <div class="contact-info-card animate-on-scroll">
+          <i class="fas fa-map-marker-alt"></i>
+          <h4 data-i18n="contact-address-title">Adresimiz</h4>
+          <p data-config="contact.address">Atatürk Cad. No:123<br>Şişli / İstanbul</p>
+        </div>
+        <div class="contact-info-card animate-on-scroll delay-1">
+          <i class="fas fa-phone-alt"></i>
+          <h4 data-i18n="contact-phone-title">Telefon</h4>
+          <p data-config="contact.phone">0212 444 0 123<br>0212 555 0 123</p>
+        </div>
+        <div class="contact-info-card animate-on-scroll delay-2">
+          <i class="fas fa-envelope"></i>
+          <h4 data-i18n="contact-email-title">E-Posta</h4>
+          <p data-config="contact.email">info@moderntip.com<br>randevu@moderntip.com</p>
+        </div>
+        <div class="contact-info-card emergency animate-on-scroll delay-3">
+          <i class="fas fa-ambulance"></i>
+          <h4 data-i18n="contact-emergency-title">Acil Servis 7/24</h4>
+          <p data-i18n="contact-emergency-phone">0212 444 0 123<br>Acil durumlarda 112</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Online Randevu Formu ===== -->
+  <section class="section-padding" id="appointment">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 data-i18n="appointment-title">Online <span>Randevu</span></h2>
+        <p data-i18n="appointment-desc">Hemen randevu alın, sağlığınıza ilk adımı atın</p>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-form animate-on-scroll">
+          <h3 data-i18n="appointment-form-title">Randevu Formu</h3>
+          <form id="appointmentForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name"><span data-i18n="form-name">Ad Soyad</span> <span>*</span></label>
+                <input type="text" id="name" name="name" class="form-control" data-i18n-placeholder="form-name" placeholder="Adınız ve Soyadınız" required>
+                <span class="error-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="email"><span data-i18n="form-email">E-Posta</span> <span>*</span></label>
+                <input type="email" id="email" name="email" class="form-control" data-i18n-placeholder="form-email" placeholder="E-posta adresiniz" required>
+                <span class="error-message"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone"><span data-i18n="form-phone">Telefon</span> <span>*</span></label>
+                <input type="tel" id="phone" name="phone" class="form-control" data-i18n-placeholder="form-phone" placeholder="0555 123 45 67" required>
+                <span class="error-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="date"><span data-i18n="form-date">Randevu Tarihi</span> <span>*</span></label>
+                <input type="date" id="date" name="date" class="form-control" required>
+                <span class="error-message"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="department"><span data-i18n="form-department">Bölüm</span> <span>*</span></label>
+              <select id="department" name="department" class="form-control" required>
+                <option value="" data-i18n="form-department-placeholder">Bölüm seçiniz</option>
+                <option value="dis-hekimligi" data-i18n="service-1-title">Diş Hekimliği</option>
+                <option value="kardiyoloji" data-i18n="service-2-title">Kardiyoloji</option>
+                <option value="dermatoloji" data-i18n="service-3-title">Dermatoloji</option>
+                <option value="goz-sagligi" data-i18n="service-4-title">Göz Sağlığı</option>
+                <option value="fizyoterapi" data-i18n="service-5-title">Fizyoterapi</option>
+                <option value="radyoloji" data-i18n="service-6-title">Radyoloji</option>
+                <option value="genel-muayene">Genel Muayene</option>
+              </select>
+              <span class="error-message"></span>
+            </div>
+            <div class="form-group">
+              <label for="message"><span data-i18n="form-message">Mesajınız</span></label>
+              <textarea id="message" name="message" class="form-control" data-i18n-placeholder="form-message-placeholder" placeholder="Varsa eklemek istediğiniz bilgiler..."></textarea>
+              <span class="error-message"></span>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">
+              <i class="fas fa-paper-plane"></i> <span data-i18n="form-submit">Randevu Talebi Gönder</span>
+            </button>
+          </form>
+        </div>
+        <div>
+          <div class="animate-on-scroll delay-1" style="margin-bottom:1.5rem;">
+            <h3 style="font-size:1.3rem; font-weight:700; margin-bottom:1rem;" data-i18n="hours-title">Çalışma Saatlerimiz</h3>
+            <div class="hours-table">
+              <div class="hours-row header">
+                <span class="day" data-i18n="hours-header-day">Gün</span>
+                <span class="time" data-i18n="hours-header-time">Saat</span>
+              </div>
+              <div class="hours-row">
+                <span class="day" data-i18n="footer-weekdays">Pazartesi - Cuma</span>
+                <span class="time">08:00 - 19:00</span>
+              </div>
+              <div class="hours-row">
+                <span class="day" data-i18n="footer-saturday">Cumartesi</span>
+                <span class="time">09:00 - 17:00</span>
+              </div>
+              <div class="hours-row">
+                <span class="day" data-i18n="footer-sunday">Pazar</span>
+                <span class="time">10:00 - 14:00</span>
+              </div>
+              <div class="hours-row">
+                <span class="day" style="font-weight:700; color:var(--primary-600);" data-i18n="footer-emergency-service">Acil Servis</span>
+                <span class="time" style="font-weight:700; color:var(--primary-600);">7/24</span>
+              </div>
+            </div>
+          </div>
+          <div class="animate-on-scroll delay-2">
+            <h3 style="font-size:1.3rem; font-weight:700; margin-bottom:1rem;" data-i18n="form-call-now">Hemen Ara</h3>
+            <div class="contact-info-card" style="margin-bottom:0;">
+              <i class="fas fa-phone-alt" style="font-size:2rem;"></i>
+              <h4 style="font-size:1.5rem; color:var(--primary-600);">0212 444 0 123</h4>
+              <p>7/24 çağrı merkezimiz hizmetinizde</p>
+              <a href="tel:+902124440123" class="btn btn-primary mt-2" style="display:inline-flex;">
+                <i class="fas fa-phone"></i> <span data-i18n="form-call-now">Şimdi Ara</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Konum / Harita ===== -->
+  <section class="section-padding bg-light" id="map">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 data-i18n="map-title">Bizi <span>Bulun</span></h2>
+        <p data-i18n="map-desc">Modern Tıp Merkezi'ne nasıl ulaşabileceğinizi keşfedin</p>
+      </div>
+      <div class="map-placeholder animate-on-scroll">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12037.852231659334!2d28.985485!3d41.060475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9e7a7777c43%3A0x4c76cf3daf8b5e5b!2s%C5%9Ei%C5%9Fli%2C%20%C4%B0stanbul!5e0!3m2!1str!2str!4v1" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Konumumuz"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Altbilgi ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3><i class="fas fa-heartbeat"></i> <span data-i18n="footer-brand">Modern Tıp</span></h3>
+          <p data-config="footer.aboutText">Modern Tıp Merkezi olarak 15 yılı aşkın süredir, deneyimli kadromuz ve ileri teknolojik donanımımızla hastalarımıza en kaliteli sağlık hizmetini sunmaktayız.</p>
+          <div class="emergency-badge">
+            <i class="fas fa-phone-alt"></i> <span data-i18n="footer-emergency">Acil: 0212 444 0 123</span>
+          </div>
+          <div class="footer-social mt-2">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 data-i18n="footer-quick-links">Hızlı Linkler</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-home">Ana Sayfa</span></a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-about">Hakkımızda</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-services">Hizmetler</span></a></li>
+            <li><a href="about.html#doctors"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-doctors">Doktorlar</span></a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-contact">İletişim</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer-hours-title">Çalışma Saatleri</h4>
+          <ul class="footer-hours">
+            <li><span data-i18n="footer-weekdays">Pazartesi - Cuma</span><span>08:00 - 19:00</span></li>
+            <li><span data-i18n="footer-saturday">Cumartesi</span><span>09:00 - 17:00</span></li>
+            <li><span data-i18n="footer-sunday">Pazar</span><span>10:00 - 14:00</span></li>
+            <li><span data-i18n="footer-emergency-service">Acil Servis</span><span>7/24</span></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer-contact-title">İletişim</h4>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-map-marker-alt"></i> Atatürk Cad. No:123, Şişli/İstanbul</a></li>
+            <li><a href="tel:+902124440123"><i class="fas fa-phone"></i> 0212 444 0 123</a></li>
+            <li><a href="mailto:info@moderntip.com"><i class="fas fa-envelope"></i> info@moderntip.com</a></li>
+            <li><a href="#"><i class="fas fa-globe"></i> www.moderntip.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer-copyright">© 2024 Efesoftlab. Tüm hakları saklıdır.</p>
+        <p><span data-i18n="footer-design">Tasarım ve Geliştirme: Efesoftlab</span> | <a href="#" data-i18n="footer-policy">Gizlilik Politikası</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== WhatsApp Butonu ===== -->
+  <a href="#" class="whatsapp-btn" data-phone="905551234567" aria-label="WhatsApp üzerinden iletişim">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ===== Yukarı Çık Düğmesi ===== -->
+  <button class="back-to-top" aria-label="Yukarı çık">
+    <i class="fas fa-arrow-up"></i>
+    <svg width="48" height="48" viewBox="0 0 48 48">
+      <circle cx="24" cy="24" r="20"></circle>
+    </svg>
+  </button>
+
+  <!-- ===== Çerez Onayı ===== -->
+  <div class="cookie-consent" id="cookieConsent">
+    <div class="container">
+      <p data-i18n="cookie-text">Web sitemizde size en iyi deneyimi sunmak için çerezler kullanıyoruz. Devam ederek çerez kullanımını kabul etmiş olursunuz.</p>
+      <button class="btn btn-primary cookie-accept"><span data-i18n="cookie-accept">Kabul Et</span></button>
+    </div>
+  </div>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

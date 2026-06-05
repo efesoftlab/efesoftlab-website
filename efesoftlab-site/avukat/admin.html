@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tasarım ve Geliştirme: Efesoftlab | Satış ve Dağıtım: Efesoftlab -->
+  <meta name="description" content="Efes Hukuk Bürosu - Yönetim Paneli">
+  <meta name="author" content="Efesoftlab">
+  <title>Yönetim Paneli - Efes Hukuk Bürosu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+  <!-- ===== SOL MENÜ (Sidebar) ===== -->
+  <aside class="admin-sidebar" id="adminSidebar">
+    <div class="admin-sidebar-header">
+      <a href="index.html" class="admin-logo">
+        <i class="fas fa-balance-scale"></i>
+        Efes<span>Hukuk</span>
+      </a>
+      <p>Yönetim Paneli</p>
+    </div>
+    <nav class="admin-nav">
+      <div class="admin-nav-label">Genel</div>
+      <a href="#" class="active" data-section="general">
+        <i class="fas fa-cog"></i> Genel Ayarlar
+      </a>
+      <div class="admin-nav-label">İçerik</div>
+      <a href="#" data-section="hero">
+        <i class="fas fa-home"></i> Hero Bölümü
+      </a>
+      <a href="#" data-section="about">
+        <i class="fas fa-info-circle"></i> Hakkımızda
+      </a>
+      <a href="#" data-section="practices">
+        <i class="fas fa-gavel"></i> Uzmanlık Alanları
+      </a>
+      <a href="#" data-section="lawyers">
+        <i class="fas fa-user-tie"></i> Avukatlar
+      </a>
+      <a href="#" data-section="stories">
+        <i class="fas fa-trophy"></i> Başarı Hikayeleri
+      </a>
+      <a href="#" data-section="stats">
+        <i class="fas fa-chart-bar"></i> İstatistikler
+      </a>
+      <a href="#" data-section="testimonials">
+        <i class="fas fa-comment-dots"></i> Müvekkil Yorumları
+      </a>
+      <a href="#" data-section="faq">
+        <i class="fas fa-question-circle"></i> SSS
+      </a>
+      <a href="#" data-section="cta">
+        <i class="fas fa-bullhorn"></i> CTA Bölümü
+      </a>
+      <div class="admin-nav-label">Diğer</div>
+      <a href="#" data-section="images">
+        <i class="fas fa-images"></i> Görsel Yönetimi
+      </a>
+      <a href="#" data-section="footer">
+        <i class="fas fa-shoe-prints"></i> Alt Bilgi
+      </a>
+      <a href="#" data-section="tools">
+        <i class="fas fa-tools"></i> Araçlar
+      </a>
+    </nav>
+  </aside>
+
+  <!-- ===== ANA İÇERİK ===== -->
+  <main class="admin-main">
+
+    <!-- Üst Çubuk -->
+    <header class="admin-header">
+      <div class="admin-header-left">
+        <button class="admin-toggle-sidebar" id="toggleSidebar" aria-label="Menüyü aç/kapa">
+          <i class="fas fa-bars"></i>
+        </button>
+        <h2 id="pageTitle">Genel Ayarlar</h2>
+      </div>
+      <div class="admin-header-right">
+        <a href="index.html" class="btn-back" target="_blank">
+          <i class="fas fa-external-link-alt"></i> Siteyi Görüntüle
+        </a>
+      </div>
+    </header>
+
+    <div class="admin-content">
+
+      <!-- ===== BİLDİRİM ALANI ===== -->
+      <div id="adminToastContainer"></div>
+
+      <!-- ===== GENEL AYARLAR ===== -->
+      <section class="admin-section active" id="section-general">
+        <div class="admin-card">
+          <div class="admin-card-header">
+            <h3><i class="fas fa-cog"></i> Genel Ayarlar</h3>
+          </div>
+          <div class="admin-card-body">
+            <div class="admin-form-group">
+              <label>Logo Metni</label>
+              <input type="text" class="admin-form-control" id="cfg_logo_text" placeholder="EfesHukuk">
+            </div>
+            <div class="admin-form-group">
+              <label>Logo İkonu</label>
+              <input type="text" class="admin-form-control" id="cfg_logo_icon" placeholder="fas fa-balance-scale">
+              <div class="admin-form-hint">FontAwesome ikon sınıfı (örn: fas fa-balance-scale)</div>
+            </div>
+            <div class="admin-form-row">
+              <div class="admin-form-group">
+                <label>Telefon</label>
+                <input type="text" class="admin-form-control" id="cfg_phone" placeholder="(0212) 234 56 78">
+              </div>
+              <div class="admin-form-group">
+                <label>Telefon 2</label>
+                <input type="text" class="admin-form-control" id="cfg_phone2" placeholder="(0555) 123 45 67">
+              </div>
+            </div>
+            <div class="admin-form-row">
+              <div class="admin-form-group">
+                <label>WhatsApp GSM</label>
+                <input type="text" class="admin-form-control" id="cfg_gsm" placeholder="905551234567">
+              </div>
+              <div class="admin-form-group">
+                <label>E-posta</label>
+                <input type="email" class="admin-form-control" id="cfg_email" placeholder="info@efeshukuk.com">
+              </div>
+            </div>
+            <div class="admin-form-group">
+              <label>Adres</label>
+              <textarea class="admin-form-control" id="cfg_address" placeholder="Levent Mah. Büyükdere Cad. No:100 K:15 Şişli / İstanbul"></textarea>
+            </div>
+            <div class="admin-form-row">
+              <div class="admin-form-group">
+                <label>Hafta İçi Çalışma Saatleri</label>
+                <input type="text" class="admin-form-control" id="cfg_hours_weekday" placeholder="09:00 - 18:00">
+              </div>
+              <div class="admin-form-group">
+                <label>Cumartesi</label>
+                <input type="text" class="admin-form-control" id="cfg_hours_saturday" placeholder="10:00 - 14:00 (Randevulu)">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== HERO BÖLÜMÜ ===== -->
+      <section class="admin-section" id="section-hero">
+        <div class="admin-card">
+          <div class="admin-card-header">
+            <h3><i class="fas fa-home"></i> Hero Bölümü</h3>
+          </div>
+          <div class="admin-card-body">
+            <div class="admin-form-group">
+              <label>Başlık</label>
+              <input type="text" class="admin-form-control" id="cfg_hero_title" placeholder="Adaletin Güvencesi">
+            </div>
+            <div class="admin-form-group">
+              <label>Alt Başlık</label>
+              <textarea class="admin-form-control" id="cfg_hero_subtitle" placeholder="45 yıllık tecrübemizle..."></textarea>
+            </div>
+            <div class="admin-form-group">
+              <label>Yazı Animasyonu Metni</label>
+              <input type="text" class="admin-form-control" id="cfg_hero_typing" placeholder="Adaletin Güvencesi">
+            </div>
+            <div class="admin-form-row">
+              <div class="admin-form-group">
+                <label>Buton 1 Metni</label>
+                <input type="text" class="admin-form-control" id="cfg_hero_btn1" placeholder="Danışmanlık Al">
+              </div>
+              <div class="admin-form-group">
+                <label>Buton 2 Metni</label>
+                <input type="text" class="admin-form-control" id="cfg_hero_btn2" placeholder="Uzmanlıklarımız">
+              </div>
+            </div>
+            <div class="admin-form-group">
+              <label>Arka Plan Görseli URL</label>
+              <input type="url" class="admin-form-control" id="cfg_hero_bg" placeholder="https://...">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== HAKKIMIZDA ===== -->
+      <section class="admin-section" id="section-about">
+        <div class="admin-card">
+          <div class="admin-card-header">
+            <h3><i class="fas fa-info-circle"></i> Hakkımızda</h3>
+          </div>
+          <div class="admin-card-body">
+            <div class="admin-form-group">
+              <label>Başlık</label>
+              <input type="text" class="admin-form-control" id="cfg_about_title" placeholder="Kurumsal Hukuk Geleneği">
+            </div>
+            <div class="admin-form-group">
+              <label>Açıklama</label>
+              <textarea class="admin-form-control" id="cfg_about_desc" placeholder="Efes Hukuk Bürosu, 1978 yılından bu yana..."></textarea>
+            </div>
+            <div class="admin-form-group">
+              <label>Görsel URL</label>
+              <input type="url" class="admin-form-control" id="cfg_about_image" placeholder="https://...">
+            </div>
+            <div class="admin-form-group">
+              <label>Öne Çıkanlar (virgülle ayırın)</label>
+              <textarea class="admin-form-control" id="cfg_about_features" placeholder="45+ yıllık deneyim ve güven, 50+ uzman avukat kadrosu, ..."></textarea>
+            </div>
+            <div class="admin-form-group">
+              <label>Tarihçe - 1. Paragraf</label>
+              <textarea class="admin-form-control" id="cfg_about_story1" placeholder="Efes Hukuk Bürosu, 1978 yılında..."></textarea>
+            </div>
+            <div class="admin-form-group">
+              <label>Tarihçe - 2. Paragraf</label>
+              <textarea class="admin-form-control" id="cfg_about_story2" placeholder="Kurulduğumuz günden bu yana..."></textarea>
+            </div>
+            <div class="admin-form-group">
+              <label>Misyon</label>
+              <textarea class="admin-form-control" id="cfg_about_mission" placeholder="Müvekkillerimizin hukuki sorunlarına..."></textarea>
+            </div>
+            <div class="admin-form-group">
+              <label>Vizyon</label>
+              <textarea class="admin-form-control" id="cfg_about_vision" placeholder="Türkiye'nin en güvenilir..."></textarea>
+            </div>
+            <div class="admin-form-group">
+              <label>Değerler</label>
+              <textarea class="admin-form-control" id="cfg_about_values" placeholder="Dürüstlük ve şeffaflık..."></textarea>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== UZMANLIK ALANLARI ===== -->
+      <section class="admin-section" id="section-practices">
+        <div class="admin-card">
+          <div class="admin-card-header">
+            <h3><i class="fas fa-gavel"></i> Uzmanlık Alanları</h3>
+            <button class="admin-btn admin-btn-primary admin-btn-sm" onclick="addPracticeArea()">
+              <i class="fas fa-plus"></i> Yeni Ekle
+            </button>
+          </div>
+          <div class="admin-card-body" id="practicesContainer"></div>
+        </div>
+      </section>
+
+      <!-- ===== AVUKATLAR ===== -->
+      <section class="admin-section" id="section-lawyers">
+        <div class="admin-card">
+          <div class="admin-card-header">
+            <h3><i class="fas fa-user-tie"></i> Avukatlar</h3>
+            <button class="admin-btn admin-btn-primary admin-btn-sm" onclick="addLawyer()">
+              <i class="fas fa-plus"></i> Yeni Ekle
+            </button>
+          </div>
+          <div class="admin-card-body" id="lawyersContainer"></div>
+        </div>
+      </section>
+
+      <!-- ===== BAŞARI HİKAYELERİ ===== -->
+      <section class="admin-section" id="section-stories">
+        <div class="admin-card">
+          <div class="admin-card-header">
+            <h3><i class="fas fa-trophy"></i> Başarı Hikayeleri</h3>
+            <button class="admin-btn admin-btn-primary admin-btn-sm" onclick="addStory()">
+              <i class="fas fa-plus"></i> Yeni Ekle
+            </button>
+          </div>
+          <div class="admin-card-body" id="storiesContainer"></div>
+        </div>
+      </section>
+
+      <!-- ===== İSTATİSTİKLER ===== -->
+      <section class="admin-section" id="section-stats">
+        <div class="admin-card">
+          <div class="admin-card-header">
+            <h3><i class="fas fa-chart-bar"></i> İstatistikler</h3>
+          </div>
+          <div class="admin-card-body" id="statsContainer"></div>
+        </div>
+      </section>
+
+      <!-- ===== MÜVEKKİL YORUMLARI ===== -->
+      <section class="admin-section" id="section-testimonials">
+        <div class="admin-card">
+          <div class="admin-card-header">
+            <h3><i class="fas fa-comment-dots"></i> Müvekkil Yorumları</h3>
+            <button class="admin-btn admin-btn-primary admin-btn-sm" onclick="addTestimonial()">
+              <i class="fas fa-plus"></i> Yeni Ekle
+            </button>
+          </div>
+          <div class="admin-card-body" id="testimonialsContainer"></div>
+        </div>
+      </section>
+
+      <!-- ===== SSS ===== -->
+      <section class="admin-section" id="section-faq">
+        <div class="admin-card">
+          <div class="admin-card-header">
+            <h3><i class="fas fa-question-circle"></i> Sıkça Sorulan Sorular</h3>
+            <button class="admin-btn admin-btn-primary admin-btn-sm" onclick="addFaq()">
+              <i class="fas fa-plus"></i> Yeni Ekle
+            </button>
+          </div>
+          <div class="admin-card-body" id="faqContainer"></div>
+        </div>
+      </section>
+
+      <!-- ===== CTA BÖLÜMÜ ===== -->
+      <section class="admin-section" id="section-cta">
+        <div class="admin-card">
+          <div class="admin-card-header">
+            <h3><i class="fas fa-bullhorn"></i> CTA Bölümü</h3>
+          </div>
+          <div class="admin-card-body">
+            <div class="admin-form-group">
+              <label>Başlık</label>
+              <input type="text" class="admin-form-control" id="cfg_cta_title" placeholder="Hukuki Destek İçin Bize Ulaşın">
+            </div>
+            <div class="admin-form-group">
+              <label>Açıklama</label>
+              <textarea class="admin-form-control" id="cfg_cta_desc" placeholder="Profesyonel ekibimiz..."></textarea>
+            </div>
+            <div class="admin-form-group">
+              <label>Buton Metni</label>
+              <input type="text" class="admin-form-control" id="cfg_cta_btn" placeholder="Randevu Al">
+            </div>
+            <div class="admin-form-group">
+              <label>Arka Plan Görseli URL</label>
+              <input type="url" class="admin-form-control" id="cfg_cta_bg" placeholder="https://...">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== GÖRSEL YÖNETİMİ ===== -->
+      <section class="admin-section" id="section-images">
+        <div class="admin-card">
+          <div class="admin-card-header">
+            <h3><i class="fas fa-images"></i> Görsel Yönetimi</h3>
+          </div>
+          <div class="admin-card-body">
+            <div class="admin-form-group">
+              <label>Hero Görseli</label>
+              <input type="url" class="admin-form-control" id="cfg_img_hero" placeholder="https://...">
+            </div>
+            <div class="admin-form-group">
+              <label>Hakkımızda Görseli (Ana Sayfa)</label>
+              <input type="url" class="admin-form-control" id="cfg_img_about" placeholder="https://...">
+            </div>
+            <div class="admin-form-group">
+              <label>Hakkımızda Sayfası Görseli</label>
+              <input type="url" class="admin-form-control" id="cfg_img_about_page" placeholder="https://...">
+            </div>
+            <div class="admin-form-group">
+              <label>Hizmetler Sayfası Banner</label>
+              <input type="url" class="admin-form-control" id="cfg_img_services" placeholder="https://...">
+            </div>
+            <div class="admin-form-group">
+              <label>İletişim Sayfası Banner</label>
+              <input type="url" class="admin-form-control" id="cfg_img_contact" placeholder="https://...">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== ALT BİLGİ ===== -->
+      <section class="admin-section" id="section-footer">
+        <div class="admin-card">
+          <div class="admin-card-header">
+            <h3><i class="fas fa-shoe-prints"></i> Alt Bilgi (Footer)</h3>
+          </div>
+          <div class="admin-card-body">
+            <div class="admin-form-group">
+              <label>Açıklama Metni</label>
+              <textarea class="admin-form-control" id="cfg_footer_desc" placeholder="1978 yılından bu yana..."></textarea>
+            </div>
+            <div class="admin-form-row">
+              <div class="admin-form-group">
+                <label>Telif Hakkı</label>
+                <input type="text" class="admin-form-control" id="cfg_footer_copyright" placeholder="© 2024 Efesoftlab. Tüm hakları saklıdır.">
+              </div>
+              <div class="admin-form-group">
+                <label>Kredi Metni</label>
+                <input type="text" class="admin-form-control" id="cfg_footer_credit" placeholder="Satış: Efesoftlab">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== ARAÇLAR ===== -->
+      <section class="admin-section" id="section-tools">
+        <div class="admin-card">
+          <div class="admin-card-header">
+            <h3><i class="fas fa-tools"></i> Araçlar</h3>
+          </div>
+          <div class="admin-card-body">
+            <div class="admin-toolbar">
+              <button class="admin-btn admin-btn-success" onclick="saveAllConfig()">
+                <i class="fas fa-save"></i> Tümünü Kaydet
+              </button>
+              <button class="admin-btn admin-btn-primary" onclick="exportConfig()">
+                <i class="fas fa-download"></i> JSON Dışa Aktar
+              </button>
+              <button class="admin-btn admin-btn-outline" onclick="document.getElementById('importFile').click()">
+                <i class="fas fa-upload"></i> JSON İçe Aktar
+              </button>
+              <input type="file" id="importFile" accept=".json" style="display:none" onchange="importConfig(event)">
+              <button class="admin-btn admin-btn-danger" onclick="resetAllConfig()">
+                <i class="fas fa-undo"></i> Sıfırla
+              </button>
+            </div>
+            <div class="admin-form-group">
+              <label>Yapılandırma Önizleme (JSON)</label>
+              <textarea class="admin-form-control" id="configPreview" style="min-height:300px;font-family:monospace;font-size:0.8rem;" readonly></textarea>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ===== MODAL ===== -->
+  <div class="admin-modal-overlay" id="adminModal">
+    <div class="admin-modal">
+      <div class="admin-modal-header">
+        <h3 id="modalTitle">Düzenle</h3>
+        <button class="admin-modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="admin-modal-body" id="modalBody"></div>
+      <div class="admin-modal-footer">
+        <button class="admin-btn admin-btn-outline" onclick="closeModal()">İptal</button>
+        <button class="admin-btn admin-btn-primary" onclick="saveModalItem()">Kaydet</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

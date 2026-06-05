@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" data-i18n="meta_desc" content="Kurumsal iş çözümleri, danışmanlık, dijital dönüşüm ve yazılım geliştirme hizmetleri ile işinizi geleceğe taşıyoruz.">
+  <meta name="keywords" data-i18n="meta_keywords" content="kurumsal, iş danışmanlığı, dijital dönüşüm, yazılım, teknoloji">
+  <meta name="author" content="Efesoftlab">
+  <!-- Tasarım ve Geliştirme: Efesoftlab | Satış ve Dağıtım: Efesoftlab -->
+  <title data-i18n="page_title">Efesoftlab | Kurumsal Çözümler</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/site-config.js"></script>
+</head>
+<body data-page="page_title" data-meta-desc="meta_desc" data-meta-keywords="meta_keywords">
+
+  <!-- Sayfa ön yükleyici -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-spinner"></div>
+    <div class="preloader-text" data-i18n="preloader_text">Yükleniyor...</div>
+  </div>
+
+  <!-- Bildirim kapsayıcısı -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- ===== Duyuru Çubuğu Başlangıcı ===== -->
+  <div class="announcement-bar">
+    <div class="announcement-track">
+      <span><i class="fas fa-star"></i> <span data-i18n="marquee1">2026 Yaz Kampanyası: Yeni müşterilere %20 indirim!</span></span>
+      <span><i class="fas fa-circle"></i></span>
+      <span><i class="fas fa-star"></i> <span data-i18n="marquee2">Ücretsiz ön görüşme için hemen arayın: +90 (212) 444 0 123</span></span>
+      <span><i class="fas fa-circle"></i></span>
+      <span><i class="fas fa-star"></i> <span data-i18n="marquee3">Dijital dönüşümde lider firma — 10+ yıllık deneyim</span></span>
+      <span><i class="fas fa-circle"></i></span>
+    </div>
+  </div>
+  <!-- ===== Duyuru Çubuğu Bitişi ===== -->
+
+  <!-- ===== Navbar Başlangıcı ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-briefcase"></i> <span data-i18n="logo_text" data-config="logo.text">Efesoftlab</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active" data-i18n="nav_home">Ana Sayfa</a></li>
+        <li><a href="about.html" data-i18n="nav_about">Hakkımızda</a></li>
+        <li><a href="services.html" data-i18n="nav_services">Hizmetler</a></li>
+        <li><a href="contact.html" data-i18n="nav_contact">İletişim</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="lang-btn active-lang" data-lang="tr" aria-label="Türkçe">TR</button>
+        <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Tema değiştir">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menü">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- ===== Navbar Bitişi ===== -->
+
+  <!-- ===== Hero Bölümü Başlangıcı ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-content animate-on-scroll">
+        <span class="badge" data-i18n="hero_badge" data-config="hero.subtitle">Kurumsal Çözümler</span>
+        <h1>
+          <span data-i18n="hero_title">Geleceği</span>
+          <span class="typing-text gradient-text"></span><span class="typing-cursor"></span>
+        </h1>
+        <p data-i18n="hero_desc" data-config="hero.description">İşletmenizi dijital çağa taşıyor, yenilikçi çözümlerle rekabet avantajı kazanmanızı sağlıyoruz. 10+ yıllık tecrübemizle yanınızdayız.</p>
+        <div class="hero-buttons">
+          <a href="services.html" class="btn btn-primary"><i class="fas fa-rocket"></i> <span data-i18n="hero_btn_services">Hizmetlerimiz</span></a>
+          <a href="contact.html" class="btn btn-outline"><i class="fas fa-phone-alt"></i> <span data-i18n="hero_btn_contact">İletişim</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== Hero Bölümü Bitişi ===== -->
+
+  <!-- ===== Özellikler Bölümü Başlangıcı ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-title animate-on-scroll">
+        <span class="subtitle" data-i18n="features_subtitle">Neden Biz</span>
+        <div class="title-line"></div>
+        <h2 data-i18n="features_title">Neden <span class="gradient-text">Bizi</span> Seçmelisiniz?</h2>
+        <p data-i18n="features_desc">Müşterilerimize sunduğumuz değerlerle fark yaratıyor, her projede mükemmelliği hedefliyoruz.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card animate-on-scroll delay-1">
+          <div class="icon"><i class="fas fa-lightbulb"></i></div>
+          <h3 data-i18n="feature1_title">İnovasyon</h3>
+          <p data-i18n="feature1_desc">Teknolojideki son gelişmeleri yakından takip ederek işletmenize en yenilikçi çözümleri sunuyor, rekabette bir adım önde olmanızı sağlıyoruz.</p>
+        </div>
+        <div class="feature-card animate-on-scroll delay-2">
+          <div class="icon"><i class="fas fa-shield-alt"></i></div>
+          <h3 data-i18n="feature2_title">Güvenilirlik</h3>
+          <p data-i18n="feature2_desc">Projelerimizde şeffaflık ve hesap verebilirlik ilkeleriyle hareket ediyor, taahhütlerimizi zamanında ve eksiksiz yerine getiriyoruz.</p>
+        </div>
+        <div class="feature-card animate-on-scroll delay-3">
+          <div class="icon"><i class="fas fa-award"></i></div>
+          <h3 data-i18n="feature3_title">Kalite</h3>
+          <p data-i18n="feature3_desc">Uluslararası kalite standartlarında hizmet veriyor, her aşamada titiz kalite kontrol süreçlerimizle en yüksek memnuniyeti hedefliyoruz.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== Özellikler Bölümü Bitişi ===== -->
+
+  <!-- ===== Hizmetler Bölümü Başlangıcı ===== -->
+  <section class="section section-dark" id="services">
+    <div class="container">
+      <div class="section-title animate-on-scroll">
+        <span class="subtitle" data-i18n="services_subtitle">Hizmetlerimiz</span>
+        <div class="title-line"></div>
+        <h2 data-i18n="services_title">Neler <span class="gradient-text">Sunuyoruz</span>?</h2>
+        <p data-i18n="services_desc">İşletmenizin ihtiyaçlarına özel kapsamlı çözümler sunuyor, her aşamada yanınızda oluyoruz.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card animate-on-scroll delay-1" data-config="services.0">
+          <div class="icon"><i class="fas fa-chart-line"></i></div>
+          <h3 data-i18n="service1_title" data-config="services.0.title">Danışmanlık</h3>
+          <p data-i18n="service1_desc" data-config="services.0.description">Stratejik yönetim, iş süreçleri optimizasyonu ve kurumsal dönüşüm konularında uzun yıllara dayanan danışmanlık tecrübemizle işletmenizi bir üst seviyeye taşıyoruz.</p>
+          <a href="services.html" class="read-more"><span data-i18n="service_read_more">Detaylı İncele</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card animate-on-scroll delay-2" data-config="services.1">
+          <div class="icon"><i class="fas fa-digital-tachograph"></i></div>
+          <h3 data-i18n="service2_title" data-config="services.1.title">Dijital Dönüşüm</h3>
+          <p data-i18n="service2_desc" data-config="services.1.description">İş süreçlerinizi dijital platformlara taşıyor, otomasyon ve modern teknolojilerle verimliliğinizi artıracak kapsamlı dönüşüm stratejileri geliştiriyoruz.</p>
+          <a href="services.html" class="read-more"><span data-i18n="service_read_more">Detaylı İncele</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card animate-on-scroll delay-3" data-config="services.2">
+          <div class="icon"><i class="fas fa-code"></i></div>
+          <h3 data-i18n="service3_title" data-config="services.2.title">Yazılım Geliştirme</h3>
+          <p data-i18n="service3_desc" data-config="services.2.description">İhtiyaçlarınıza özel web ve mobil uygulamalar, kurumsal yazılım çözümleri ve API entegrasyonları ile işletmenizin dijital altyapısını güçlendiriyoruz.</p>
+          <a href="services.html" class="read-more"><span data-i18n="service_read_more">Detaylı İncele</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card animate-on-scroll delay-4" data-config="services.3">
+          <div class="icon"><i class="fas fa-database"></i></div>
+          <h3 data-i18n="service4_title" data-config="services.3.title">Veri Analitiği</h3>
+          <p data-i18n="service4_desc" data-config="services.3.description">Büyük veri analizi, iş zekası raporlamaları ve öngörücü analitik modelleriyle verilerinizi anlamlı içgörülere dönüştürüp stratejik kararlar almanızı sağlıyoruz.</p>
+          <a href="services.html" class="read-more"><span data-i18n="service_read_more">Detaylı İncele</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card animate-on-scroll delay-5" data-config="services.4">
+          <div class="icon"><i class="fas fa-cloud"></i></div>
+          <h3 data-i18n="service5_title" data-config="services.4.title">Bulut Çözümleri</h3>
+          <p data-i18n="service5_desc" data-config="services.4.description">Bulut mimarisi danışmanlığı, geçiş stratejileri ve yönetilen bulut hizmetleriyle altyapınızı esnek, ölçeklenebilir ve maliyet etkin bir yapıya kavuşturuyoruz.</p>
+          <a href="services.html" class="read-more"><span data-i18n="service_read_more">Detaylı İncele</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card animate-on-scroll delay-6" data-config="services.5">
+          <div class="icon"><i class="fas fa-lock"></i></div>
+          <h3 data-i18n="service6_title" data-config="services.5.title">Güvenlik</h3>
+          <p data-i18n="service6_desc" data-config="services.5.description">Siber güvenlik değerlendirmeleri, sızma testleri, güvenlik duvarı yapılandırması ve acil durum müdahale planları ile dijital varlıklarınızı koruma altına alıyoruz.</p>
+          <a href="services.html" class="read-more"><span data-i18n="service_read_more">Detaylı İncele</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== Hizmetler Bölümü Bitişi ===== -->
+
+  <!-- ===== Bölüm Ayracı (Dalga) ===== -->
+  <div class="section-divider">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path class="wave-fill" d="M0,40 C360,80 720,0 1440,40 L1440,80 L0,80 Z"></path>
+    </svg>
+  </div>
+
+  <!-- ===== İstatistikler Bölümü Başlangıcı ===== -->
+  <section class="stats" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item animate-on-scroll delay-1" data-config="stats.0">
+          <div class="number"><span class="counter" data-target="500" data-i18n="stat1_num" data-config="stats.0.number">0</span><span class="suffix" data-config="stats.0.suffix">+</span></div>
+          <p data-i18n="stat1_label" data-config="stats.0.label">Tamamlanan Proje</p>
+        </div>
+        <div class="stat-item animate-on-scroll delay-2" data-config="stats.1">
+          <div class="number"><span class="counter" data-target="150" data-i18n="stat2_num" data-config="stats.1.number">0</span><span class="suffix" data-config="stats.1.suffix">+</span></div>
+          <p data-i18n="stat2_label" data-config="stats.1.label">Mutlu Müşteri</p>
+        </div>
+        <div class="stat-item animate-on-scroll delay-3" data-config="stats.2">
+          <div class="number"><span class="counter" data-target="50" data-i18n="stat3_num" data-config="stats.2.number">0</span><span class="suffix" data-config="stats.2.suffix">+</span></div>
+          <p data-i18n="stat3_label" data-config="stats.2.label">Uzman Personel</p>
+        </div>
+        <div class="stat-item animate-on-scroll delay-4" data-config="stats.3">
+          <div class="number"><span class="counter" data-target="10" data-i18n="stat4_num" data-config="stats.3.number">0</span><span class="suffix" data-config="stats.3.suffix">+</span></div>
+          <p data-i18n="stat4_label" data-config="stats.3.label">Yıl Deneyim</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== İstatistikler Bölümü Bitişi ===== -->
+
+  <!-- ===== Marka Bölümü Başlangıcı ===== -->
+  <section class="brands-section">
+    <div class="container">
+      <p class="brands-title" data-i18n="brands_title">Güvendiklerimiz</p>
+    </div>
+    <div class="brands-wrapper">
+      <div class="brands-track">
+        <span class="brand-logo"><i class="fas fa-building"></i></span>
+        <span class="brand-logo"><i class="fas fa-industry"></i></span>
+        <span class="brand-logo"><i class="fas fa-university"></i></span>
+        <span class="brand-logo"><i class="fas fa-chart-pie"></i></span>
+        <span class="brand-logo"><i class="fas fa-hospital"></i></span>
+        <span class="brand-logo"><i class="fas fa-shopping-cart"></i></span>
+        <span class="brand-logo"><i class="fas fa-truck"></i></span>
+        <span class="brand-logo"><i class="fas fa-laptop"></i></span>
+        <span class="brand-logo"><i class="fas fa-building"></i></span>
+        <span class="brand-logo"><i class="fas fa-industry"></i></span>
+        <span class="brand-logo"><i class="fas fa-university"></i></span>
+        <span class="brand-logo"><i class="fas fa-chart-pie"></i></span>
+        <span class="brand-logo"><i class="fas fa-hospital"></i></span>
+        <span class="brand-logo"><i class="fas fa-shopping-cart"></i></span>
+        <span class="brand-logo"><i class="fas fa-truck"></i></span>
+        <span class="brand-logo"><i class="fas fa-laptop"></i></span>
+      </div>
+    </div>
+  </section>
+  <!-- ===== Marka Bölümü Bitişi ===== -->
+
+  <!-- ===== Müşteri Yorumları Bölümü Başlangıcı ===== -->
+  <section class="section section-dark" id="testimonials">
+    <div class="container">
+      <div class="section-title animate-on-scroll">
+        <span class="subtitle" data-i18n="testimonials_subtitle">Referanslar</span>
+        <div class="title-line"></div>
+        <h2 data-i18n="testimonials_title">Müşterilerimiz <span class="gradient-text">Ne Diyor</span>?</h2>
+        <p data-i18n="testimonials_desc">Onlarca başarılı projede müşterilerimizin memnuniyeti bizim için en büyük referans.</p>
+      </div>
+      <div class="testimonials-carousel animate-on-scroll">
+        <div class="testimonials-track">
+          <div class="testimonial-card" data-config="testimonials.0">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="text" data-i18n="testimonial1_text" data-config="testimonials.0.text">"Corporate Business ile çalışmak iş süreçlerimizi tamamen dönüştürdü. Profesyonel yaklaşımları ve yenilikçi çözümleri sayesinde verimliliğimiz %40 arttı. Kendilerine minnettarız."</p>
+            <div class="author">
+              <img src="https://i.pravatar.cc/100?img=11" alt="Ayşe Yılmaz" loading="lazy">
+              <div>
+                <h4 data-i18n="testimonial1_name" data-config="testimonials.0.name">Ayşe Yılmaz</h4>
+                <span data-i18n="testimonial1_title" data-config="testimonials.0.role">CEO, TechInnovate</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card" data-config="testimonials.1">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="text" data-i18n="testimonial2_text" data-config="testimonials.1.text">"Dijital dönüşüm projemizde bize rehberlik eden ekip, beklentilerimizin çok ötesinde bir iş çıkardı. Süreç boyunca şeffaf iletişim ve güçlü teknik destek aldık."</p>
+            <div class="author">
+              <img src="https://i.pravatar.cc/100?img=12" alt="Mehmet Demir" loading="lazy">
+              <div>
+                <h4 data-i18n="testimonial2_name" data-config="testimonials.1.name">Mehmet Demir</h4>
+                <span data-i18n="testimonial2_title" data-config="testimonials.1.role">Genel Müdür, GlobalSoft</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card" data-config="testimonials.2">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="text" data-i18n="testimonial3_text" data-config="testimonials.2.text">"Yazılım geliştirme sürecinde gösterdikleri özveri ve kalite anlayışı gerçekten takdire şayan. Projemizi zamanında ve eksiksiz teslim ettiler. Kesinlikle öneriyorum."</p>
+            <div class="author">
+              <img src="https://i.pravatar.cc/100?img=13" alt="Zeynep Kaya" loading="lazy">
+              <div>
+                <h4 data-i18n="testimonial3_name" data-config="testimonials.2.name">Zeynep Kaya</h4>
+                <span data-i18n="testimonial3_title" data-config="testimonials.2.role">IT Direktörü, FinansBank</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-dots"></div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== Müşteri Yorumları Bölümü Bitişi ===== -->
+
+  <!-- ===== Blog Bölümü Başlangıcı ===== -->
+  <section class="section" id="blog">
+    <div class="container">
+      <div class="section-title animate-on-scroll">
+        <span class="subtitle" data-i18n="blog_subtitle">Blog & Haberler</span>
+        <div class="title-line"></div>
+        <h2 data-i18n="blog_title">Son <span class="gradient-text">Yazılar</span></h2>
+        <p data-i18n="blog_desc">Sektördeki son gelişmeler, ipuçları ve başarı hikayelerimizi keşfedin.</p>
+      </div>
+      <div class="blog-grid">
+        <article class="blog-card animate-on-scroll delay-1">
+          <div class="image">
+            <img src="https://picsum.photos/600/400?random=10" alt="Dijital Dönüşüm" loading="lazy">
+            <span class="category" data-i18n="blog1_category">Dijital Dönüşüm</span>
+          </div>
+          <div class="body">
+            <div class="meta">
+              <span><i class="far fa-calendar-alt"></i> <span data-i18n="blog1_date">15 Mayıs 2026</span></span>
+              <span><i class="far fa-user"></i> <span data-i18n="blog_author">Admin</span></span>
+            </div>
+            <h3 data-i18n="blog1_title">Dijital Dönüşümde Başarıya Giden 5 Strateji</h3>
+            <p data-i18n="blog1_desc">Dijital dönüşüm yolculuğunda işletmenizi başarıya taşıyacak temel stratejileri ve dikkat edilmesi gereken noktaları ele alıyoruz.</p>
+            <a href="#" class="read-more"><span data-i18n="blog_read_more">Devamını Oku</span> <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="blog-card animate-on-scroll delay-2">
+          <div class="image">
+            <img src="https://picsum.photos/600/400?random=11" alt="Yapay Zeka" loading="lazy">
+            <span class="category" data-i18n="blog2_category">Yapay Zeka</span>
+          </div>
+          <div class="body">
+            <div class="meta">
+              <span><i class="far fa-calendar-alt"></i> <span data-i18n="blog2_date">8 Mayıs 2026</span></span>
+              <span><i class="far fa-user"></i> <span data-i18n="blog_author">Admin</span></span>
+            </div>
+            <h3 data-i18n="blog2_title">Yapay Zeka ile İş Süreçlerini Optimize Etme</h3>
+            <p data-i18n="blog2_desc">Yapay zeka teknolojilerinin iş süreçlerine entegrasyonu, verimlilik artışı ve rekabet avantajı sağlamak için nasıl kullanılabileceğini inceliyoruz.</p>
+            <a href="#" class="read-more"><span data-i18n="blog_read_more">Devamını Oku</span> <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="blog-card animate-on-scroll delay-3">
+          <div class="image">
+            <img src="https://picsum.photos/600/400?random=12" alt="Siber Güvenlik" loading="lazy">
+            <span class="category" data-i18n="blog3_category">Siber Güvenlik</span>
+          </div>
+          <div class="body">
+            <div class="meta">
+              <span><i class="far fa-calendar-alt"></i> <span data-i18n="blog3_date">1 Mayıs 2026</span></span>
+              <span><i class="far fa-user"></i> <span data-i18n="blog_author">Admin</span></span>
+            </div>
+            <h3 data-i18n="blog3_title">2026'da Siber Güvenlik Trendleri ve Önlemler</h3>
+            <p data-i18n="blog3_desc">Yeni nesil siber tehditler, güvenlik önlemleri ve işletmenizi korumak için almanız gereken aksiyonları detaylı bir şekilde analiz ediyoruz.</p>
+            <a href="#" class="read-more"><span data-i18n="blog_read_more">Devamını Oku</span> <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- ===== Blog Bölümü Bitişi ===== -->
+
+  <!-- ===== CTA Bölümü Başlangıcı ===== -->
+  <section class="cta-section" id="cta">
+    <div class="container">
+      <div class="animate-on-scroll">
+        <span class="badge" data-i18n="cta_badge" data-config="cta.title">Hadi Başlayalım</span>
+        <h2 data-i18n="cta_title">Projenizi <span class="gradient-text">Hayata</span> Geçirelim</h2>
+        <p data-i18n="cta_desc" data-config="cta.desc">Projenizi hayata geçirmek için doğru adrestesiniz. Uzman ekibimizle ücretsiz ön görüşme için hemen bizimle iletişime geçin.</p>
+        <a href="contact.html" class="btn btn-primary btn-lg" data-config="cta.btnLink"><i class="fas fa-paper-plane"></i> <span data-i18n="cta_btn" data-config="cta.btnText">Bizimle İletişime Geçin</span></a>
+      </div>
+    </div>
+  </section>
+  <!-- ===== CTA Bölümü Bitişi ===== -->
+
+  <!-- ===== SSS Bölümü Başlangıcı ===== -->
+  <section class="section section-dark" id="faq">
+    <div class="container">
+      <div class="section-title animate-on-scroll">
+        <span class="subtitle" data-i18n="faq_subtitle">SSS</span>
+        <div class="title-line"></div>
+        <h2 data-i18n="faq_title">Sıkça Sorulan <span class="gradient-text">Sorular</span></h2>
+        <p data-i18n="faq_desc">Hizmetlerimiz hakkında en çok merak edilen soruların yanıtlarını burada bulabilirsiniz.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item active animate-on-scroll" data-config="faq.0">
+          <button class="faq-question">
+            <span data-i18n="faq1_q" data-config="faq.0.question">Hangi sektörlere hizmet veriyorsunuz?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq1_a" data-config="faq.0.answer">Finans, sağlık, üretim, perakende, lojistik ve e-ticaret başta olmak üzere birçok farklı sektöre hizmet veriyoruz. Her sektörün kendine özgü dinamiklerine uygun özelleştirilmiş çözümler geliştiriyor, işletmenizin ihtiyaçlarına tam uyum sağlıyoruz.</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll" data-config="faq.1">
+          <button class="faq-question">
+            <span data-i18n="faq2_q" data-config="faq.1.question">Proje teslim süreleriniz ne kadar?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq2_a" data-config="faq.1.answer">Proje teslim süresi, projenin kapsamına ve karmaşıklığına göre değişiklik göstermektedir. Küçük ölçekli projeler 2-4 hafta içerisinde tamamlanırken, büyük ölçekli kurumsal projeler 3-6 ay arasında sürebilmektedir. Keşif ve planlama aşamasında size net bir zaman çizelgesi sunuyoruz.</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll" data-config="faq.2">
+          <button class="faq-question">
+            <span data-i18n="faq3_q" data-config="faq.2.question">Teklif süreciniz nasıl işliyor?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq3_a" data-config="faq.2.answer">Öncelikle ihtiyaçlarınızı anlamak için ücretsiz bir ön görüşme gerçekleştiriyoruz. Ardından proje kapsamını detaylı olarak analiz ediyor ve size özel bir teklif hazırlıyoruz. Teklifimizde proje takvimi, teslimat planı ve maliyet detayları şeffaf bir şekilde yer almaktadır.</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll" data-config="faq.3">
+          <button class="faq-question">
+            <span data-i18n="faq4_q" data-config="faq.3.question">Teknik destek hizmetiniz var mı?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq4_a" data-config="faq.3.answer">Evet, tüm projelerimizde teslimat sonrası teknik destek hizmeti sunuyoruz. Standart bakım anlaşmalarımızın yanı sıra 7/7 acil destek paketlerimiz de mevcuttur. Uzman ekibimiz her türlü teknik sorununuzda yanınızda.</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll" data-config="faq.4">
+          <button class="faq-question">
+            <span data-i18n="faq5_q" data-config="faq.4.question">Referanslarınızı görebilir miyiz?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq5_a" data-config="faq.4.answer">Tabii ki. 150'den fazla mutlu müşterimiz arasından sektörünüzle ilgili referans projelerimizi ve müşteri yorumlarını sizinle paylaşmaktan memnuniyet duyarız. Gizlilik anlaşmaları çerçevesinde uygun referansları görüşme sırasında iletebiliriz.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== SSS Bölümü Bitişi ===== -->
+
+  <!-- ===== Footer Başlangıcı ===== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <a href="index.html" class="logo">
+            <i class="fas fa-briefcase"></i> <span data-i18n="logo_text" data-config="logo.text">Efesoftlab</span>
+          </a>
+          <p data-i18n="footer_about_desc" data-config="footer.aboutText">10 yılı aşkın deneyimimizle işletmenizi dijital çağa taşıyor, yenilikçi çözümlerle rekabet avantajı kazanmanızı sağlıyoruz. Müşteri memnuniyeti odaklı yaklaşımımızla her projede fark yaratıyoruz.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3 data-i18n="footer_quick_links">Hızlı Linkler</h3>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer_home">Ana Sayfa</span></a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer_about">Hakkımızda</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer_services_link">Hizmetler</span></a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer_contact_link">İletişim</span></a></li>
+            <li><a href="#faq"><i class="fas fa-chevron-right"></i> <span data-i18n="footer_faq">SSS</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 data-i18n="footer_services_title">Hizmetler</h3>
+          <ul class="footer-links">
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer_service1">Danışmanlık</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer_service2">Dijital Dönüşüm</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer_service3">Yazılım Geliştirme</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer_service4">Veri Analitiği</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer_service5">Bulut Çözümleri</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer_service6">Güvenlik</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 data-i18n="footer_contact_title">İletişim Bilgileri</h3>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer_addr" data-config="contact.address">Levent Mahallesi, Teknik Sokak No:42, Beşiktaş / İstanbul</span></li>
+            <li><i class="fas fa-phone-alt"></i> <span data-i18n="footer_phone" data-config="contact.phone">+90 (212) 444 0 123</span></li>
+            <li><i class="fas fa-envelope"></i> <span data-i18n="footer_email" data-config="contact.email">info@corporatebusiness.com</span></li>
+            <li><i class="fas fa-clock"></i> <span data-i18n="footer_hours" data-config="footer.workingHours">Pazartesi - Cuma: 09:00 - 18:00</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p><span data-i18n="footer_copyright">© 2024 Efesoftlab. Tüm hakları saklıdır.</span></p>
+        <p><a href="#" data-i18n="footer_privacy">Gizlilik Politikası</a> &nbsp;|&nbsp; <a href="#" data-i18n="footer_terms">Kullanım Koşulları</a></p>
+      </div>
+    </div>
+  </footer>
+  <!-- ===== Footer Bitişi ===== -->
+
+  <!-- ===== Resim Görüntüleyici ===== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+    <img src="" alt="Resim">
+  </div>
+
+  <!-- ===== Yukarı Çık Butonu ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Yukarı çık">
+    <i class="fas fa-arrow-up"></i>
+    <svg viewBox="0 0 52 52">
+      <circle cx="26" cy="26" r="24"></circle>
+    </svg>
+  </button>
+
+  <!-- ===== Canlı Ziyaretçi Sayacı ===== -->
+  <div class="visitor-counter">
+    <span class="dot"></span>
+    <span><span class="count" id="visitorCount">847</span> <span data-i18n="visitor_online">çevrimiçi</span></span>
+  </div>
+
+  <!-- ===== WhatsApp Butonu ===== -->
+  <a href="https://wa.me/905551234567" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" aria-label="WhatsApp ile iletişime geçin">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ===== Çerez Onay Kutusu ===== -->
+  <div class="cookie-consent" id="cookieConsent">
+    <div class="container">
+      <p data-i18n="toast_cookie_msg">Size daha iyi bir deneyim sunmak için çerezler kullanıyoruz. Detaylı bilgi için <a href="#">Gizlilik Politikası</a>'nı inceleyebilirsiniz.</p>
+      <div class="cookie-actions">
+        <button class="btn btn-primary btn-sm" id="cookieAccept" data-i18n="toast_cookie_btn">Kabul Et</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<!-- Tasarım ve Geliştirme: Efesoftlab | Satış ve Dağıtım: Efesoftlab -->
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lezzetin Adresi - Şefin özenle hazırladığı eşsiz lezzetler ile unutulmaz bir yemek deneyimi yaşayın.">
+  <meta name="author" content="Efesoftlab">
+  <title data-i18n="preloader-text">Lezzetin Adresi | Ana Sayfa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== SAYFA YUKLENIYOR (PRELOADER) ===== -->
+  <div id="preloader">
+    <div class="preloader-icon"><i class="fas fa-utensils"></i></div>
+    <div class="preloader-text" data-i18n="preloader-text">Lezzetin Adresi</div>
+  </div>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close">&times;</button>
+    <img src="" alt="">
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" role="navigation" aria-label="Ana navigasyon">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-utensils"></i> <span data-config="logo.text">Lezzetin Adresi</span> <span data-i18n="nav-home">Restoran</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="active" data-i18n="nav-home">Ana Sayfa</a></li>
+        <li><a href="#menu" data-i18n="nav-menu">Menü</a></li>
+        <li><a href="about.html" data-i18n="nav-about">Hakkımızda</a></li>
+        <li><a href="services.html" data-i18n="nav-services">Özel Etkinlikler</a></li>
+        <li><a href="#gallery" data-i18n="nav-gallery">Galeri</a></li>
+        <li><a href="contact.html" data-i18n="nav-contact">İletişim</a></li>
+        <li>
+          <div class="nav-controls">
+            <button class="lang-toggle" data-lang="tr" onclick="switchLanguage('tr')" aria-label="Türkçe">TR</button>
+            <button class="lang-toggle" data-lang="en" onclick="switchLanguage('en')" aria-label="English">EN</button>
+            <button class="theme-toggle" aria-label="Tema değiştir">
+              <i class="fas fa-moon"></i>
+            </button>
+          </div>
+        </li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menüyü aç/kapat">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== WHATSAPP ===== -->
+  <a href="#" class="whatsapp-btn" id="whatsapp-btn" aria-label="WhatsApp ile iletişim">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ===== YUKARI CIK ===== -->
+  <button class="back-to-top" id="back-to-top" aria-label="Yukarı çık">
+    <svg viewBox="0 0 46 46">
+      <circle cx="23" cy="23" r="22"/>
+    </svg>
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <p class="hero-subtitle animate-on-scroll" data-i18n="hero-subtitle" data-config="hero.subtitle">Hoş Geldiniz</p>
+      <h1 class="hero-title animate-on-scroll">
+        <span data-i18n="hero-title" data-config="hero.title">Lezzetin Adresi</span>
+      </h1>
+      <p class="hero-text animate-on-scroll">
+        <span class="typing-text" data-i18n="hero-title">Lezzetin Adresi</span><span class="typing-cursor"></span>
+      </p>
+      <p class="hero-text animate-on-scroll" data-i18n="hero-text" data-config="hero.description" style="margin-top: -24px;">
+        Şefin özenle seçtiği taze malzemelerle hazırlanan eşsiz lezzetleri, sıcak ve samimi atmosferimizde keşfedin.
+      </p>
+      <div class="hero-buttons animate-on-scroll">
+        <a href="#menu" class="btn btn-primary"><i class="fas fa-utensils"></i> <span data-i18n="hero-btn-menu">Menüyü İncele</span></a>
+        <a href="contact.html" class="btn btn-secondary"><i class="fas fa-calendar-check"></i> <span data-i18n="hero-btn-reservation">Rezervasyon Yap</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT PREVIEW ===== -->
+  <section class="about-preview section-padding" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image animate-on-scroll">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=700&q=80" alt="Restoran iç mekan" loading="lazy">
+        </div>
+        <div class="about-content animate-on-scroll">
+          <span class="about-label" data-i18n="about-label">Hikayemiz</span>
+          <h2 data-i18n="about-title" data-config="about.title">Geleneksel Lezzetler, Modern Dokunuşlar</h2>
+          <p data-i18n="about-text-1" data-config="about.story.0">
+            2015 yılında küçük bir mutfakta başlayan tutku dolu yolculuğumuz, bugün şehrin en gözde restoranlarından biri olmamızı sağladı. Her tabakta taze, yerel ve mevsimsel malzemeler kullanarak size unutulmaz bir lezzet deneyimi sunuyoruz.
+          </p>
+          <p data-i18n="about-text-2" data-config="about.story.1">
+            Tecrübeli şef ekibimiz, Türk mutfağının zengin mirasını modern tekniklerle birleştirerek her damak tadına hitap eden eşsiz menüler hazırlamaktadır.
+          </p>
+          <a href="about.html" class="btn btn-primary" style="margin-top: 12px;"><span data-i18n="about-btn">Daha Fazla</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU ===== -->
+  <section class="menu-preview section-padding" id="menu">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll" data-i18n="menu-title">Lezzetli Menümüz</h2>
+      <p class="section-subtitle animate-on-scroll" data-i18n="menu-subtitle">Şefin özel tarifleriyle hazırlanan seçkin yemeklerimizi keşfedin</p>
+      <div class="section-divider"></div>
+
+      <!-- Menu Filtreleme -->
+      <div class="menu-filters animate-on-scroll">
+        <button class="menu-filter-btn active" data-filter="all" data-i18n="menu-all">Tümü</button>
+        <button class="menu-filter-btn" data-filter="starter" data-i18n="menu-appetizer">Başlangıç</button>
+        <button class="menu-filter-btn" data-filter="main" data-i18n="menu-main">Ana Yemek</button>
+        <button class="menu-filter-btn" data-filter="grill" data-i18n="menu-grill">Izgara</button>
+        <button class="menu-filter-btn" data-filter="pasta" data-i18n="menu-pasta">Makarna</button>
+        <button class="menu-filter-btn" data-filter="salad" data-i18n="menu-salad">Salata</button>
+        <button class="menu-filter-btn" data-filter="dessert" data-i18n="menu-dessert">Tatlı</button>
+        <button class="menu-filter-btn" data-filter="soup" data-i18n="menu-soup">Çorba</button>
+        <button class="menu-filter-btn" data-filter="drink" data-i18n="menu-drink">İçecek</button>
+      </div>
+
+      <div class="menu-grid">
+        <!-- 1 - Izgara Somon -->
+        <div class="menu-card animate-on-scroll" data-category="main">
+          <div class="menu-card-image">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400&q=80" alt="Izgara Somon" loading="lazy">
+            <span class="menu-card-badge">Popüler</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Izgara Somon</h3>
+            <p class="menu-desc">Izgara somon fileto, mevsim sebzeleri ve limonlu tereyağı sosu ile</p>
+            <div class="menu-footer">
+              <span class="menu-price">185 TL</span>
+              <span class="menu-category" data-i18n="menu-main">Ana Yemek</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 - Kuzu Şiş -->
+        <div class="menu-card animate-on-scroll" data-category="grill">
+          <div class="menu-card-image">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80" alt="Kuzu Şiş" loading="lazy">
+            <span class="menu-card-badge">Şefin Tavsiyesi</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Kuzu Şiş</h3>
+            <p class="menu-desc">Özel baharatlarla marine edilmiş kuzu eti, bulgur pilavı ile</p>
+            <div class="menu-footer">
+              <span class="menu-price">160 TL</span>
+              <span class="menu-category" data-i18n="menu-grill">Izgara</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 - Mantarlı Risotto -->
+        <div class="menu-card animate-on-scroll" data-category="pasta">
+          <div class="menu-card-image">
+            <img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=400&q=80" alt="Mantarlı Risotto" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <h3>Mantarlı Risotto</h3>
+            <p class="menu-desc">Taze mantar ve parmesan peyniri ile kremsi risotto</p>
+            <div class="menu-footer">
+              <span class="menu-price">145 TL</span>
+              <span class="menu-category" data-i18n="menu-pasta">Makarna</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 - Fettuccine Alfredo -->
+        <div class="menu-card animate-on-scroll" data-category="pasta">
+          <div class="menu-card-image">
+            <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&q=80" alt="Fettuccine Alfredo" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <h3>Fettuccine Alfredo</h3>
+            <p class="menu-desc">Kremalı beyaz sos, parmesan ve taze fesleğen ile</p>
+            <div class="menu-footer">
+              <span class="menu-price">135 TL</span>
+              <span class="menu-category" data-i18n="menu-pasta">Makarna</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 - Hellim Salatası -->
+        <div class="menu-card animate-on-scroll" data-category="salad">
+          <div class="menu-card-image">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80" alt="Hellim Salatası" loading="lazy">
+            <span class="menu-card-badge">Popüler</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Hellim Salatası</h3>
+            <p class="menu-desc">Izgara hellim peyniri, roka, ceviz ve nar ekşisi ile</p>
+            <div class="menu-footer">
+              <span class="menu-price">120 TL</span>
+              <span class="menu-category" data-i18n="menu-salad">Salata</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 - Acılı Adana Kebap -->
+        <div class="menu-card animate-on-scroll" data-category="grill">
+          <div class="menu-card-image">
+            <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=400&q=80" alt="Acılı Adana Kebap" loading="lazy">
+            <span class="menu-card-badge">Popüler</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Acılı Adana Kebap</h3>
+            <p class="menu-desc">El kıyması acılı Adana kebap, közlenmiş sebzeler ile</p>
+            <div class="menu-footer">
+              <span class="menu-price">150 TL</span>
+              <span class="menu-category" data-i18n="menu-grill">Izgara</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 - Antrikot Izgara -->
+        <div class="menu-card animate-on-scroll" data-category="grill">
+          <div class="menu-card-image">
+            <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=400&q=80" alt="Antrikot Izgara" loading="lazy">
+            <span class="menu-card-badge">Şefin Tavsiyesi</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Antrikot Izgara</h3>
+            <p class="menu-desc">300gr dana antrikot, trüf yağlı patates püresi ile</p>
+            <div class="menu-footer">
+              <span class="menu-price">220 TL</span>
+              <span class="menu-category" data-i18n="menu-grill">Izgara</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 - Mercimek Çorbası -->
+        <div class="menu-card animate-on-scroll" data-category="soup">
+          <div class="menu-card-image">
+            <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80" alt="Mercimek Çorbası" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <h3>Mercimek Çorbası</h3>
+            <p class="menu-desc">Geleneksel kırmızı mercimek çorbası, nane yağı ile</p>
+            <div class="menu-footer">
+              <span class="menu-price">65 TL</span>
+              <span class="menu-category" data-i18n="menu-soup">Çorba</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9 - Fıstıklı Baklava -->
+        <div class="menu-card animate-on-scroll" data-category="dessert">
+          <div class="menu-card-image">
+            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&q=80" alt="Fıstıklı Baklava" loading="lazy">
+            <span class="menu-card-badge">Popüler</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Fıstıklı Baklava</h3>
+            <p class="menu-desc">Antep fıstıklı, geleneksel yufka tatlısı</p>
+            <div class="menu-footer">
+              <span class="menu-price">85 TL</span>
+              <span class="menu-category" data-i18n="menu-dessert">Tatlı</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10 - Karides Güveç -->
+        <div class="menu-card animate-on-scroll" data-category="main">
+          <div class="menu-card-image">
+            <img src="https://images.unsplash.com/photo-1559737558-2f5a35f4523b?w=400&q=80" alt="Karides Güveç" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <h3>Karides Güveç</h3>
+            <p class="menu-desc">Karides, mantar ve kaşar peyniri ile graten</p>
+            <div class="menu-footer">
+              <span class="menu-price">195 TL</span>
+              <span class="menu-category" data-i18n="menu-main">Ana Yemek</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11 - Vejetaryen Pizza -->
+        <div class="menu-card animate-on-scroll" data-category="main">
+          <div class="menu-card-image">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=80" alt="Vejetaryen Pizza" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <h3>Vejetaryen Pizza</h3>
+            <p class="menu-desc">Mantar, biber, mısır ve zeytinli pizza</p>
+            <div class="menu-footer">
+              <span class="menu-price">130 TL</span>
+              <span class="menu-category" data-i18n="menu-main">Ana Yemek</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12 - Paella Deniz Ürünlü -->
+        <div class="menu-card animate-on-scroll" data-category="main">
+          <div class="menu-card-image">
+            <img src="https://images.unsplash.com/photo-1534080564583-6be75777b70a?w=400&q=80" alt="Paella Deniz Ürünlü" loading="lazy">
+            <span class="menu-card-badge">Şefin Tavsiyesi</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Paella Deniz Ürünlü</h3>
+            <p class="menu-desc">İspanyol pilavı, karides, midye ve kalamar ile</p>
+            <div class="menu-footer">
+              <span class="menu-price">210 TL</span>
+              <span class="menu-category" data-i18n="menu-main">Ana Yemek</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 13 - Çoban Salata -->
+        <div class="menu-card animate-on-scroll" data-category="salad">
+          <div class="menu-card-image">
+            <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&q=80" alt="Çoban Salata" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <h3>Çoban Salata</h3>
+            <p class="menu-desc">Domates, salatalık, biber, soğan ve nar ekşisi ile</p>
+            <div class="menu-footer">
+              <span class="menu-price">75 TL</span>
+              <span class="menu-category" data-i18n="menu-salad">Salata</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 14 - Kahvaltı Tabağı -->
+        <div class="menu-card animate-on-scroll" data-category="main">
+          <div class="menu-card-image">
+            <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=400&q=80" alt="Kahvaltı Tabağı" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <h3>Kahvaltı Tabağı</h3>
+            <p class="menu-desc">Zengin serpme kahvaltı, çeşitli peynirler ve zeytinler</p>
+            <div class="menu-footer">
+              <span class="menu-price">95 TL</span>
+              <span class="menu-category" data-i18n="menu-main">Ana Yemek</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 15 - Şefin Spesiyali -->
+        <div class="menu-card animate-on-scroll" data-category="main">
+          <div class="menu-card-image">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80" alt="Şefin Spesiyali" loading="lazy">
+            <span class="menu-card-badge">Şefin Tavsiyesi</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Şefin Spesiyali</h3>
+            <p class="menu-desc">Şefin günlük seçimi, sürpriz lezzetler</p>
+            <div class="menu-footer">
+              <span class="menu-price">250 TL</span>
+              <span class="menu-category" data-i18n="menu-main">Ana Yemek</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 16 - Balık Ekmek -->
+        <div class="menu-card animate-on-scroll" data-category="main">
+          <div class="menu-card-image">
+            <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400&q=80" alt="Balık Ekmek" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <h3>Balık Ekmek</h3>
+            <p class="menu-desc">Izgara balık, marul, soğan ve özel sos ile</p>
+            <div class="menu-footer">
+              <span class="menu-price">110 TL</span>
+              <span class="menu-category" data-i18n="menu-main">Ana Yemek</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 17 - Kremalı Mantar Çorbası -->
+        <div class="menu-card animate-on-scroll" data-category="soup">
+          <div class="menu-card-image">
+            <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80" alt="Kremalı Mantar Çorbası" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <h3>Kremalı Mantar Çorbası</h3>
+            <p class="menu-desc">Taze mantar ve krema ile hazırlanmış çorba</p>
+            <div class="menu-footer">
+              <span class="menu-price">70 TL</span>
+              <span class="menu-category" data-i18n="menu-soup">Çorba</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 18 - Sufle Çikolatalı -->
+        <div class="menu-card animate-on-scroll" data-category="dessert">
+          <div class="menu-card-image">
+            <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=400&q=80" alt="Sufle Çikolatalı" loading="lazy">
+            <span class="menu-card-badge">Popüler</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Sufle Çikolatalı</h3>
+            <p class="menu-desc">Akışkan çikolatalı sufle, vanilya dondurmalı</p>
+            <div class="menu-footer">
+              <span class="menu-price">95 TL</span>
+              <span class="menu-category" data-i18n="menu-dessert">Tatlı</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 19 - Soğuk Ayran -->
+        <div class="menu-card animate-on-scroll" data-category="drink">
+          <div class="menu-card-image">
+            <img src="https://images.unsplash.com/photo-1558857563-b371033873b8?w=400&q=80" alt="Soğuk Ayran" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <h3>Soğuk Ayran</h3>
+            <p class="menu-desc">Geleneksel yoğurt içeceği</p>
+            <div class="menu-footer">
+              <span class="menu-price">25 TL</span>
+              <span class="menu-category" data-i18n="menu-drink">İçecek</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 20 - Türk Kahvesi -->
+        <div class="menu-card animate-on-scroll" data-category="drink">
+          <div class="menu-card-image">
+            <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&q=80" alt="Türk Kahvesi" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <h3>Türk Kahvesi</h3>
+            <p class="menu-desc">Geleneksel Türk kahvesi, lokum ile</p>
+            <div class="menu-footer">
+              <span class="menu-price">35 TL</span>
+              <span class="menu-category" data-i18n="menu-drink">İçecek</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 21 - Limonata -->
+        <div class="menu-card animate-on-scroll" data-category="drink">
+          <div class="menu-card-image">
+            <img src="https://images.unsplash.com/photo-1523371054106-bbf80586c38c?w=400&q=80" alt="Limonata" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <h3>Limonata</h3>
+            <p class="menu-desc">Taze sıkılmış limonata, nane yaprakları ile</p>
+            <div class="menu-footer">
+              <span class="menu-price">30 TL</span>
+              <span class="menu-category" data-i18n="menu-drink">İçecek</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 22 - Şefin Tatlısı -->
+        <div class="menu-card animate-on-scroll" data-category="dessert">
+          <div class="menu-card-image">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&q=80" alt="Şefin Tatlısı" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <h3>Şefin Tatlısı</h3>
+            <p class="menu-desc">Günün tatlısı, şefin seçimi</p>
+            <div class="menu-footer">
+              <span class="menu-price">80 TL</span>
+              <span class="menu-category" data-i18n="menu-dessert">Tatlı</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GUNUN SPESIYALI ===== -->
+  <section class="todays-special section-padding" id="special">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll" data-i18n="special-title">Günün Spesiyali</h2>
+      <p class="section-subtitle animate-on-scroll" data-i18n="special-subtitle">Şefimizin bugün sizin için özel olarak hazırladığı lezzetler</p>
+      <div class="section-divider"></div>
+      <div class="special-grid">
+        <div class="special-card animate-on-scroll">
+          <div class="special-card-image">
+            <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80" alt="Günün Çorbası" loading="lazy">
+            <span class="special-card-label" data-i18n="special-starter">Başlangıç</span>
+          </div>
+          <div class="special-card-body">
+            <h3>Mercimek Çorbası</h3>
+            <span class="special-type" data-i18n="special-starter">Başlangıç</span>
+            <p>Kırmızı mercimek, havuç, patates ve baharatlarla hazırlanan geleneksel lezzet.</p>
+            <span class="special-price">65 TL</span>
+          </div>
+        </div>
+        <div class="special-card animate-on-scroll">
+          <div class="special-card-image">
+            <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=400&q=80" alt="Günün Ana Yemeği" loading="lazy">
+            <span class="special-card-label" data-i18n="special-main">Ana Yemek</span>
+          </div>
+          <div class="special-card-body">
+            <h3>Antrikot Izgara</h3>
+            <span class="special-type" data-i18n="special-main">Ana Yemek</span>
+            <p>Mermer desenli dana antrikot, sebze garnitürü ve trüf sos ile servis edilir.</p>
+            <span class="special-price">220 TL</span>
+          </div>
+        </div>
+        <div class="special-card animate-on-scroll">
+          <div class="special-card-image">
+            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&q=80" alt="Günün Tatlısı" loading="lazy">
+            <span class="special-card-label" data-i18n="special-dessert">Tatlı</span>
+          </div>
+          <div class="special-card-body">
+            <h3>Fıstıklı Baklava</h3>
+            <span class="special-type" data-i18n="special-dessert">Tatlı</span>
+            <p>Antep fıstığı ile hazırlanmış geleneksel baklava, kaymak eşliğinde.</p>
+            <span class="special-price">85 TL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SEF ===== -->
+  <section class="chef-section section-padding">
+    <div class="container">
+      <div class="chef-content">
+        <div class="chef-image animate-on-scroll">
+          <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=600&q=80" alt="Şefimiz" loading="lazy">
+        </div>
+        <div class="chef-info animate-on-scroll">
+          <h2 data-i18n="chef-title" data-config="chefTeam.0.name">Şef Mehmet Yılmaz</h2>
+          <span class="chef-role" data-i18n="chef-role" data-config="chefTeam.0.title">Yönetici Şef</span>
+          <p data-i18n="chef-text-1">
+            15 yıllık mesleki tecrübesiyle mutfağımızın başında yer alan Şef Mehmet Yılmaz, dünyanın önde gelen restoranlarında edindiği deneyimi Türk mutfağının zengin lezzetleriyle birleştiriyor.
+          </p>
+          <p data-i18n="chef-text-2">
+            Her bir tabakta taze, yerel ve mevsimsel malzemeler kullanarak misafirlerimize unutulmaz bir gastronomi deneyimi sunmayı hedefliyor. Şef Mehmet'in yenilikçi dokunuşları, geleneksel tariflerimize modern bir perspektif kazandırıyor.
+          </p>
+          <div class="chef-stats">
+            <div class="chef-stat">
+              <span class="number">15+</span>
+              <span class="label" data-i18n="chef-stat-1">Yıllık Deneyim</span>
+            </div>
+            <div class="chef-stat">
+              <span class="number">3</span>
+              <span class="label" data-i18n="chef-stat-2">Ödül</span>
+            </div>
+            <div class="chef-stat">
+              <span class="number">500+</span>
+              <span class="label" data-i18n="chef-stat-3">Özel Tarif</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALERI ===== -->
+  <section class="gallery-section section-padding" id="gallery">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll" data-i18n="gallery-title">Galeri</h2>
+      <p class="section-subtitle animate-on-scroll" data-i18n="gallery-subtitle">Restoranımızdan ve lezzetlerimizden kareler</p>
+      <div class="section-divider"></div>
+      <div class="gallery-grid">
+        <div class="gallery-item animate-on-scroll">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Restoran atmosferi" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item animate-on-scroll">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Yemek sunumu" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item animate-on-scroll">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80" alt="Salata" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item animate-on-scroll">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80" alt="İç mekan" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item animate-on-scroll">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80" alt="Pizza" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item animate-on-scroll">
+          <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&q=80" alt="Yemek" loading="lazy">
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== YORUMLAR (Carousel) ===== -->
+  <section class="testimonials section-padding">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll" data-i18n="testimonials-title">Misafirlerimizin Yorumları</h2>
+      <p class="section-subtitle animate-on-scroll" data-i18n="testimonials-subtitle">Onların sözleri bizim için en değerli ödül</p>
+      <div class="section-divider"></div>
+      <div class="testimonial-carousel animate-on-scroll">
+        <div class="testimonial-track">
+          <div class="testimonial-card">
+            <div class="testimonial-inner">
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="quote">"Lezzetin Adresi'nde yediğim en güzel yemeklerden birini deneyimledim. Kuzu şiş inanılmaz lezzetliydi. Servis çok hızlı ve personel çok güleryüzlü. Kesinlikle tekrar geleceğim!"</p>
+              <div class="author">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Ayşe K." loading="lazy">
+                <div class="author-info">
+                  <h4>Ayşe K.</h4>
+                  <span>İstanbul</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-inner">
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="quote">"Özel günümüzü burada kutladık ve mükemmel bir deneyimdi. Ortam çok sıcak ve samimiydi. Şefin özel menüsü gerçekten damak çatlatan cinstendi. Herkese tavsiye ediyorum."</p>
+              <div class="author">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Ahmet T." loading="lazy">
+                <div class="author-info">
+                  <h4>Ahmet T.</h4>
+                  <span>Ankara</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-inner">
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+              </div>
+              <p class="quote">"İş yemeği için tercih ettik ve herkes çok memnun kaldı. Fiyat-performans açısından şehrin en iyi restoranlarından biri. Tatlıları mutlaka denemelisiniz, özellikle baklava harika!"</p>
+              <div class="author">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Zeynep A." loading="lazy">
+                <div class="author-info">
+                  <h4>Zeynep A.</h4>
+                  <span>İzmir</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-dots">
+          <button class="carousel-dot active" aria-label="Yorum 1"></button>
+          <button class="carousel-dot" aria-label="Yorum 2"></button>
+          <button class="carousel-dot" aria-label="Yorum 3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REZERVASYON CTA ===== -->
+  <section class="reservation-cta section-padding">
+    <div class="container">
+      <h2 class="animate-on-scroll" data-i18n="reservation-cta-title">Unutulmaz Bir Akşam Yemeği İçin</h2>
+      <p class="animate-on-scroll" data-i18n="reservation-cta-text">Rezervasyon yapın, size özel hazırlanmış lezzetlerle dolu bir akşamın keyfini çıkarın.</p>
+      <a href="contact.html" class="btn btn-primary animate-on-scroll"><i class="fas fa-calendar-check"></i> <span data-i18n="reservation-cta-btn">Rezervasyon Yap</span></a>
+    </div>
+  </section>
+
+  <!-- ===== CALISMA SAATLERI ===== -->
+  <section class="opening-hours section-padding">
+    <div class="container">
+      <div class="hours-grid">
+        <div class="hours-content animate-on-scroll">
+          <h2 data-i18n="hours-title">Çalışma Saatlerimiz</h2>
+          <table class="hours-table">
+            <tr><td data-i18n="hours-mon-thu">Pazartesi - Perşembe</td><td data-config="workingHours.weekdays">11:00 - 23:00</td></tr>
+            <tr><td data-i18n="hours-fri-sat">Cuma - Cumartesi</td><td data-config="workingHours.weekend">11:00 - 01:00</td></tr>
+            <tr><td data-i18n="hours-sun">Pazar</td><td data-config="workingHours.sunday">12:00 - 22:00</td></tr>
+          </table>
+          <p style="color: var(--text-muted); margin-top: 20px; font-size: 0.9rem;">
+            <i class="fas fa-info-circle" style="color: var(--orange-primary);"></i>
+            <span data-i18n="hours-note">Mutfağımız kapanıştan 1 saat önce son siparişleri almaktadır.</span>
+          </p>
+        </div>
+        <div class="hours-image animate-on-scroll">
+          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80" alt="Restoran iç mekan" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3><i class="fas fa-utensils"></i> Lezzetin Adresi</h3>
+          <p data-i18n="footer-about" data-config="footer.about">
+            2015 yılından bu yana, en taze malzemelerle hazırladığımız eşsiz lezzetlerimizle misafirlerimize unutulmaz bir yemek deneyimi sunuyoruz. Sıcak atmosferimizde sizi de ağırlamaktan mutluluk duyarız.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 data-i18n="footer-quick">Hızlı Linkler</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-home">Ana Sayfa</span></a></li>
+            <li><a href="index.html#menu"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-menu">Menü</span></a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-about">Hakkımızda</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-services">Özel Etkinlikler</span></a></li>
+            <li><a href="index.html#gallery"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-gallery">Galeri</span></a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-contact">İletişim</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer-hours">Çalışma Saatleri</h4>
+          <ul class="footer-hours">
+            <li><span data-i18n="hours-mon-thu">Pazartesi - Perşembe</span> <span data-config="workingHours.weekdays">11:00 - 23:00</span></li>
+            <li><span data-i18n="hours-fri-sat">Cuma - Cumartesi</span> <span data-config="workingHours.weekend">11:00 - 01:00</span></li>
+            <li><span data-i18n="hours-sun">Pazar</span> <span data-config="workingHours.sunday">12:00 - 22:00</span></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer-contact">İletişim</h4>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-map-marker-alt"></i> <span data-i18n="contact-address" data-config="contact.address">İstiklal Cad. No:123 Beyoğlu, İstanbul</span></a></li>
+            <li><a href="tel:+905551234567"><i class="fas fa-phone"></i> <span data-i18n="contact-phone" data-config="contact.phone">(0555) 123 45 67</span></a></li>
+            <li><a href="mailto:info@lezzetinadresi.com"><i class="fas fa-envelope"></i> <span data-i18n="contact-email" data-config="contact.email">info@lezzetinadresi.com</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 <span>Efesoftlab</span>. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== COOKIE ONAY ===== -->
+  <div class="cookie-consent" id="cookie-consent">
+    <div class="cookie-content">
+      <p data-i18n="cookie-text">Size daha iyi bir deneyim sunmak için çerezler kullanıyoruz. Devam ederek çerez politikamızı kabul etmiş olursunuz.</p>
+      <div class="cookie-buttons">
+        <button class="btn btn-primary btn-sm cookie-accept" data-i18n="cookie-accept">Kabul Et</button>
+        <button class="btn btn-secondary btn-sm cookie-decline" data-i18n="cookie-decline">Reddet</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/main.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', applyConfigToDOM);</script>
+</body>
+</html>

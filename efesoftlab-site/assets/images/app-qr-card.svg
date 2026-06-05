@@ -1,0 +1,30 @@
+﻿<svg width="640" height="420" viewBox="0 0 640 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="qrBg" x1="60" y1="44" x2="568" y2="378" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#112036"/>
+      <stop offset="1" stop-color="#0A1423"/>
+    </linearGradient>
+    <linearGradient id="qrAccent" x1="144" y1="96" x2="512" y2="318" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67E8F9"/>
+      <stop offset="0.58" stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="420" rx="32" fill="#09111E"/>
+  <rect x="58" y="42" width="524" height="336" rx="30" fill="url(#qrBg)"/>
+  <rect x="58.75" y="42.75" width="522.5" height="334.5" rx="29.25" stroke="#8ABFFF" stroke-opacity="0.16" stroke-width="1.5"/>
+  <rect x="108" y="98" width="182" height="182" rx="28" fill="#0D1A2D"/>
+  <rect x="350" y="116" width="142" height="22" rx="11" fill="#EAF4FF"/>
+  <rect x="350" y="156" width="188" height="18" rx="9" fill="#D6E6FF" fill-opacity="0.58"/>
+  <rect x="350" y="194" width="132" height="18" rx="9" fill="#D6E6FF" fill-opacity="0.38"/>
+  <path d="M332 238C353.667 223.333 375.333 208.667 397 194" stroke="url(#qrAccent)" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 12"/>
+  <path d="M241 279C261 292.333 281 305.667 301 319" stroke="url(#qrAccent)" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 12"/>
+  <rect x="348" y="262" width="170" height="72" rx="24" fill="#0D1A2D"/>
+  <path d="M377 291H489" stroke="#EAF4FF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M377 313H455" stroke="#D6E6FF" stroke-opacity="0.5" stroke-width="7" stroke-linecap="round"/>
+  <rect x="144" y="132" width="32" height="32" rx="8" fill="url(#qrAccent)"/>
+  <rect x="218" y="132" width="32" height="32" rx="8" fill="url(#qrAccent)"/>
+  <rect x="144" y="206" width="32" height="32" rx="8" fill="url(#qrAccent)"/>
+  <rect x="218" y="206" width="32" height="32" rx="8" fill="url(#qrAccent)"/>
+  <rect x="181" y="169" width="32" height="32" rx="8" fill="#7DD3FC" fill-opacity="0.22" stroke="#7DD3FC" stroke-opacity="0.42"/>
+</svg>

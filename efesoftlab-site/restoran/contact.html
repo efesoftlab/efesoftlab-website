@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!-- Tasarım ve Geliştirme: Efesoftlab | Satış ve Dağıtım: Efesoftlab -->
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lezzetin Adresi İletişim - Rezervasyon yapın, özel etkinlikleriniz için bizimle iletişime geçin.">
+  <meta name="author" content="Efesoftlab">
+  <title data-i18n="contact-hero-title">İletişim | Lezzetin Adresi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== SAYFA YUKLENIYOR ===== -->
+  <div id="preloader">
+    <div class="preloader-icon"><i class="fas fa-utensils"></i></div>
+    <div class="preloader-text" data-i18n="preloader-text">Lezzetin Adresi</div>
+  </div>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close">&times;</button>
+    <img src="" alt="">
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" role="navigation" aria-label="Ana navigasyon">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-utensils"></i> Lezzetin Adresi <span data-i18n="nav-home">Restoran</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" data-i18n="nav-home">Ana Sayfa</a></li>
+        <li><a href="index.html#menu" data-i18n="nav-menu">Menü</a></li>
+        <li><a href="about.html" data-i18n="nav-about">Hakkımızda</a></li>
+        <li><a href="services.html" data-i18n="nav-services">Özel Etkinlikler</a></li>
+        <li><a href="index.html#gallery" data-i18n="nav-gallery">Galeri</a></li>
+        <li><a href="contact.html" class="active" data-i18n="nav-contact">İletişim</a></li>
+        <li>
+          <div class="nav-controls">
+            <button class="lang-toggle" data-lang="tr" onclick="switchLanguage('tr')" aria-label="Türkçe">TR</button>
+            <button class="lang-toggle" data-lang="en" onclick="switchLanguage('en')" aria-label="English">EN</button>
+            <button class="theme-toggle" aria-label="Tema değiştir">
+              <i class="fas fa-moon"></i>
+            </button>
+          </div>
+        </li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menüyü aç/kapat">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== WHATSAPP ===== -->
+  <a href="#" class="whatsapp-btn" id="whatsapp-btn" aria-label="WhatsApp ile iletişim">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ===== YUKARI CIK ===== -->
+  <button class="back-to-top" id="back-to-top" aria-label="Yukarı çık">
+    <svg viewBox="0 0 46 46"><circle cx="23" cy="23" r="22"/></svg>
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- ===== SAYFA HERO ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="animate-on-scroll" data-i18n="contact-hero-title">İletişim</h1>
+      <p class="animate-on-scroll" data-i18n="contact-hero-text">Rezervasyon ve tüm sorularınız için bizimle iletişime geçin</p>
+    </div>
+  </section>
+
+  <!-- ===== ILETISIM ===== -->
+  <section class="contact-section section-padding">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="animate-on-scroll">
+          <div class="contact-form">
+            <h2 data-i18n="contact-form-title">Rezervasyon Formu</h2>
+            <form id="reservation-form" novalidate>
+              <div class="floating-group">
+                <input type="text" id="res-name" placeholder=" " required>
+                <label for="res-name" data-i18n="form-name">Ad Soyad</label>
+                <span class="error-message" data-i18n="form-error-name">Lütfen adınızı ve soyadınızı giriniz.</span>
+              </div>
+              <div class="floating-group">
+                <input type="email" id="res-email" placeholder=" " required>
+                <label for="res-email" data-i18n="form-email">E-posta</label>
+                <span class="error-message" data-i18n="form-error-email">Geçerli bir e-posta adresi giriniz.</span>
+              </div>
+              <div class="floating-group">
+                <input type="tel" id="res-phone" placeholder=" " required>
+                <label for="res-phone" data-i18n="form-phone">Telefon</label>
+                <span class="error-message" data-i18n="form-error-phone">Geçerli bir telefon numarası giriniz.</span>
+              </div>
+              <div class="floating-group">
+                <input type="date" id="res-date" placeholder=" " required>
+                <label for="res-date" data-i18n="form-date">Tarih</label>
+                <span class="error-message" data-i18n="form-error-date">Geçerli bir tarih seçiniz (bugün veya sonrası).</span>
+              </div>
+              <div class="floating-group">
+                <input type="time" id="res-time" placeholder=" " required>
+                <label for="res-time" data-i18n="form-time">Saat</label>
+                <span class="error-message" data-i18n="form-error-time">Lütfen 10:00 - 23:00 arası bir saat seçiniz.</span>
+              </div>
+              <div class="floating-group">
+                <select id="res-guests" required>
+                  <option value="" disabled selected></option>
+                  <option value="1">1 <span data-i18n="form-guests">Kişi</span></option>
+                  <option value="2">2 <span data-i18n="form-guests">Kişi</span></option>
+                  <option value="3">3 <span data-i18n="form-guests">Kişi</span></option>
+                  <option value="4">4 <span data-i18n="form-guests">Kişi</span></option>
+                  <option value="5">5 <span data-i18n="form-guests">Kişi</span></option>
+                  <option value="6">6 <span data-i18n="form-guests">Kişi</span></option>
+                  <option value="7">7 <span data-i18n="form-guests">Kişi</span></option>
+                  <option value="8">8 <span data-i18n="form-guests">Kişi</span></option>
+                  <option value="9">9 <span data-i18n="form-guests">Kişi</span></option>
+                  <option value="10">10 <span data-i18n="form-guests">Kişi</span></option>
+                  <option value="10+">10+ <span data-i18n="form-guests">Kişi</span></option>
+                </select>
+                <label for="res-guests" data-i18n="form-guests">Kişi Sayısı</label>
+                <span class="error-message" data-i18n="form-error-guests">Lütfen kişi sayısını seçiniz.</span>
+              </div>
+              <div class="floating-group">
+                <textarea id="res-requests" placeholder=" "></textarea>
+                <label for="res-requests" data-i18n="form-requests">Özel İstekler</label>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%;"><i class="fas fa-paper-plane"></i> <span data-i18n="form-submit">Rezervasyon Talebi Gönder</span></button>
+            </form>
+          </div>
+        </div>
+        <div class="animate-on-scroll">
+          <div class="contact-info-cards">
+            <div class="contact-info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4 data-i18n="contact-address-title">Adresimiz</h4>
+                <p><span data-i18n="contact-address" data-config="contact.address">İstiklal Caddesi No:123, Beyoğlu, İstanbul 34421</span></p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <h4 data-i18n="contact-phone-title">Telefon</h4>
+                <p><span data-i18n="contact-phone" data-config="contact.phone">(0555) 123 45 67</span><br>(0212) 555 12 34</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4 data-i18n="contact-email-title">E-posta</h4>
+                <p><span data-i18n="contact-email" data-config="contact.email">info@lezzetinadresi.com</span><br>rezervasyon@lezzetinadresi.com</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h4 data-i18n="contact-hours-title">Çalışma Saatleri</h4>
+                <p><span data-i18n="hours-mon-thu">Pazartesi - Perşembe</span>: <span data-config="workingHours.weekdays">11:00 - 23:00</span><br><span data-i18n="hours-fri-sat">Cuma - Cumartesi</span>: <span data-config="workingHours.weekend">11:00 - 01:00</span><br><span data-i18n="hours-sun">Pazar</span>: <span data-config="workingHours.sunday">12:00 - 22:00</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hours-detailed">
+            <h3><i class="fas fa-clock" style="color: var(--orange-primary); margin-right: 8px;"></i> Haftalık Çalışma Programı</h3>
+            <table>
+              <tr><td data-i18n="hours-mon-thu">Pazartesi - Perşembe</td><td>11:00 - 23:00</td></tr>
+              <tr><td>Cuma</td><td>11:00 - 01:00</td></tr>
+              <tr><td>Cumartesi</td><td>11:00 - 01:00</td></tr>
+              <tr><td data-i18n="hours-sun">Pazar</td><td>12:00 - 22:00</td></tr>
+            </table>
+          </div>
+
+          <div class="map-placeholder">
+            <i class="fas fa-map-marked-alt"></i>
+            <span>Google Maps Haritası Burada Görünecek</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3><i class="fas fa-utensils"></i> Lezzetin Adresi</h3>
+          <p data-i18n="footer-about" data-config="footer.about">
+            2015 yılından bu yana, en taze malzemelerle hazırladığımız eşsiz lezzetlerimizle misafirlerimize unutulmaz bir yemek deneyimi sunuyoruz. Sıcak atmosferimizde sizi de ağırlamaktan mutluluk duyarız.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 data-i18n="footer-quick">Hızlı Linkler</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-home">Ana Sayfa</span></a></li>
+            <li><a href="index.html#menu"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-menu">Menü</span></a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-about">Hakkımızda</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-services">Özel Etkinlikler</span></a></li>
+            <li><a href="index.html#gallery"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-gallery">Galeri</span></a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-contact">İletişim</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer-hours">Çalışma Saatleri</h4>
+          <ul class="footer-hours">
+            <li><span data-i18n="hours-mon-thu">Pazartesi - Perşembe</span> <span>11:00 - 23:00</span></li>
+            <li><span data-i18n="hours-fri-sat">Cuma - Cumartesi</span> <span>11:00 - 01:00</span></li>
+            <li><span data-i18n="hours-sun">Pazar</span> <span>12:00 - 22:00</span></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer-contact">İletişim</h4>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-map-marker-alt"></i> <span data-i18n="contact-address">İstiklal Cad. No:123 Beyoğlu, İstanbul</span></a></li>
+            <li><a href="tel:+905551234567"><i class="fas fa-phone"></i> <span data-i18n="contact-phone">(0555) 123 45 67</span></a></li>
+            <li><a href="mailto:info@lezzetinadresi.com"><i class="fas fa-envelope"></i> <span data-i18n="contact-email">info@lezzetinadresi.com</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 <span>Efesoftlab</span>. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/main.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', applyConfigToDOM);</script>
+</body>
+</html>

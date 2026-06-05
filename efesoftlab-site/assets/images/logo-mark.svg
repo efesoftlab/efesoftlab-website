@@ -1,0 +1,11 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="m_icon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0e0e0"/>
+      <stop offset="50%" stop-color="#a0a0a0"/>
+      <stop offset="100%" stop-color="#d0d0d0"/>
+    </linearGradient>
+  </defs>
+
+  <path d="M10 20 C10 10, 15 5, 25 5 H110 V35 H45 V50 H95 V70 H45 V85 H110 V115 H25 C15 115, 10 110, 10 100 Z" fill="url(#m_icon)"/>
+</svg>

@@ -1,0 +1,47 @@
+﻿<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="ogGlowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(298 164) rotate(28.8158) scale(310.498 201.084)">
+      <stop stop-color="#67E8F9" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#67E8F9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ogGlowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(946 164) rotate(150.584) scale(345.573 233.267)">
+      <stop stop-color="#60A5FA" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#60A5FA" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ogMark" x1="95" y1="113" x2="235" y2="263" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7DD3FC"/>
+      <stop offset="0.58" stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <linearGradient id="ogWord" x1="286" y1="162" x2="772" y2="412" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7FBFF"/>
+      <stop offset="1" stop-color="#C4D7F2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#07101D"/>
+  <rect width="1200" height="630" fill="url(#ogGlowA)"/>
+  <rect width="1200" height="630" fill="url(#ogGlowB)"/>
+  <rect x="72" y="74" width="1056" height="482" rx="36" fill="#0C1727"/>
+  <rect x="72.75" y="74.75" width="1054.5" height="480.5" rx="35.25" stroke="#9FC4FF" stroke-opacity="0.14" stroke-width="1.5"/>
+  <rect x="110" y="114" width="126" height="126" rx="36" fill="none" stroke="url(#ogMark)" stroke-opacity="0.5" stroke-width="2"/>
+  <rect x="112" y="116" width="122" height="122" rx="34" fill="url(#ogMark)" fill-opacity="0.06"/>
+  <g transform="translate(132, 128) scale(0.8)" fill="url(#ogMark)">
+    <path d="M0 15 C0 5, 5 0, 15 0 H100 V30 H35 V45 H85 V65 H35 V80 H100 V110 H15 C5 110, 0 105, 0 95 Z"/>
+  </g>
+  <path d="M277.984 242V151.232H336.496V170.88H302.288V189.184H334.448V208.384H302.288V242H277.984ZM349.309 242V151.232H412.237V171.584H373.613V186.176H409.357V205.248H373.613V221.648H414.093V242H349.309ZM429.801 242V151.232H491.449V171.584H454.105V187.84H486.777V206.976H454.105V242H429.801ZM507.808 242V151.232H532.112V242H507.808ZM553.927 242V151.232H576.119L606.967 202.592L637.815 151.232H660.007V242H636.855V190.144L613.703 228.128H600.031L576.999 190.272V242H553.927ZM685.452 242V151.232H748.38V171.584H709.756V186.176H745.5V205.248H709.756V221.648H750.236V242H685.452ZM765.944 242V151.232H790.248V221.328H824.968V242H765.944ZM840.248 242V151.232H864.552V242H840.248ZM886.367 242V151.232H923.967C944.175 151.232 956.431 161.232 956.431 177.664C956.431 189.216 950.239 197.552 939.639 201.84L958.199 242H932.279L916.823 207.088H910.679V242H886.367ZM910.679 188.88H921.215C929.319 188.88 932.903 185.664 932.903 179.36C932.903 172.936 929.319 169.72 921.215 169.72H910.679V188.88Z" fill="url(#ogWord)"/>
+  <path d="M278 314H641" stroke="#E9F4FF" stroke-width="14" stroke-linecap="round"/>
+  <path d="M278 352H802" stroke="#D0E2FD" stroke-opacity="0.74" stroke-width="12" stroke-linecap="round"/>
+  <path d="M278 390H612" stroke="#C4D8F6" stroke-opacity="0.46" stroke-width="12" stroke-linecap="round"/>
+  <rect x="278" y="444" width="202" height="58" rx="29" fill="url(#ogMark)"/>
+  <path d="M529 466H702" stroke="#F0F7FF" stroke-width="10" stroke-linecap="round"/>
+  <path d="M529 492H653" stroke="#D7E7FF" stroke-opacity="0.56" stroke-width="9" stroke-linecap="round"/>
+  <rect x="874" y="154" width="180" height="122" rx="28" fill="#0D1A2D"/>
+  <rect x="874.75" y="154.75" width="178.5" height="120.5" rx="27.25" stroke="#8ABFFF" stroke-opacity="0.16" stroke-width="1.5"/>
+  <rect x="910" y="188" width="42" height="42" rx="14" fill="#7DD3FC"/>
+  <path d="M974 196H1018" stroke="#EDF6FF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M974 220H1001" stroke="#D9E8FF" stroke-opacity="0.54" stroke-width="7" stroke-linecap="round"/>
+  <rect x="874" y="302" width="180" height="168" rx="28" fill="#0D1A2D"/>
+  <rect x="910" y="338" width="104" height="18" rx="9" fill="#EDF6FF"/>
+  <rect x="910" y="372" width="78" height="16" rx="8" fill="#D7E7FF" fill-opacity="0.56"/>
+  <rect x="910" y="406" width="122" height="16" rx="8" fill="#C6D8F1" fill-opacity="0.34"/>
+</svg>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<!-- Tasarım ve Geliştirme: Efesoftlab | Satış ve Dağıtım: Efesoftlab -->
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Efesoft Emlak İletişim - Bize ulaşın, gayrimenkul danışmanlarımız size yardımcı olsun">
+  <meta name="author" content="Efesoftlab">
+  <title data-i18n="contact-hero-title">İletişim | Efesoft Emlak</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/site-config.js"></script>
+</head>
+<body>
+
+  <!-- ===== YÜKLEYİCİ EKRANI ===== -->
+  <div id="preloader">
+    <div class="preloader-logo">
+      <i class="fas fa-building" data-config="logo.icon"></i> <span data-config="logo.text">Efesoft Emlak</span>
+    </div>
+    <div class="preloader-bar">
+      <div class="preloader-bar-inner"></div>
+    </div>
+  </div>
+
+  <!-- ===== KAYDIRMA İLERLEME ÇUBUĞU ===== -->
+  <div id="scrollProgress"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar scrolled" role="navigation" aria-label="Ana navigasyon">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-building" data-config="logo.icon"></i> <span data-config="logo.text">Efesoft Emlak</span>
+      </a>
+      <button class="hamburger" aria-label="Menüyü aç/kapat">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav-home">Ana Sayfa</a></li>
+        <li><a href="about.html" data-i18n="nav-about">Hakkımızda</a></li>
+        <li><a href="services.html" data-i18n="nav-services">Hizmetler</a></li>
+        <li><a href="index.html#featured" data-i18n="nav-listings">İlanlar</a></li>
+        <li><a href="contact.html" class="active" data-i18n="nav-contact">İletişim</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="lang-toggle" aria-label="Dil değiştir">EN</button>
+        <button class="nav-theme-toggle" aria-label="Tema değiştir">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== WHATSAPP FLOATING ===== -->
+  <a href="#" class="whatsapp-float" aria-label="WhatsApp ile iletişim">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ===== YUKARI ÇIK BUTONU ===== -->
+  <button id="backToTop" aria-label="Yukarı çık">
+    <i class="fas fa-arrow-up"></i>
+    <svg viewBox="0 0 56 56">
+      <circle cx="28" cy="28" r="25"/>
+    </svg>
+  </button>
+
+  <!-- ===== BİLDİRİM KONTEYNERI ===== -->
+  <div id="toastContainer"></div>
+
+  <!-- ===== SAYFA BAŞLIĞI ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-subtitle" data-i18n="contact-hero-subtitle">İletişim</p>
+      <h1 data-i18n="contact-hero-title">Bize Ulaşın</h1>
+      <p data-i18n="contact-hero-desc">Sorularınızı yanıtlamaktan mutluluk duyarız</p>
+      <p class="breadcrumb"><a href="index.html" data-i18n="nav-home">Ana Sayfa</a> / <span data-i18n="contact-breadcrumb">İletişim</span></p>
+    </div>
+  </section>
+
+  <!-- ===== İLETİŞİM ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title fade-up">
+        <p class="section-subtitle" data-i18n="contact-section-subtitle">İletişim</p>
+        <h2 data-i18n="contact-section-title">Bizimle İletişime Geçin</h2>
+        <p data-i18n="contact-section-desc">Her türlü soru ve görüşleriniz için bize ulaşabilirsiniz</p>
+      </div>
+      <div class="contact-wrap">
+        <div class="contact-form fade-left">
+          <h3 data-i18n="contact-form-title">Mesaj Gönderin</h3>
+          <form id="contactForm" novalidate>
+            <div class="form-group floating">
+              <input type="text" id="contactName" placeholder=" " required data-i18n-placeholder="contact-form-name">
+              <label for="contactName" data-i18n="contact-form-name">Adınız Soyadınız</label>
+              <div class="error-message"></div>
+            </div>
+            <div class="form-group floating">
+              <input type="email" id="contactEmail" placeholder=" " required data-i18n-placeholder="contact-form-email">
+              <label for="contactEmail" data-i18n="contact-form-email">E-posta Adresiniz</label>
+              <div class="error-message"></div>
+            </div>
+            <div class="form-group floating">
+              <input type="tel" id="contactPhone" placeholder=" " data-i18n-placeholder="contact-form-phone">
+              <label for="contactPhone" data-i18n="contact-form-phone">Telefon Numaranız</label>
+              <div class="error-message"></div>
+            </div>
+            <div class="form-group">
+              <label for="contactInterest" data-i18n="contact-form-interest">İlgilendiğiniz Gayrimenkul Türü</label>
+              <select id="contactInterest">
+                <option value="" data-i18n-value="contact-form-select">Seçiniz</option>
+                <option value="sale">Satılık Daire</option>
+                <option value="sale-villa">Satılık Villa</option>
+                <option value="sale-office">Satılık Ofis</option>
+                <option value="rent">Kiralık Daire</option>
+                <option value="rent-villa">Kiralık Villa</option>
+                <option value="rent-office">Kiralık Ofis</option>
+                <option value="investment">Yatırımlık Gayrimenkul</option>
+                <option value="other">Diğer</option>
+              </select>
+              <div class="error-message"></div>
+            </div>
+            <div class="form-group floating">
+              <textarea id="contactMessage" placeholder=" " required data-i18n-placeholder="contact-form-message"></textarea>
+              <label for="contactMessage" data-i18n="contact-form-message">Mesajınız</label>
+              <div class="error-message"></div>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i> <span data-i18n="contact-form-submit">Mesajı Gönder</span>
+            </button>
+          </form>
+        </div>
+
+        <div class="contact-info-wrap fade-right">
+          <h3 data-i18n="contact-info-title">İletişim Bilgileri</h3>
+          <p data-i18n="contact-info-desc">Aşağıdaki kanallardan bize ulaşabilirsiniz.</p>
+
+          <div class="contact-info-card">
+            <div class="info-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h5 data-i18n="contact-office-title">Merkez Ofis</h5>
+              <p>Levent Mah. Büyükdere Cad. No:123, Şişli / İstanbul</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="info-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div>
+              <h5 data-i18n="contact-phone-title">Telefon</h5>
+              <p>+90 (212) 555 44 33<br>+90 (212) 555 44 34</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h5 data-i18n="contact-email-title">E-posta</h5>
+              <p>info@efesoftemlak.com<br>satis@efesoftemlak.com</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="info-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div>
+              <h5 data-i18n="contact-hours-title">Çalışma Saatleri</h5>
+              <p><span data-config="workingHours.weekdays">Hafta içi: 09:00 - 19:00</span><br><span data-config="workingHours.saturday">Cumartesi: 10:00 - 17:00</span></p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="info-icon">
+              <i class="fab fa-whatsapp" style="color:#25d366"></i>
+            </div>
+            <div>
+              <h5 data-i18n="contact-whatsapp-title">WhatsApp</h5>
+              <p>+90 555 123 45 67</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ŞUBELERİMİZ ===== -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-title fade-up">
+        <p class="section-subtitle" data-i18n="contact-branches-subtitle">Şubelerimiz</p>
+        <h2 data-i18n="contact-branches-title">Ofislerimiz</h2>
+        <p data-i18n="contact-branches-desc">Sizlere daha iyi hizmet verebilmek için 2 noktadayız</p>
+      </div>
+      <div class="branch-grid">
+
+        <div class="branch-card fade-up" data-config-branch="0">
+          <h4><i class="fas fa-building"></i> <span data-i18n="branch-1-name" data-config="branch.0.name">Levent Merkez Ofis</span></h4>
+          <p><i class="fas fa-map-marker-alt"></i> <span data-config="branch.0.address">Büyükdere Caddesi No:123, Levent, İstanbul</span></p>
+          <p><i class="fas fa-phone-alt"></i> <span data-config="branch.0.phone">+90 (212) 345 67 89</span></p>
+          <p><i class="fas fa-envelope"></i> levent@efesoftemlak.com</p>
+          <p><i class="fas fa-clock"></i> Hafta içi: 09:00 - 19:00</p>
+        </div>
+
+        <div class="branch-card fade-up" data-config-branch="1">
+          <h4><i class="fas fa-building"></i> <span data-i18n="branch-2-name" data-config="branch.1.name">Kadıköy Şubesi</span></h4>
+          <p><i class="fas fa-map-marker-alt"></i> <span data-config="branch.1.address">Bağdat Caddesi No:456, Kadıköy, İstanbul</span></p>
+          <p><i class="fas fa-phone-alt"></i> <span data-config="branch.1.phone">+90 (216) 345 67 89</span></p>
+          <p><i class="fas fa-envelope"></i> kadikoy@efesoftemlak.com</p>
+          <p><i class="fas fa-clock"></i> Hafta içi: 09:00 - 19:00</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HARİTA ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title fade-up">
+        <p class="section-subtitle" data-i18n="contact-map-subtitle">Konum</p>
+        <h2 data-i18n="contact-map-title">Bizi Haritada Bulun</h2>
+      </div>
+      <div class="map-placeholder fade-up">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.1038914131893!2d28.9865!3d41.0825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDA0JzU3LjAiTiAyOMKwNTknMTEuNCJF!5e0!3m2!1str!2str!4v1" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Efesoft Emlak Harita Konumu"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="fade-up">
+        <h2 data-i18n="contact-cta-title">Sorularınız mı Var?</h2>
+        <p data-i18n="contact-cta-desc">Uzman ekibimiz tüm sorularınızı yanıtlamak için hazır.</p>
+        <a href="tel:+902125554433" class="btn btn-white">
+          <i class="fas fa-phone-alt"></i> <span data-i18n="contact-cta-btn">Hemen Arayın</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ALT BİLGİ (FOOTER) ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-col footer-about">
+          <div class="logo">
+            <i class="fas fa-building" data-config="logo.icon"></i> <span data-config="logo.text">Efesoft Emlak</span>
+          </div>
+          <p data-i18n="footer-about" data-config="footer.aboutText">Premium gayrimenkul danışmanlığı hizmeti ile lüks konut, villa, ofis ve yatırımlık gayrimenkullerde Türkiye'nin lider platformu. 10 yılı aşkın deneyimimizle hayallerinize ortak oluyoruz.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col footer-links">
+          <h4 data-i18n="footer-quick-links">Hızlı Linkler</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav-home"><i class="fas fa-chevron-right"></i> Ana Sayfa</a></li>
+            <li><a href="about.html" data-i18n="nav-about"><i class="fas fa-chevron-right"></i> Hakkımızda</a></li>
+            <li><a href="services.html" data-i18n="nav-services"><i class="fas fa-chevron-right"></i> Hizmetler</a></li>
+            <li><a href="index.html#featured" data-i18n="nav-listings"><i class="fas fa-chevron-right"></i> İlanlar</a></li>
+            <li><a href="contact.html" data-i18n="nav-contact"><i class="fas fa-chevron-right"></i> İletişim</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-links">
+          <h4 data-i18n="footer-listing-types">İlan Türleri</h4>
+          <ul>
+            <li><a href="index.html#featured" data-i18n="filter-sale"><i class="fas fa-chevron-right"></i> Satılık Daire</a></li>
+            <li><a href="index.html#featured" data-i18n="badge-sale"><i class="fas fa-chevron-right"></i> Satılık Villa</a></li>
+            <li><a href="index.html#featured" data-i18n="filter-rent"><i class="fas fa-chevron-right"></i> Kiralık Daire</a></li>
+            <li><a href="index.html#featured"><i class="fas fa-chevron-right"></i> Kiralık Ofis</a></li>
+            <li><a href="index.html#featured"><i class="fas fa-chevron-right"></i> Lüks Konut</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <h4 data-i18n="footer-contact">İletişim</h4>
+          <p data-config="contact.address"><i class="fas fa-map-marker-alt"></i> Levent Mah. Büyükdere Cad. No:123, Şişli / İstanbul</p>
+          <p data-config="contact.phone"><i class="fas fa-phone-alt"></i> +90 (212) 555 44 33</p>
+          <p data-config="contact.email"><i class="fas fa-envelope"></i> info@efesoftemlak.com</p>
+          <p><i class="fas fa-clock"></i> <span data-config="footer.workingHours">Hafta içi: 09:00 - 19:00<br>Cumartesi: 10:00 - 17:00</span></p>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p data-i18n="footer-copyright">© 2024 Efesoftlab. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== RESİM GÖRÜNTÜLEYİCİ ===== -->
+  <div id="lightbox">
+    <button class="close-lightbox">&times;</button>
+    <img src="" alt="Büyük görsel">
+  </div>
+
+  <!-- ===== ÇEREZ İZİN BANNERI ===== -->
+  <div id="cookieConsent">
+    <div class="container">
+      <p data-i18n="cookie-text">Web sitemizde size en iyi deneyimi sunmak için çerezler kullanıyoruz. Devam ederek çerez kullanımını kabul etmiş olursunuz.</p>
+      <button class="btn btn-primary btn-sm" id="cookieAccept" data-i18n="cookie-btn">Kabul Et</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

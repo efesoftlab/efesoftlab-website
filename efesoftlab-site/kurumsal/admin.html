@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Efesoftlab">
+  <!-- Tasarım ve Geliştirme: Efesoftlab | Satış ve Dağıtım: Efesoftlab -->
+  <title>Admin Panel | Efesoftlab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+  <!-- ===== Sidebar ===== -->
+  <aside class="admin-sidebar" id="adminSidebar">
+    <div class="admin-sidebar-header">
+      <a href="index.html" class="logo">
+        <i class="fas fa-briefcase"></i> <span>Efesoftlab</span>
+      </a>
+      <div class="version">Admin Panel v1.0</div>
+    </div>
+    <nav class="admin-sidebar-menu">
+      <div class="menu-label">İçerik</div>
+      <button class="menu-item active" data-section="genel"><i class="fas fa-cog"></i> Genel</button>
+      <button class="menu-item" data-section="hero"><i class="fas fa-home"></i> Hero</button>
+      <button class="menu-item" data-section="hakkimizda"><i class="fas fa-info-circle"></i> Hakkımızda</button>
+      <button class="menu-item" data-section="hizmetler"><i class="fas fa-concierge-bell"></i> Hizmetler</button>
+      <button class="menu-item" data-section="takim"><i class="fas fa-users"></i> Takım</button>
+      <button class="menu-item" data-section="istatistikler"><i class="fas fa-chart-bar"></i> İstatistikler</button>
+      <button class="menu-item" data-section="yorumlar"><i class="fas fa-star"></i> Müşteri Yorumları</button>
+      <button class="menu-item" data-section="sss"><i class="fas fa-question-circle"></i> SSS</button>
+      <button class="menu-item" data-section="cta"><i class="fas fa-bullhorn"></i> CTA Bölümü</button>
+      <button class="menu-item" data-section="gor seller"><i class="fas fa-image"></i> Görsel Yönetimi</button>
+      <button class="menu-item" data-section="altbilgi"><i class="fas fa-info"></i> Alt Bilgi</button>
+    </nav>
+    <div class="admin-sidebar-footer">
+      <a href="index.html" class="btn-sidebar" target="_blank"><i class="fas fa-external-link-alt"></i> Site</a>
+      <button class="btn-sidebar" id="resetBtn"><i class="fas fa-undo"></i> Sıfırla</button>
+    </div>
+  </aside>
+
+  <!-- ===== Ana İçerik ===== -->
+  <main class="admin-main">
+    <header class="admin-header">
+      <div class="admin-header-left">
+        <button class="hamburger-admin" id="hamburgerAdmin"><i class="fas fa-bars"></i></button>
+        <h1 id="sectionTitle">Genel</h1>
+      </div>
+      <div class="admin-header-right">
+        <button class="btn btn-outline-admin" id="importBtn"><i class="fas fa-file-import"></i> <span>İçe Aktar</span></button>
+        <button class="btn btn-outline-admin" id="exportBtn"><i class="fas fa-file-export"></i> <span>Dışa Aktar</span></button>
+        <button class="btn btn-success-admin" id="saveBtn"><i class="fas fa-save"></i> <span>Kaydet</span></button>
+        <input type="file" id="importFileInput" accept=".json" style="display:none" onchange="handleFileImport(event)">
+      </div>
+    </header>
+
+    <div class="admin-content">
+
+      <!-- ===== GENEL ===== -->
+      <section class="admin-section active" id="section-genel">
+        <div class="section-header">
+          <h2>Genel Ayarlar</h2>
+          <p>Logo ve iletişim bilgilerini buradan düzenleyebilirsiniz.</p>
+        </div>
+        <div class="admin-card">
+          <div class="admin-card-title"><i class="fas fa-id-card"></i> Logo</div>
+          <div class="form-row-admin">
+            <div class="form-group-admin">
+              <label>Logo Metni <span class="required">*</span></label>
+              <input type="text" class="form-control-admin" id="logoText" placeholder="Efesoftlab">
+              <div class="help-text">Navbar ve footer'da görünen logo metni.</div>
+            </div>
+            <div class="form-group-admin">
+              <label>Logo İkonu</label>
+              <input type="text" class="form-control-admin" id="logoIcon" placeholder="fas fa-briefcase">
+              <div class="help-text">Font Awesome ikon sınıfı. Örn: fas fa-briefcase</div>
+            </div>
+          </div>
+        </div>
+        <div class="admin-card">
+          <div class="admin-card-title"><i class="fas fa-address-book"></i> İletişim Bilgileri</div>
+          <div class="form-row-admin">
+            <div class="form-group-admin">
+              <label>Telefon <span class="required">*</span></label>
+              <input type="text" class="form-control-admin" id="contactPhone" placeholder="+90 (212) 345 67 89">
+            </div>
+            <div class="form-group-admin">
+              <label>E-posta <span class="required">*</span></label>
+              <input type="email" class="form-control-admin" id="contactEmail" placeholder="info@efesoftlab.com">
+            </div>
+          </div>
+          <div class="form-group-admin">
+            <label>Adres <span class="required">*</span></label>
+            <textarea class="form-control-admin" id="contactAddress" placeholder="Şirket adresiniz..."></textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== HERO ===== -->
+      <section class="admin-section" id="section-hero">
+        <div class="section-header">
+          <h2>Hero Bölümü</h2>
+          <p>Ana sayfadaki hero (giriş) bölümü içeriğini düzenleyin.</p>
+        </div>
+        <div class="admin-card">
+          <div class="admin-card-title"><i class="fas fa-heading"></i> Hero İçeriği</div>
+          <div class="form-group-admin">
+            <label>Başlık <span class="required">*</span></label>
+            <input type="text" class="form-control-admin" id="heroTitle" placeholder="Geleceği Şekillendiriyoruz">
+            <div class="help-text">Typing animasyonunda görünen ana başlık.</div>
+          </div>
+          <div class="form-group-admin">
+            <label>Alt Başlık <span class="required">*</span></label>
+            <input type="text" class="form-control-admin" id="heroSubtitle" placeholder="Premium kurumsal çözümler...">
+          </div>
+          <div class="form-group-admin">
+            <label>Açıklama <span class="required">*</span></label>
+            <textarea class="form-control-admin" id="heroDescription" placeholder="Hero açıklama metni..."></textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== HAKKIMIZDA ===== -->
+      <section class="admin-section" id="section-hakkimizda">
+        <div class="section-header">
+          <h2>Hakkımızda</h2>
+          <p>Şirket hikayesi, misyon, vizyon ve değerler.</p>
+        </div>
+        <div class="admin-card">
+          <div class="admin-card-title"><i class="fas fa-history"></i> Şirket Hikayesi</div>
+          <div class="form-group-admin">
+            <label>Hikaye Başlığı</label>
+            <input type="text" class="form-control-admin" id="storyTitle" placeholder="Hikayemiz">
+          </div>
+          <div class="form-group-admin">
+            <label>1. Paragraf <span class="required">*</span></label>
+            <textarea class="form-control-admin" id="storyP1" placeholder="1. paragraf..."></textarea>
+          </div>
+          <div class="form-group-admin">
+            <label>2. Paragraf</label>
+            <textarea class="form-control-admin" id="storyP2" placeholder="2. paragraf..."></textarea>
+          </div>
+          <div class="form-group-admin">
+            <label>3. Paragraf</label>
+            <textarea class="form-control-admin" id="storyP3" placeholder="3. paragraf..."></textarea>
+          </div>
+        </div>
+        <div class="admin-card">
+          <div class="admin-card-title"><i class="fas fa-bullseye"></i> Misyon & Vizyon</div>
+          <div class="form-row-admin">
+            <div class="form-group-admin">
+              <label>Misyon Başlığı</label>
+              <input type="text" class="form-control-admin" id="missionTitle" placeholder="Misyonumuz">
+            </div>
+            <div class="form-group-admin">
+              <label>Vizyon Başlığı</label>
+              <input type="text" class="form-control-admin" id="visionTitle" placeholder="Vizyonumuz">
+            </div>
+          </div>
+          <div class="form-group-admin">
+            <label>Misyon Metni</label>
+            <textarea class="form-control-admin" id="missionText" placeholder="Misyon metni..."></textarea>
+          </div>
+          <div class="form-group-admin">
+            <label>Vizyon Metni</label>
+            <textarea class="form-control-admin" id="visionText" placeholder="Vizyon metni..."></textarea>
+          </div>
+        </div>
+        <div class="admin-card">
+          <div class="admin-card-title"><i class="fas fa-heart"></i> Şirket Değerleri</div>
+          <div class="admin-grid-2">
+            <div class="form-group-admin">
+              <label>Değer 1 Başlık</label>
+              <input type="text" class="form-control-admin" id="value1Title" placeholder="Yenilikçilik">
+            </div>
+            <div class="form-group-admin">
+              <label>Değer 1 İkon</label>
+              <input type="text" class="form-control-admin" id="value1Icon" placeholder="fas fa-lightbulb">
+            </div>
+          </div>
+          <div class="form-group-admin">
+            <label>Değer 1 Açıklama</label>
+            <textarea class="form-control-admin" id="value1Text" placeholder="Açıklama..."></textarea>
+          </div>
+          <hr style="border: none; border-top: 1px solid var(--admin-border); margin: 16px 0;">
+          <div class="admin-grid-2">
+            <div class="form-group-admin">
+              <label>Değer 2 Başlık</label>
+              <input type="text" class="form-control-admin" id="value2Title" placeholder="Güvenilirlik">
+            </div>
+            <div class="form-group-admin">
+              <label>Değer 2 İkon</label>
+              <input type="text" class="form-control-admin" id="value2Icon" placeholder="fas fa-handshake">
+            </div>
+          </div>
+          <div class="form-group-admin">
+            <label>Değer 2 Açıklama</label>
+            <textarea class="form-control-admin" id="value2Text" placeholder="Açıklama..."></textarea>
+          </div>
+          <hr style="border: none; border-top: 1px solid var(--admin-border); margin: 16px 0;">
+          <div class="admin-grid-2">
+            <div class="form-group-admin">
+              <label>Değer 3 Başlık</label>
+              <input type="text" class="form-control-admin" id="value3Title" placeholder="Kalite">
+            </div>
+            <div class="form-group-admin">
+              <label>Değer 3 İkon</label>
+              <input type="text" class="form-control-admin" id="value3Icon" placeholder="fas fa-award">
+            </div>
+          </div>
+          <div class="form-group-admin">
+            <label>Değer 3 Açıklama</label>
+            <textarea class="form-control-admin" id="value3Text" placeholder="Açıklama..."></textarea>
+          </div>
+          <hr style="border: none; border-top: 1px solid var(--admin-border); margin: 16px 0;">
+          <div class="admin-grid-2">
+            <div class="form-group-admin">
+              <label>Değer 4 Başlık</label>
+              <input type="text" class="form-control-admin" id="value4Title" placeholder="Takım Ruhu">
+            </div>
+            <div class="form-group-admin">
+              <label>Değer 4 İkon</label>
+              <input type="text" class="form-control-admin" id="value4Icon" placeholder="fas fa-users">
+            </div>
+          </div>
+          <div class="form-group-admin">
+            <label>Değer 4 Açıklama</label>
+            <textarea class="form-control-admin" id="value4Text" placeholder="Açıklama..."></textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== HİZMETLER ===== -->
+      <section class="admin-section" id="section-hizmetler">
+        <div class="section-header">
+          <h2>Hizmetler</h2>
+          <p>Hizmet kartlarını ekleyin, düzenleyin, silin ve sıralayın.</p>
+        </div>
+        <div class="admin-card">
+          <div class="admin-card-title"><i class="fas fa-concierge-bell"></i> Hizmet Kartları</div>
+          <p style="font-size:0.85rem;color:var(--admin-text-light);margin-bottom:16px;">Kartları sürükleyerek sıralayabilir, her kartın altındaki oka tıklayarak içeriğini düzenleyebilirsiniz.</p>
+          <div class="service-admin-list" id="serviceList"></div>
+          <button class="btn-add" id="addServiceBtn"><i class="fas fa-plus"></i> Yeni Hizmet Ekle</button>
+        </div>
+      </section>
+
+      <!-- ===== TAKIM ===== -->
+      <section class="admin-section" id="section-takim">
+        <div class="section-header">
+          <h2>Takım</h2>
+          <p>Yönetim ekibi üyelerini düzenleyin.</p>
+        </div>
+        <div class="admin-card">
+          <div class="admin-card-title"><i class="fas fa-users"></i> Takım Üyeleri</div>
+          <div class="service-admin-list" id="teamList"></div>
+        </div>
+      </section>
+
+      <!-- ===== İSTATİSTİKLER ===== -->
+      <section class="admin-section" id="section-istatistikler">
+        <div class="section-header">
+          <h2>İstatistikler</h2>
+          <p>Sayısal istatistikleri düzenleyin (proje, müşteri, ekip vb.).</p>
+        </div>
+        <div class="admin-card">
+          <div class="admin-card-title"><i class="fas fa-chart-bar"></i> İstatistik Kartları</div>
+          <div class="service-admin-list" id="statList"></div>
+        </div>
+      </section>
+
+      <!-- ===== MÜŞTERİ YORUMLARI ===== -->
+      <section class="admin-section" id="section-yorumlar">
+        <div class="section-header">
+          <h2>Müşteri Yorumları</h2>
+          <p>Müşteri referanslarını ve yorumlarını yönetin.</p>
+        </div>
+        <div class="admin-card">
+          <div class="admin-card-title"><i class="fas fa-star"></i> Müşteri Yorumları</div>
+          <div class="service-admin-list" id="testimonialList"></div>
+          <button class="btn-add" id="addTestimonialBtn"><i class="fas fa-plus"></i> Yeni Yorum Ekle</button>
+        </div>
+      </section>
+
+      <!-- ===== SSS ===== -->
+      <section class="admin-section" id="section-sss">
+        <div class="section-header">
+          <h2>SSS (Sıkça Sorulan Sorular)</h2>
+          <p>Soruları ve cevapları yönetin.</p>
+        </div>
+        <div class="admin-card">
+          <div class="admin-card-title"><i class="fas fa-question-circle"></i> SSS Kayıtları</div>
+          <div class="service-admin-list" id="faqList"></div>
+          <button class="btn-add" id="addFaqBtn"><i class="fas fa-plus"></i> Yeni Soru Ekle</button>
+        </div>
+      </section>
+
+      <!-- ===== CTA ===== -->
+      <section class="admin-section" id="section-cta">
+        <div class="section-header">
+          <h2>CTA Bölümü</h2>
+          <p>Harekete geçirici mesaj bölümü içeriği.</p>
+        </div>
+        <div class="admin-card">
+          <div class="admin-card-title"><i class="fas fa-bullhorn"></i> CTA İçeriği</div>
+          <div class="form-group-admin">
+            <label>Başlık</label>
+            <input type="text" class="form-control-admin" id="ctaTitle" placeholder="Hadi Başlayalım">
+          </div>
+          <div class="form-group-admin">
+            <label>Açıklama</label>
+            <textarea class="form-control-admin" id="ctaDesc" placeholder="CTA açıklama metni..."></textarea>
+          </div>
+          <div class="form-row-admin">
+            <div class="form-group-admin">
+              <label>Buton Metni</label>
+              <input type="text" class="form-control-admin" id="ctaBtnText" placeholder="Ücretsiz Danışmanlık Alın">
+            </div>
+            <div class="form-group-admin">
+              <label>Buton Linki</label>
+              <input type="text" class="form-control-admin" id="ctaBtnLink" placeholder="contact.html">
+              <div class="help-text">Sayfa adı veya tam URL.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== GÖRSEL YÖNETİMİ ===== -->
+      <section class="admin-section" id="section-gorseller">
+        <div class="section-header">
+          <h2>Görsel Yönetimi</h2>
+          <p>Site genelinde kullanılan görsellerin URL'lerini güncelleyin.</p>
+        </div>
+        <div class="admin-card">
+          <div class="admin-card-title"><i class="fas fa-image"></i> Görsel URL'leri</div>
+          <div class="form-group-admin">
+            <label>Hero Arkaplan Görseli</label>
+            <input type="text" class="form-control-admin" id="imgHero" placeholder="https://...">
+            <div class="help-text">Ana sayfa hero bölümü arkaplan görseli (1920x1080 önerilir).</div>
+          </div>
+          <div class="form-group-admin">
+            <label>Hakkımızda Görseli</label>
+            <input type="text" class="form-control-admin" id="imgAbout" placeholder="https://...">
+            <div class="help-text">Hakkımızda sayfası şirket görseli (800x600 önerilir).</div>
+          </div>
+          <div class="form-row-admin">
+            <div class="form-group-admin">
+              <label>Blog 1 Görseli</label>
+              <input type="text" class="form-control-admin" id="imgBlog1" placeholder="https://...">
+            </div>
+            <div class="form-group-admin">
+              <label>Blog 2 Görseli</label>
+              <input type="text" class="form-control-admin" id="imgBlog2" placeholder="https://...">
+            </div>
+          </div>
+          <div class="form-group-admin">
+            <label>Blog 3 Görseli</label>
+            <input type="text" class="form-control-admin" id="imgBlog3" placeholder="https://...">
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== ALT BİLGİ ===== -->
+      <section class="admin-section" id="section-altbilgi">
+        <div class="section-header">
+          <h2>Alt Bilgi (Footer)</h2>
+          <p>Footer alanındaki metin içeriklerini düzenleyin.</p>
+        </div>
+        <div class="admin-card">
+          <div class="admin-card-title"><i class="fas fa-info"></i> Footer İçeriği</div>
+          <div class="form-group-admin">
+            <label>Hakkımızda Metni</label>
+            <textarea class="form-control-admin" id="footerAboutText" placeholder="Footer hakkımızda açıklaması..."></textarea>
+          </div>
+          <div class="form-group-admin">
+            <label>Çalışma Saatleri</label>
+            <input type="text" class="form-control-admin" id="footerWorkingHours" placeholder="Hafta içi: 09:00 - 18:00">
+          </div>
+        </div>
+      </section>
+
+      <div class="admin-footer">
+        &copy; 2026 Efesoftlab. Tüm hakları saklıdır. | Admin Panel v1.0
+      </div>
+
+    </div>
+  </main>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

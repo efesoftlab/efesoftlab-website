@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tasarım ve Geliştirme: Efesoftlab | Satış ve Dağıtım: Efesoftlab -->
+  <meta name="description" content="Efes Hukuk Bürosu ile iletişime geçin. Danışmanlık formu, ofis adresleri, telefon ve e-posta bilgileri.">
+  <meta name="author" content="Efesoftlab">
+  <title data-i18n="nav-contact">İletişim - Efes Hukuk Bürosu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+
+  <!-- ===== SAYFA ÖN YÜKLEYİCİ ===== -->
+  <div id="preloader">
+    <div style="text-align:center;">
+      <div class="preloader-icon"><i class="fas fa-balance-scale"></i></div>
+      <span class="preloader-text">Efes Hukuk</span>
+    </div>
+  </div>
+
+  <!-- ===== BİLDİRİM KAPSAYICI ===== -->
+  <div class="toast-container"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" role="navigation" aria-label="Ana navigasyon">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <i class="fas fa-balance-scale"></i>
+        Efes<span>Hukuk</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link" data-i18n="nav-home">Ana Sayfa</a></li>
+        <li><a href="about.html" class="nav-link" data-i18n="nav-about">Hakkımızda</a></li>
+        <li><a href="services.html" class="nav-link" data-i18n="nav-services">Uzmanlıklar</a></li>
+        <li><a href="about.html#team" class="nav-link" data-i18n="nav-attorneys">Avukatlar</a></li>
+        <li><a href="contact.html" class="nav-link active" data-i18n="nav-contact">İletişim</a></li>
+      </ul>
+      <div class="nav-right">
+        <button id="langToggle" aria-label="Switch to English">
+          <i class="fas fa-globe"></i> EN
+        </button>
+        <button id="darkModeToggle" aria-label="Karanlık moda geç">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="hamburger" aria-label="Menüyü aç/kapa">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== SAYFA BANNER ===== -->
+  <section class="page-banner">
+    <img src="https://picsum.photos/1920/600?random=30" alt="İletişim" class="page-banner-bg" loading="lazy">
+    <div class="container">
+      <h1 data-i18n="page-banner-contact-title" data-config="contactBanner.title">İletişim</h1>
+      <span class="gold-accent"></span>
+      <p data-i18n="page-banner-contact-desc" data-config="contactBanner.description">Hukuki sorunlarınız için bize ulaşın</p>
+    </div>
+  </section>
+
+  <!-- ===== İLETİŞİM BÖLÜMÜ ===== -->
+  <section class="contact-section section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-form-wrapper animate-on-scroll-left">
+          <h2 data-i18n="contact-form-title">Hukuki Danışmanlık Formu</h2>
+          <span class="gold-accent-left"></span>
+          <p data-i18n="contact-form-desc">Size en kısa sürede dönüş yapabilmemiz için formu doldurun.</p>
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name"><span data-i18n="contact-name-label">Adınız Soyadınız</span> <span>*</span></label>
+                <input type="text" id="name" name="name" class="form-control" data-i18n-placeholder="contact-name-placeholder" placeholder="Adınız ve soyadınız" required>
+                <div class="form-error"></div>
+              </div>
+              <div class="form-group">
+                <label for="email"><span data-i18n="contact-email-label">E-posta Adresiniz</span> <span>*</span></label>
+                <input type="email" id="email" name="email" class="form-control" data-i18n-placeholder="contact-email-placeholder" placeholder="ornek@mail.com" required>
+                <div class="form-error"></div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone"><span data-i18n="contact-phone-label">Telefon Numaranız</span> <span>*</span></label>
+                <input type="tel" id="phone" name="phone" class="form-control" data-i18n-placeholder="contact-phone-placeholder" placeholder="(05XX) XXX XX XX" required>
+                <div class="form-error"></div>
+              </div>
+              <div class="form-group">
+                <label for="practice"><span data-i18n="contact-practice-label">Hukuk Alanı</span> <span>*</span></label>
+                <select id="practice" name="practice" class="form-control" required>
+                  <option value="" data-i18n="contact-practice-placeholder">Hukuk alanı seçiniz</option>
+                  <option value="ceza" data-i18n="area-criminal-title">Ceza Hukuku</option>
+                  <option value="aile" data-i18n="area-family-title">Aile Hukuku</option>
+                  <option value="ticaret" data-i18n="area-commercial-title">Ticaret Hukuku</option>
+                  <option value="gayrimenkul" data-i18n="area-property-title">Gayrimenkul Hukuku</option>
+                  <option value="is" data-i18n="area-labor-title">İş Hukuku</option>
+                  <option value="fikri" data-i18n="area-ip-title">Fikri Mülkiyet Hukuku</option>
+                  <option value="diger">Diğer</option>
+                </select>
+                <div class="form-error"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact_time"><span data-i18n="contact-time-label">Tercih Edilen İletişim Zamanı</span></label>
+              <select id="contact_time" name="contact_time" class="form-control">
+                <option value="" data-i18n="contact-time-placeholder">Zaman seçiniz</option>
+                <option value="sabah">09:00 - 12:00</option>
+                <option value="ogle">12:00 - 14:00</option>
+                <option value="ogleden_sonra">14:00 - 18:00</option>
+                <option value="farketmez">Fark etmez</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message"><span data-i18n="contact-message-label">Mesajınız</span> <span>*</span></label>
+              <textarea id="message" name="message" class="form-control" data-i18n-placeholder="contact-message-placeholder" placeholder="Hukuki durumunuzu kısaca açıklayınız..." required></textarea>
+              <div class="form-error"></div>
+            </div>
+            <button type="submit" class="btn btn-gold" style="width:100%">
+              <i class="fas fa-paper-plane"></i> <span data-i18n="contact-submit">Gönder</span>
+            </button>
+          </form>
+        </div>
+        <div class="contact-info-grid animate-on-scroll-right">
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h3>Merkez Ofis</h3>
+              <p>Levent Mah. Büyükdere Cad. No:100 K:15<br>Şişli / İstanbul</p>
+              <p style="margin-top:10px;"><i class="fas fa-phone-alt" style="color:var(--gold);margin-right:8px;"></i><a href="tel:+902122345678">(0212) 234 56 78</a></p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <h3>Telefon</h3>
+              <p><a href="tel:+902122345678">(0212) 234 56 78</a></p>
+              <p><a href="tel:+905551234567">(0555) 123 45 67</a></p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h3>E-posta</h3>
+              <p><a href="mailto:info@efeshukuk.com">info@efeshukuk.com</a></p>
+              <p><a href="mailto:danisma@efeshukuk.com">danisma@efeshukuk.com</a></p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h3>Çalışma Saatleri</h3>
+              <p>Hafta içi: 09:00 - 18:00</p>
+              <p>Cumartesi: 10:00 - 14:00 (Randevulu)</p>
+              <p>Pazar: Kapalı</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fas fa-balance-scale"></i></div>
+            <div>
+              <h3>Adli Yardım</h3>
+              <p>Maddi durumu yetersiz vatandaşlarımız için adli yardım başvuruları ofisimiz aracılığıyla yapılabilmektedir.</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fas fa-wheelchair"></i></div>
+            <div>
+              <h3>Engelli Danışmanlık</h3>
+              <p>Engelli vatandaşlarımıza özel danışmanlık hizmeti ve ofis erişim desteği sağlanmaktadır.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HARİTA BÖLÜMÜ ===== -->
+  <section class="map-section section" id="locations">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll" data-i18n="map-title">Ofis Lokasyonlarımız</h2>
+      <span class="gold-accent"></span>
+      <p class="section-subtitle" data-i18n="map-subtitle">İstanbul'un iki yakasında hizmetinizdeyiz.</p>
+      <div class="map-container animate-on-scroll">
+        <div class="map-placeholder">
+          <i class="fas fa-map-marked-alt"></i>
+          <p>Google Maps entegrasyonu buraya eklenecektir.</p>
+          <p style="font-size:0.9rem;">Levent Mah. Büyükdere Cad. No:100 K:15 Şişli / İstanbul</p>
+        </div>
+      </div>
+      <div class="office-addresses">
+        <div class="office-card animate-on-scroll animate-delay-1">
+          <h3><i class="fas fa-building" style="color:var(--gold);margin-right:10px;"></i>Levent Merkez Ofis</h3>
+          <p>Levent Mah. Büyükdere Cad. No:100 K:15<br>Şişli / İstanbul</p>
+          <p style="margin-top:10px;"><strong>Tel:</strong> <a href="tel:+902122345678">(0212) 234 56 78</a></p>
+          <p><strong>E-posta:</strong> <a href="mailto:info@efeshukuk.com">info@efeshukuk.com</a></p>
+        </div>
+        <div class="office-card animate-on-scroll animate-delay-2">
+          <h3><i class="fas fa-building" style="color:var(--gold);margin-right:10px;"></i>Kadıköy Şube Ofis</h3>
+          <p>Caferağa Mah. Bahariye Cad. No:45 K:3<br>Kadıköy / İstanbul</p>
+          <p style="margin-top:10px;"><strong>Tel:</strong> <a href="tel:+902164567890">(0216) 456 78 90</a></p>
+          <p><strong>E-posta:</strong> <a href="mailto:kadikoy@efeshukuk.com">kadikoy@efeshukuk.com</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACİL DURUM ===== -->
+  <section class="emergency-section section" id="emergency">
+    <div class="container">
+      <h2 class="animate-on-scroll" data-i18n="emergency-title">Acil Hukuki Destek</h2>
+      <span class="gold-accent"></span>
+      <p data-i18n="emergency-desc">7/24 acil hukuki destek hattımızla, tutuklama, gözaltı veya acil hukuki müdahale gerektiren durumlarda yanınızdayız.</p>
+      <a href="tel:+905551234567" class="emergency-phone">
+        <i class="fas fa-phone-alt"></i> (0555) 123 45 67
+      </a>
+      <p style="margin-top:1.5rem;color:rgba(255,255,255,0.6);font-size:0.9rem;">
+        <i class="fas fa-clock"></i> 7/24 Acil Danışmanlık Hattı
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== WHATSAPP FLOATING ===== -->
+  <div class="whatsapp-float" role="button" aria-label="WhatsApp üzerinden iletişim" data-phone="905551234567" title="WhatsApp'tan bize yazın">
+    <i class="fab fa-whatsapp"></i>
+  </div>
+
+  <!-- ===== YUKARI ÇIK ===== -->
+  <button id="backToTop" aria-label="Yukarı çık">
+    <svg viewBox="0 0 44 44">
+      <circle cx="22" cy="22" r="20"/>
+    </svg>
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- ===== ÇEREZ ONAY BANNERI ===== -->
+  <div class="cookie-consent">
+    <div class="container">
+      <div class="cookie-content">
+        <i class="fas fa-cookie-bite"></i>
+        <span data-i18n="cookie-text">Size daha iyi hizmet verebilmek için çerezleri kullanıyoruz.</span>
+      </div>
+      <div class="cookie-buttons">
+        <button class="btn cookie-btn-accept" data-i18n="cookie-accept">Kabul Et</button>
+        <button class="btn cookie-btn-decline" data-i18n="cookie-decline">Reddet</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-brand">
+            <i class="fas fa-balance-scale"></i>
+            Efes<span>Hukuk</span>
+          </a>
+          <p data-i18n="footer-desc" data-config="footer.description">1978 yılından bu yana İstanbul merkezli olarak hukukun her alanında profesyonel danışmanlık ve dava takibi hizmeti sunmaktayız. Adalete olan inancımızla çalışıyoruz.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3 data-i18n="footer-practices">Uzmanlıklar</h3>
+          <ul class="footer-links">
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="area-criminal-title">Ceza Hukuku</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="area-family-title">Aile Hukuku</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="area-commercial-title">Ticaret Hukuku</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="area-property-title">Gayrimenkul Hukuku</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="area-labor-title">İş Hukuku</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="area-ip-title">Fikri Mülkiyet Hukuku</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 data-i18n="footer-links">Hızlı Linkler</h3>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-home">Ana Sayfa</span></a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-about">Hakkımızda</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-services">Uzmanlıklar</span></a></li>
+            <li><a href="about.html#team"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-attorneys">Avukatlar</span></a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-contact">İletişim</span></a></li>
+            <li><a href="index.html#faq"><i class="fas fa-chevron-right"></i> SSS</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 data-i18n="footer-contact">İletişim</h3>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> Levent Mah. Büyükdere Cad. No:100 K:15 Şişli / İstanbul</li>
+            <li><i class="fas fa-phone-alt"></i> <a href="tel:+902122345678">(0212) 234 56 78</a></li>
+            <li><i class="fas fa-phone-alt"></i> <a href="tel:+905551234567">(0555) 123 45 67</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:info@efeshukuk.com">info@efeshukuk.com</a></li>
+            <li><i class="fas fa-clock"></i> Hafta içi: 09:00 - 18:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footer-copyright" data-config="footer.copyright">© 2024 Efesoftlab. Tüm hakları saklıdır.</span>
+        <span><span class="footer-credit" data-i18n="footer-credit">Satış: Efesoftlab</span> | <a href="#">KVKK Aydınlatma Metni</a> | <a href="#">Çerez Politikası</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

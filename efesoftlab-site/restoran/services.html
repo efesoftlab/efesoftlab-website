@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!-- Tasarım ve Geliştirme: Efesoftlab | Satış ve Dağıtım: Efesoftlab -->
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lezzetin Adresi Özel Etkinlikler - Düğün, kurumsal yemek, doğum günü ve özel davet organizasyonlarınız için ideal mekan.">
+  <meta name="author" content="Efesoftlab">
+  <title data-i18n="services-hero-title">Özel Etkinlikler | Lezzetin Adresi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== SAYFA YUKLENIYOR ===== -->
+  <div id="preloader">
+    <div class="preloader-icon"><i class="fas fa-utensils"></i></div>
+    <div class="preloader-text" data-i18n="preloader-text">Lezzetin Adresi</div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" role="navigation" aria-label="Ana navigasyon">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-utensils"></i> Lezzetin Adresi <span data-i18n="nav-home">Restoran</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" data-i18n="nav-home">Ana Sayfa</a></li>
+        <li><a href="index.html#menu" data-i18n="nav-menu">Menü</a></li>
+        <li><a href="about.html" data-i18n="nav-about">Hakkımızda</a></li>
+        <li><a href="services.html" class="active" data-i18n="nav-services">Özel Etkinlikler</a></li>
+        <li><a href="index.html#gallery" data-i18n="nav-gallery">Galeri</a></li>
+        <li><a href="contact.html" data-i18n="nav-contact">İletişim</a></li>
+        <li>
+          <div class="nav-controls">
+            <button class="lang-toggle" data-lang="tr" onclick="switchLanguage('tr')" aria-label="Türkçe">TR</button>
+            <button class="lang-toggle" data-lang="en" onclick="switchLanguage('en')" aria-label="English">EN</button>
+            <button class="theme-toggle" aria-label="Tema değiştir">
+              <i class="fas fa-moon"></i>
+            </button>
+          </div>
+        </li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menüyü aç/kapat">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== WHATSAPP ===== -->
+  <a href="#" class="whatsapp-btn" id="whatsapp-btn" aria-label="WhatsApp ile iletişim">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ===== YUKARI CIK ===== -->
+  <button class="back-to-top" id="back-to-top" aria-label="Yukarı çık">
+    <svg viewBox="0 0 46 46"><circle cx="23" cy="23" r="22"/></svg>
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- ===== SAYFA HERO ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="animate-on-scroll" data-i18n="services-hero-title">Özel Etkinlikler</h1>
+      <p class="animate-on-scroll" data-i18n="services-hero-text">Hayalinizdeki organizasyonu bizimle gerçeğe dönüştürün</p>
+    </div>
+  </section>
+
+  <!-- ===== ETKINLIK SECENEKLERI ===== -->
+  <section class="section-padding" style="background: var(--bg-primary);">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll" data-i18n="services-title">Etkinlik Seçeneklerimiz</h2>
+      <p class="section-subtitle animate-on-scroll" data-i18n="services-subtitle">Her türlü özel gününüz için size özel çözümler sunuyoruz</p>
+      <div class="section-divider"></div>
+      <div class="services-grid">
+        <div class="service-card animate-on-scroll">
+          <div class="service-card-image">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80" alt="Düğün organizasyonu" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <h3><i class="fas fa-ring" style="color: var(--orange-primary); margin-right: 8px;"></i> Düğün &amp; Nişan</h3>
+            <p>Hayalinizdeki düğün organizasyonu için özel menüler, dekorasyon ve canlı müzik seçenekleriyle unutulmaz bir gün yaşayın. 50-200 kişilik kapasitemizle her türlü düğün ve nişan törenine ev sahipliği yapıyoruz.</p>
+            <div class="service-features">
+              <span>Özel Menü</span>
+              <span>Dekorasyon</span>
+              <span>Canlı Müzik</span>
+              <span>Fotoğrafçı</span>
+            </div>
+          </div>
+        </div>
+        <div class="service-card animate-on-scroll">
+          <div class="service-card-image">
+            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&q=80" alt="Kurumsal yemek" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <h3><i class="fas fa-briefcase" style="color: var(--orange-primary); margin-right: 8px;"></i> Kurumsal Yemek</h3>
+            <p>İş toplantıları, yılbaşı partileri ve kurumsal etkinlikleriniz için profesyonel hizmet. Özel toplantı odalarımız ve VIP menü seçeneklerimizle iş dünyasına özel çözümler sunuyoruz.</p>
+            <div class="service-features">
+              <span>VIP Hizmet</span>
+              <span>Projektör</span>
+              <span>Özel Menü</span>
+              <span>İkramlar</span>
+            </div>
+          </div>
+        </div>
+        <div class="service-card animate-on-scroll">
+          <div class="service-card-image">
+            <img src="https://images.unsplash.com/photo-1464349153735-7db50ed83c84?w=600&q=80" alt="Doğum günü" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <h3><i class="fas fa-birthday-cake" style="color: var(--orange-primary); margin-right: 8px;"></i> Doğum Günü</h3>
+            <p>Sevdiklerinizle birlikte unutulmaz bir doğum günü kutlaması için özel pasta, süsleme ve menü seçeneklerimizle sizlere eşsiz bir deneyim sunuyoruz. Çocuk ve yetişkin gruplarına özel paketler.</p>
+            <div class="service-features">
+              <span>Özel Pasta</span>
+              <span>Süsleme</span>
+              <span>Balon</span>
+              <span>Hediye</span>
+            </div>
+          </div>
+        </div>
+        <div class="service-card animate-on-scroll">
+          <div class="service-card-image">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Özel davet" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <h3><i class="fas fa-glass-cheers" style="color: var(--orange-primary); margin-right: 8px;"></i> Özel Davet</h3>
+            <p>Yıldönümü, baby shower, söz kesme gibi özel günlerinizde size özel hazırlanmış menüler ve samimi atmosferimizle unutulmaz anlar yaşayın. Her detayı sizinle planlıyoruz.</p>
+            <div class="service-features">
+              <span>Özel Menü</span>
+              <span>Şef Masası</span>
+              <span>Şarap Eşleşmesi</span>
+              <span>Özel Dekor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATERING ===== -->
+  <section class="catering-section section-padding">
+    <div class="container">
+      <div class="catering-grid">
+        <div class="catering-image animate-on-scroll">
+          <img src="https://images.unsplash.com/photo-1555244162-803834f70033?w=600&q=80" alt="Catering hizmeti" loading="lazy">
+        </div>
+        <div class="catering-content animate-on-scroll">
+          <h2 data-i18n="catering-title">Catering Hizmetimiz</h2>
+          <p data-i18n="catering-text-1">
+            Restoranımızın eşsiz lezzetlerini, dilediğiniz mekana taşıyoruz. Profesyonel catering ekibimizle, evinizde, ofisinizde veya açık hava etkinliklerinizde size özel menüler hazırlıyoruz.
+          </p>
+          <p data-i18n="catering-text-2">
+            Her etkinliğin büyüklüğüne ve konseptine göre özelleştirilmiş catering paketlerimizle, misafirlerinize unutulmaz bir lezzet deneyimi yaşatın.
+          </p>
+          <ul>
+            <li><i class="fas fa-check"></i> Kokteyl &amp; Resepsiyon Catering</li>
+            <li><i class="fas fa-check"></i> Açık Büfe &amp; Tabak Servisi</li>
+            <li><i class="fas fa-check"></i> Kurumsal Yemek Hizmeti</li>
+            <li><i class="fas fa-check"></i> Özel Diyet Menüleri (Vejetaryen, Vegan, Glutensiz)</li>
+            <li><i class="fas fa-check"></i> Profesyonel Servis Ekibi</li>
+            <li><i class="fas fa-check"></i> Ücretsiz Danışmanlık &amp; Tadım</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary"><i class="fas fa-phone"></i> <span data-i18n="catering-cta">İletişime Geçin</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REZERVASYON & ORGANIZASYON ===== -->
+  <section class="reservation-info section-padding">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll" data-i18n="reservation-info-title">Rezervasyon &amp; Organizasyon</h2>
+      <p class="section-subtitle animate-on-scroll" data-i18n="reservation-info-subtitle">Etkinliğinizi planlamak için ihtiyacınız olan her şey</p>
+      <div class="section-divider"></div>
+      <div class="reservation-info-grid">
+        <div class="info-card animate-on-scroll">
+          <i class="fas fa-calendar-alt"></i>
+          <h3>Önceden Planlama</h3>
+          <p>Büyük etkinlikleriniz için en az 2 hafta önceden rezervasyon yapmanızı öneririz. Ekibimiz her detayla ilgilenir.</p>
+        </div>
+        <div class="info-card animate-on-scroll">
+          <i class="fas fa-users"></i>
+          <h3>Kapasite</h3>
+          <p>Restoranımız 150 kişi, özel salonumuz 50 kişi, teras alanımız ise 80 kişi kapasitelidir.</p>
+        </div>
+        <div class="info-card animate-on-scroll">
+          <i class="fas fa-credit-card"></i>
+          <h3>Ödeme Seçenekleri</h3>
+          <p>Nakit, kredi kartı ve kurumsal fatura ile ödeme seçenekleri mevcuttur. Peşinat ve taksit imkanı sunuyoruz.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3><i class="fas fa-utensils"></i> Lezzetin Adresi</h3>
+          <p data-i18n="footer-about" data-config="footer.about">
+            2015 yılından bu yana, en taze malzemelerle hazırladığımız eşsiz lezzetlerimizle misafirlerimize unutulmaz bir yemek deneyimi sunuyoruz. Sıcak atmosferimizde sizi de ağırlamaktan mutluluk duyarız.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 data-i18n="footer-quick">Hızlı Linkler</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-home">Ana Sayfa</span></a></li>
+            <li><a href="index.html#menu"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-menu">Menü</span></a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-about">Hakkımızda</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-services">Özel Etkinlikler</span></a></li>
+            <li><a href="index.html#gallery"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-gallery">Galeri</span></a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-contact">İletişim</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer-hours">Çalışma Saatleri</h4>
+          <ul class="footer-hours">
+            <li><span data-i18n="hours-mon-thu">Pazartesi - Perşembe</span> <span data-config="workingHours.weekdays">11:00 - 23:00</span></li>
+            <li><span data-i18n="hours-fri-sat">Cuma - Cumartesi</span> <span data-config="workingHours.weekend">11:00 - 01:00</span></li>
+            <li><span data-i18n="hours-sun">Pazar</span> <span data-config="workingHours.sunday">12:00 - 22:00</span></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer-contact">İletişim</h4>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-map-marker-alt"></i> <span data-i18n="contact-address" data-config="contact.address">İstiklal Cad. No:123 Beyoğlu, İstanbul</span></a></li>
+            <li><a href="tel:+905551234567"><i class="fas fa-phone"></i> <span data-i18n="contact-phone" data-config="contact.phone">(0555) 123 45 67</span></a></li>
+            <li><a href="mailto:info@lezzetinadresi.com"><i class="fas fa-envelope"></i> <span data-i18n="contact-email" data-config="contact.email">info@lezzetinadresi.com</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 <span>Efesoftlab</span>. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/main.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', applyConfigToDOM);</script>
+</body>
+</html>

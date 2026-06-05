@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!-- Tasarım ve Geliştirme: Efesoftlab | Satış ve Dağıtım: Efesoftlab -->
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lezzetin Adresi Hakkımızda - Geleneksel lezzetler, modern dokunuşlar ve uzman şef ekibimizle tanışın.">
+  <meta name="author" content="Efesoftlab">
+  <title data-i18n="page-hero-about-title">Hakkımızda | Lezzetin Adresi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== SAYFA YUKLENIYOR ===== -->
+  <div id="preloader">
+    <div class="preloader-icon"><i class="fas fa-utensils"></i></div>
+    <div class="preloader-text" data-i18n="preloader-text">Lezzetin Adresi</div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" role="navigation" aria-label="Ana navigasyon">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-utensils"></i> Lezzetin Adresi <span data-i18n="nav-home">Restoran</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" data-i18n="nav-home">Ana Sayfa</a></li>
+        <li><a href="index.html#menu" data-i18n="nav-menu">Menü</a></li>
+        <li><a href="about.html" class="active" data-i18n="nav-about">Hakkımızda</a></li>
+        <li><a href="services.html" data-i18n="nav-services">Özel Etkinlikler</a></li>
+        <li><a href="index.html#gallery" data-i18n="nav-gallery">Galeri</a></li>
+        <li><a href="contact.html" data-i18n="nav-contact">İletişim</a></li>
+        <li>
+          <div class="nav-controls">
+            <button class="lang-toggle" data-lang="tr" onclick="switchLanguage('tr')" aria-label="Türkçe">TR</button>
+            <button class="lang-toggle" data-lang="en" onclick="switchLanguage('en')" aria-label="English">EN</button>
+            <button class="theme-toggle" aria-label="Tema değiştir">
+              <i class="fas fa-moon"></i>
+            </button>
+          </div>
+        </li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menüyü aç/kapat">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== WHATSAPP ===== -->
+  <a href="#" class="whatsapp-btn" id="whatsapp-btn" aria-label="WhatsApp ile iletişim">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ===== YUKARI CIK ===== -->
+  <button class="back-to-top" id="back-to-top" aria-label="Yukarı çık">
+    <svg viewBox="0 0 46 46"><circle cx="23" cy="23" r="22"/></svg>
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- ===== SAYFA HERO ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="animate-on-scroll" data-i18n="page-hero-about-title">Hakkımızda</h1>
+      <p class="animate-on-scroll" data-i18n="page-hero-about-text">Geleneksel lezzetlerin modern yorumlarla buluştuğu mutfağımızın hikayesi</p>
+    </div>
+  </section>
+
+  <!-- ===== RESTORAN HIKAYESI ===== -->
+  <section class="about-story section-padding">
+    <div class="container">
+      <div class="about-story-grid">
+        <div class="about-story-image animate-on-scroll">
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=700&q=80" alt="Restoran hikayesi" loading="lazy">
+        </div>
+        <div class="animate-on-scroll">
+          <h2 class="section-title" style="text-align: left;" data-i18n="about-story-title">Bizim Hikayemiz</h2>
+          <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 16px;" data-i18n="about-story-1" data-config="about.story.0">
+            2015 yılının sıcak bir yaz akşamında, küçük bir dükkanda başlayan bu yolculuk, bugün İstanbul'un kalbinde, üç katlı tarihi bir binada devam ediyor. Kurucumuz Mehmet Yılmaz'ın çocukluk hayali olan kendi restoranını açma fikri, ailesinin destekleriyle gerçeğe dönüştü.
+          </p>
+          <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 16px;" data-i18n="about-story-2" data-config="about.story.1">
+            İlk günden beri en taze, en kaliteli malzemeleri kullanma prensibiyle hareket eden ekibimiz, her geçen gün daha da büyüyerek bugün 50 kişilik profesyonel bir kadroya ulaştı.
+          </p>
+          <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 16px;" data-i18n="about-story-3" data-config="about.story.2">
+            Yerel üreticilerden tedarik ettiğimiz taze sebzeler, Ege'nin zeytinyağları, Güneydoğu'nun baharatları ve dünyanın dört bir yanından seçkin şaraplar ile zenginleşen menümüz, her damak tadına hitap edecek çeşitliliktedir.
+          </p>
+          <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 16px;" data-i18n="about-story-2">
+            İlk günden beri en taze, en kaliteli malzemeleri kullanma prensibiyle hareket eden ekibimiz, her geçen gün daha da büyüyerek bugün 50 kişilik profesyonel bir kadroya ulaştı. Menümüzdeki her yemek, şeflerimizin titiz çalışmaları ve yaratıcı dokunuşlarıyla hazırlanmaktadır.
+          </p>
+          <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 16px;" data-i18n="about-story-3">
+            Yerel üreticilerden tedarik ettiğimiz taze sebzeler, Ege'nin zeytinyağları, Güneydoğu'nun baharatları ve dünyanın dört bir yanından seçkin şaraplar ile zenginleşen menümüz, her damak tadına hitap edecek çeşitliliktedir.
+          </p>
+          <div class="signature">— Mehmet Yılmaz</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SEF EKIBI ===== -->
+  <section class="chef-team section-padding">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll" data-i18n="team-title">Şef Ekibimiz</h2>
+      <p class="section-subtitle animate-on-scroll" data-i18n="team-subtitle">Lezzetlerimizin ardındaki yetenekli eller</p>
+      <div class="section-divider"></div>
+      <div class="team-grid">
+        <div class="team-card animate-on-scroll">
+          <div class="team-card-image">
+            <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=400&q=80" alt="Mehmet Yılmaz" loading="lazy">
+          </div>
+          <div class="team-card-body">
+            <h3 data-config="chefTeam.0.name">Mehmet Yılmaz</h3>
+            <span class="role" data-config="chefTeam.0.title">Yönetici Şef</span>
+            <p data-config="chefTeam.0.description">15 yıllık deneyime sahip olan Mehmet Şef, Londra ve Tokyo'daki Michelin yıldızlı restoranlarda çalışmıştır. Türk mutfağını dünya standartlarında yorumlamaktadır.</p>
+          </div>
+        </div>
+        <div class="team-card animate-on-scroll">
+          <div class="team-card-image">
+            <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?w=400&q=80" alt="Ayşe Demir" loading="lazy">
+          </div>
+          <div class="team-card-body">
+            <h3 data-config="chefTeam.1.name">Ayşe Demir</h3>
+            <span class="role" data-config="chefTeam.1.title">Sous Chef &amp; Pastacı</span>
+            <p data-config="chefTeam.1.description">Fransız pastacılık okulu mezunu olan Ayşe Şef, tatlı ve hamur işlerindeki ustalığıyla bilinir. Özel tarifleriyle menümüze benzersiz lezzetler katmaktadır.</p>
+          </div>
+        </div>
+        <div class="team-card animate-on-scroll">
+          <div class="team-card-image">
+            <img src="https://images.unsplash.com/photo-1566554273541-37e9d77f4a88?w=400&q=80" alt="Ali Kaya" loading="lazy">
+          </div>
+          <div class="team-card-body">
+            <h3 data-config="chefTeam.2.name">Ali Kaya</h3>
+            <span class="role" data-config="chefTeam.2.title">Izgara Şefi</span>
+            <p data-config="chefTeam.2.description">Güneydoğu mutfağının tüm inceliklerine hakim olan Ali Şef, 20 yıllık mangalbaşı tecrübesiyle et yemeklerimizin vazgeçilmez ismidir.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FELSEFE ===== -->
+  <section class="philosophy section-padding">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll" data-i18n="philosophy-title">Felsefemiz</h2>
+      <p class="section-subtitle animate-on-scroll" data-i18n="philosophy-subtitle">Lezzete olan tutkumuzun temel taşları</p>
+      <div class="section-divider"></div>
+      <div class="philosophy-grid">
+        <div class="philosophy-card animate-on-scroll">
+          <i class="fas fa-leaf"></i>
+          <h3 data-i18n="phil-1-title">Taze Malzeme</h3>
+          <p data-i18n="phil-1-text">Her gün yerel üreticilerden tedarik ettiğimiz taze sebze, meyve ve otlar ile en kaliteli malzemeleri kullanıyoruz. Mevsimsel ürünlere öncelik veriyoruz.</p>
+        </div>
+        <div class="philosophy-card animate-on-scroll">
+          <i class="fas fa-fire"></i>
+          <h3 data-i18n="phil-2-title">Geleneksel Lezzet</h3>
+          <p data-i18n="phil-2-text">Anadolu'nun binlerce yıllık mutfak kültürünü modern tekniklerle buluşturuyor, her yemeğimizde geçmişin izlerini geleceğe taşıyoruz.</p>
+        </div>
+        <div class="philosophy-card animate-on-scroll">
+          <i class="fas fa-heart"></i>
+          <h3 data-i18n="phil-3-title">Tutku &amp; Özen</h3>
+          <p data-i18n="phil-3-text">Her tabak, şeflerimizin tutkusu ve özeniyle hazırlanır. Misafirlerimizin yüzündeki gülümseme, bizim en büyük motivasyon kaynağımızdır.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3><i class="fas fa-utensils"></i> Lezzetin Adresi</h3>
+          <p data-i18n="footer-about" data-config="footer.about">
+            2015 yılından bu yana, en taze malzemelerle hazırladığımız eşsiz lezzetlerimizle misafirlerimize unutulmaz bir yemek deneyimi sunuyoruz. Sıcak atmosferimizde sizi de ağırlamaktan mutluluk duyarız.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 data-i18n="footer-quick">Hızlı Linkler</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-home">Ana Sayfa</span></a></li>
+            <li><a href="index.html#menu"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-menu">Menü</span></a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-about">Hakkımızda</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-services">Özel Etkinlikler</span></a></li>
+            <li><a href="index.html#gallery"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-gallery">Galeri</span></a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> <span data-i18n="nav-contact">İletişim</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer-hours">Çalışma Saatleri</h4>
+          <ul class="footer-hours">
+            <li><span data-i18n="hours-mon-thu">Pazartesi - Perşembe</span> <span data-config="workingHours.weekdays">11:00 - 23:00</span></li>
+            <li><span data-i18n="hours-fri-sat">Cuma - Cumartesi</span> <span data-config="workingHours.weekend">11:00 - 01:00</span></li>
+            <li><span data-i18n="hours-sun">Pazar</span> <span data-config="workingHours.sunday">12:00 - 22:00</span></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer-contact">İletişim</h4>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-map-marker-alt"></i> <span data-i18n="contact-address" data-config="contact.address">İstiklal Cad. No:123 Beyoğlu, İstanbul</span></a></li>
+            <li><a href="tel:+905551234567"><i class="fas fa-phone"></i> <span data-i18n="contact-phone" data-config="contact.phone">(0555) 123 45 67</span></a></li>
+            <li><a href="mailto:info@lezzetinadresi.com"><i class="fas fa-envelope"></i> <span data-i18n="contact-email" data-config="contact.email">info@lezzetinadresi.com</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 <span>Efesoftlab</span>. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/main.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', applyConfigToDOM);</script>
+</body>
+</html>
