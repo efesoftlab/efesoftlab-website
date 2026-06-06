@@ -242,6 +242,7 @@ function buildTranslations(config) {
   set('home_tpl_restaurant_text', config.home_templates.items[3].text);
   set('home_tpl_law', config.home_templates.items[4].name);
   set('home_tpl_law_text', config.home_templates.items[4].text);
+  set('home_tpl_demo', { tr: 'Canlı Demo', en: 'Live Demo' });
 
   // META
   set('page_title', config.meta.index.title);
