@@ -174,6 +174,8 @@ function applyConfigToDOM(config) {
         }
       } else if (tag === 'meta') {
         el.content = value;
+      } else if (tag === 'i') {
+        el.className = value;
       } else {
         el.textContent = value;
       }
