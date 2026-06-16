@@ -1138,14 +1138,18 @@ select {
   }
 
   .hero-panel-main {
-    inset: 0 0 6% 0;
-    padding: 22px 22px 70px;
+    inset: 0 0 auto 0;
+    position: relative;
+    padding: 22px 22px 22px;
   }
 
   .hero-panel-floating {
-    right: 12px;
-    bottom: 16px;
-    width: min(100%, 180px);
+    position: static;
+    width: auto;
+    border-radius: var(--radius-lg);
+    background: linear-gradient(135deg, rgba(16, 25, 42, 0.96), rgba(10, 17, 29, 0.96));
+    border: 1px solid var(--border-strong);
+    box-shadow: var(--shadow-md);
   }
 
   .page-intro-card {
@@ -1153,11 +1157,14 @@ select {
     max-width: none;
   }
 
-  .hero-stack-row,
   .phone-gallery,
   .value-grid,
   .app-grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero-stack-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .apps-preview-grid {
@@ -1219,12 +1226,21 @@ select {
   }
 
   .hero-stack-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .hero-stack-card {
+    padding: 12px 14px;
   }
 }
 
 @media (max-width: 380px) {
   .apps-preview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-stack-row {
     grid-template-columns: 1fr;
   }
 }
