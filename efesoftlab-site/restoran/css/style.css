@@ -1681,6 +1681,7 @@ ul { list-style: none; }
 
 /* ===== COOKIE ONAY ===== */
 .cookie-consent {
+  padding-bottom: max(18px, env(safe-area-inset-bottom));
   position: fixed;
   bottom: 0;
   left: 0;
@@ -1710,6 +1711,12 @@ ul { list-style: none; }
   display: flex;
   gap: 10px;
   flex-shrink: 0;
+}
+
+.cookie-content .cookie-buttons .btn {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -1781,7 +1788,35 @@ ul { list-style: none; }
   .footer-links a { justify-content: center; }
   .contact-form { padding: 24px; }
   .hero-buttons { flex-direction: column; align-items: center; }
-  .cookie-content { flex-direction: column; text-align: center; }
+}
+
+@media (max-width: 640px) {
+  .cookie-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+    padding: 8px 16px;
+  }
+  .cookie-consent {
+    padding: 12px 0 16px;
+  }
+  .cookie-content p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+  .cookie-content .cookie-buttons {
+    width: 100%;
+    flex-direction: row;
+    gap: 8px;
+  }
+  .cookie-content .cookie-buttons .btn {
+    min-height: 44px;
+    font-size: 0.85rem;
+    padding: 10px 24px;
+    width: 100%;
+    flex: 1;
+  }
 }
 
 @media (max-width: 576px) {

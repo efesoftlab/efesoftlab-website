@@ -601,6 +601,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ===== ÇEREZ İZİN BANNERI ===== */
 #cookieConsent {
+  padding-bottom: max(20px, env(safe-area-inset-bottom));
   position: fixed;
   bottom: 0;
   left: 0;
@@ -630,6 +631,9 @@ h1, h2, h3, h4, h5, h6 {
 
 #cookieConsent .btn {
   flex-shrink: 0;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 /* ===== HERO ===== */
@@ -2125,9 +2129,28 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   }
 
+}
+
+@media (max-width: 640px) {
   #cookieConsent .container {
     flex-direction: column;
     text-align: center;
+    gap: 12px;
+    padding: 8px 16px;
+  }
+  #cookieConsent {
+    padding: 12px 0 16px;
+  }
+  #cookieConsent p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+  #cookieConsent .btn {
+    min-height: 44px;
+    font-size: 0.85rem;
+    padding: 10px 24px;
+    width: 100%;
   }
 }
 

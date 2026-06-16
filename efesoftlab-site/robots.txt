@@ -1,4 +1,11 @@
 User-agent: *
 Allow: /
+Disallow: /admin.html
+Disallow: /js/admin.js
+Disallow: /js/admin-auth.js
+Disallow: /css/admin.css
+Disallow: */admin.html
+Disallow: */admin.js
+Disallow: */admin.css
 
 Sitemap: https://www.efesoftlab.com.tr/sitemap.xml

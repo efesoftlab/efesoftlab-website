@@ -210,6 +210,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ===== Çerez Onay Kutusu ===== */
 .cookie-consent {
+  padding-bottom: max(20px, env(safe-area-inset-bottom));
   position: fixed;
   bottom: 0;
   left: 0; right: 0;
@@ -237,6 +238,11 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .cookie-consent p a { color: var(--blue); text-decoration: underline; }
 .cookie-actions { display: flex; gap: 10px; flex-shrink: 0; }
+.cookie-actions .btn {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
 
 /* ===== Container ===== */
 .container {
@@ -2198,7 +2204,37 @@ img { max-width: 100%; height: auto; display: block; }
   .btn { padding: 12px 24px; font-size: 0.9rem; }
   .container { padding: 0 16px; }
   .toast { min-width: auto; max-width: calc(100vw - 40px); }
-  .cookie-consent .container { flex-direction: column; text-align: center; }
+}
+
+@media (max-width: 640px) {
+  .cookie-consent .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+    padding: 8px 16px;
+  }
+  .cookie-consent {
+    padding: 12px 0 16px;
+  }
+  .cookie-consent p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+  .cookie-actions .btn {
+    min-height: 44px;
+    font-size: 0.85rem;
+    padding: 10px 24px;
+    width: 100%;
+  }
+  .cookie-actions {
+    width: 100%;
+    flex-direction: row;
+    gap: 8px;
+  }
+  .cookie-actions .btn {
+    flex: 1;
+  }
 }
 
 /* ===== Mobil Duyarlı Tipografi ve Dokunma Hedefleri ===== */

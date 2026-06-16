@@ -2378,6 +2378,7 @@ select.form-control {
 
 /* ===== ÇEREZ ONAY BANNERI (Cookie Consent) ===== */
 .cookie-consent {
+  padding-bottom: max(20px, env(safe-area-inset-bottom));
   position: fixed;
   bottom: 0;
   left: 0;
@@ -2424,6 +2425,9 @@ select.form-control {
 .cookie-buttons .btn {
   padding: 10px 24px;
   font-size: 0.85rem;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .cookie-btn-accept {
@@ -2793,9 +2797,34 @@ select.form-control {
     grid-template-columns: 1fr;
   }
 
+}
+
+@media (max-width: 640px) {
   .cookie-consent .container {
     flex-direction: column;
     text-align: center;
+    gap: 12px;
+    padding: 8px 16px;
+  }
+  .cookie-consent {
+    padding: 12px 0 16px;
+  }
+  .cookie-content {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+  .cookie-buttons {
+    width: 100%;
+    flex-direction: row;
+    gap: 8px;
+  }
+  .cookie-buttons .btn {
+    min-height: 44px;
+    font-size: 0.85rem;
+    padding: 10px 24px;
+    width: 100%;
+    flex: 1;
   }
 }
 

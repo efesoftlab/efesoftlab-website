@@ -114,6 +114,9 @@ const EFESOFTLAB_DEFAULTS = {
     primary_cta: { tr: "Uygulamaları İncele", en: "Explore Apps" },
     secondary_cta: { tr: "İletişime Geç", en: "Get in Touch" },
     nav_cta: { tr: "Vitrini Aç", en: "Open Showcase" },
+    section_tag: { tr: "Uygulamalar", en: "Apps" },
+    section_title: { tr: "Ürün vitrini", en: "Product showcase" },
+    section_text: { tr: "Her ürün, sade kullanım mantığı ve gerçek ihtiyaç odağıyla tasarlanmış net bir mobil deneyim sunar.", en: "Each product delivers a clean mobile experience built around simple usage logic and real needs." },
     card_title: { tr: "Odaklı ürün vitrini", en: "Focused product showcase" },
     card_text: { tr: "Ana sayfayı daha temiz tutarken, tüm ürün detaylarını ayrı sayfada topladım.", en: "The homepage stays cleaner while the full product detail lives here in one dedicated page." },
     filter: {
@@ -232,7 +235,7 @@ const EFESOFTLAB_DEFAULTS = {
         desc: { tr: "Profesyonel kurumsal web sitesi. sticky navbar, hero, hizmetler, takım, blog, istatistikler ve SSS bölümleriyle eksiksiz bir kurumsal çözüm.", en: "Professional corporate website. Includes sticky navbar, hero, services, team, blog, statistics and FAQ sections." },
         features: ["Sticky Navbar", "Hero", "Hizmetler", "Takım", "Blog", "İstatistikler", "SSS"],
         colors: ["#0a1628", "#2563eb"],
-        price: "199",
+        price: "4.999",
         demo_url: "kurumsal/index.html",
         buy_url: "#"
       },
@@ -244,7 +247,7 @@ const EFESOFTLAB_DEFAULTS = {
         desc: { tr: "Modern emlak ofisi web sitesi. gelişmiş emlak arama motoru, 24 ilan kartı, slider, admin paneli, danışmanlar ve harita entegrasyonu.", en: "Modern real estate website. Advanced property search, 24 listings, slider, admin panel, agents and map integration." },
         features: ["Emlak Arama", "24 İlan", "Slider", "Admin Panel", "Danışmanlar", "Harita"],
         colors: ["#1a1a2e", "#d4a843"],
-        price: "249",
+        price: "5.999",
         demo_url: "emlak/index.html",
         buy_url: "#"
       },
@@ -256,7 +259,7 @@ const EFESOFTLAB_DEFAULTS = {
         desc: { tr: "Modern sağlık kliniği web sitesi. doktor kartları, bölümler, randevu formu, tedavi süreci ve hasta yorumları bölümleri.", en: "Modern medical clinic website. Doctor cards, departments, appointment form, treatment process and patient reviews." },
         features: ["Doktorlar", "Bölümler", "Randevu Formu", "Tedavi Süreci", "Hasta Yorumları"],
         colors: ["#ffffff", "#0ea5e9"],
-        price: "199",
+        price: "4.999",
         demo_url: "klinik/index.html",
         buy_url: "#"
       },
@@ -268,7 +271,7 @@ const EFESOFTLAB_DEFAULTS = {
         desc: { tr: "Şık restoran web sitesi. 22+ menü öğesi, görsel galeri, çevrimiçi rezervasyon sistemi, şef tanıtımı ve lightbox galeri.", en: "Elegant restaurant website. 22+ menu items, photo gallery, online reservation, chef profiles and lightbox gallery." },
         features: ["22+ Menü", "Galeri", "Rezervasyon", "Şef Tanıtımı", "Lightbox"],
         colors: ["#1a1110", "#f97316"],
-        price: "199",
+        price: "5.999",
         demo_url: "restoran/index.html",
         buy_url: "#"
       },
@@ -280,7 +283,7 @@ const EFESOFTLAB_DEFAULTS = {
         desc: { tr: "Premium hukuk bürosu web sitesi. avukat kartları, uzmanlık alanları, başarı hikayeleri ve danışmanlık formu ile kurumsal duruş.", en: "Premium law firm website. Attorney cards, practice areas, success stories and consultation form with corporate presence." },
         features: ["Avukatlar", "Uzmanlıklar", "Başarı Hikayeleri", "Danışmanlık Formu"],
         colors: ["#0c1628", "#c19a4b"],
-        price: "199",
+        price: "4.999",
         demo_url: "avukat/index.html",
         buy_url: "#"
       }
@@ -320,6 +323,7 @@ const EFESOFTLAB_DEFAULTS = {
     title: { tr: "Profesyonel web siteleri için satışa hazır şablonlar", en: "Ready-to-sell templates for professional websites" },
     text: { tr: "HTML5, CSS3 ve JavaScript ile geliştirilmiş 5 farklı sektöre özel premium web sitesi teması. Her şablon tamamen özelleştirilebilir ve kullanıma hazırdır.", en: "5 premium website themes for different industries, built with HTML5, CSS3 and JavaScript. Each template is fully customizable and ready to use." },
     cta: { tr: "Tüm Şablonları İncele", en: "Browse All Templates" },
+    demo_label: { tr: "Canlı Demo", en: "Live Demo" },
     items: [
       { name: { tr: "Kurumsal İşletme", en: "Corporate Business" }, text: { tr: "Sticky navbar, hero, hizmetler, takım ve blog bölümleriyle eksiksiz kurumsal çözüm.", en: "Complete corporate solution with sticky navbar, hero, services, team and blog sections." } },
       { name: { tr: "Emlak Ofisi", en: "Real Estate Agency" }, text: { tr: "Gelişmiş emlak arama, 24 ilan, slider ve admin paneli ile modern emlak sitesi.", en: "Modern real estate site with advanced search, 24 listings, slider and admin panel." } },
@@ -333,15 +337,15 @@ const EFESOFTLAB_DEFAULTS = {
   meta: {
     index: {
       title: { tr: "EfeSoftLab | Pratik ve Modern Mobil Uygulamalar", en: "EfeSoftLab | Practical and Modern Mobile Apps" },
-      description: { tr: "EfeSoftLab, günlük kullanımı kolaylaştıran sade, hızlı ve kullanıcı dostu mobil uygulamalar geliştirir.", en: "EfeSoftLab builds clean, fast and user-focused mobile apps designed for everyday use." }
+      description: { tr: "EfeSoftLab, günlük kullanımı kolaylaştıran sade ve hızlı mobil uygulamalar ile premium web şablonları geliştirir. Hemen keşfedin, ücretsiz demo'yu inceleyin.", en: "EfeSoftLab builds clean, fast mobile apps and premium website templates. Explore now and check the free demo." }
     },
     apps: {
-      title: { tr: "EfeSoftLab Uygulamalar | Ürün Vitrini", en: "EfeSoftLab Apps | Product Showcase" },
-      description: { tr: "EfeSoftLab uygulamaları: Listora, 10'lu Günlük Araçlar ve yeni üretkenlik özellikleri için ürün vitrini.", en: "EfeSoftLab apps: a focused showcase for Listora, 10 Everyday Tools and new productivity features." }
+      title: { tr: "EfeSoftLab Mobil Uygulamalar | Listora ve Günlük Araçlar", en: "EfeSoftLab Mobile Apps | Listora & Everyday Tools" },
+      description: { tr: "EfeSoftLab uygulamalarını keşfedin: Listora, 10'lu Günlük Araçlar ve daha fazlası. Sade, hızlı ve kullanıcı dostu mobil ürünleri hemen inceleyin.", en: "Discover EfeSoftLab apps: Listora, 10 Everyday Tools and more. Simple, fast and user-friendly mobile products." }
     },
     templates: {
-      title: { tr: "Web Sitesi Şablonları | Efesoftlab", en: "Website Templates | Efesoftlab" },
-      description: { tr: "Satılabilir premium HTML5 web sitesi şablonları. Kurumsal, Emlak, Klinik, Restoran ve Hukuk temaları.", en: "Premium HTML5 website templates for sale. Corporate, Real Estate, Medical Clinic, Restaurant and Law themes." }
+      title: { tr: "Premium Web Sitesi Şablonları | 5 Sektöre Özel Tema | EfeSoftLab", en: "Premium Website Templates | 5 Industry Themes | EfeSoftLab" },
+      description: { tr: "Satışa hazır premium HTML5 web sitesi şablonları. Kurumsal, Emlak, Klinik, Restoran ve Hukuk temalarını hemen keşfedin, canlı demoyu inceleyin.", en: "Premium HTML5 website templates for sale. Explore Corporate, Real Estate, Clinic, Restaurant and Law themes with live demo." }
     },
     privacy: {
       title: { tr: "EfeSoftLab Gizlilik Politikası", en: "EfeSoftLab Privacy Policy" },
@@ -364,7 +368,7 @@ const EFESOFTLAB_DEFAULTS = {
   privacy: {
     heading_tag: { tr: "Gizlilik Politikası", en: "Privacy Policy" },
     heading_title: { tr: "EfeSoftLab uygulamaları için gizlilik yaklaşımı", en: "Privacy approach for EfeSoftLab apps" },
-    updated: { tr: "Son güncelleme: 14 Mart 2026", en: "Last updated: March 14, 2026" },
+    updated: { tr: "Son güncelleme: 10 Haziran 2026", en: "Last updated: June 10, 2026" },
     sections: [
       {
         title: { tr: "1. Genel Bilgilendirme", en: "1. General Information" },
@@ -376,7 +380,8 @@ const EFESOFTLAB_DEFAULTS = {
         items: [
           { tr: "Kullanıcının doğrudan uygulama içine girdiği içerikler ve listeler", en: "Content and lists entered directly by the user" },
           { tr: "Uygulama performansını ve hata durumlarını anlamaya yardımcı teknik kullanım verileri", en: "Technical usage data to understand app performance and error states" },
-          { tr: "Cihaz türü, işletim sistemi sürümü ve anonim tanılama bilgileri", en: "Device type, operating system version, and anonymous diagnostic information" }
+          { tr: "Cihaz türü, işletim sistemi sürümü ve anonim tanılama bilgileri", en: "Device type, operating system version, and anonymous diagnostic information" },
+          { tr: "Web sitesinde (efesoftlab.com.tr) ziyaret istatistikleri ve kullanıcı tercihleri için localStorage kullanılır. Bu veriler yalnızca tarayıcınızda saklanır ve sunuculara iletilmez.", en: "On the website (efesoftlab.com.tr), localStorage is used for visit statistics and user preferences. This data is stored only in your browser and is not transmitted to servers." }
         ]
       },
       {
@@ -394,7 +399,7 @@ const EFESOFTLAB_DEFAULTS = {
       },
       {
         title: { tr: "5. Üçüncü Taraf Hizmetler", en: "5. Third-Party Services" },
-        text: { tr: "Bazı uygulamalarda analiz, hata izleme, reklam veya mağaza dağıtımı gibi amaçlarla Google Play Hizmetleri veya benzeri üçüncü taraf servisler kullanılabilir. Bu servislerin veri işleme faaliyetleri kendi politikalarına tabidir.", en: "Some apps may use Google Play Services or similar third-party services for analytics, crash reporting, advertising, or store distribution. These services' data processing is governed by their own policies." }
+        text: { tr: "Bazı uygulamalarda analiz, hata izleme, reklam veya mağaza dağıtımı gibi amaçlarla Google Play Hizmetleri veya benzeri üçüncü taraf servisler kullanılabilir. Web sitesi ve şablonlarda görüntüleme amacıyla Google Fonts ile Font Awesome gibi harici içerik dağıtım ağları (CDN) kullanılabilir. Bu servisler cihazınızın IP adresini görebilir. Veri işleme faaliyetleri ilgili hizmet sağlayıcıların kendi politikalarına tabidir.", en: "Some apps may use Google Play Services or similar third-party services for analytics, crash reporting, advertising, or store distribution. The website and templates may use external content delivery networks (CDNs) such as Google Fonts and Font Awesome for display purposes. These services may see your device's IP address. Data processing activities are governed by the respective service providers' own policies." }
       },
       {
         title: { tr: "6. Veri Güvenliği", en: "6. Data Security" },
@@ -427,3 +432,8 @@ const EFESOFTLAB_DEFAULTS = {
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { EFESOFTLAB_DEFAULTS };
 }
+
+// window.ADMIN_CREDENTIALS = {
+//   username: 'admin',
+//   password: 'admin123'
+// };

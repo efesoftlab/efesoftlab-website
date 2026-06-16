@@ -2,9 +2,9 @@
   var EFESOFTLAB_DEFAULTS = {};
 }
 
-// ===== Ä°Ã§erik YÃ¶netim Sistemi =====
+// ===== Icerik Yonetim Sistemi =====
 // Config, admin panelinden localStorage'a kaydedilir.
-// VarsayÄ±lan deÄŸerler site-config.js'deki EFESOFTLAB_DEFAULTS'tan gelir.
+// Varsayilan degerler site-config.js'deki EFESOFTLAB_DEFAULTS'tan gelir.
 function loadConfig() {
   var saved = localStorage.getItem('efesoftlab-content');
   if (saved) {
@@ -102,7 +102,6 @@ function buildTranslations(config) {
   // FOOTER
   set('footer_note', config.footer.note);
   set('footer_privacy', config.footer.privacy);
-  set('footer_top', config.footer.home_link);
   set('footer_home_link', config.footer.home_link);
   set('counter_label', config.footer.counter_label);
   
@@ -135,9 +134,9 @@ function buildTranslations(config) {
   set('apps_page_card_title', config.apps_page.card_title);
   set('apps_page_card_text', config.apps_page.card_text);
   set('apps_page_nav_cta', config.apps_page.nav_cta);
-  set('apps_tag', { tr: 'Uygulamalar', en: 'Apps' });
-  set('apps_title', { tr: 'ÃœrÃ¼n vitrini', en: 'Product showcase' });
-  set('apps_text', config.apps_page.text);
+  set('apps_tag', config.apps_page.section_tag);
+  set('apps_title', config.apps_page.section_title);
+  set('apps_text', config.apps_page.section_text);
   set('apps_filter_label', config.apps_page.filter.label);
   set('apps_filter_all', config.apps_page.filter.all);
   set('apps_filter_live', config.apps_page.filter.live);
@@ -209,6 +208,8 @@ function buildTranslations(config) {
       set(prefix + '_badge', tpl.badge);
       set(prefix + '_name', tpl.name);
       set(prefix + '_desc', tpl.desc);
+      // price is not bilingual, same for both languages
+      set(prefix + '_price', tpl.price || '');
     }
   });
   
@@ -242,11 +243,13 @@ function buildTranslations(config) {
   set('home_tpl_restaurant_text', config.home_templates.items[3].text);
   set('home_tpl_law', config.home_templates.items[4].name);
   set('home_tpl_law_text', config.home_templates.items[4].text);
-  set('home_tpl_demo', { tr: 'Canlı Demo', en: 'Live Demo' });
+  set('home_tpl_demo', config.home_templates.demo_label);
 
   // META
   set('page_title', config.meta.index.title);
   set('page_description', config.meta.index.description);
+  set('page_404_title', config.meta['404'].title);
+  set('page_404_description', config.meta['404'].description);
   
   // LABELS
   set('skip_link', config.labels.skip_link);
@@ -450,33 +453,3 @@ applyLanguage(localStorage.getItem(storageKey) || "tr");
 applyAppFilter("all");
 updateCounter();
 
-/* Mobil dokunmatik kaydırma desteği */
-var touchStartX = 0;
-var touchEndX = 0;
-document.addEventListener('touchstart', function(e) {
-  touchStartX = e.changedTouches[0].screenX;
-}, { passive: true });
-document.addEventListener('touchend', function(e) {
-  touchEndX = e.changedTouches[0].screenX;
-  handleSwipe();
-}, { passive: true });
-function handleSwipe() {
-  var diff = touchStartX - touchEndX;
-  if (Math.abs(diff) > 50) {
-    var carousels = document.querySelectorAll('.carousel-next');
-    carousels.forEach(function(btn) {
-      if (isElementInViewport(btn.closest('.property-carousel'))) {
-        if (diff > 0) btn.click();
-        else {
-          var prevBtn = btn.closest('.property-carousel').querySelector('.carousel-prev');
-          if (prevBtn) prevBtn.click();
-        }
-      }
-    });
-  }
-}
-function isElementInViewport(el) {
-  if (!el) return false;
-  var rect = el.getBoundingClientRect();
-  return rect.top < window.innerHeight && rect.bottom > 0;
-}

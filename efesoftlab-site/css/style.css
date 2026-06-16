@@ -87,7 +87,6 @@ select {
 
 .site-shell {
   position: relative;
-  overflow: clip;
 }
 
 .site-shell::before {
@@ -193,6 +192,7 @@ select {
   justify-content: space-between;
   gap: 24px;
   min-height: 104px;
+  position: relative;
 }
 
 .brand,
@@ -1212,26 +1212,6 @@ select {
     transition-duration: 0.01ms !important;
     transition-delay: 0ms !important;
   }
-}
-
-/* ===== Mobil Duyarlı Tipografi ve Dokunma Hedefleri ===== */
-@media (max-width: 576px) {
-  h1 { font-size: 1.8rem; }
-  h2 { font-size: 1.4rem; }
-  h3 { font-size: 1.1rem; }
-  body { font-size: 0.95rem; }
-  .section { padding: 50px 0; }
-  .hero { min-height: 60vh; }
-  .btn, button, .nav-links a, .filter-btn, .faq-question {
-    min-height: 44px;
-  }
-  input, select, textarea {
-    font-size: 16px !important;
-  }
-}
-@media (max-width: 768px) {
-  h1 { font-size: 2.2rem; }
-  .section { padding: 60px 0; }
 }
 
 .tpl-home-grid {

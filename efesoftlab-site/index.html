@@ -4,14 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EfeSoftLab | Pratik ve Modern Mobil Uygulamalar</title>
-  <meta name="description" content="EfeSoftLab, günlük kullanımı kolaylaştıran sade, hızlı ve kullanıcı dostu mobil uygulamalar geliştirir.">
+  <meta name="description" content="EfeSoftLab, günlük kullanımı kolaylaştıran sade ve hızlı mobil uygulamalar ile premium web şablonları geliştirir. Hemen keşfedin, ücretsiz demo'yu inceleyin.">
+  <meta name="keywords" content="EfeSoftLab, mobil uygulama, Android uygulamaları, web şablonları, HTML5 temaları, Listora, alışveriş listesi uygulaması, pratik araçlar">
   <meta name="theme-color" content="#0b1020">
   <meta property="og:type" content="website">
   <meta property="og:title" content="EfeSoftLab | Pratik ve Modern Mobil Uygulamalar">
   <meta property="og:description" content="EfeSoftLab, günlük kullanımı kolaylaştıran sade, hızlı ve kullanıcı dostu mobil uygulamalar geliştirir.">
   <meta property="og:locale" content="tr_TR">
   <meta property="og:site_name" content="EfeSoftLab">
+  <meta property="og:image" content="https://www.efesoftlab.com.tr/assets/images/og-cover.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="EfeSoftLab | Pratik ve Modern Mobil Uygulamalar">
+  <meta name="twitter:description" content="Günlük kullanımı kolaylaştıran sade, hızlı ve kullanıcı dostu mobil uygulamalar ve premium web şablonları.">
+  <meta name="twitter:image" content="https://www.efesoftlab.com.tr/assets/images/og-cover.svg">
   <link rel="canonical" href="https://www.efesoftlab.com.tr/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "EfeSoftLab",
+    "url": "https://www.efesoftlab.com.tr",
+    "logo": "https://www.efesoftlab.com.tr/assets/images/logo-wordmark.svg",
+    "description": "Günlük kullanımı kolaylaştıran sade, hızlı ve kullanıcı dostu mobil uygulamalar geliştirir.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "efesoftlab@gmail.com",
+      "contactType": "sales"
+    },
+    "sameAs": []
+  }
+  </script>
   <link rel="alternate" hreflang="tr" href="https://www.efesoftlab.com.tr/">
   <link rel="alternate" hreflang="en" href="https://www.efesoftlab.com.tr/">
   <link rel="alternate" hreflang="x-default" href="https://www.efesoftlab.com.tr/">
@@ -45,7 +67,7 @@
 
           <div class="nav-panel" id="site-menu">
             <ul class="nav-links">
-              <li><a href="#top" data-i18n="nav_home">Ana Sayfa</a></li>
+              <li><a href="#top" data-i18n="nav_home" aria-current="page">Ana Sayfa</a></li>
               <li><a href="templates.html" data-i18n="nav_templates">Şablonlar</a></li>
               <li><a href="apps.html" data-i18n="nav_apps">Uygulamalar</a></li>
               <li><a href="#hakkimda" data-i18n="nav_about">Hakkımda</a></li>
@@ -139,7 +161,7 @@
           <div class="apps-preview-grid">
             <article class="app-preview-card">
               <div class="app-icon app-icon-image-wrap app-preview-icon">
-                <img class="app-icon-image" src="assets/images/10in1Icon.png" alt="10'lu Günlük Araçlar logo">
+                <img class="app-icon-image" src="assets/images/10in1Icon.png" alt="10'lu Günlük Araçlar logo" loading="lazy">
               </div>
               <div>
                 <h3 data-i18n="app_tools_title">10'lu Günlük Araçlar</h3>
@@ -149,7 +171,7 @@
 
             <article class="app-preview-card app-preview-card-featured">
               <div class="app-icon app-icon-image-wrap app-preview-icon">
-                <img class="app-icon-image" src="assets/images/listoraapp_icon.png" alt="Listora logo">
+                <img class="app-icon-image" src="assets/images/listoraapp_icon.png" alt="Listora logo" loading="lazy">
               </div>
               <div>
                 <h3 data-i18n="app_listora_title">Listora</h3>
@@ -331,7 +353,7 @@
           </a>
           <div class="footer-meta">
             <p class="footer-note" data-i18n="footer_note">© 2026 EfeSoftLab. Tüm hakları saklıdır.</p>
-            <div class="footer-counter">
+            <div class="footer-counter" aria-live="polite">
               <span data-i18n="counter_label">Toplam ziyaret</span>
               <strong class="counter-value" data-counter>0</strong>
             </div>
@@ -339,7 +361,7 @@
         </div>
         <div class="footer-links">
           <a href="privacy-policy.html" data-i18n="footer_privacy">Gizlilik Politikası</a>
-          <a href="#top" data-i18n="footer_top">Ana sayfaya dön</a>
+          <a href="#top" data-i18n="footer_home_link">Ana sayfaya dön</a>
         </div>
       </div>
     </footer>
