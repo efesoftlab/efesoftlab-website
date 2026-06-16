@@ -1091,6 +1091,7 @@ select {
     top: calc(100% + 10px);
     right: 20px;
     left: 20px;
+    z-index: 50;
     flex-direction: column;
     align-items: stretch;
     padding: 18px;
@@ -1155,9 +1156,12 @@ select {
   .hero-stack-row,
   .phone-gallery,
   .value-grid,
-  .apps-preview-grid,
   .app-grid {
     grid-template-columns: 1fr;
+  }
+
+  .apps-preview-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .phone-shot-offset,
@@ -1197,6 +1201,16 @@ select {
     opacity: 1;
     visibility: visible;
     transform: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .apps-preview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-stack-row {
+    grid-template-columns: 1fr;
   }
 }
 

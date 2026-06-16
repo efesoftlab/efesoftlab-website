@@ -525,7 +525,7 @@ var defaultConfig = {
 
 /* Config okuma - localStorage varsa onu, yoksa defaultConfig döndür */
 function getConfig() {
-  var stored = localStorage.getItem('efsSiteConfig');
+  var stored = localStorage.getItem('efesoftlab-config');
   if (stored) {
     try {
       var parsed = JSON.parse(stored);
@@ -539,7 +539,7 @@ function getConfig() {
 
 /* Config kaydet */
 function saveConfig(config) {
-  localStorage.setItem('efsSiteConfig', JSON.stringify(config));
+  localStorage.setItem('efesoftlab-config', JSON.stringify(config));
 }
 
 /* Derin birleştirme (default + kullanıcı ayarları) */

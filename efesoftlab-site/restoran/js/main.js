@@ -286,7 +286,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     document.documentElement.lang = lang;
-    localStorage.setItem('lang', lang);
+    localStorage.setItem('efesoftlab-lang', lang);
     window.currentLang = lang;
   }
 
@@ -296,7 +296,7 @@ document.addEventListener('DOMContentLoaded', function () {
   };
 
   /* Varsayilan dil */
-  var savedLang = localStorage.getItem('lang') || 'tr';
+  var savedLang = localStorage.getItem('efesoftlab-lang') || 'tr';
   setLanguage(savedLang);
 
   /* Dil dugmelerine tiklanma */
@@ -311,7 +311,7 @@ document.addEventListener('DOMContentLoaded', function () {
      KARANLIK/ACIK MOD
      ========================================================== */
   var themeIcon = document.querySelector('.theme-toggle i');
-  var currentTheme = localStorage.getItem('theme') || 'dark';
+  var currentTheme = localStorage.getItem('efesoftlab-theme') || 'dark';
   document.documentElement.setAttribute('data-theme', currentTheme);
   if (themeIcon) {
     themeIcon.className = currentTheme === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
@@ -322,7 +322,7 @@ document.addEventListener('DOMContentLoaded', function () {
       var theme = document.documentElement.getAttribute('data-theme');
       var newTheme = theme === 'dark' ? 'light' : 'dark';
       document.documentElement.setAttribute('data-theme', newTheme);
-      localStorage.setItem('theme', newTheme);
+      localStorage.setItem('efesoftlab-theme', newTheme);
       if (themeIcon) {
         themeIcon.className = newTheme === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
       }
@@ -763,7 +763,7 @@ document.addEventListener('DOMContentLoaded', function () {
      COOKIE ONAY
      ========================================================== */
   var cookieConsent = document.getElementById('cookie-consent');
-  if (cookieConsent && !localStorage.getItem('cookie-accepted')) {
+  if (cookieConsent && !localStorage.getItem('efesoftlab-cookie')) {
     setTimeout(function () {
       cookieConsent.classList.add('show');
     }, 1500);
@@ -771,7 +771,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   document.querySelectorAll('.cookie-accept').forEach(function (btn) {
     btn.addEventListener('click', function () {
-      localStorage.setItem('cookie-accepted', 'true');
+      localStorage.setItem('efesoftlab-cookie', 'true');
       var el = document.getElementById('cookie-consent');
       if (el) el.classList.remove('show');
     });

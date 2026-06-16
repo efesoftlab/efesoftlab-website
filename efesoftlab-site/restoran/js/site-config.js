@@ -177,7 +177,7 @@ function mergeDeep(target, source) {
 
 function getConfig() {
   try {
-    var saved = localStorage.getItem('restaurant_config');
+    var saved = localStorage.getItem('efesoftlab-config');
     if (saved) {
       var parsed = JSON.parse(saved);
       return mergeDeep(DEFAULT_CONFIG, parsed);
@@ -190,7 +190,7 @@ function getConfig() {
 
 function saveConfig(config) {
   try {
-    localStorage.setItem('restaurant_config', JSON.stringify(config));
+    localStorage.setItem('efesoftlab-config', JSON.stringify(config));
     return true;
   } catch (e) {
     console.error('Config kaydetme hatası:', e);

@@ -498,7 +498,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const navbar = document.querySelector('.navbar');
   const themeToggle = document.querySelector('.nav-theme-toggle');
   const themeIcon = themeToggle ? themeToggle.querySelector('i') : null;
-  const langToggle = document.querySelector('.lang-toggle');
+  const langToggles = document.querySelectorAll('.lang-toggle');
   const whatsappBtn = document.querySelector('.whatsapp-float');
   const contactForm = document.getElementById('contactForm');
   const animatedElements = document.querySelectorAll('.fade-up, .fade-left, .fade-right');
@@ -519,12 +519,12 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   /* ===== DİL SİSTEMİ ===== */
-  let currentLang = localStorage.getItem('efsLang') || 'tr';
+  let currentLang = localStorage.getItem('efesoftlab-lang') || 'tr';
 
   function updateLangDisplay() {
-    if (langToggle) {
-      langToggle.textContent = currentLang === 'tr' ? 'EN' : 'TR';
-    }
+    langToggles.forEach(function(btn) {
+      btn.classList.toggle('active-lang', btn.getAttribute('data-lang') === currentLang);
+    });
   }
 
   function t(key) {
@@ -619,7 +619,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function switchLanguage(lang) {
     currentLang = lang;
-    localStorage.setItem('efsLang', lang);
+    localStorage.setItem('efesoftlab-lang', lang);
     applyLanguage();
     updateLangDisplay();
 
@@ -627,13 +627,12 @@ document.addEventListener('DOMContentLoaded', function () {
     showToast(t('toast-language'), 'success');
   }
 
-  if (langToggle) {
-    updateLangDisplay();
-    langToggle.addEventListener('click', function () {
-      const newLang = currentLang === 'tr' ? 'en' : 'tr';
-      switchLanguage(newLang);
+  updateLangDisplay();
+  langToggles.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      switchLanguage(this.getAttribute('data-lang'));
     });
-  }
+  });
 
   /* İlk dil uygulaması */
   applyLanguage();
@@ -647,11 +646,11 @@ document.addEventListener('DOMContentLoaded', function () {
       document.documentElement.removeAttribute('data-theme');
       if (themeIcon) themeIcon.className = 'fas fa-moon';
     }
-    localStorage.setItem('efsTheme', theme);
+    localStorage.setItem('efesoftlab-theme', theme);
   }
 
   if (themeToggle) {
-    const savedTheme = localStorage.getItem('efsTheme') || 'light';
+    const savedTheme = localStorage.getItem('efesoftlab-theme') || 'light';
     setTheme(savedTheme);
 
     themeToggle.addEventListener('click', function () {
@@ -1049,12 +1048,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   /* ===== ÇEREZ İZNİ ===== */
   if (cookieConsent && cookieBtn) {
-    if (!localStorage.getItem('efsCookie')) {
+    if (!localStorage.getItem('efesoftlab-cookie')) {
       setTimeout(function () { cookieConsent.classList.add('show'); }, 1500);
     }
 
     cookieBtn.addEventListener('click', function () {
-      localStorage.setItem('efsCookie', 'accepted');
+      localStorage.setItem('efesoftlab-cookie', 'accepted');
       cookieConsent.classList.remove('show');
       showToast(t('toast-cookie'), 'success');
     });

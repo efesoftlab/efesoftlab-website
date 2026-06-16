@@ -456,12 +456,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   /* ===== Dil Değiştirme Sistemi ===== */
   const langToggle = document.getElementById('langToggle');
-  let currentLang = localStorage.getItem('lang') || 'tr';
+  let currentLang = localStorage.getItem('efesoftlab-lang') || 'tr';
 
   // Mevcut dili uygula
   function applyLanguage(lang) {
     currentLang = lang;
-    localStorage.setItem('lang', lang);
+    localStorage.setItem('efesoftlab-lang', lang);
     document.documentElement.lang = lang === 'tr' ? 'tr' : 'en';
 
     // data-i18n ile tüm öğeleri güncelle
@@ -501,7 +501,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   /* ===== Koyu Mod ===== */
   const darkModeToggle = document.getElementById('darkModeToggle');
-  const currentTheme = localStorage.getItem('theme');
+  const currentTheme = localStorage.getItem('efesoftlab-theme');
 
   if (currentTheme === 'dark') {
     document.documentElement.setAttribute('data-theme', 'dark');
@@ -513,11 +513,11 @@ document.addEventListener('DOMContentLoaded', function () {
       const theme = document.documentElement.getAttribute('data-theme');
       if (theme === 'dark') {
         document.documentElement.removeAttribute('data-theme');
-        localStorage.setItem('theme', 'light');
+        localStorage.setItem('efesoftlab-theme', 'light');
         darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
       } else {
         document.documentElement.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark');
+        localStorage.setItem('efesoftlab-theme', 'dark');
         darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
       }
     });
@@ -868,7 +868,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const cookieBar = document.getElementById('cookieConsent');
     if (!cookieBar) return;
 
-    if (localStorage.getItem('cookieAccepted')) {
+    if (localStorage.getItem('efesoftlab-cookie')) {
       return;
     }
 
@@ -879,7 +879,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const acceptBtn = cookieBar.querySelector('.cookie-accept');
     if (acceptBtn) {
       acceptBtn.addEventListener('click', function () {
-        localStorage.setItem('cookieAccepted', 'true');
+        localStorage.setItem('efesoftlab-cookie', 'true');
         cookieBar.classList.remove('show');
         showToast('info', translations[currentLang]['toast-cookie-accepted']);
       });

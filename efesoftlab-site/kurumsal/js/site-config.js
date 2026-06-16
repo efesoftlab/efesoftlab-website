@@ -106,7 +106,7 @@ function mergeDeep(target, source) {
 }
 
 function getConfig() {
-  var saved = localStorage.getItem('efesoftlab-site-config');
+  var saved = localStorage.getItem('efesoftlab-config');
   if (saved) {
     try {
       return mergeDeep(defaultConfig, JSON.parse(saved));
@@ -118,7 +118,7 @@ function getConfig() {
 }
 
 function saveConfig(config) {
-  localStorage.setItem('efesoftlab-site-config', JSON.stringify(config));
+  localStorage.setItem('efesoftlab-config', JSON.stringify(config));
   siteConfig = config;
 }
 
@@ -148,38 +148,38 @@ function applyConfigToDOM(config) {
 
   if (typeof translations !== 'undefined') {
     if (config.hero) {
-      translations.tr.hero_title = 'Geleceği';
-      translations.tr.hero_title_span = config.hero.title || 'Şekillendiriyoruz';
-      translations.tr.hero_desc = config.hero.description || translations.tr.hero_desc;
-      translations.en.hero_title = 'Shaping the';
-      translations.en.hero_title_span = config.hero.title || 'Future';
-      translations.en.hero_desc = config.hero.description || translations.en.hero_desc;
+      translations.tr['hero-title'] = 'Geleceği';
+      translations.tr['hero-title-span'] = config.hero.title || 'Şekillendiriyoruz';
+      translations.tr['hero-desc'] = config.hero.description || translations.tr['hero-desc'];
+      translations.en['hero-title'] = 'Shaping the';
+      translations.en['hero-title-span'] = config.hero.title || 'Future';
+      translations.en['hero-desc'] = config.hero.description || translations.en['hero-desc'];
     }
     if (config.contact) {
-      translations.tr.footer_phone = config.contact.phone || translations.tr.footer_phone;
-      translations.tr.footer_email = config.contact.email || translations.tr.footer_email;
-      translations.tr.footer_addr = config.contact.address || translations.tr.footer_addr;
-      translations.en.footer_phone = config.contact.phone || translations.en.footer_phone;
-      translations.en.footer_email = config.contact.email || translations.en.footer_email;
-      translations.en.footer_addr = config.contact.address || translations.en.footer_addr;
+      translations.tr['footer-phone'] = config.contact.phone || translations.tr['footer-phone'];
+      translations.tr['footer-email'] = config.contact.email || translations.tr['footer-email'];
+      translations.tr['footer-addr'] = config.contact.address || translations.tr['footer-addr'];
+      translations.en['footer-phone'] = config.contact.phone || translations.en['footer-phone'];
+      translations.en['footer-email'] = config.contact.email || translations.en['footer-email'];
+      translations.en['footer-addr'] = config.contact.address || translations.en['footer-addr'];
     }
     if (config.footer) {
-      translations.tr.footer_about_desc = config.footer.aboutText || translations.tr.footer_about_desc;
-      translations.tr.footer_hours = config.footer.workingHours || translations.tr.footer_hours;
-      translations.en.footer_about_desc = config.footer.aboutText || translations.en.footer_about_desc;
-      translations.en.footer_hours = config.footer.workingHours || translations.en.footer_hours;
+      translations.tr['footer-about-desc'] = config.footer.aboutText || translations.tr['footer-about-desc'];
+      translations.tr['footer-hours'] = config.footer.workingHours || translations.tr['footer-hours'];
+      translations.en['footer-about-desc'] = config.footer.aboutText || translations.en['footer-about-desc'];
+      translations.en['footer-hours'] = config.footer.workingHours || translations.en['footer-hours'];
     }
     if (config.cta) {
-      translations.tr.cta_badge = config.cta.title || translations.tr.cta_badge;
-      translations.tr.cta_desc = config.cta.desc || translations.tr.cta_desc;
-      translations.tr.cta_btn = config.cta.btnText || translations.tr.cta_btn;
-      translations.en.cta_badge = config.cta.title || translations.en.cta_badge;
-      translations.en.cta_desc = config.cta.desc || translations.en.cta_desc;
-      translations.en.cta_btn = config.cta.btnText || translations.en.cta_btn;
+      translations.tr['cta-badge'] = config.cta.title || translations.tr['cta-badge'];
+      translations.tr['cta-desc'] = config.cta.desc || translations.tr['cta-desc'];
+      translations.tr['cta-btn'] = config.cta.btnText || translations.tr['cta-btn'];
+      translations.en['cta-badge'] = config.cta.title || translations.en['cta-badge'];
+      translations.en['cta-desc'] = config.cta.desc || translations.en['cta-desc'];
+      translations.en['cta-btn'] = config.cta.btnText || translations.en['cta-btn'];
     }
     if (config.logo) {
-      translations.tr.logo_text = config.logo.text || translations.tr.logo_text;
-      translations.en.logo_text = config.logo.text || translations.en.logo_text;
+      translations.tr['logo-text'] = config.logo.text || translations.tr['logo-text'];
+      translations.en['logo-text'] = config.logo.text || translations.en['logo-text'];
     }
   }
 

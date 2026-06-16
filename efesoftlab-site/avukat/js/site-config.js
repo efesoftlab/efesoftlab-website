@@ -124,7 +124,7 @@ const DEFAULT_CONFIG = {
 
 function getConfig() {
   try {
-    const stored = localStorage.getItem('efes-site-config');
+    const stored = localStorage.getItem('efesoftlab-config');
     if (stored) {
       const parsed = JSON.parse(stored);
       return mergeDeep(cloneDeep(DEFAULT_CONFIG), parsed);
@@ -138,7 +138,7 @@ function getConfig() {
 function saveConfig(config) {
   try {
     const merged = mergeDeep(cloneDeep(DEFAULT_CONFIG), config);
-    localStorage.setItem('efes-site-config', JSON.stringify(merged));
+    localStorage.setItem('efesoftlab-config', JSON.stringify(merged));
     return true;
   } catch (e) {
     console.error('Yapılandırma kaydedilemedi:', e);
@@ -147,7 +147,7 @@ function saveConfig(config) {
 }
 
 function resetConfig() {
-  localStorage.removeItem('efes-site-config');
+  localStorage.removeItem('efesoftlab-config');
   return cloneDeep(DEFAULT_CONFIG);
 }
 

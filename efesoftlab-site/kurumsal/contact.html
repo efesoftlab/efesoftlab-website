@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" data-i18n="meta_desc_contact" content="Corporate Business ile iletişime geçin. Adres, telefon, e-posta ve iletişim formumuzla size yardımcı olmaktan mutluluk duyarız.">
-  <meta name="keywords" data-i18n="meta_keywords_contact" content="iletişim, iletişim formu, adres, telefon, e-posta">
+  <meta name="description" data-i18n="meta-desc-contact" content="Corporate Business ile iletişime geçin. Adres, telefon, e-posta ve iletişim formumuzla size yardımcı olmaktan mutluluk duyarız.">
+  <meta name="keywords" data-i18n="meta-keywords-contact" content="iletişim, iletişim formu, adres, telefon, e-posta">
   <meta name="author" content="Efesoftlab">
   <!-- Tasarım ve Geliştirme: Efesoftlab | Satış ve Dağıtım: Efesoftlab -->
-  <title data-i18n="contact_banner_title">İletişim | Efesoftlab</title>
+  <title data-i18n="contact-banner-title">İletişim | Efesoftlab</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,12 +15,12 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="js/site-config.js"></script>
 </head>
-<body data-page="contact_banner_title" data-meta-desc="meta_desc_contact" data-meta-keywords="meta_keywords_contact">
+<body data-page="contact-banner-title" data-meta-desc="meta-desc-contact" data-meta-keywords="meta-keywords-contact">
 
   <!-- Sayfa ön yükleyici -->
   <div class="preloader" id="preloader">
     <div class="preloader-spinner"></div>
-    <div class="preloader-text" data-i18n="preloader_text">Yükleniyor...</div>
+    <div class="preloader-text" data-i18n="preloader-text">Yükleniyor...</div>
   </div>
 
   <!-- Bildirim kapsayıcısı -->
@@ -30,13 +30,13 @@
   <nav class="navbar" id="navbar">
     <div class="container">
       <a href="index.html" class="logo">
-        <i class="fas fa-briefcase"></i> <span data-i18n="logo_text" data-config="logo.text">Efesoftlab</span>
+        <i class="fas fa-briefcase"></i> <span data-i18n="logo-text" data-config="logo.text">Efesoftlab</span>
       </a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="index.html" data-i18n="nav_home">Ana Sayfa</a></li>
-        <li><a href="about.html" data-i18n="nav_about">Hakkımızda</a></li>
-        <li><a href="services.html" data-i18n="nav_services">Hizmetler</a></li>
-        <li><a href="contact.html" class="active" data-i18n="nav_contact">İletişim</a></li>
+        <li><a href="index.html" data-i18n="nav-home">Ana Sayfa</a></li>
+        <li><a href="about.html" data-i18n="nav-about">Hakkımızda</a></li>
+        <li><a href="services.html" data-i18n="nav-services">Hizmetler</a></li>
+        <li><a href="contact.html" class="active" data-i18n="nav-contact">İletişim</a></li>
       </ul>
       <div class="nav-actions">
         <button class="lang-btn active-lang" data-lang="tr" aria-label="Türkçe">TR</button>
@@ -57,12 +57,12 @@
     <div class="page-banner-bg"></div>
     <div class="container">
       <div class="breadcrumb">
-        <a href="index.html" data-i18n="contact_breadcrumb_home">Ana Sayfa</a>
+        <a href="index.html" data-i18n="contact-breadcrumb-home">Ana Sayfa</a>
         <i class="fas fa-chevron-right"></i>
-        <span data-i18n="contact_breadcrumb_current">İletişim</span>
+        <span data-i18n="contact-breadcrumb-current">İletişim</span>
       </div>
-      <h1 data-i18n="contact_banner_title">İletişim</h1>
-      <p data-i18n="contact_banner_desc">Sorularınız için bizimle iletişime geçin, size en kısa sürede dönüş yapalım.</p>
+      <h1 data-i18n="contact-banner-title">İletişim</h1>
+      <p data-i18n="contact-banner-desc">Sorularınız için bizimle iletişime geçin, size en kısa sürede dönüş yapalım.</p>
     </div>
   </section>
   <!-- ===== Sayfa Banner Bitişi ===== -->
@@ -74,47 +74,47 @@
 
         <!-- İletişim Formu -->
         <div class="contact-form animate-on-scroll">
-          <h3 data-i18n="contact_form_title">Bize Mesaj Gönderin</h3>
+          <h3 data-i18n="contact-form-title">Bize Mesaj Gönderin</h3>
           <form id="contactForm" novalidate>
             <div class="form-row">
               <div class="form-group floating-label">
                 <input type="text" id="name" name="name" placeholder=" " required>
-                <label for="name" data-i18n="form_name_label">Ad Soyad *</label>
+                <label for="name" data-i18n="form-name-label">Ad Soyad *</label>
                 <span class="error-message" id="nameError"></span>
               </div>
               <div class="form-group floating-label">
                 <input type="email" id="email" name="email" placeholder=" " required>
-                <label for="email" data-i18n="form_email_label">E-posta Adresi *</label>
+                <label for="email" data-i18n="form-email-label">E-posta Adresi *</label>
                 <span class="error-message" id="emailError"></span>
               </div>
             </div>
             <div class="form-row">
               <div class="form-group floating-label">
                 <input type="tel" id="phone" name="phone" placeholder=" " required>
-                <label for="phone" data-i18n="form_phone_label">Telefon Numarası *</label>
+                <label for="phone" data-i18n="form-phone-label">Telefon Numarası *</label>
                 <span class="error-message" id="phoneError"></span>
               </div>
               <div class="form-group floating-label">
                 <select id="subject" name="subject" required>
-                  <option value="" data-i18n="form_subject_placeholder">Konu Seçiniz</option>
-                  <option value="danismanlik" data-i18n="form_subject1">Danışmanlık Hizmeti</option>
-                  <option value="dijital-donusum" data-i18n="form_subject2">Dijital Dönüşüm</option>
-                  <option value="yazilim" data-i18n="form_subject3">Yazılım Geliştirme</option>
-                  <option value="veri-analitigi" data-i18n="form_subject4">Veri Analitiği</option>
-                  <option value="bulut" data-i18n="form_subject5">Bulut Çözümleri</option>
-                  <option value="guvenlik" data-i18n="form_subject6">Siber Güvenlik</option>
-                  <option value="diger" data-i18n="form_subject7">Diğer</option>
+                  <option value="" data-i18n="form-subject-placeholder">Konu Seçiniz</option>
+                  <option value="danismanlik" data-i18n="form-subject1">Danışmanlık Hizmeti</option>
+                  <option value="dijital-donusum" data-i18n="form-subject2">Dijital Dönüşüm</option>
+                  <option value="yazilim" data-i18n="form-subject3">Yazılım Geliştirme</option>
+                  <option value="veri-analitigi" data-i18n="form-subject4">Veri Analitiği</option>
+                  <option value="bulut" data-i18n="form-subject5">Bulut Çözümleri</option>
+                  <option value="guvenlik" data-i18n="form-subject6">Siber Güvenlik</option>
+                  <option value="diger" data-i18n="form-subject7">Diğer</option>
                 </select>
-                <label for="subject" data-i18n="form_subject_label">Konu *</label>
+                <label for="subject" data-i18n="form-subject-label">Konu *</label>
                 <span class="error-message" id="subjectError"></span>
               </div>
             </div>
             <div class="form-group floating-label">
               <textarea id="message" name="message" placeholder=" " required></textarea>
-              <label for="message" data-i18n="form_message_label">Mesajınız *</label>
+              <label for="message" data-i18n="form-message-label">Mesajınız *</label>
               <span class="error-message" id="messageError"></span>
             </div>
-            <button type="submit" class="btn btn-primary btn-lg"><i class="fas fa-paper-plane"></i> <span data-i18n="form_submit">Mesaj Gönder</span></button>
+            <button type="submit" class="btn btn-primary btn-lg"><i class="fas fa-paper-plane"></i> <span data-i18n="form-submit">Mesaj Gönder</span></button>
           </form>
         </div>
 
@@ -123,29 +123,29 @@
           <div class="contact-info-card">
             <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
             <div>
-              <h4 data-i18n="contact_addr_title">Adresimiz</h4>
-              <p data-i18n="contact_addr" data-config="contact.address">Levent Mahallesi, Teknik Sokak No:42, Kat:5<br>Beşiktaş / İstanbul, 34330</p>
+              <h4 data-i18n="contact-addr-title">Adresimiz</h4>
+              <p data-i18n="contact-addr" data-config="contact.address">Levent Mahallesi, Teknik Sokak No:42, Kat:5<br>Beşiktaş / İstanbul, 34330</p>
             </div>
           </div>
           <div class="contact-info-card">
             <div class="icon"><i class="fas fa-phone-alt"></i></div>
             <div>
-              <h4 data-i18n="contact_phone_title">Telefon</h4>
-              <p data-i18n="contact_phone" data-config="contact.phone">+90 (212) 444 0 123<br>+90 (212) 444 0 124</p>
+              <h4 data-i18n="contact-phone-title">Telefon</h4>
+              <p data-i18n="contact-phone" data-config="contact.phone">+90 (212) 444 0 123<br>+90 (212) 444 0 124</p>
             </div>
           </div>
           <div class="contact-info-card">
             <div class="icon"><i class="fas fa-envelope"></i></div>
             <div>
-              <h4 data-i18n="contact_email_title">E-posta</h4>
-              <p data-i18n="contact_email" data-config="contact.email">info@corporatebusiness.com<br>destek@corporatebusiness.com</p>
+              <h4 data-i18n="contact-email-title">E-posta</h4>
+              <p data-i18n="contact-email" data-config="contact.email">info@corporatebusiness.com<br>destek@corporatebusiness.com</p>
             </div>
           </div>
           <div class="contact-info-card">
             <div class="icon"><i class="fas fa-clock"></i></div>
             <div>
-              <h4 data-i18n="contact_hours_title">Çalışma Saatleri</h4>
-              <p data-i18n="contact_hours" data-config="footer.workingHours">Pazartesi - Cuma: 09:00 - 18:00<br>Cumartesi: 10:00 - 16:00</p>
+              <h4 data-i18n="contact-hours-title">Çalışma Saatleri</h4>
+              <p data-i18n="contact-hours" data-config="footer.workingHours">Pazartesi - Cuma: 09:00 - 18:00<br>Cumartesi: 10:00 - 16:00</p>
             </div>
           </div>
         </div>
@@ -165,9 +165,9 @@
       <div class="footer-grid">
         <div class="footer-col footer-about">
           <a href="index.html" class="logo">
-            <i class="fas fa-briefcase"></i> <span data-i18n="logo_text" data-config="logo.text">Efesoftlab</span>
+            <i class="fas fa-briefcase"></i> <span data-i18n="logo-text" data-config="logo.text">Efesoftlab</span>
           </a>
-          <p data-i18n="footer_about_desc" data-config="footer.aboutText">10 yılı aşkın deneyimimizle işletmenizi dijital çağa taşıyor, yenilikçi çözümlerle rekabet avantajı kazanmanızı sağlıyoruz. Müşteri memnuniyeti odaklı yaklaşımımızla her projede fark yaratıyoruz.</p>
+          <p data-i18n="footer-about-desc" data-config="footer.aboutText">10 yılı aşkın deneyimimizle işletmenizi dijital çağa taşıyor, yenilikçi çözümlerle rekabet avantajı kazanmanızı sağlıyoruz. Müşteri memnuniyeti odaklı yaklaşımımızla her projede fark yaratıyoruz.</p>
           <div class="footer-social">
             <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
             <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
@@ -177,39 +177,39 @@
           </div>
         </div>
         <div class="footer-col">
-          <h3 data-i18n="footer_quick_links">Hızlı Linkler</h3>
+          <h3 data-i18n="footer-quick-links">Hızlı Linkler</h3>
           <ul class="footer-links">
-            <li><a href="index.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer_home">Ana Sayfa</span></a></li>
-            <li><a href="about.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer_about">Hakkımızda</span></a></li>
-            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer_services_link">Hizmetler</span></a></li>
-            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer_contact_link">İletişim</span></a></li>
-            <li><a href="index.html#faq"><i class="fas fa-chevron-right"></i> <span data-i18n="footer_faq">SSS</span></a></li>
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-home">Ana Sayfa</span></a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-about">Hakkımızda</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-services-link">Hizmetler</span></a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-contact-link">İletişim</span></a></li>
+            <li><a href="index.html#faq"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-faq">SSS</span></a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h3 data-i18n="footer_services_title">Hizmetler</h3>
+          <h3 data-i18n="footer-services-title">Hizmetler</h3>
           <ul class="footer-links">
-            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer_service1">Danışmanlık</span></a></li>
-            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer_service2">Dijital Dönüşüm</span></a></li>
-            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer_service3">Yazılım Geliştirme</span></a></li>
-            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer_service4">Veri Analitiği</span></a></li>
-            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer_service5">Bulut Çözümleri</span></a></li>
-            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer_service6">Güvenlik</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-service1">Danışmanlık</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-service2">Dijital Dönüşüm</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-service3">Yazılım Geliştirme</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-service4">Veri Analitiği</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-service5">Bulut Çözümleri</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-service6">Güvenlik</span></a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h3 data-i18n="footer_contact_title">İletişim Bilgileri</h3>
+          <h3 data-i18n="footer-contact-title">İletişim Bilgileri</h3>
           <ul class="footer-contact">
-            <li><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer_addr" data-config="contact.address">Levent Mahallesi, Teknik Sokak No:42, Beşiktaş / İstanbul</span></li>
-            <li><i class="fas fa-phone-alt"></i> <span data-i18n="footer_phone" data-config="contact.phone">+90 (212) 444 0 123</span></li>
-            <li><i class="fas fa-envelope"></i> <span data-i18n="footer_email" data-config="contact.email">info@corporatebusiness.com</span></li>
-            <li><i class="fas fa-clock"></i> <span data-i18n="footer_hours" data-config="footer.workingHours">Pazartesi - Cuma: 09:00 - 18:00</span></li>
+            <li><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer-addr" data-config="contact.address">Levent Mahallesi, Teknik Sokak No:42, Beşiktaş / İstanbul</span></li>
+            <li><i class="fas fa-phone-alt"></i> <span data-i18n="footer-phone" data-config="contact.phone">+90 (212) 444 0 123</span></li>
+            <li><i class="fas fa-envelope"></i> <span data-i18n="footer-email" data-config="contact.email">info@corporatebusiness.com</span></li>
+            <li><i class="fas fa-clock"></i> <span data-i18n="footer-hours" data-config="footer.workingHours">Pazartesi - Cuma: 09:00 - 18:00</span></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p><span data-i18n="footer_copyright">© 2024 Efesoftlab. Tüm hakları saklıdır.</span></p>
-        <p><a href="#" data-i18n="footer_privacy">Gizlilik Politikası</a> &nbsp;|&nbsp; <a href="#" data-i18n="footer_terms">Kullanım Koşulları</a></p>
+        <p><span data-i18n="footer-copyright">© 2024 Efesoftlab. Tüm hakları saklıdır.</span></p>
+        <p><a href="#" data-i18n="footer-privacy">Gizlilik Politikası</a> &nbsp;|&nbsp; <a href="#" data-i18n="footer-terms">Kullanım Koşulları</a></p>
       </div>
     </div>
   </footer>
@@ -232,7 +232,7 @@
   <!-- ===== Canlı Ziyaretçi Sayacı ===== -->
   <div class="visitor-counter">
     <span class="dot"></span>
-    <span><span class="count" id="visitorCount">847</span> <span data-i18n="visitor_online">çevrimiçi</span></span>
+    <span><span class="count" id="visitorCount">847</span> <span data-i18n="visitor-online">çevrimiçi</span></span>
   </div>
 
   <!-- ===== WhatsApp Butonu ===== -->
@@ -243,9 +243,9 @@
   <!-- ===== Çerez Onay Kutusu ===== -->
   <div class="cookie-consent" id="cookieConsent">
     <div class="container">
-      <p data-i18n="toast_cookie_msg">Size daha iyi bir deneyim sunmak için çerezler kullanıyoruz. Detaylı bilgi için <a href="#">Gizlilik Politikası</a>'nı inceleyebilirsiniz.</p>
+      <p data-i18n="toast-cookie-msg">Size daha iyi bir deneyim sunmak için çerezler kullanıyoruz. Detaylı bilgi için <a href="#">Gizlilik Politikası</a>'nı inceleyebilirsiniz.</p>
       <div class="cookie-actions">
-        <button class="btn btn-primary btn-sm" id="cookieAccept" data-i18n="toast_cookie_btn">Kabul Et</button>
+        <button class="btn btn-primary btn-sm" id="cookieAccept" data-i18n="toast-cookie-btn">Kabul Et</button>
       </div>
     </div>
   </div>

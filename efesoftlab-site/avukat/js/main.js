@@ -442,20 +442,16 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ==========================================================
      DİL DEĞİŞTİRME (Language Switch)
      ========================================================== */
-  let currentLang = localStorage.getItem('efes-lang') || 'tr';
+  let currentLang = localStorage.getItem('efesoftlab-lang') || 'tr';
 
   function switchLanguage(lang) {
     currentLang = lang;
-    localStorage.setItem('efes-lang', lang);
+    localStorage.setItem('efesoftlab-lang', lang);
 
     /* Dil düğmesi metnini güncelle */
-    const langToggle = document.getElementById('langToggle');
-    if (langToggle) {
-      langToggle.innerHTML = lang === 'tr'
-        ? '<i class="fas fa-globe"></i> EN'
-        : '<i class="fas fa-globe"></i> TR';
-      langToggle.setAttribute('aria-label', lang === 'tr' ? 'Switch to English' : 'Türkçeye geç');
-    }
+    document.querySelectorAll('.lang-toggle').forEach(function(btn) {
+      btn.classList.toggle('active-lang', btn.getAttribute('data-lang') === lang);
+    });
 
     /* data-i18n ile tüm metinleri güncelle */
     document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -520,12 +516,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* Dil düğmesi olayı */
-  const langToggle = document.getElementById('langToggle');
-  if (langToggle) {
-    langToggle.addEventListener('click', () => {
-      switchLanguage(currentLang === 'tr' ? 'en' : 'tr');
+  document.querySelectorAll('.lang-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      switchLanguage(this.getAttribute('data-lang'));
     });
-  }
+  });
 
   /* Başlangıç dilini uygula */
   switchLanguage(currentLang);
@@ -573,11 +568,11 @@ document.addEventListener('DOMContentLoaded', () => {
       darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
       darkModeToggle.setAttribute('aria-label', currentLang === 'tr' ? 'Karanlık moda geç' : 'Switch to dark mode');
     }
-    localStorage.setItem('efes-theme', theme);
+    localStorage.setItem('efesoftlab-theme', theme);
   }
 
   /* Kayıtlı temayı veya sistem tercihini yükle */
-  const savedTheme = localStorage.getItem('efes-theme');
+  const savedTheme = localStorage.getItem('efesoftlab-theme');
   if (savedTheme) {
     setTheme(savedTheme);
   } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -1149,7 +1144,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ========================================================== */
   const cookieConsent = document.querySelector('.cookie-consent');
   if (cookieConsent) {
-    if (!localStorage.getItem('efes-cookie-consent')) {
+    if (!localStorage.getItem('efesoftlab-cookie')) {
       setTimeout(() => {
         cookieConsent.classList.add('show');
       }, 1000);
@@ -1160,14 +1155,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (acceptBtn) {
       acceptBtn.addEventListener('click', () => {
-        localStorage.setItem('efes-cookie-consent', 'accepted');
+        localStorage.setItem('efesoftlab-cookie', 'accepted');
         cookieConsent.classList.remove('show');
       });
     }
 
     if (declineBtn) {
       declineBtn.addEventListener('click', () => {
-        localStorage.setItem('efes-cookie-consent', 'declined');
+        localStorage.setItem('efesoftlab-cookie', 'declined');
         cookieConsent.classList.remove('show');
       });
     }

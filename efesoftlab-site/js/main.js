@@ -5,10 +5,26 @@
 // ===== Icerik Yonetim Sistemi =====
 // Config, admin panelinden localStorage'a kaydedilir.
 // Varsayilan degerler site-config.js'deki EFESOFTLAB_DEFAULTS'tan gelir.
+function deepMerge(target, source) {
+  if (!source || typeof source !== 'object') return target;
+  var out = JSON.parse(JSON.stringify(target));
+  Object.keys(source).forEach(function(k) {
+    if (source[k] && typeof source[k] === 'object' && !Array.isArray(source[k]) && out[k]) {
+      out[k] = deepMerge(out[k], source[k]);
+    } else if (source[k] !== undefined) {
+      out[k] = source[k];
+    }
+  });
+  return out;
+}
+
 function loadConfig() {
   var saved = localStorage.getItem('efesoftlab-content');
   if (saved) {
-    try { return JSON.parse(saved); } catch(e) {}
+    try {
+      var parsed = JSON.parse(saved);
+      return deepMerge(EFESOFTLAB_DEFAULTS, parsed);
+    } catch(e) {}
   }
   return JSON.parse(JSON.stringify(EFESOFTLAB_DEFAULTS));
 }
@@ -286,6 +302,7 @@ function buildTranslations(config) {
 var config = loadConfig();
 var translations = buildTranslations(config);
 
+try {
 const root = document.documentElement;
 const menuToggle = document.querySelector(".menu-toggle");
 const navPanel = document.querySelector(".nav-panel");
@@ -452,4 +469,5 @@ const updateCounter = () => {
 applyLanguage(localStorage.getItem(storageKey) || "tr");
 applyAppFilter("all");
 updateCounter();
+} catch(e) {}
 
