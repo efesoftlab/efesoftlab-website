@@ -1169,10 +1169,18 @@ select {
     transform: none;
   }
 
-  .app-card-header,
-  .app-preview-card,
+  .app-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .app-preview-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .apps-results-bar {
-    grid-template-columns: 1fr;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -1206,10 +1214,17 @@ select {
 
 @media (max-width: 480px) {
   .apps-preview-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
 
   .hero-stack-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 380px) {
+  .apps-preview-grid {
     grid-template-columns: 1fr;
   }
 }
