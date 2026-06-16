@@ -106,7 +106,8 @@ function mergeDeep(target, source) {
 }
 
 function getConfig() {
-  var saved = localStorage.getItem('efesoftlab-config');
+  var saved;
+  try { saved = localStorage.getItem('efesoftlab-config'); } catch (e) {}
   if (saved) {
     try {
       return mergeDeep(defaultConfig, JSON.parse(saved));
