@@ -10,9 +10,9 @@ const DEFAULT_CONFIG = {
     icon: 'fa-heartbeat'
   },
   contact: {
-    phone: '0212 444 0 123',
-    email: 'info@moderntip.com',
-    address: 'Atatürk Cad. No:123<br>Şişli / İstanbul'
+    phone: '0212 XXX XX XX',
+    email: 'ornek@moderntipdemo.com',
+    address: 'Örnek Mah. Demo Cad. No:XX<br>Şişli / İstanbul'
   },
   hero: {
     title: 'Sağlığınız <span>Bizim Önceliğimiz</span>',
@@ -20,7 +20,7 @@ const DEFAULT_CONFIG = {
     description: 'Modern tıp merkezimizde, deneyimli kadromuz ve ileri teknolojik donanımımızla size en kaliteli sağlık hizmetini sunuyoruz. Sağlıklı bir yaşam için yanınızdayız.'
   },
   about: {
-    story: 'Modern Tıp Merkezi, 2010 yılında bir grup idealist doktorun hayaliyle yola çıktı. Küçük bir poliklinik olarak başlayan yolculuğumuz, bugün 50\'den fazla uzman doktor ve 200\'ü aşkın sağlık çalışanıyla hizmet veren modern bir sağlık kompleksine dönüştü.',
+    story: '[Demo] Modern Tıp Merkezi, bir grup idealist doktorun hayaliyle yola çıktı. Küçük bir poliklinik olarak başlayan yolculuğumuz, bugün birçok uzman doktor ve sağlık çalışanıyla hizmet veren modern bir sağlık kompleksine dönüştü.',
     story2: 'Kurulduğumuz günden bu yana, hastalarımıza en kaliteli sağlık hizmetini sunmak için sürekli kendimizi yeniliyor, tıptaki son gelişmeleri yakından takip ediyoruz. Her yıl binlerce hastaya şifa olmanın gururunu yaşıyoruz.',
     story3: 'Amacımız, sağlık alanında bölgenin en güvenilir ve tercih edilen merkezi olmaya devam etmek, hastalarımıza sadece tedavi değil, aynı zamanda sağlıklı bir yaşam için rehberlik etmektir.',
     mission: 'Hastalarımıza en güncel tıbbi bilgi ve teknolojilerle donanmış, etik değerlere bağlı, hasta odaklı ve kaliteli sağlık hizmeti sunmak; toplum sağlığının korunmasına ve geliştirilmesine katkıda bulunmak.',
@@ -29,48 +29,48 @@ const DEFAULT_CONFIG = {
   },
   doctors: [
     {
-      name: 'Dr. Ahmet Yılmaz',
+      name: 'Kardiyoloji Uzmanı',
       title: 'Başhekim - Kardiyoloji Uzmanı',
       department: 'Kalp Damar Cerrahisi',
-      experience: '25 yıl',
-      education: 'İstanbul Üniversitesi Tıp Fakültesi',
-      description: 'İstanbul Üniversitesi Tıp Fakültesi mezunu. 25 yıllık deneyimiyle kardiyoloji alanında uzmanlaşmıştır. Avrupa Kardiyoloji Derneği üyesidir. 5000\'den fazla hastaya başarılı anjiyo ve kalp ameliyatı gerçekleştirmiştir. Özellikle kalp yetmezliği ve hipertansiyon tedavisinde uzmandır.',
+      experience: 'XX yıl',
+      education: '[Demo] Tıp Fakültesi',
+      description: '[Demo] Tıp Fakültesi mezunu. Kardiyoloji alanında uzmanlaşmıştır. Kalp yetmezliği ve hipertansiyon tedavisinde deneyimlidir.',
       image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=200&h=200&fit=crop&crop=face'
     },
     {
-      name: 'Dr. Ayşe Kaya',
+      name: 'Diş Hekimliği Uzmanı',
       title: 'Diş Hekimliği Uzmanı',
       department: 'Diş Hekimliği',
-      experience: '18 yıl',
-      education: 'Hacettepe Üniversitesi Diş Hekimliği Fakültesi',
-      description: 'Hacettepe Üniversitesi Diş Hekimliği Fakültesi mezunu. İmplantoloji ve estetik diş hekimliği alanında yurt dışı sertifikalara sahiptir. 18 yıllık deneyimiyle binden fazla başarılı implant vakasına imza atmıştır. Gülüş tasarımı ve dijital diş hekimliği konularında uzmanlaşmıştır.',
+      experience: 'XX yıl',
+      education: '[Demo] Diş Hekimliği Fakültesi',
+      description: '[Demo] Diş Hekimliği Fakültesi mezunu. İmplantoloji ve estetik diş hekimliği alanında deneyimlidir.',
       image: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=200&h=200&fit=crop&crop=face'
     },
     {
-      name: 'Uzm. Dr. Mehmet Demir',
+      name: 'Göz Hastalıkları Uzmanı',
       title: 'Göz Hastalıkları Uzmanı',
       department: 'Göz Sağlığı',
-      experience: '20 yıl',
-      education: 'Cerrahpaşa Tıp Fakültesi',
-      description: 'Cerrahpaşa Tıp Fakültesi mezunu. 20 yıllık göz hastalıkları deneyimi. Katarakt cerrahisi, glokom tedavisi ve refraktif cerrahi (lazer göz ameliyatı) alanlarında uzmanlaşmıştır. Avrupa Katarakt ve Refraktif Cerrahi Derneği üyesidir. 10.000\'den fazla başarılı göz ameliyatı gerçekleştirmiştir.',
+      experience: 'XX yıl',
+      education: '[Demo] Tıp Fakültesi',
+      description: '[Demo] Tıp Fakültesi mezunu. Göz hastalıkları deneyimi. Katarakt cerrahisi ve refraktif cerrahi alanlarında uzmanlaşmıştır.',
       image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=200&h=200&fit=crop&crop=face'
     },
     {
-      name: 'Dr. Zeynep Şahin',
+      name: 'Dermatoloji Uzmanı',
       title: 'Dermatoloji Uzmanı',
       department: 'Dermatoloji',
-      experience: '15 yıl',
-      education: 'Ankara Üniversitesi Tıp Fakültesi',
-      description: 'Ankara Üniversitesi Tıp Fakültesi mezunu. 15 yıllık dermatoloji deneyimi bulunmaktadır. Lazer tedavileri, cilt kanseri taraması ve estetik dermatoloji alanlarında uzmanlaşmıştır. Amerikan Dermatoloji Akademisi üyesidir. Binlerce hastaya başarılı tedavi uygulamıştır.',
+      experience: 'XX yıl',
+      education: '[Demo] Tıp Fakültesi',
+      description: '[Demo] Tıp Fakültesi mezunu. Dermatoloji deneyimi. Lazer tedavileri ve estetik dermatoloji alanlarında uzmanlaşmıştır.',
       image: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=200&h=200&fit=crop&crop=face'
     },
     {
-      name: 'Fzt. Ali Öztürk',
+      name: 'Fizyoterapi Uzmanı',
       title: 'Fizyoterapi Uzmanı',
       department: 'Fizyoterapi',
-      experience: '12 yıl',
-      education: 'Hacettepe Üniversitesi Fizyoterapi ve Rehabilitasyon',
-      description: 'Hacettepe Üniversitesi Fizyoterapi ve Rehabilitasyon bölümü mezunu. 12 yıllık deneyime sahiptir. Manuel terapi, spor yaralanmaları rehabilitasyonu ve nörolojik rehabilitasyon alanlarında uzmanlaşmıştır. Türkiye Fizyoterapistler Derneği üyesidir.',
+      experience: 'XX yıl',
+      education: '[Demo] Fizyoterapi ve Rehabilitasyon',
+      description: '[Demo] Fizyoterapi ve Rehabilitasyon bölümü mezunu. Manuel terapi, spor yaralanmaları rehabilitasyonu alanlarında uzmanlaşmıştır.',
       image: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=200&h=200&fit=crop&crop=face'
     }
   ],
@@ -107,29 +107,29 @@ const DEFAULT_CONFIG = {
     }
   ],
   stats: [
-    { icon: 'fa-user-injured', value: 5000, suffix: '+', label: 'Mutlu Hasta' },
-    { icon: 'fa-user-md', value: 50, suffix: '+', label: 'Uzman Doktor' },
-    { icon: 'fa-award', value: 15, suffix: '+', label: 'Yıllık Deneyim' },
-    { icon: 'fa-smile', value: 98, suffix: '+', label: 'Memnuniyet Oranı' }
+    { icon: 'fa-user-injured', value: 1000, suffix: '+', label: 'Mutlu Hasta (Demo)' },
+    { icon: 'fa-user-md', value: 20, suffix: '+', label: 'Uzman Doktor (Demo)' },
+    { icon: 'fa-award', value: 5, suffix: '+', label: 'Yıllık Deneyim (Demo)' },
+    { icon: 'fa-smile', value: 90, suffix: '%', label: 'Memnuniyet Oranı (Demo)' }
   ],
   testimonials: [
     {
-      text: '"Çok profesyonel bir ekip. Diş tedavim sırasında hiç ağrı hissetmedim ve sonuç harika oldu. Herkese tavsiye ediyorum."',
-      name: 'Ayşe K.',
+      text: '"[Demo] Profesyonel bir ekip. Tedavi sırasında konforlu bir deneyim yaşadım ve sonuçtan memnun kaldım."',
+      name: '[Demo Hasta]',
       department: 'Diş Tedavisi',
       image: 'https://randomuser.me/api/portraits/women/45.jpg',
       rating: 5
     },
     {
-      text: '"Kardiyoloji bölümünde geçirdiğim anjiyo işlemi sonrası sağlığıma kavuştum. İlgili ve güler yüzlü personel için teşekkürler."',
-      name: 'Ali R.',
+      text: '"[Demo] Sağlık hizmetinden memnun kaldım. İlgili ve güler yüzlü personel için teşekkürler."',
+      name: '[Demo Hasta]',
       department: 'Kardiyoloji',
       image: 'https://randomuser.me/api/portraits/men/32.jpg',
       rating: 5
     },
     {
-      text: '"Fizyoterapi sürecimde gösterdikleri özen ve profesyonellik sayesinde kısa sürede sağlığıma kavuştum. Kesinlikle öneriyorum."',
-      name: 'Fatma T.',
+      text: '"[Demo] Tedavi sürecimde gösterdikleri özen ve profesyonellik sayesinde kısa sürede sağlığıma kavuştum."',
+      name: '[Demo Hasta]',
       department: 'Fizyoterapi',
       image: 'https://randomuser.me/api/portraits/women/68.jpg',
       rating: 4.5
@@ -138,7 +138,7 @@ const DEFAULT_CONFIG = {
   faq: [
     { question: 'Randevu nasıl alabilirim?', answer: 'Randevu almak için web sitemizdeki iletişim formunu doldurabilir, 7/24 hizmet veren çağrı merkezimizi arayabilir veya merkezimize şahsen başvurabilirsiniz. Online randevu sistemimiz sayesinde istediğiniz bölüm ve doktora hızlıca randevu oluşturabilirsiniz.' },
     { question: 'Hangi sigorta şirketleri ile anlaşmalısınız?', answer: 'Başlıca anlaşmalı olduğumuz sigorta şirketleri: Anadolu Sigorta, Axa Sigorta, Allianz, Groupama, Eureko Sigorta, Ak Sigorta ve diğer özel sağlık sigortaları. Tüm anlaşmalı kurumlar listesi için bizimle iletişime geçebilirsiniz.' },
-    { question: 'Acil durumlarda ne yapmalıyım?', answer: 'Acil durumlarda 7/24 hizmet veren acil servisimiz bulunmaktadır. Acil durumlarda 112\'yi arayabilir veya doğrudan merkezimize başvurabilirsiniz. Acil durumlar için 7/24 açık telefon hattımız: 0212 444 0 123.' },
+    { question: 'Acil durumlarda ne yapmalıyım?', answer: 'Acil durumlarda 7/24 hizmet veren acil servisimiz bulunmaktadır. Acil durumlarda 112\'yi arayabilir veya doğrudan merkezimize başvurabilirsiniz. Acil durumlar için 7/24 açık telefon hattımız: 0212 XXX XX XX.' },
     { question: 'Tedavi ücretleri hakkında bilgi alabilir miyim?', answer: 'Tedavi ücretlerimiz, sigorta kapsamınıza ve seçeceğiniz tedavi yöntemine göre değişiklik göstermektedir. Detaylı ücret bilgisi için web sitemizdeki fiyat listesini inceleyebilir veya bizimle iletişime geçebilirsiniz.' },
     { question: 'Muayene öncesi hazırlık yapmalı mıyım?', answer: 'Bölüme göre değişmekle birlikte, genel olarak randevunuzdan önce varsa önceki tahlil ve görüntüleme sonuçlarınızı yanınızda getirmeniz önerilir. Bazı testler için aç karnına gelmeniz gerekebilir. Randevu sırasında bu konuda bilgilendirileceksiniz.' },
     { question: 'Merkezinizde hangi dillerde hizmet veriliyor?', answer: 'Merkezimizde başta Türkçe olmak üzere İngilizce, Almanca ve Arapça dillerinde hizmet verilmektedir. Uluslararası hastalarımız için tercüman desteği de sağlamaktayız.' }
@@ -160,8 +160,8 @@ const DEFAULT_CONFIG = {
     about: 'https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=600&q=80'
   },
   footer: {
-    aboutText: 'Modern Tıp Merkezi olarak 15 yılı aşkın süredir, deneyimli kadromuz ve ileri teknolojik donanımımızla hastalarımıza en kaliteli sağlık hizmetini sunmaktayız.',
-    emergency: 'Acil: 0212 444 0 123',
+    aboutText: '[Demo] Modern Tıp Merkezi olarak deneyimli kadromuz ve ileri teknolojik donanımımızla hastalarımıza en kaliteli sağlık hizmetini sunmaktayız.',
+    emergency: 'Acil: 0212 XXX XX XX',
     copyright: '© 2024 Efesoftlab. Tüm hakları saklıdır.'
   }
 };

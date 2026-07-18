@@ -10,9 +10,9 @@ var defaultConfig = {
     icon: 'fas fa-building'
   },
   contact: {
-    phone: '+90 (212) 345 67 89',
-    email: 'info@efesoftemlak.com',
-    address: 'Büyükdere Caddesi No:123, Levent, İstanbul 34394'
+    phone: '+90 (212) XXX XX XX',
+    email: 'ornek@efesoftemlakdemo.com',
+    address: 'Örnek Mah. Demo Cad. No:XX, Levent, İstanbul'
   },
   hero: {
     title: 'Hayalinizdeki',
@@ -463,25 +463,25 @@ var defaultConfig = {
     }
   ],
   footer: {
-    aboutText: 'Premium gayrimenkul danışmanlığı hizmeti ile lüks konut, villa, ofis ve yatırımlık gayrimenkullerde Türkiye\'nin lider platformu. 10 yılı aşkın deneyimimizle hayallerinize ortak oluyoruz.',
+    aboutText: '[Demo] Premium gayrimenkul danışmanlığı hizmeti ile lüks konut, villa, ofis ve yatırımlık gayrimenkullerde uzman çözümler. Deneyimimizle hayallerinize ortak oluyoruz.',
     workingHours: 'Hafta içi: 09:00 - 19:00<br>Cumartesi: 10:00 - 17:00'
   },
   agents: [
-    { name: 'Ahmet Yılmaz', title: 'Kurucu & CEO', desc: '15 yıllık gayrimenkul deneyimi. Boğaziçi Üniversitesi İşletme mezunu. 3000+ satış.', image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80' },
-    { name: 'Zeynep Kaya', title: 'Satış Müdürü', desc: '10+ yıl lüks konut satışı deneyimi. İTÜ İnşaat Mühendisliği mezunu. 500+ premium satış.', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80' },
-    { name: 'Mehmet Demir', title: 'Kiralama Uzmanı', desc: '8 yıl kurumsal kiralama deneyimi. Marmara Üniversitesi İktisat mezunu.', image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80' },
-    { name: 'Elif Arslan', title: 'Değerleme Uzmanı', desc: '12 yıl gayrimenkul değerleme deneyimi. SPK lisanslı değerleme uzmanı.', image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80' }
+    { name: 'Kurucu & CEO', title: 'Kurucu & CEO', desc: '[Demo] Gayrimenkul deneyimi. İşletme mezunu.', image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80' },
+    { name: 'Satış Müdürü', title: 'Satış Müdürü', desc: '[Demo] Lüks konut satışı deneyimi.', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80' },
+    { name: 'Kiralama Uzmanı', title: 'Kiralama Uzmanı', desc: '[Demo] Kurumsal kiralama deneyimi.', image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80' },
+    { name: 'Değerleme Uzmanı', title: 'Değerleme Uzmanı', desc: '[Demo] Gayrimenkul değerleme deneyimi.', image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80' }
   ],
   testimonials: [
-    { text: 'Efesoft Emlak sayesinde hayalimdeki villaya kavuştum. Profesyonel yaklaşımları ve ilgileri gerçekten takdire değer. Kesinlikle tavsiye ediyorum.', name: 'Ali Öztürk', role: 'Villa Alıcısı' },
-    { text: 'Yatırımlık gayrimenkul ararken tanıştık Efesoft Emlak ile. Bize özel hazırlanan portföy ile doğru yatırımı yapmamızı sağladılar.', name: 'Ayşe Yıldız', role: 'Yatırımcı' },
-    { text: 'Ofis taşınma sürecimizde Efesoft Emlak mükemmel hizmet verdi. İhtiyaçlarımıza uygun ofisi bulmak hiç bu kadar kolay olmamıştı.', name: 'Can Özkan', role: 'Kurumsal Müşteri' }
+    { text: '[Demo] Gayrimenkul danışmanlığı sayesinde hayalimdeki eve kavuştum. Profesyonel yaklaşımları ve ilgileri takdire değer.', name: '[Demo Müşteri]', role: 'Villa Alıcısı' },
+    { text: '[Demo] Yatırımlık gayrimenkul ararken tanıştık. Bize özel hazırlanan portföy ile doğru yatırımı yapmamızı sağladılar.', name: '[Demo Müşteri]', role: 'Yatırımcı' },
+    { text: '[Demo] Ofis taşınma sürecimizde mükemmel hizmet verildi. İhtiyaçlarımıza uygun ofisi bulmak çok kolay oldu.', name: '[Demo Müşteri]', role: 'Kurumsal Müşteri' }
   ],
   stats: [
-    { number: 500, suffix: '+', label: 'Satılık & Kiralık İlan' },
-    { number: 50, suffix: '+', label: 'Uzman Danışman' },
-    { number: 1000, suffix: '+', label: 'Mutlu Müşteri' },
-    { number: 10, suffix: '+', label: 'Yıllık Deneyim' }
+    { number: 100, suffix: '+', label: 'Satılık & Kiralık İlan (Demo)' },
+    { number: 25, suffix: '+', label: 'Uzman Danışman (Demo)' },
+    { number: 500, suffix: '+', label: 'Mutlu Müşteri (Demo)' },
+    { number: 5, suffix: '+', label: 'Yıllık Deneyim (Demo)' }
   ],
   faq: [
     { question: 'Emlak alım-satım süreci ne kadar sürer?', answer: 'Ortalama bir emlak alım-satım işlemi, finansman durumuna ve resmi işlemlere bağlı olarak 30-60 gün arasında tamamlanmaktadır.' },
@@ -499,7 +499,7 @@ var defaultConfig = {
   about: {
     storyTitle: 'Başarıyla Dolu Bir Yolculuk',
     storyParagraphs: [
-      '2014 yılında kurulan Efesoft Emlak, kısa sürede sektörün önde gelen gayrimenkul danışmanlık firmalarından biri haline gelmiştir. Kurulduğumuz günden bu yana binlerce müşterimize hayallerindeki gayrimenkule kavuşma fırsatı sunduk.',
+      '[Demo] Yıllar önce kurulan Efesoft Emlak, sektörün önde gelen gayrimenkul danışmanlık firmalarından biri haline gelmiştir. Kurulduğumuz günden bu yana müşterilerimize hayallerindeki gayrimenkule kavuşma fırsatı sunduk.',
       'Müşteri memnuniyetini her şeyin üzerinde tutan anlayışımız, uzman ve deneyimli kadromuz ve yenilikçi yaklaşımımızla gayrimenkul sektöründe fark yaratıyoruz.',
       'Bugün İstanbul\'un en prestijli bölgelerinde ofisleri bulunan firmamız, lüks konuttan ticari gayrimenkule kadar geniş bir yelpazede hizmet vermektedir.'
     ],
@@ -518,8 +518,8 @@ var defaultConfig = {
     sunday: 'Pazar: Kapalı'
   },
   branches: [
-    { name: 'Levent Merkez Ofis', address: 'Büyükdere Caddesi No:123, Levent, İstanbul', phone: '+90 (212) 345 67 89', map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.1038914131893!2d28.9865!3d41.0825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDA0JzU3LjAiTiAyOMKwNTknMTEuNCJF!5e0!3m2!1str!2str!4v1' },
-    { name: 'Kadıköy Şubesi', address: 'Bağdat Caddesi No:456, Kadıköy, İstanbul', phone: '+90 (216) 345 67 89', map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.1038914131893!2d28.9865!3d41.0825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDA0JzU3LjAiTiAyOMKwNTknMTEuNCJF!5e0!3m2!1str!2str!4v1' }
+    { name: 'Merkez Ofis (Demo)', address: 'Örnek Mah. Demo Cad. No:XX, İstanbul', phone: '+90 (212) XXX XX XX', map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.1038914131893!2d28.9865!3d41.0825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDA0JzU3LjAiTiAyOMKwNTknMTEuNCJF!5e0!3m2!1str!2str!4v1' },
+    { name: 'Şube (Demo)', address: 'Örnek Mah. Demo Cad. No:XX, İstanbul', phone: '+90 (216) XXX XX XX', map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.1038914131893!2d28.9865!3d41.0825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDA0JzU3LjAiTiAyOMKwNTknMTEuNCJF!5e0!3m2!1str!2str!4v1' }
   ]
 };
 

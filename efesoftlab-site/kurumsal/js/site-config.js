@@ -8,24 +8,24 @@
 var defaultConfig = {
   logo: { text: 'Efesoftlab', icon: 'fas fa-briefcase' },
   contact: {
-    phone: '+90 (212) 345 67 89',
-    email: 'info@efesoftlab.com',
-    address: 'Büyükdere Caddesi No:123, Levent, İstanbul 34394'
+    phone: '+90 (212) XXX XX XX',
+    email: 'ornek@efesoftlabdemo.com',
+    address: 'Örnek Mah. Demo Cad. No:XX, Levent, İstanbul'
   },
   hero: {
     title: 'Geleceği Şekillendiriyoruz',
     subtitle: 'Premium kurumsal çözümlerle işinizi bir adım öteye taşıyın',
-    description: 'Danışmanlık, dijital dönüşüm ve yazılım geliştirme alanlarında 10+ yıllık deneyimimizle işletmenize değer katıyoruz.'
+    description: '[Demo] Danışmanlık, dijital dönüşüm ve yazılım geliştirme alanlarında deneyimimizle işletmenize değer katıyoruz.'
   },
   about: {
     storyTitle: 'Hikayemiz',
     storyParagraphs: [
-      '2015 yılında kurulan Efesoftlab, teknoloji ve danışmanlık alanında yenilikçi çözümler sunmak amacıyla yola çıktı. Bugün 50+ uzman kadromuzla yüzlerce kurumsal müşteriye hizmet veriyoruz.',
+      '[Demo] Teknoloji ve danışmanlık alanında yenilikçi çözümler sunmak amacıyla yola çıktık. Uzman kadromuzla kurumsal müşterilere hizmet veriyoruz.',
       'Müşteri odaklı yaklaşımımız, deneyimli ekibimiz ve teknolojik altyapımızla işletmelerin dijital dönüşüm yolculuğunda güvenilir bir iş ortağıyız.',
       'İstanbul, Ankara ve Londra ofislerimizle global ölçekte hizmet vermekteyiz.'
     ],
     mission: { title: 'Misyonumuz', text: 'İşletmelere yenilikçi teknoloji çözümleri sunarak dijital dönüşümlerinde liderlik etmek.' },
-    vision: { title: 'Vizyonumuz', text: '2028 yılına kadar Avrupa\'nın en saygın teknoloji danışmanlık firmaları arasında yer almak.' },
+    vision: { title: 'Vizyonumuz', text: '[Demo] Sektörün saygın teknoloji danışmanlık firmaları arasında yer almak.' },
     values: [
       { title: 'Yenilikçilik', text: 'Sürekli öğrenme ve gelişim kültürüyle sektörde fark yaratıyoruz.', icon: 'fas fa-lightbulb' },
       { title: 'Güvenilirlik', text: 'Müşterilerimizle uzun vadeli ve güvene dayalı iş ilişkileri kuruyoruz.', icon: 'fas fa-handshake' },
@@ -42,21 +42,21 @@ var defaultConfig = {
     { icon: 'fas fa-shield-alt', title: 'Siber Güvenlik', description: 'Kurumsal güvenlik ihtiyaçlarınıza özel çözümler.' }
   ],
   team: [
-    { name: 'Ahmet Yılmaz', title: 'CEO & Kurucu Ortak', desc: '20+ yıllık teknoloji ve yönetim danışmanlığı deneyimi.', image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80' },
-    { name: 'Ayşe Kaya', title: 'CTO', desc: 'Yapay zeka ve büyük veri alanında uzman.', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80' },
-    { name: 'Mehmet Demir', title: 'Proje Yöneticisi', desc: 'PMP sertifikalı, 50+ başarılı proje yöneticisi.', image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80' },
-    { name: 'Zeynep Şahin', title: 'UX Direktörü', desc: 'Kullanıcı deneyimi ve arayüz tasarımı uzmanı.', image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80' }
+    { name: 'CEO & Kurucu Ortak', title: 'CEO & Kurucu Ortak', desc: '[Demo] Teknoloji ve yönetim danışmanlığı deneyimi.', image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80' },
+    { name: 'CTO', title: 'CTO', desc: '[Demo] Yapay zeka ve büyük veri alanında uzman.', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80' },
+    { name: 'Proje Yöneticisi', title: 'Proje Yöneticisi', desc: '[Demo] Sertifikalı proje yöneticisi.', image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80' },
+    { name: 'UX Direktörü', title: 'UX Direktörü', desc: '[Demo] Kullanıcı deneyimi ve arayüz tasarımı uzmanı.', image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80' }
   ],
   stats: [
-    { number: 500, suffix: '+', label: 'Başarılı Proje' },
-    { number: 150, suffix: '+', label: 'Mutlu Müşteri' },
-    { number: 50, suffix: '+', label: 'Uzman Kadro' },
-    { number: 10, suffix: '+', label: 'Yıllık Deneyim' }
+    { number: 200, suffix: '+', label: 'Başarılı Proje (Demo)' },
+    { number: 50, suffix: '+', label: 'Mutlu Müşteri (Demo)' },
+    { number: 25, suffix: '+', label: 'Uzman Kadro (Demo)' },
+    { number: 5, suffix: '+', label: 'Yıllık Deneyim (Demo)' }
   ],
   testimonials: [
-    { text: 'Efesoftlab ile çalışmak iş süreçlerimizi tamamen dönüştürdü. Profesyonel yaklaşımları ve teknik yeterlilikleri takdire şayan.', name: 'Ali Öztürk', role: 'CEO, TechCorp' },
-    { text: 'Dijital dönüşüm yolculuğumuzda bize rehberlik eden Efesoftlab ekibine minnettarız. Süreç boyunca gösterdikleri özveri mükemmeldi.', name: 'Ayşe Yıldız', role: 'CTO, FinansBank' },
-    { text: 'Yazılım geliştirme projemizde gösterdikleri profesyonellik ve kalite beklentilerimizin çok üzerindeydi.', name: 'Can Özkan', role: 'Genel Müdür, SağlıkGrubu' }
+    { text: '[Demo] İş süreçlerimizi dönüştüren profesyonel yaklaşımları ve teknik yeterlilikleri takdire şayan.', name: '[Demo Müşteri]', role: 'CEO' },
+    { text: '[Demo] Dijital dönüşüm yolculuğumuzda bize rehberlik eden ekibe minnettarız.', name: '[Demo Müşteri]', role: 'CTO' },
+    { text: '[Demo] Projemizde gösterdikleri profesyonellik ve kalite beklentilerimizin üzerindeydi.', name: '[Demo Müşteri]', role: 'Genel Müdür' }
   ],
   faq: [
     { question: 'Proje süreciniz nasıl işliyor?', answer: 'Projelerimiz 4 aşamadan oluşur: Keşif ve analiz, tasarım ve planlama, geliştirme ve uygulama, test ve dağıtım. Her aşamada müşterilerimizle düzenli iletişim halinde oluruz.' },

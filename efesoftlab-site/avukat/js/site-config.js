@@ -9,17 +9,17 @@ const DEFAULT_CONFIG = {
     icon: 'fas fa-balance-scale'
   },
   contact: {
-    phone: '(0212) 234 56 78',
-    phone2: '(0555) 123 45 67',
-    gsm: '905551234567',
-    email: 'info@efeshukuk.com',
-    email2: 'danisma@efeshukuk.com',
-    address: 'Levent Mah. Büyükdere Cad. No:100 K:15 Şişli / İstanbul',
-    address2: 'Caferağa Mah. Bahariye Cad. No:45 K:3 Kadıköy / İstanbul'
+    phone: '(0212) XXX XX XX',
+    phone2: '(0555) XXX XX XX',
+    gsm: '90555XXXXXXX',
+    email: 'ornek@efeshukukdemo.com',
+    email2: 'ornek2@efeshukukdemo.com',
+    address: 'Örnek Mah. Demo Cad. No:XX K:X Şişli / İstanbul',
+    address2: 'Örnek Mah. Demo Cad. No:XX K:X Kadıköy / İstanbul'
   },
   hero: {
     title: 'Adaletin Güvencesi',
-    subtitle: '45 yıllık tecrübemizle, hukuki sorunlarınızda yanınızdayız. Profesyonel avukat kadromuz ile size en uygun çözümü sunuyoruz.',
+    subtitle: 'Köklü tecrübemizle, hukuki sorunlarınızda yanınızdayız. Profesyonel avukat kadromuz ile size en uygun çözümü sunuyoruz.',
     typingText: 'Adaletin Güvencesi',
     btnConsult: 'Danışmanlık Al',
     btnServices: 'Uzmanlıklarımız',
@@ -27,15 +27,15 @@ const DEFAULT_CONFIG = {
   },
   about: {
     title: 'Kurumsal Hukuk Geleneği',
-    description: 'Efes Hukuk Bürosu, 1978 yılından bu yana Türk yargı sisteminde güvenilir bir çınar olarak hizmet vermektedir. Kurulduğu günden bugüne, adalete olan inancımız ve mesleki etik değerlerimizden ödün vermeden çalışıyoruz.',
+    description: 'Efes Hukuk Bürosu, uzun yıllardır Türk yargı sisteminde güvenilir bir çınar olarak hizmet vermektedir. Kurulduğu günden bugüne, adalete olan inancımız ve mesleki etik değerlerimizden ödün vermeden çalışıyoruz.',
     features: [
-      '45+ yıllık deneyim ve güven',
-      '50+ uzman avukat kadrosu',
-      '5000\'den fazla başarılı dava',
-      '6 farklı hukuk dalında uzmanlık'
+      'XX+ yıllık deneyim (Demo)',
+      'XX+ uzman avukat kadrosu (Demo)',
+      'XXXX\'den fazla başarılı dava (Demo)',
+      'X farklı hukuk dalında uzmanlık (Demo)'
     ],
     image: 'https://picsum.photos/600/450?random=2',
-    story1: 'Efes Hukuk Bürosu, 1978 yılında Av. Ahmet Yılmaz tarafından İstanbul Levent\'te kuruldu. Küçük bir avukatlık ofisi olarak başlayan yolculuğumuz, bugün 50\'den fazla avukatın görev yaptığı köklü bir hukuk bürosuna dönüştü.',
+    story1: 'Efes Hukuk Bürosu, bir grup deneyimli avukat tarafından İstanbul\'da kuruldu. Küçük bir avukatlık ofisi olarak başlayan yolculuğumuz, bugün birçok avukatın görev yaptığı köklü bir hukuk bürosuna dönüştü.',
     story2: 'Kurulduğumuz günden bu yana, etik değerlerimizden ve mesleki ilkelerimizden ödün vermeden, müvekkillerimize en kaliteli hukuki hizmeti sunmayı kendimize görev bildik. Her geçen yıl artan dava başarımız ve memnun müvekkil portföyümüzle Türkiye\'nin saygın hukuk bürolarından biri olmayı başardık.',
     mission: 'Müvekkillerimizin hukuki sorunlarına yenilikçi, etkili ve sürdürülebilir çözümler üreterek adalete erişimlerini kolaylaştırmak. Hukukun üstünlüğü ilkesine bağlı kalarak, her bireyin adil yargılanma hakkını korumak.',
     vision: 'Türkiye\'nin en güvenilir ve saygın hukuk bürolarından biri olarak, uluslararası standartlarda hukuki hizmet sunmak. Teknolojiyi ve güncel hukuki gelişmeleri yakından takip eden bir kurum kültürü oluşturmak.',
@@ -50,27 +50,27 @@ const DEFAULT_CONFIG = {
     { id: 'ip', icon: 'fas fa-copyright', title: 'Fikri Mülkiyet Hukuku', description: 'Patent, marka, endüstriyel tasarım tescili, fikir ve sanat eserleri, haksız rekabet ve lisans sözleşmeleri.', detailedDesc: 'Fikri mülkiyet hukuku ekibimiz, yenilikçi fikirlerin ve yaratıcı çalışmaların hukuki korunması konusunda uzmanlaşmıştır. Marka, patent ve endüstriyel tasarım tescili ve korunması, fikir ve sanat eserleri (FSEK) kapsamında telif hakkı ihlalleri, coğrafi işaret tescili, haksız rekabet davaları, lisans ve franchise sözleşmeleri, dijital içerik ve yazılım hukuku alanlarında danışmanlık ve dava takibi yapmaktayız.' }
   ],
   lawyers: [
-    { id: 1, name: 'Av. Ahmet Yılmaz', title: 'Kurucu Ortak', spec: 'Ceza Hukuku', education: 'İstanbul Üniversitesi Hukuk Fakültesi', experience: '30 yıl', description: 'Ceza Hukuku uzmanı. İstanbul Üniversitesi Hukuk Fakültesi mezunu, 30 yıllık deneyim.', image: 'https://picsum.photos/400/300?random=3' },
-    { id: 2, name: 'Av. Ayşe Kaya', title: 'Ortak Avukat', spec: 'Aile Hukuku', education: 'Ankara Üniversitesi Hukuk Fakültesi', experience: '25 yıl', description: 'Aile Hukuku uzmanı. Ankara Üniversitesi Hukuk Fakültesi mezunu, 25 yıllık deneyim.', image: 'https://picsum.photos/400/300?random=4' },
-    { id: 3, name: 'Av. Mehmet Demir', title: 'Kıdemli Avukat', spec: 'Ticaret Hukuku', education: 'Marmara Üniversitesi Hukuk Fakültesi', experience: '20 yıl', description: 'Ticaret Hukuku uzmanı. Marmara Üniversitesi Hukuk Fakültesi mezunu, 20 yıllık deneyim.', image: 'https://picsum.photos/400/300?random=5' },
-    { id: 4, name: 'Av. Zeynep Şahin', title: 'Avukat', spec: 'Gayrimenkul Hukuku', education: 'İstanbul Üniversitesi Hukuk Fakültesi', experience: '15 yıl', description: 'Gayrimenkul Hukuku uzmanı. İstanbul Üniversitesi Hukuk Fakültesi mezunu, 15 yıllık deneyim.', image: 'https://picsum.photos/400/300?random=6' },
-    { id: 5, name: 'Av. Ali Öztürk', title: 'Avukat', spec: 'İş Hukuku', education: 'Koç Üniversitesi Hukuk Fakültesi', experience: '12 yıl', description: 'İş Hukuku uzmanı. Koç Üniversitesi Hukuk Fakültesi mezunu, 12 yıllık deneyim.', image: 'https://picsum.photos/400/300?random=7' }
+    { id: 1, name: 'Ceza Hukuku Uzmanı', title: 'Kurucu Ortak', spec: 'Ceza Hukuku', education: '[Demo] Hukuk Fakültesi', experience: 'XX yıl', description: '[Demo] Ceza Hukuku uzmanı. Deneyimli avukat.', image: 'https://picsum.photos/400/300?random=3' },
+    { id: 2, name: 'Aile Hukuku Uzmanı', title: 'Ortak Avukat', spec: 'Aile Hukuku', education: '[Demo] Hukuk Fakültesi', experience: 'XX yıl', description: '[Demo] Aile Hukuku uzmanı. Deneyimli avukat.', image: 'https://picsum.photos/400/300?random=4' },
+    { id: 3, name: 'Ticaret Hukuku Uzmanı', title: 'Kıdemli Avukat', spec: 'Ticaret Hukuku', education: '[Demo] Hukuk Fakültesi', experience: 'XX yıl', description: '[Demo] Ticaret Hukuku uzmanı. Deneyimli avukat.', image: 'https://picsum.photos/400/300?random=5' },
+    { id: 4, name: 'Gayrimenkul Hukuku Uzmanı', title: 'Avukat', spec: 'Gayrimenkul Hukuku', education: '[Demo] Hukuk Fakültesi', experience: 'XX yıl', description: '[Demo] Gayrimenkul Hukuku uzmanı. Deneyimli avukat.', image: 'https://picsum.photos/400/300?random=6' },
+    { id: 5, name: 'İş Hukuku Uzmanı', title: 'Avukat', spec: 'İş Hukuku', education: '[Demo] Hukuk Fakültesi', experience: 'XX yıl', description: '[Demo] İş Hukuku uzmanı. Deneyimli avukat.', image: 'https://picsum.photos/400/300?random=7' }
   ],
   successStories: [
-    { id: 1, badge: 'Ticaret Hukuku', title: 'Tazminat Davası', description: 'Sanayi devi şirketimize 50 milyon TL\'lik tazminat davasında %100 başarı sağlandı.', result: '%100 Başarı & Tazminat' },
-    { id: 2, badge: 'Ticaret Hukuku', title: 'Uluslararası Tahkim', description: 'Uluslararası tahkim sürecinde müvekkilimizin hakları başarıyla korundu.', result: 'Başarılı Tahkim Süreci' },
-    { id: 3, badge: 'Aile Hukuku', title: 'Velayet Davası', description: 'Aile hukuku davasında çocuk velayeti ve nafaka konusunda olumlu sonuç.', result: 'Velayet & Nafaka Kazanımı' }
+    { id: 1, badge: 'Ticaret Hukuku', title: 'Örnek Dava', description: '[Demo] Tazminat davasında başarılı sonuç elde edildi.', result: 'Başarılı Sonuç' },
+    { id: 2, badge: 'Ticaret Hukuku', title: 'Örnek Tahkim', description: '[Demo] Uluslararası tahkim sürecinde müvekkil hakları korundu.', result: 'Başarılı Tahkim Süreci' },
+    { id: 3, badge: 'Aile Hukuku', title: 'Örnek Dava', description: '[Demo] Aile hukuku davasında olumlu sonuç elde edildi.', result: 'Kazanım Sağlandı' }
   ],
   stats: [
-    { icon: 'fas fa-file-alt', target: 500, suffix: '+', label: 'Başarılı Dava' },
-    { icon: 'fas fa-user-tie', target: 50, suffix: '+', label: 'Uzman Avukat' },
-    { icon: 'fas fa-chart-line', target: 95, suffix: '%', label: 'Başarı Oranı' },
-    { icon: 'fas fa-calendar-alt', target: 45, suffix: '+', label: 'Yıllık Deneyim' }
+    { icon: 'fas fa-file-alt', target: 100, suffix: '+', label: 'Başarılı Dava (Demo)' },
+    { icon: 'fas fa-user-tie', target: 25, suffix: '+', label: 'Uzman Avukat (Demo)' },
+    { icon: 'fas fa-chart-line', target: 99, suffix: '%', label: 'Başarı Oranı (Demo)' },
+    { icon: 'fas fa-calendar-alt', target: 10, suffix: '+', label: 'Yıllık Deneyim (Demo)' }
   ],
   testimonials: [
-    { id: 1, text: 'Boşanma sürecimde Av. Ayşe Kaya\'nın profesyonel yaklaşımı ve hukuki desteği sayesinde hak ettiğim sonucu aldım. Herkese tavsiye ederim.', author: 'Zeynep A.', location: 'İstanbul', rating: 5, image: 'https://picsum.photos/100/100?random=8' },
-    { id: 2, text: 'Ticari alacak davamda Efes Hukuk\'un deneyimi sayesinde 2 yıl süren hukuki süreci lehimize çevirdik. Profesyonel ekibe teşekkürler.', author: 'Ahmet K.', location: 'Ankara', rating: 5, image: 'https://picsum.photos/100/100?random=9' },
-    { id: 3, text: 'İşe iade davamda gösterdikleri özveri ve hukuki başarı sayesinde işime geri döndüm. Her aşamada yanımda oldular.', author: 'Elif Y.', location: 'İzmir', rating: 5, image: 'https://picsum.photos/100/100?random=10' }
+    { id: 1, text: '[Demo] Hukuki danışmanlık sürecinde gösterilen profesyonel yaklaşım ve destek sayesinde olumlu sonuç aldım.', author: '[Demo Müşteri]', location: 'İstanbul', rating: 5, image: 'https://picsum.photos/100/100?random=8' },
+    { id: 2, text: '[Demo] Hukuk bürosunun deneyimi sayesinde hukuki süreç başarıyla sonuçlandı. Profesyonel ekibe teşekkürler.', author: '[Demo Müşteri]', location: 'Ankara', rating: 5, image: 'https://picsum.photos/100/100?random=9' },
+    { id: 3, text: '[Demo] Gösterilen özveri ve hukuki başarı sayesinde olumlu sonuç elde ettim. Her aşamada yanımda oldular.', author: '[Demo Müşteri]', location: 'İzmir', rating: 5, image: 'https://picsum.photos/100/100?random=10' }
   ],
   faq: [
     { id: 1, question: 'İlk danışmanlık görüşmesi ücretli mi?', answer: 'Evet, ilk danışmanlık görüşmemiz ücretlidir. Ancak bu görüşme sonrasında avukatlık sözleşmesi imzalamanız durumunda danışmanlık ücreti sözleşme bedelinden düşülmektedir. İlk görüşmede davanızı detaylıca analiz ediyor ve size en uygun hukuki stratejiyi belirliyoruz.' },
@@ -98,19 +98,19 @@ const DEFAULT_CONFIG = {
     contact: 'https://picsum.photos/1920/600?random=30'
   },
   footer: {
-    description: '1978 yılından bu yana İstanbul merkezli olarak hukukun her alanında profesyonel danışmanlık ve dava takibi hizmeti sunmaktayız. Adalete olan inancımızla çalışıyoruz.',
+    description: '[Demo] İstanbul merkezli olarak hukukun her alanında profesyonel danışmanlık ve dava takibi hizmeti sunmaktayız.',
     copyright: '© 2024 Efesoftlab. Tüm hakları saklıdır.',
     credit: 'Satış: Efesoftlab'
   },
   timeline: [
-    { year: '1978', text: 'Efes Hukuk Bürosu\'nun İstanbul\'da kuruluşu' },
-    { year: '1990', text: 'Ticaret hukuku departmanının kurulması' },
-    { year: '2005', text: 'Levent ofisine taşınma ve ekibin genişlemesi' },
-    { year: '2024', text: '50+ avukat ve 5000+ başarılı dava ile yolumuza devam' }
+    { year: 'YYYY', text: '[Demo] Hukuk bürosunun kuruluşu' },
+    { year: 'YYYY', text: '[Demo] Yeni departmanların kurulması' },
+    { year: 'YYYY', text: '[Demo] Ofis taşınma ve ekibin genişlemesi' },
+    { year: 'YYYY', text: '[Demo] Büyüme ve gelişme ile yolumuza devam' }
   ],
   aboutBanner: {
     title: 'Hakkımızda',
-    description: '45 yılı aşkın tecrübe, güven ve adalet anlayışı'
+    description: '[Demo] Tecrübe, güven ve adalet anlayışı'
   },
   servicesBanner: {
     title: 'Uzmanlık Alanlarımız',

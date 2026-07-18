@@ -1144,3 +1144,94 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
 }); // DOMContentLoaded sonu
+
+/* ============================================================
+   DEMO ŞABLON BANNERI — EfeSoftLab Demo Notification
+   ============================================================ */
+document.addEventListener('DOMContentLoaded', function() {
+  var bannerKey = 'efesoftlab-demo-banner';
+  var bannerHidden = localStorage.getItem(bannerKey);
+  if (bannerHidden) {
+    var hiddenTime = parseInt(bannerHidden, 10);
+    if (Date.now() - hiddenTime < 86400000) return;
+  }
+
+  var banner = document.createElement('div');
+  banner.id = 'efesoftlab-demo-banner';
+  banner.innerHTML =
+    '<span style="flex:1">DEMO ŞABLON — Bu web sitesi EfeSoftLab tarafından hazırlanmış örnek içeriklerden oluşmaktadır. Gerçek bir işletmeyi temsil etmez.</span>' +
+    '<a href="https://www.efesoftlab.com.tr/templates.html" target="_blank" rel="noopener noreferrer" style="color:#fff;text-decoration:underline;white-space:nowrap;margin:0 12px">Şablonu İncele →</a>' +
+    '<button id="efesoftlab-banner-close" aria-label="Kapat" style="background:none;border:none;color:#fff;cursor:pointer;font-size:16px;padding:0 4px;line-height:1">&times;</button>';
+
+  Object.assign(banner.style, {
+    position: 'fixed',
+    top: '0',
+    left: '0',
+    right: '0',
+    zIndex: '99999',
+    background: '#1a1a2e',
+    color: '#fff',
+    padding: '8px 16px',
+    fontSize: '13px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexWrap: 'wrap',
+    gap: '4px',
+    boxSizing: 'border-box',
+    fontFamily: 'Arial, sans-serif'
+  });
+
+  document.body.appendChild(banner);
+  document.body.style.paddingTop = (parseInt(window.getComputedStyle(document.body).paddingTop) || 0) + banner.offsetHeight + 'px';
+
+  document.getElementById('efesoftlab-banner-close').addEventListener('click', function() {
+    banner.style.display = 'none';
+    document.body.style.paddingTop = Math.max(0, (parseInt(window.getComputedStyle(document.body).paddingTop) || 0) - banner.offsetHeight);
+    localStorage.setItem(bannerKey, Date.now().toString());
+  });
+
+  var style = document.createElement('style');
+  style.textContent =
+    '#efesoftlab-demo-banner a:hover{opacity:0.8}' +
+    '@media(max-width:600px){' +
+    '#efesoftlab-demo-banner{font-size:11px;padding:6px 10px;flex-direction:column;text-align:center}' +
+    '#efesoftlab-demo-banner a{margin:2px 0 !important}' +
+    '}';
+  document.head.appendChild(style);
+});
+
+/* ============================================================
+   DEMO ŞABLON BANNERI — Always visible, no close button
+   ============================================================ */
+(function() {
+  var banner = document.createElement('div');
+  banner.id = 'efesoftlab-demo-banner';
+  banner.setAttribute('role', 'note');
+  banner.setAttribute('aria-label', 'Demo şablon bildirimi');
+  banner.innerHTML =
+    '<span>DEMO ŞABLON — Bu web sitesi EfeSoftLab tarafından hazırlanmış örnek içeriklerden oluşmaktadır. Gerçek bir işletmeyi temsil etmez.</span>' +
+    '<a href="https://www.efesoftlab.com.tr/templates/klinik.html" target="_blank" rel="noopener noreferrer">Şablonu İncele →</a>';
+
+  Object.assign(banner.style, {
+    position: 'fixed', top: '0', left: '0', right: '0',
+    zIndex: '9999', background: '#1a1a2e', color: '#fff',
+    padding: '6px 16px', fontSize: '13px', display: 'flex',
+    alignItems: 'center', justifyContent: 'center',
+    flexWrap: 'wrap', gap: '8px', boxSizing: 'border-box',
+    fontFamily: 'Arial, sans-serif', lineHeight: '1.4'
+  });
+
+  document.body.appendChild(banner);
+  var bodyPad = parseInt(window.getComputedStyle(document.body).paddingTop) || 0;
+  document.body.style.paddingTop = (bodyPad + banner.offsetHeight) + 'px';
+
+  var style = document.createElement('style');
+  style.textContent =
+    '#efesoftlab-demo-banner a{color:#74b6ff;text-decoration:underline;white-space:nowrap}' +
+    '#efesoftlab-demo-banner a:hover{opacity:0.8}' +
+    '@media(max-width:600px){' +
+    '#efesoftlab-demo-banner{font-size:11px;padding:5px 10px;flex-direction:column;text-align:center;gap:4px}' +
+    '}';
+  document.head.appendChild(style);
+})();

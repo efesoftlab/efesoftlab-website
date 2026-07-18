@@ -9,9 +9,9 @@ var DEFAULT_CONFIG = {
     icon: 'fas fa-utensils'
   },
   contact: {
-    phone: '(0555) 123 45 67',
-    email: 'info@lezzetinadresi.com',
-    address: 'İstiklal Caddesi No:123, Beyoğlu, İstanbul 34421'
+    phone: '(0555) XXX XX XX',
+    email: 'ornek@lezzetinadresidemo.com',
+    address: 'Örnek Mah. Demo Cad. No:XX, Beyoğlu, İstanbul'
   },
   hero: {
     subtitle: 'Hoş Geldiniz',
@@ -21,7 +21,7 @@ var DEFAULT_CONFIG = {
   about: {
     title: 'Geleneksel Lezzetler, Modern Dokunuşlar',
     story: [
-      '2015 yılında küçük bir mutfakta başlayan tutku dolu yolculuğumuz, bugün şehrin en gözde restoranlarından biri olmamızı sağladı. Her tabakta taze, yerel ve mevsimsel malzemeler kullanarak size unutulmaz bir lezzet deneyimi sunuyoruz.',
+      '[Demo] Küçük bir mutfakta başlayan tutku dolu yolculuğumuz, şehrin gözde restoranlarından biri olmamızı sağladı. Her tabakta taze, yerel ve mevsimsel malzemeler kullanarak size unutulmaz bir lezzet deneyimi sunuyoruz.',
       'Tecrübeli şef ekibimiz, Türk mutfağının zengin mirasını modern tekniklerle birleştirerek her damak tadına hitap eden eşsiz menüler hazırlamaktadır.',
       'Yerel üreticilerden tedarik ettiğimiz taze sebzeler, Ege\'nin zeytinyağları, Güneydoğu\'nun baharatları ve dünyanın dört bir yanından seçkin şaraplar ile zenginleşen menümüz, her damak tadına hitap edecek çeşitliliktedir.'
     ],
@@ -43,24 +43,24 @@ var DEFAULT_CONFIG = {
   },
   chefTeam: [
     {
-      name: 'Mehmet Yılmaz',
+      name: 'Yönetici Şef',
       title: 'Yönetici Şef',
-      description: '15 yıllık deneyime sahip olan Mehmet Şef, Londra ve Tokyo\'daki Michelin yıldızlı restoranlarda çalışmıştır. Türk mutfağını dünya standartlarında yorumlamaktadır.',
-      experience: '15+ Yıl',
+      description: '[Demo] Deneyimli şefimiz, uluslararası mutfak kültürüyle Türk mutfağını dünya standartlarında yorumlamaktadır.',
+      experience: 'XX+ Yıl',
       image: 'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=400&q=80'
     },
     {
-      name: 'Ayşe Demir',
+      name: 'Sous Chef & Pastacı',
       title: 'Sous Chef & Pastacı',
-      description: 'Fransız pastacılık okulu mezunu olan Ayşe Şef, tatlı ve hamur işlerindeki ustalığıyla bilinir. Özel tarifleriyle menümüze benzersiz lezzetler katmaktadır.',
-      experience: '10+ Yıl',
+      description: '[Demo] Pastacılık alanında deneyimli şefimiz, tatlı ve hamur işlerindeki ustalığıyla bilinir.',
+      experience: 'XX+ Yıl',
       image: 'https://images.unsplash.com/photo-1552058544-f2b08422138a?w=400&q=80'
     },
     {
-      name: 'Ali Kaya',
+      name: 'Izgara Şefi',
       title: 'Izgara Şefi',
-      description: 'Güneydoğu mutfağının tüm inceliklerine hakim olan Ali Şef, 20 yıllık mangalbaşı tecrübesiyle et yemeklerimizin vazgeçilmez ismidir.',
-      experience: '20+ Yıl',
+      description: '[Demo] Izgara ve et yemekleri konusunda deneyimli şefimiz, geleneksel lezzetleri modern dokunuşlarla sunmaktadır.',
+      experience: 'XX+ Yıl',
       image: 'https://images.unsplash.com/photo-1566554273541-37e9d77f4a88?w=400&q=80'
     }
   ],
@@ -95,23 +95,23 @@ var DEFAULT_CONFIG = {
   ],
   testimonials: [
     {
-      name: 'Ayşe K.',
+      name: '[Demo Müşteri]',
       location: 'İstanbul',
-      text: 'Lezzetin Adresi\'nde yediğim en güzel yemeklerden birini deneyimledim. Kuzu şiş inanılmaz lezzetliydi. Servis çok hızlı ve personel çok güleryüzlü. Kesinlikle tekrar geleceğim!',
+      text: '[Demo] Restoranda yediğim en güzel yemeklerden birini deneyimledim. Servis çok hızlı ve personel çok güleryüzlüydü.',
       rating: 5,
       image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80'
     },
     {
-      name: 'Ahmet T.',
+      name: '[Demo Müşteri]',
       location: 'Ankara',
-      text: 'Özel günümüzü burada kutladık ve mükemmel bir deneyimdi. Ortam çok sıcak ve samimiydi. Şefin özel menüsü gerçekten damak çatlatan cinstendi. Herkese tavsiye ediyorum.',
+      text: '[Demo] Özel günümüzü burada kutladık ve mükemmel bir deneyimdi. Ortam çok sıcak ve samimiydi.',
       rating: 5,
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80'
     },
     {
-      name: 'Zeynep A.',
+      name: '[Demo Müşteri]',
       location: 'İzmir',
-      text: 'İş yemeği için tercih ettik ve herkes çok memnun kaldı. Fiyat-performans açısından şehrin en iyi restoranlarından biri. Tatlıları mutlaka denemelisiniz, özellikle baklava harika!',
+      text: '[Demo] İş yemeği için tercih ettik ve herkes çok memnun kaldı. Fiyat-performans açısından başarılı bir restoran.',
       rating: 4.5,
       image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80'
     }
@@ -131,11 +131,11 @@ var DEFAULT_CONFIG = {
     note: 'Mutfağımız kapanıştan 1 saat önce son siparişleri almaktadır.'
   },
   reservation: {
-    phone: '(0555) 123 45 67',
-    email: 'rezervasyon@lezzetinadresi.com',
-    capacity: '150 kişi',
-    privateHall: '50 kişi',
-    terrace: '80 kişi'
+    phone: '(0555) XXX XX XX',
+    email: 'rezervasyon@lezzetinadresidemo.com',
+    capacity: 'XX kişi',
+    privateHall: 'XX kişi',
+    terrace: 'XX kişi'
   },
   images: {
     hero: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600&q=80',
@@ -145,7 +145,7 @@ var DEFAULT_CONFIG = {
     pageHero: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&q=80'
   },
   footer: {
-    about: '2015 yılından bu yana, en taze malzemelerle hazırladığımız eşsiz lezzetlerimizle misafirlerimize unutulmaz bir yemek deneyimi sunuyoruz. Sıcak atmosferimizde sizi de ağırlamaktan mutluluk duyarız.',
+    about: '[Demo] En taze malzemelerle hazırladığımız eşsiz lezzetlerimizle misafirlerimize unutulmaz bir yemek deneyimi sunuyoruz. Sıcak atmosferimizde sizi de ağırlamaktan mutluluk duyarız.',
     social: {
       instagram: '#',
       facebook: '#',
