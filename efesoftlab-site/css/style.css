@@ -358,6 +358,20 @@ select {
   border-color: var(--border-strong);
 }
 
+.button-outline {
+  color: var(--text-soft);
+  border-color: var(--border);
+  background: transparent;
+  font-size: 0.85rem;
+}
+
+.button-outline:hover,
+.button-outline:focus-visible {
+  color: var(--text);
+  border-color: var(--primary);
+  background: rgba(125, 211, 252, 0.06);
+}
+
 .button-sm {
   min-height: 44px;
   padding: 0 18px;

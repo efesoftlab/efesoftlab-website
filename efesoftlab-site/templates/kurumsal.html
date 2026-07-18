@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurumsal İşletme Şablonu | Profesyonel Kurumsal Web Sitesi | EfeSoftLab</title>
+  <meta name="description" content="Profesyonel kurumsal web sitesi şablonu. Sticky navbar, hero, hizmetler, takım, blog, istatistikler ve SSS bölümleriyle eksiksiz kurumsal çözüm. Hemen satın alın.">
+  <meta name="keywords" content="kurumsal web sitesi şablonu, kurumsal tema, işletme web sitesi, HTML5 kurumsal şablon, premium kurumsal tema">
+  <meta name="theme-color" content="#0a1628">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kurumsal İşletme Şablonu | Profesyonel Kurumsal Web Sitesi | EfeSoftLab">
+  <meta property="og:description" content="Sticky navbar, hero, hizmetler, takım, blog, istatistikler ve SSS bölümleriyle eksiksiz kurumsal çözüm.">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:site_name" content="EfeSoftLab">
+  <meta property="og:image" content="https://www.efesoftlab.com.tr/assets/images/og-cover.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kurumsal İşletme Şablonu | Profesyonel Kurumsal Web Sitesi | EfeSoftLab">
+  <meta name="twitter:description" content="Sticky navbar, hero, hizmetler, takım, blog, istatistikler ve SSS bölümleriyle eksiksiz kurumsal çözüm.">
+  <meta name="twitter:image" content="https://www.efesoftlab.com.tr/assets/images/og-cover.svg">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' https://picsum.photos data:; connect-src 'self'; frame-src 'none'; object-src 'none'">
+  <link rel="canonical" href="https://www.efesoftlab.com.tr/templates/kurumsal.html">
+  <link rel="alternate" hreflang="tr" href="https://www.efesoftlab.com.tr/templates/kurumsal.html">
+  <link rel="alternate" hreflang="en" href="https://www.efesoftlab.com.tr/templates/kurumsal.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.efesoftlab.com.tr/templates/kurumsal.html">
+  <link rel="icon" type="image/svg+xml" href="../assets/images/logo-mark.svg">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .product-hero { padding-top: 78px; padding-bottom: 60px; }
+    .product-hero-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr); align-items: center; gap: 44px; }
+    .product-hero-copy { max-width: 680px; }
+    .product-hero-copy h1 { margin: 14px 0 16px; line-height: 1.08; letter-spacing: -0.035em; font-size: clamp(2.8rem, 5vw, 4rem); }
+    .product-hero-copy p { color: var(--text-soft); font-size: 1.08rem; line-height: 1.7; }
+    .product-price { display: inline-flex; align-items: center; gap: 6px; margin-top: 24px; font-size: 2rem; font-weight: 700; letter-spacing: -0.03em; }
+    .product-price small { font-size: 1rem; font-weight: 400; color: var(--text-muted); }
+    .product-hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 28px; }
+    .product-hero-visual { display: grid; place-items: center; min-height: 300px; }
+    .product-palette { display: flex; gap: 20px; padding: 40px; border-radius: var(--radius-xl); border: 1px solid var(--border); background: linear-gradient(180deg, rgba(14,23,39,0.94), rgba(9,15,28,0.94)); box-shadow: var(--shadow-md); }
+    .product-swatch { width: 80px; height: 80px; border-radius: 20px; border: 2px solid rgba(255,255,255,0.1); }
+    .product-features-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; padding: 0; list-style: none; }
+    .product-features-grid li { display: inline-flex; align-items: center; min-height: 34px; padding: 0 14px; border-radius: 999px; border: 1px solid rgba(148,163,184,0.14); background: rgba(255,255,255,0.04); color: var(--text-soft); font-size: 0.92rem; }
+    .service-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; margin-top: 28px; }
+    .service-card { padding: 30px; border-radius: var(--radius-lg); border: 1px solid var(--border); background: linear-gradient(180deg, rgba(14,23,39,0.94), rgba(9,15,28,0.94)); box-shadow: var(--shadow-md); }
+    .service-card h3 { margin: 0 0 14px; font-size: 1.25rem; letter-spacing: -0.02em; }
+    .service-card p { margin: 0; color: var(--text-soft); font-size: 0.94rem; line-height: 1.7; }
+    .service-card .service-icon { width: 48px; height: 48px; display: grid; place-items: center; border-radius: 16px; font-size: 1.3rem; margin-bottom: 16px; background: rgba(125,211,252,0.12); color: var(--primary); }
+    .tpl-colors-inline { display: flex; align-items: center; gap: 6px; margin-top: 16px; }
+    .tpl-colors-inline span { font-size: 0.82rem; color: var(--text-muted); }
+    .tpl-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; padding-top: 8px; }
+    .tpl-card { padding: 0; border-radius: var(--radius-sm); border: 1px solid var(--border); background: rgba(255,255,255,0.02); transition: all var(--transition); display: flex; flex-direction: column; overflow: hidden; }
+    .tpl-card:hover { border-color: var(--border-strong); background: rgba(255,255,255,0.04); }
+    .tpl-card-top { display: flex; align-items: flex-start; gap: 16px; padding: 20px 20px 16px; flex: 1; }
+    .tpl-card-body { flex: 1; min-width: 0; }
+    .tpl-card-body h3 { margin: 0 0 6px; font-size: 1rem; font-weight: 600; }
+    .tpl-card-body p { margin: 0; font-size: 0.88rem; color: var(--text-soft); line-height: 1.5; }
+    .tpl-card-actions { display: flex; align-items: center; justify-content: flex-end; padding: 10px 20px; border-top: 1px solid var(--border); background: rgba(255,255,255,0.02); }
+    .tpl-card-demo { display: inline-flex; align-items: center; gap: 6px; font-size: 0.85rem; font-weight: 500; color: var(--primary); transition: gap var(--transition); }
+    .tpl-card-demo:hover { gap: 10px; color: var(--primary-strong); }
+    .tpl-card-arrow { font-size: 1.1rem; transition: transform var(--transition); }
+    .tpl-card-demo:hover .tpl-card-arrow { transform: translateX(3px); }
+    .tpl-card-icon { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 14px; font-size: 1.2rem; font-weight: 700; flex-shrink: 0; }
+    @media (max-width: 1080px) {
+      .product-hero-grid { grid-template-columns: 1fr; }
+      .product-hero-visual { min-height: auto; }
+      .service-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 760px) {
+      .product-hero { padding-top: 48px; }
+      .tpl-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Kurumsal İşletme Şablonu",
+    "description": "Profesyonel kurumsal web sitesi şablonu. Sticky navbar, hero, hizmetler, takım, blog, istatistikler ve SSS bölümleriyle eksiksiz bir kurumsal çözüm.",
+    "image": "https://www.efesoftlab.com.tr/assets/images/templates/kurumsal.jpg",
+    "category": "Web Sitesi Şablonu",
+    "offers": {
+      "@type": "Offer",
+      "price": "4999",
+      "priceCurrency": "TRY",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.efesoftlab.com.tr/templates/kurumsal.html"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">İçeriğe geç</a>
+  <div class="site-shell site-shell-subpage">
+    <header class="site-header" id="top">
+      <div class="container">
+        <nav class="navbar" aria-label="Ana menü">
+          <a class="brand" href="https://www.efesoftlab.com.tr" aria-label="EfeSoftLab resmi sitesi">
+            <span class="brand-frame">
+              <img class="brand-logo" src="../assets/images/logo-wordmark.svg" alt="EfeSoftLab logo">
+            </span>
+          </a>
+          <div class="nav-meta">
+            <div class="language-switcher" role="group" aria-label="Language selector">
+              <button class="lang-button is-active" type="button" data-lang="tr">TR</button>
+              <button class="lang-button" type="button" data-lang="en">EN</button>
+            </div>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Menüyü aç">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <div class="nav-panel" id="site-menu">
+            <ul class="nav-links">
+              <li><a href="../index.html">Ana Sayfa</a></li>
+              <li><a href="../templates.html">Şablonlar</a></li>
+              <li><a href="../apps.html">Uygulamalar</a></li>
+              <li><a href="../index.html#hakkimda">Hakkımda</a></li>
+              <li><a href="../index.html#iletisim">İletişim</a></li>
+            </ul>
+            <a class="button button-primary button-sm" href="../templates.html">Şablonları İncele</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content">
+      <section class="section product-hero">
+        <div class="container">
+          <div class="product-hero-grid">
+            <div class="product-hero-copy">
+              <span class="eyebrow">Kurumsal Tema</span>
+              <h1>Kurumsal İşletme Şablonu</h1>
+              <p>Profesyonel kurumsal web sitesi şablonu. Sticky navbar, hero, hizmetler, takım, blog, istatistikler ve SSS bölümleriyle eksiksiz bir kurumsal çözüm. HTML5, CSS3 ve JavaScript ile geliştirilmiştir.</p>
+              <ul class="product-features-grid">
+                <li>Sticky Navbar</li>
+                <li>Hero Bölümü</li>
+                <li>Hizmetler</li>
+                <li>Takım</li>
+                <li>Blog</li>
+                <li>İstatistikler</li>
+                <li>SSS</li>
+              </ul>
+              <div class="tpl-colors-inline">
+                <span>Renk Şeması:</span>
+                <span class="color-dot" style="background:#0a1628"></span>
+                <span class="color-dot" style="background:#2563eb"></span>
+              </div>
+              <div class="product-price">4.999 <small>TL</small></div>
+              <div class="product-hero-actions">
+                <a class="button button-secondary" href="../kurumsal/index.html" target="_blank" rel="noopener noreferrer">Canlı Demo</a>
+                <a class="button button-primary" href="mailto:efesoftlab@gmail.com?subject=Satın Alma Talebi: Kurumsal İşletme Şablonu">Satın Al</a>
+              </div>
+            </div>
+            <div class="product-hero-visual">
+              <div class="product-palette">
+                <div class="product-swatch" style="background:#0a1628"></div>
+                <div class="product-swatch" style="background:#2563eb"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-soft">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-tag">Şablon Detayları</span>
+            <h2>Kurumsal işletmeniz için profesyonel çözüm</h2>
+            <p>Kurumsal İşletme şablonu, modern bir kurumsal web sitesinde olması gereken tüm bölümleri kapsar. Sade tasarımı ve güçlü yapısıyla işletmenizi dijitalde profesyonelce temsil eder.</p>
+          </div>
+          <div class="template-grid" style="margin-top:0">
+            <div class="template-card" style="cursor:default">
+              <div class="template-card-body">
+                <h3>Hero Bölümü</h3>
+                <p>Dikkat çekici bir ana görsel ve harekete geçirici mesajlarla ziyaretçileri karşılayan güçlü hero alanı.</p>
+              </div>
+            </div>
+            <div class="template-card" style="cursor:default">
+              <div class="template-card-body">
+                <h3>Hizmet Kartları</h3>
+                <p>İşletmenizin sunduğu hizmetleri görsel kartlar halinde sergileyen düzenli bir bölüm.</p>
+              </div>
+            </div>
+            <div class="template-card" style="cursor:default">
+              <div class="template-card-body">
+                <h3>Takım Vitrini</h3>
+                <p>Ekip üyelerinizi fotoğraf, unvan ve kısa açıklamalarla tanıtabileceğiniz profesyonel kart tasarımı.</p>
+              </div>
+            </div>
+            <div class="template-card" style="cursor:default">
+              <div class="template-card-body">
+                <h3>Blog Sayfası</h3>
+                <p>Kurumsal blog yazılarınızı listeleyebileceğiniz, okuma süresi ve kategorilerle zenginleştirilmiş blog alanı.</p>
+              </div>
+            </div>
+            <div class="template-card" style="cursor:default">
+              <div class="template-card-body">
+                <h3>İstatistikler</h3>
+                <p>Müşteri memnuniyeti, tamamlanan projeler gibi önemli metrikleri animasyonlu sayaçlarla gösterin.</p>
+              </div>
+            </div>
+            <div class="template-card" style="cursor:default">
+              <div class="template-card-body">
+                <h3>SSS Alanı</h3>
+                <p>Sıkça sorulan soruları akordeon formatında düzenleyerek kullanıcı deneyimini iyileştiren bölüm.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-tag">Hizmet Modeli</span>
+            <h2>Size özel teslimat seçenekleri</h2>
+            <p>İhtiyacınıza göre üç farklı şekilde çalışıyoruz.</p>
+          </div>
+          <div class="service-grid">
+            <article class="service-card">
+              <div class="service-icon">&#128274;</div>
+              <h3>Lisans</h3>
+              <p>Şablonu satın alır, kendi sunucunuza kurar ve sınırsız kullanırsınız. 6 ay boyunca güncelleme desteği ve e-posta ile teknik destek dahildir. Dosyalar ZIP olarak teslim edilir.</p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon">&#9881;</div>
+              <h3>Kurulum</h3>
+              <p>Şablonu satın alır, biz kurar ve yayına alırız. İçeriklerinizi yerleştirir, görselleri optimize eder ve sitenizi yayına hazır hale getiririz. Kurulum sonrası 30 gün destek.</p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon">&#10002;</div>
+              <h3>Özel Çözüm</h3>
+              <p>Tamamen size özel, sıfırdan geliştirilmiş web sitesi. Tasarım, geliştirme, kurulum ve yayın sürecinin tamamı bize ait. İhtiyacınıza göre özel modüller eklenir.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section section-soft">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-tag">Diğer Şablonlar</span>
+            <h2>Diğer sektörlere göz atın</h2>
+            <p>İhtiyacınıza uygun başka bir tema arıyorsanız diğer şablonlarımızı inceleyebilirsiniz.</p>
+          </div>
+          <div class="tpl-grid">
+            <article class="tpl-card">
+              <div class="tpl-card-top">
+                <div class="tpl-card-icon" style="background:rgba(212,168,67,0.15);color:#d4a843">E</div>
+                <div class="tpl-card-body">
+                  <h3>Emlak Ofisi</h3>
+                  <p>Gelişmiş emlak arama, 24 ilan, slider ve admin paneli ile modern emlak sitesi.</p>
+                </div>
+              </div>
+              <div class="tpl-card-actions">
+                <a class="tpl-card-demo" href="emlak.html">
+                  Şablonu İncele <span class="tpl-card-arrow">→</span>
+                </a>
+              </div>
+            </article>
+            <article class="tpl-card">
+              <div class="tpl-card-top">
+                <div class="tpl-card-icon" style="background:rgba(14,165,233,0.15);color:#0ea5e9">K</div>
+                <div class="tpl-card-body">
+                  <h3>Sağlık Kliniği</h3>
+                  <p>Doktor kartları, bölümler, randevu formu ve hasta yorumları ile klinik sitesi.</p>
+                </div>
+              </div>
+              <div class="tpl-card-actions">
+                <a class="tpl-card-demo" href="klinik.html">
+                  Şablonu İncele <span class="tpl-card-arrow">→</span>
+                </a>
+              </div>
+            </article>
+            <article class="tpl-card">
+              <div class="tpl-card-top">
+                <div class="tpl-card-icon" style="background:rgba(249,115,22,0.15);color:#f97316">R</div>
+                <div class="tpl-card-body">
+                  <h3>Restoran & Kafe</h3>
+                  <p>22+ menü öğesi, galeri, çevrimiçi rezervasyon ve lightbox ile şık restoran sitesi.</p>
+                </div>
+              </div>
+              <div class="tpl-card-actions">
+                <a class="tpl-card-demo" href="restoran.html">
+                  Şablonu İncele <span class="tpl-card-arrow">→</span>
+                </a>
+              </div>
+            </article>
+            <article class="tpl-card">
+              <div class="tpl-card-top">
+                <div class="tpl-card-icon" style="background:rgba(193,154,75,0.15);color:#c19a4b">H</div>
+                <div class="tpl-card-body">
+                  <h3>Hukuk Bürosu</h3>
+                  <p>Avukat kartları, uzmanlık alanları, başarı hikayeleri ve danışmanlık formu.</p>
+                </div>
+              </div>
+              <div class="tpl-card-actions">
+                <a class="tpl-card-demo" href="hukuk.html">
+                  Şablonu İncele <span class="tpl-card-arrow">→</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="footer-brand" href="https://www.efesoftlab.com.tr" aria-label="EfeSoftLab resmi sitesi">
+            <span class="footer-brand-frame">
+              <img class="footer-logo" src="../assets/images/logo-wordmark.svg" alt="EfeSoftLab logo">
+            </span>
+          </a>
+          <div class="footer-meta">
+            <p class="footer-note">© 2026 EfeSoftLab. Tüm hakları saklıdır.</p>
+            <div class="footer-counter">
+              <span>Toplam ziyaret</span>
+              <strong class="counter-value" data-counter>0</strong>
+            </div>
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="../privacy-policy.html">Gizlilik Politikası</a>
+          <a href="../index.html">Ana sayfaya dön</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="../js/site-config.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -38,6 +38,7 @@ function buildTranslations(config) {
   auto('nav_about', 'nav.about');
   auto('nav_contact', 'nav.contact');
   auto('nav_cta', 'nav.cta');
+  auto('nav_templates_cta', 'nav.templates_cta');
 
   auto('hero_eyebrow', 'hero.eyebrow');
   auto('hero_title', 'hero.title');

@@ -170,8 +170,8 @@
     .template-card-footer { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-top: 20px; padding-top: 18px; border-top: 1px solid var(--border); }
     .template-price { font-size: 1.35rem; font-weight: 700; letter-spacing: -0.02em; }
     .template-price small { font-size: 0.82rem; font-weight: 400; color: var(--text-muted); }
-    .template-actions { display: flex; gap: 10px; }
-    .template-actions .button { min-height: 40px; padding: 0 16px; font-size: 0.88rem; }
+    .template-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+    .template-actions .button { min-height: 40px; padding: 0 14px; font-size: 0.85rem; }
     .features-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px; padding: 28px 0; }
     .feature-item { display: flex; align-items: center; gap: 12px; padding: 16px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: rgba(255,255,255,0.03); }
     .feature-item-icon { width: 36px; height: 36px; display: grid; place-items: center; border-radius: 12px; font-size: 1.1rem; background: rgba(125,211,252,0.12); color: var(--primary); flex-shrink: 0; }
@@ -294,7 +294,8 @@
                 <div class="template-card-footer">
                   <div class="template-price"><span data-i18n="tpl_corp_price">4.999</span> <small>TL</small></div>
                   <div class="template-actions">
-                    <a class="button button-secondary" href="kurumsal/index.html" target="_blank" data-i18n="tpl_demo_btn">Canlı Demo</a>
+                    <a class="button button-outline" href="templates/kurumsal.html" data-i18n="tpl_details_btn">Detaylar</a>
+                    <a class="button button-secondary" href="kurumsal/index.html" target="_blank" rel="noopener noreferrer" data-i18n="tpl_demo_btn">Canlı Demo</a>
                     <a class="button button-primary" href="mailto:efesoftlab@gmail.com?subject=Satın Alma Talebi: Kurumsal İşletme Şablonu" data-i18n="tpl_buy_btn">Satın Al</a>
                   </div>
                 </div>
@@ -326,7 +327,8 @@
                 <div class="template-card-footer">
                   <div class="template-price"><span data-i18n="tpl_estate_price">5.999</span> <small>TL</small></div>
                   <div class="template-actions">
-                    <a class="button button-secondary" href="emlak/index.html" target="_blank" data-i18n="tpl_demo_btn">Canlı Demo</a>
+                    <a class="button button-outline" href="templates/emlak.html" data-i18n="tpl_details_btn">Detaylar</a>
+                    <a class="button button-secondary" href="emlak/index.html" target="_blank" rel="noopener noreferrer" data-i18n="tpl_demo_btn">Canlı Demo</a>
                     <a class="button button-primary" href="mailto:efesoftlab@gmail.com?subject=Satın Alma Talebi: Emlak Ofisi Şablonu" data-i18n="tpl_buy_btn">Satın Al</a>
                   </div>
                 </div>
@@ -357,7 +359,8 @@
                 <div class="template-card-footer">
                   <div class="template-price"><span data-i18n="tpl_medical_price">4.999</span> <small>TL</small></div>
                   <div class="template-actions">
-                    <a class="button button-secondary" href="klinik/index.html" target="_blank" data-i18n="tpl_demo_btn">Canlı Demo</a>
+                    <a class="button button-outline" href="templates/klinik.html" data-i18n="tpl_details_btn">Detaylar</a>
+                    <a class="button button-secondary" href="klinik/index.html" target="_blank" rel="noopener noreferrer" data-i18n="tpl_demo_btn">Canlı Demo</a>
                     <a class="button button-primary" href="mailto:efesoftlab@gmail.com?subject=Satın Alma Talebi: Sağlık Kliniği Şablonu" data-i18n="tpl_buy_btn">Satın Al</a>
                   </div>
                 </div>
@@ -388,7 +391,8 @@
                 <div class="template-card-footer">
                   <div class="template-price"><span data-i18n="tpl_restaurant_price">5.999</span> <small>TL</small></div>
                   <div class="template-actions">
-                    <a class="button button-secondary" href="restoran/index.html" target="_blank" data-i18n="tpl_demo_btn">Canlı Demo</a>
+                    <a class="button button-outline" href="templates/restoran.html" data-i18n="tpl_details_btn">Detaylar</a>
+                    <a class="button button-secondary" href="restoran/index.html" target="_blank" rel="noopener noreferrer" data-i18n="tpl_demo_btn">Canlı Demo</a>
                     <a class="button button-primary" href="mailto:efesoftlab@gmail.com?subject=Satın Alma Talebi: Restoran ve Kafe Şablonu" data-i18n="tpl_buy_btn">Satın Al</a>
                   </div>
                 </div>
@@ -418,7 +422,8 @@
                 <div class="template-card-footer">
                   <div class="template-price"><span data-i18n="tpl_law_price">4.999</span> <small>TL</small></div>
                   <div class="template-actions">
-                    <a class="button button-secondary" href="avukat/index.html" target="_blank" data-i18n="tpl_demo_btn">Canlı Demo</a>
+                    <a class="button button-outline" href="templates/hukuk.html" data-i18n="tpl_details_btn">Detaylar</a>
+                    <a class="button button-secondary" href="avukat/index.html" target="_blank" rel="noopener noreferrer" data-i18n="tpl_demo_btn">Canlı Demo</a>
                     <a class="button button-primary" href="mailto:efesoftlab@gmail.com?subject=Satın Alma Talebi: Hukuk Bürosu Şablonu" data-i18n="tpl_buy_btn">Satın Al</a>
                   </div>
                 </div>
@@ -460,6 +465,35 @@
             <div class="feature-item">
               <div class="feature-item-icon">&#9889;</div>
               <span data-i18n="tpl_feature_speed">Hızlı Yükleme</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-tag" data-i18n="tpl_service_tag">Hizmet Modelleri</span>
+            <h2 data-i18n="tpl_service_title">İhtiyacınıza uygun çözümü seçin</h2>
+            <p data-i18n="tpl_service_text">Her işletmenin ihtiyacı farklıdır. Size en uygun hizmet modelini belirleyelim.</p>
+          </div>
+          <div class="features-grid" style="grid-template-columns:repeat(auto-fill,minmax(260px,1fr));padding:0">
+            <div class="feature-item" style="flex-direction:column;align-items:flex-start;gap:12px;padding:24px">
+              <div class="feature-item-icon" style="width:44px;height:44px;font-size:1.2rem">1</div>
+              <h3 style="margin:0;font-size:1.1rem" data-i18n="tpl_service_1_title">Şablon Lisansı</h3>
+              <p style="margin:0;color:var(--text-soft);font-size:0.9rem;line-height:1.6" data-i18n="tpl_service_1_text">Premium HTML5 şablonun tam kaynak kodunu satın alın. Kendi sunucunuza kurun, dilediğiniz gibi özelleştirin. E-posta ile teslimat, 6 ay güncelleme desteği.</p>
+            </div>
+            <div class="feature-item" style="flex-direction:column;align-items:flex-start;gap:12px;padding:24px">
+              <div class="feature-item-icon" style="width:44px;height:44px;font-size:1.2rem">2</div>
+              <h3 style="margin:0;font-size:1.1rem" data-i18n="tpl_service_2_title">Kurulum & Özelleştirme</h3>
+              <p style="margin:0;color:var(--text-soft);font-size:0.9rem;line-height:1.6" data-i18n="tpl_service_2_text">Şablonu satın alın, biz kuralım. Logo, renk ve içeriklerinizi ekleyip yayına alalım. Temel SEO ve iletişim entegrasyonları dahil.</p>
+              <a class="text-link" href="mailto:efesoftlab@gmail.com?subject=Kurulum ve Özelleştirme Hizmeti Talep" data-i18n="tpl_service_2_cta">Teklif Al →</a>
+            </div>
+            <div class="feature-item" style="flex-direction:column;align-items:flex-start;gap:12px;padding:24px">
+              <div class="feature-item-icon" style="width:44px;height:44px;font-size:1.2rem">3</div>
+              <h3 style="margin:0;font-size:1.1rem" data-i18n="tpl_service_3_title">Özel Web Çözümü</h3>
+              <p style="margin:0;color:var(--text-soft);font-size:0.9rem;line-height:1.6" data-i18n="tpl_service_3_text">İhtiyacınıza tam uygun, sıfırdan özel web çözümü. Özel tasarım, entegrasyonlar, yönetim paneli ve teknik danışmanlık dahil.</p>
+              <a class="text-link" href="mailto:efesoftlab@gmail.com?subject=Özel Web Çözümü Talebi" data-i18n="tpl_service_3_cta">Teklif Al →</a>
             </div>
           </div>
         </div>

@@ -12,26 +12,27 @@ const EFESOFTLAB_DEFAULTS = {
     about: { tr: "Hakkımda", en: "About" },
     contact: { tr: "İletişim", en: "Contact" },
     cta: { tr: "Uygulamaları İncele", en: "Explore Apps" },
+    templates_cta: { tr: "Web Çözümlerini İncele", en: "Browse Web Solutions" },
   },
 
   // ===== HERO SECTION =====
   hero: {
-    eyebrow: { tr: "Bağımsız yazılım markası", en: "Independent software brand" },
-    title: { tr: "Günlük kullanım için sade, hızlı ve güven veren mobil uygulamalar.", en: "Clean, fast and trustworthy mobile apps for everyday use." },
-    text: { tr: "EfeSoftLab, modern arayüz ve net kullanım akışıyla gerçek ihtiyaçlara odaklanan Android uygulamaları geliştirir. Amaç, gösterişli değil; düzenli, pratik ve tekrar kullanmak isteyeceğiniz ürünler sunmaktır.", en: "EfeSoftLab builds Android apps focused on real user needs with modern interfaces and clear user flows. The goal is not noise, but practical products that feel easy to trust and easy to return to." },
-    primary_cta: { tr: "Uygulamaları İncele", en: "Explore Apps" },
-    secondary_cta: { tr: "İletişime Geç", en: "Get in Touch" },
+    eyebrow: { tr: "Bağımsız yazılım stüdyosu", en: "Independent software studio" },
+    title: { tr: "Dijital ürünler ve modern web çözümleri.", en: "Digital products and modern web solutions." },
+    text: { tr: "Günlük yaşamı kolaylaştıran mobil uygulamalar geliştiriyor, işletmeler için kullanıma hazır web çözümleri sunuyoruz. Her ürün, sade kullanım mantığı ve gerçek ihtiyaç odağıyla tasarlanır.", en: "We build mobile apps that simplify everyday life and offer ready-to-use web solutions for businesses. Every product is designed with clean logic and real needs in mind." },
+    primary_cta: { tr: "Uygulamaları Keşfet", en: "Discover Apps" },
+    secondary_cta: { tr: "Web Çözümlerini İncele", en: "Browse Web Solutions" },
     signals: [
-      { tr: "Kullanıcı odaklı", en: "User-focused" },
-      { tr: "Günlük kullanıma uygun", en: "Built for everyday use" },
-      { tr: "Sade ama güçlü", en: "Clean but capable" }
+      { tr: "Mobil uygulamalar", en: "Mobile apps" },
+      { tr: "Web çözümleri", en: "Web solutions" },
+      { tr: "Sade ve güvenilir", en: "Clean and reliable" }
     ],
-    panel_badge: { tr: "Uygulama vitrini", en: "Product showcase" },
+    panel_badge: { tr: "Ürün vitrini", en: "Product showcase" },
     panel_status: { tr: "Düzenli, hızlı, net", en: "Structured, fast, clear" },
     stacks: [
       { title: { tr: "Listora", en: "Listora" }, text: { tr: "Alışveriş listeleri için modern akış", en: "A modern flow for shopping lists" } },
       { title: { tr: "10'lu Günlük Araçlar", en: "10 Everyday Tools" }, text: { tr: "Tek yerde pratik araçlar", en: "Practical tools in one place" } },
-      { title: { tr: "QR Paylaşım", en: "QR Sharing" }, text: { tr: "Hızlı aktarım deneyimi", en: "Fast transfer experience" } }
+      { title: { tr: "Premium Web Şablonları", en: "Premium Web Templates" }, text: { tr: "5 sektöre özel satışa hazır temalar", en: "Ready-to-sell themes for 5 industries" } }
     ],
     floating_title: { tr: "Temiz ürün dili", en: "A cleaner product language" },
     floating_text: { tr: "Yüksek gürültü yerine net fayda ve düzenli deneyim.", en: "Less noise, clearer value, stronger usability." }
@@ -224,7 +225,8 @@ const EFESOFTLAB_DEFAULTS = {
     labels: {
       colors: { tr: "Renk Şeması:", en: "Color scheme:" },
       demo: { tr: "Canlı Demo", en: "Live Demo" },
-      buy: { tr: "Satın Al", en: "Buy Now" }
+      buy: { tr: "Satın Al", en: "Buy Now" },
+      details: { tr: "Detaylar", en: "Details" }
     },
     items: [
       {
@@ -313,6 +315,27 @@ const EFESOFTLAB_DEFAULTS = {
       {
         q: { tr: "Şablonu kaç web sitesinde kullanabilirim?", en: "How many websites can I use the template on?" },
         a: { tr: "Her satın alma işlemi, şablonu tek bir web sitesinde kullanma lisansı içerir. Şablonu birden fazla sitede kullanmak için ek lisans satın almanız gerekmektedir.", en: "Each purchase includes a license to use the template on a single website. Additional licenses must be purchased to use the template on multiple sites." }
+      }
+    ]
+  },
+
+  // ===== SERVICE MODELS =====
+  service_models: {
+    tag: { tr: "Hizmet Modelleri", en: "Service Models" },
+    title: { tr: "İhtiyacınıza uygun çözümü seçin", en: "Choose the right solution for you" },
+    text: { tr: "Her işletmenin ihtiyacı farklıdır. Size en uygun hizmet modelini belirleyelim.", en: "Every business has different needs. Let us find the best model for you." },
+    items: [
+      {
+        title: { tr: "Şablon Lisansı", en: "Template License" },
+        text: { tr: "Premium HTML5 şablonun tam kaynak kodunu satın alın. Kendi sunucunuza kurun, dilediğiniz gibi özelleştirin. E-posta ile teslimat, 6 ay güncelleme desteği.", en: "Purchase the full source code of the premium HTML5 template. Install on your own server, customize as you wish. Email delivery, 6 months of updates." }
+      },
+      {
+        title: { tr: "Kurulum ve Özelleştirme", en: "Setup and Customization" },
+        text: { tr: "Şablonu satın alın, biz kuralım. Logo, renk ve içeriklerinizi ekleyip yayına alalım. Temel SEO ve iletişim entegrasyonları dahil.", en: "Purchase the template, we handle the setup. Add your logo, colors and content, and go live. Basic SEO and communication integrations included." }
+      },
+      {
+        title: { tr: "Özel Web Çözümü", en: "Custom Web Solution" },
+        text: { tr: "İhtiyacınıza tam uygun, sıfırdan özel web çözümü. Özel tasarım, entegrasyonlar, yönetim paneli ve teknik danışmanlık dahil.", en: "A fully custom web solution built from scratch to meet your exact needs. Custom design, integrations, admin panel and technical consulting included." }
       }
     ]
   },
