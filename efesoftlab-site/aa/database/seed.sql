@@ -1,0 +1,2 @@
+-- A&A Güvenlik - Seed Data (Optional)
+-- Run after schema.sql to populate sample data

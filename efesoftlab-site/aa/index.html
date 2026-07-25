@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" data-i18n="meta-desc" content="A&A Güvenlik Teknolojileri - Bursa'da güvenlik kamera sistemleri, çipli giriş sistemleri, bilgisayar satış ve teknik destek hizmetleri. Site yöneticileri için ücretsiz keşif.">
+  <meta name="keywords" data-i18n="meta-keywords" content="güvenlik kamera, çipli giriş, keycard, teknik destek, bursa güvenlik, site güvenlik, kamera sistemleri">
+  <meta name="author" content="A&A Güvenlik">
+  <title data-i18n="page-title">A&A Güvenlik Teknolojileri ve Bilişim Hizmetleri</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/site-config.js"></script>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="A&A Güvenlik Teknolojileri ve Bilişim Hizmetleri">
+  <meta property="og:title" content="A&A Güvenlik - Bursa'da Güvenlik Kamera ve Çipli Giriş Sistemleri">
+  <meta property="og:description" content="A&A Güvenlik Teknolojileri - Bursa'da güvenlik kamera sistemleri, çipli giriş sistemleri, bilgisayar satış ve teknik destek. Site yöneticileri için ücretsiz keşif.">
+  <meta property="og:url" content="https://aguvenlik.com.tr/">
+  <meta property="og:image" content="https://aguvenlik.com.tr/img/og-image.jpg">
+  <meta property="og:locale" content="tr_TR">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="A&A Güvenlik - Bursa'da Güvenlik Kamera ve Çipli Giriş Sistemleri">
+  <meta name="twitter:description" content="A&A Güvenlik Teknolojileri - Bursa'da güvenlik kamera sistemleri, çipli giriş sistemleri, bilgisayar satış ve teknik destek. Site yöneticileri için ücretsiz keşif.">
+  <meta name="twitter:image" content="https://aguvenlik.com.tr/img/og-image.jpg">
+  <!-- Canonical -->
+  <link rel="canonical" href="https://aguvenlik.com.tr/">
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "A&A Güvenlik Teknolojileri ve Bilişim Hizmetleri",
+    "image": "https://aguvenlik.com.tr/img/og-image.jpg",
+    "telephone": "0506 092 16 14",
+    "email": "info@aguvenlik.com.tr",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Güneştepe 1. Yalıçiftlik Sk. No:46/A",
+      "addressLocality": "Osmangazi",
+      "addressRegion": "Bursa",
+      "postalCode": "16220",
+      "addressCountry": "TR"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "08:00",
+        "closes": "19:00"
+      }
+    ],
+    "url": "https://aguvenlik.com.tr",
+    "priceRange": "₺₺",
+    "description": "Güvenlik teknolojileri ve bilişim hizmetleri - Kamera sistemleri, çipli giriş sistemleri, bilgisayar satış & destek, kurulum & bakım."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "A&A Güvenlik",
+    "url": "https://aguvenlik.com.tr",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://aguvenlik.com.tr/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+<body data-page="page-title" data-meta-desc="meta-desc" data-meta-keywords="meta-keywords">
+
+  <div class="preloader" id="preloader">
+    <div class="preloader-spinner"></div>
+    <div class="preloader-text" data-i18n="preloader-text">Yükleniyor...</div>
+  </div>
+
+  <div id="toastContainer" class="toast-container"></div>
+
+  <div class="announcement-bar">
+    <div class="announcement-track">
+      <span><i class="fas fa-shield-halved"></i> <span>Ücretsiz Keşif Fırsatı! Sitenizdeki güvenlik sistemlerini ücretsiz kontrol ediyoruz.</span></span>
+      <span><i class="fas fa-circle"></i></span>
+      <span><i class="fas fa-shield-halved"></i> <span>Kamera, çipli giriş ve teknik altyapı kontrolü için hemen randevu alın: 0506 092 16 14</span></span>
+      <span><i class="fas fa-circle"></i></span>
+      <span><i class="fas fa-shield-halved"></i> <span>Bursa geneli site yöneticilerine özel ücretsiz kontrol ve raporlama hizmeti.</span></span>
+      <span><i class="fas fa-circle"></i></span>
+    </div>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-shield-halved"></i> <span data-i18n="logo-text" data-config="logo.text">A&A Güvenlik</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active" data-i18n="nav-home">Ana Sayfa</a></li>
+        <li><a href="services.html" data-i18n="nav-services">Hizmetler</a></li>
+        <li><a href="free-inspection.html" data-i18n="nav-free-check">Ücretsiz Kontrol</a></li>
+        <li><a href="about.html" data-i18n="nav-about">Hakkımızda</a></li>
+        <li><a href="gallery.html" data-i18n="nav-gallery">Galeri</a></li>
+        <li><a href="index.html#faq" data-i18n="nav-faq">SSS</a></li>
+        <li><a href="contact.html" data-i18n="nav-contact">İletişim</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="lang-btn active-lang" data-lang="tr" aria-label="Türkçe">TR</button>
+        <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Tema değiştir">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menü">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-content animate-on-scroll">
+        <span class="badge" data-i18n="hero-badge" data-config="hero.subtitle">A&A Güvenlik Teknolojileri</span>
+        <h1>
+          <span data-i18n="hero-title">Siteler İçin</span>
+          <span class="typing-text gradient-text"></span><span class="typing-cursor"></span>
+        </h1>
+        <p data-i18n="hero-desc" data-config="hero.description">Site yöneticileri ve işletmeler için profesyonel güvenlik teknolojileri ve bilişim hizmetleri. Ücretsiz keşif ve kontrol ile sistemlerinizi güvence altına alıyoruz.</p>
+        <div class="hero-buttons">
+          <a href="services.html" class="btn btn-primary"><i class="fas fa-rocket"></i> <span data-i18n="hero-btn-services">Hizmetlerimiz</span></a>
+          <a href="free-inspection.html" class="btn btn-outline"><i class="fas fa-clipboard-check"></i> <span data-i18n="hero-btn-contact">Ücretsiz Keşif Talep Et</span></a>
+          <a href="Tel:05060921614" class="btn btn-outline"><i class="fas fa-phone-alt"></i> <span data-i18n="hero-btn-call">Hemen Ara</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-title animate-on-scroll">
+        <span class="subtitle" data-i18n="features-subtitle">Ücretsiz Hizmetlerimiz</span>
+        <div class="title-line"></div>
+        <h2 data-i18n="features-title">Site Yöneticileri İçin <span class="gradient-text">Ücretsiz Kontroller</span></h2>
+        <p data-i18n="features-desc">Sitenizdeki güvenlik sistemlerini ücretsiz kontrol ediyor, detaylı rapor sunuyoruz.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card animate-on-scroll delay-1">
+          <div class="icon"><i class="fas fa-camera"></i></div>
+          <h3 data-i18n="feature1-title">Kamera Açısı Kontrolü</h3>
+          <p data-i18n="feature1-desc">Mevcut kameralarınızın açılarını ve görüş alanlarını ücretsiz kontrol ediyor, kör noktaları tespit ediyoruz.</p>
+        </div>
+        <div class="feature-card animate-on-scroll delay-2">
+          <div class="icon"><i class="fas fa-wifi"></i></div>
+          <h3 data-i18n="feature2-title">Bağlantı Kontrolü</h3>
+          <p data-i18n="feature2-desc">Sinyal kalitesi, kayıt cihazı bağlantıları ve ağ altyapınızı detaylı test ediyoruz.</p>
+        </div>
+        <div class="feature-card animate-on-scroll delay-3">
+          <div class="icon"><i class="fas fa-door-open"></i></div>
+          <h3 data-i18n="feature3-title">Giriş Sistemi Kontrolü</h3>
+          <p data-i18n="feature3-desc">Turnike, kapı ve kart okuyucu sistemlerinizin performansını kontrol ediyoruz.</p>
+        </div>
+        <div class="feature-card animate-on-scroll delay-4">
+          <div class="icon"><i class="fas fa-file-alt"></i></div>
+          <h3 data-i18n="feature4-title">Sistem Raporlama</h3>
+          <p data-i18n="feature4-desc">Tüm kontroller sonrası detaylı rapor hazırlıyor, iyileştirme önerileri sunuyoruz.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark" id="services">
+    <div class="container">
+      <div class="section-title animate-on-scroll">
+        <span class="subtitle" data-i18n="services-subtitle">Hizmetlerimiz</span>
+        <div class="title-line"></div>
+        <h2 data-i18n="services-title">Neler <span class="gradient-text">Sunuyoruz</span>?</h2>
+        <p data-i18n="services-desc">Güvenlik teknolojileri ve bilişim alanında profesyonel çözümler.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card animate-on-scroll delay-1" data-config="services.0">
+          <div class="icon"><i class="fas fa-video"></i></div>
+          <h3 data-i18n="service1-title" data-config="services.0.title">Güvenlik Kamera Sistemleri</h3>
+          <p data-i18n="service1-desc" data-config="services.0.description">Kamera kurulumu, kayıt sistemi kontrolü, görüntü kalitesi optimizasyonu, mevcut sistem revizyonu ve arıza/bakım desteği.</p>
+          <a href="services.html" class="read-more"><span data-i18n="service-read-more">Detaylı İncele</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card animate-on-scroll delay-2" data-config="services.1">
+          <div class="icon"><i class="fas fa-id-card"></i></div>
+          <h3 data-i18n="service2-title" data-config="services.1.title">Çipli Giriş Sistemleri</h3>
+          <p data-i18n="service2-desc" data-config="services.1.description">Keycard sistemleri, turnike/kapı giriş çözümleri, kart okuyucu kontrolü, yetkilendirme yönetimi ve sistem revizyonu.</p>
+          <a href="services.html" class="read-more"><span data-i18n="service-read-more">Detaylı İncele</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card animate-on-scroll delay-3" data-config="services.2">
+          <div class="icon"><i class="fas fa-laptop"></i></div>
+          <h3 data-i18n="service3-title" data-config="services.2.title">Bilgisayar Satış & Teknik Destek</h3>
+          <p data-i18n="service3-desc" data-config="services.2.description">Bilgisayar satış danışmanlığı, kurulum, format/bakım/yazılım desteği ve yerinde teknik destek hizmetleri.</p>
+          <a href="services.html" class="read-more"><span data-i18n="service-read-more">Detaylı İncele</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card animate-on-scroll delay-4" data-config="services.3">
+          <div class="icon"><i class="fas fa-tools"></i></div>
+          <h3 data-i18n="service4-title" data-config="services.3.title">Profesyonel Kurulum & Bakım</h3>
+          <p data-i18n="service4-desc" data-config="services.3.description">Periyodik bakım, arıza tespiti, sistem performans kontrolü ve kablosal bağlantı kontrolü hizmetleri.</p>
+          <a href="services.html" class="read-more"><span data-i18n="service-read-more">Detaylı İncele</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path class="wave-fill" d="M0,40 C360,80 720,0 1440,40 L1440,80 L0,80 Z"></path>
+    </svg>
+  </div>
+
+  <section class="stats" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item animate-on-scroll delay-1" data-config="stats.0">
+          <div class="number"><span class="counter" data-target="250" data-i18n="stat1-num" data-config="stats.0.number">0</span><span class="suffix" data-config="stats.0.suffix">+</span></div>
+          <p data-i18n="stat1-label" data-config="stats.0.label">Başarılı Proje</p>
+        </div>
+        <div class="stat-item animate-on-scroll delay-2" data-config="stats.1">
+          <div class="number"><span class="counter" data-target="80" data-i18n="stat2-num" data-config="stats.1.number">0</span><span class="suffix" data-config="stats.1.suffix">+</span></div>
+          <p data-i18n="stat2-label" data-config="stats.1.label">Mutlu Müşteri</p>
+        </div>
+        <div class="stat-item animate-on-scroll delay-3" data-config="stats.2">
+          <div class="number"><span class="counter" data-target="5" data-i18n="stat3-num" data-config="stats.2.number">0</span><span class="suffix" data-config="stats.2.suffix">+</span></div>
+          <p data-i18n="stat3-label" data-config="stats.2.label">Yıl Deneyim</p>
+        </div>
+        <div class="stat-item animate-on-scroll delay-4" data-config="stats.3">
+          <div class="number"><span class="counter" data-target="7" data-i18n="stat4-num" data-config="stats.3.number">0</span><span class="suffix" data-config="stats.3.suffix">/24</span></div>
+          <p data-i18n="stat4-label" data-config="stats.3.label">Destek Hattı</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark" id="testimonials">
+    <div class="container">
+      <div class="section-title animate-on-scroll">
+        <span class="subtitle" data-i18n="testimonials-subtitle">Referanslar</span>
+        <div class="title-line"></div>
+        <h2 data-i18n="testimonials-title">Müşterilerimiz <span class="gradient-text">Ne Diyor</span>?</h2>
+        <p data-i18n="testimonials-desc">Site yönetimleri ve işletmelerin memnuniyeti bizim için en büyük referans.</p>
+      </div>
+      <div class="testimonials-carousel animate-on-scroll">
+        <div class="testimonials-track">
+          <div class="testimonial-card" data-config="testimonials.0">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="text" data-i18n="testimonial1-text" data-config="testimonials.0.text">"Site güvenlik sistemlerimizi yenilediler. Profesyonel ekipleri ve uygun fiyat politikasıyla kesinlikle tavsiye ediyorum."</p>
+            <div class="author">
+              <img src="https://i.pravatar.cc/100?img=11" alt="Mehmet K." loading="lazy">
+              <div>
+                <h4 data-i18n="testimonial1-name" data-config="testimonials.0.name">Mehmet K.</h4>
+                <span data-i18n="testimonial1-title" data-config="testimonials.0.role">Site Yöneticisi, Yıldız Sitesi</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card" data-config="testimonials.1">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="text" data-i18n="testimonial2-text" data-config="testimonials.1.text">"Kamera sistemimizde yaşadığımız arızaya çok hızlı müdahale ettiler. Ücretsiz keşif hizmetleri gerçekten işe yaradı."</p>
+            <div class="author">
+              <img src="https://i.pravatar.cc/100?img=12" alt="Ayşe T." loading="lazy">
+              <div>
+                <h4 data-i18n="testimonial2-name" data-config="testimonials.1.name">Ayşe T.</h4>
+                <span data-i18n="testimonial2-title" data-config="testimonials.1.role">Apartman Yöneticisi</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card" data-config="testimonials.2">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="text" data-i18n="testimonial3-text" data-config="testimonials.2.text">"Giriş sistemimizi keycard sistemine dönüştürdüler. Hem güvenli hem kullanışlı. Çok memnunuz."</p>
+            <div class="author">
+              <img src="https://i.pravatar.cc/100?img=13" alt="Can Ö." loading="lazy">
+              <div>
+                <h4 data-i18n="testimonial3-name" data-config="testimonials.2.name">Can Ö.</h4>
+                <span data-i18n="testimonial3-title" data-config="testimonials.2.role">İş Yeri Sahibi</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-title animate-on-scroll">
+        <span class="subtitle" data-i18n="faq-subtitle">SSS</span>
+        <div class="title-line"></div>
+        <h2 data-i18n="faq-title">Sıkça Sorulan <span class="gradient-text">Sorular</span></h2>
+        <p data-i18n="faq-desc">Hizmetlerimiz hakkında en çok merak edilen soruların yanıtları.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item active animate-on-scroll" data-config="faq.0">
+          <button class="faq-question">
+            <span data-i18n="faq1-q" data-config="faq.0.question">Ücretsiz keşif gerçekten ücretsiz mi?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq1-a" data-config="faq.0.answer">Evet, ücretsiz keşif ve kontrol hizmetimiz tamamen ücretsizdir. Herhangi bir taahhüt veya gizli ücret söz konusu değildir. Kontrol sonrası ihtiyaç duyulması halinde size özel fiyat teklifi sunarız, kabul etme zorunluluğunuz yoktur.</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll" data-config="faq.1">
+          <button class="faq-question">
+            <span data-i18n="faq2-q" data-config="faq.1.question">Hangi bölgelerde hizmet veriyorsunuz?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq2-a" data-config="faq.1.answer">Başta Bursa Osmangazi, Nilüfer, Yıldırım olmak üzere Bursa geneli ve çevre ilçelerde hizmet vermekteyiz.</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll" data-config="faq.2">
+          <button class="faq-question">
+            <span data-i18n="faq3-q" data-config="faq.2.question">Mevcut sistemleri kontrol edip raporluyor musunuz?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq3-a" data-config="faq.2.answer">Evet, mevcut güvenlik kamera ve giriş sistemlerinizi detaylı olarak kontrol ediyor, eksikleri ve iyileştirme önerilerini içeren kapsamlı bir rapor sunuyoruz.</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll" data-config="faq.3">
+          <button class="faq-question">
+            <span data-i18n="faq4-q" data-config="faq.3.question">Kamera açısı kontrolü neden önemli?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq4-a" data-config="faq.3.answer">Yanlış kamera açıları güvenlik açıklarına neden olabilir. Kör noktalar, yetersiz görüş alanı veya düşük kaliteli kayıtlar güvenlik zaafiyeti yaratır. Düzenli açı kontrolü ile bu riskleri ortadan kaldırıyoruz.</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll" data-config="faq.4">
+          <button class="faq-question">
+            <span data-i18n="faq5-q" data-config="faq.4.question">Giriş sistemi bakımını ne sıklıkta yapmak gerekir?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq5-a" data-config="faq.4.answer">Çipli giriş sistemlerinizin yılda en az 2 kez periyodik bakımdan geçmesini öneriyoruz. Yoğun kullanılan sistemlerde bu süre 3 aya kadar düşebilir.</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll" data-config="faq.5">
+          <button class="faq-question">
+            <span data-i18n="faq6-q" data-config="faq.5.question">Arıza durumunda ne kadar sürede dönüş sağlanır?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq6-a" data-config="faq.5.answer">Arıza bildirimlerinize en geç 2 saat içinde dönüş sağlıyor, acil durumlarda aynı gün müdahale ediyoruz.</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll" data-config="faq.6">
+          <button class="faq-question">
+            <span data-i18n="faq7-q" data-config="faq.6.question">Hangi tip kamera sistemlerini kuruyorsunuz?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq7-a" data-config="faq.6.answer">Analog, HD-TVI, IP ve kablosuz kamera sistemleri olmak üzere her türlü çözümü sunuyoruz. İhtiyacınıza ve bütçenize en uygun sistemi belirliyoruz.</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll" data-config="faq.7">
+          <button class="faq-question">
+            <span data-i18n="faq8-q" data-config="faq.7.question">Keycard sistemi nedir?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq8-a" data-config="faq.7.answer">Keycard (çipli kart) sistemleri, bina girişlerinde kartlı geçiş sağlayan elektronik güvenlik sistemleridir. Yetkisiz girişleri engeller ve kimin ne zaman girdiğini kayıt altına alır.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section" id="cta">
+    <div class="cta-shapes">
+      <div class="cta-shape cta-shape-1"><i class="fas fa-shield-halved"></i></div>
+      <div class="cta-shape cta-shape-2"><i class="fas fa-camera"></i></div>
+      <div class="cta-shape cta-shape-3"><i class="fas fa-key"></i></div>
+      <div class="cta-dot cta-dot-1"></div>
+      <div class="cta-dot cta-dot-2"></div>
+      <div class="cta-dot cta-dot-3"></div>
+      <div class="cta-dot cta-dot-4"></div>
+    </div>
+    <div class="container">
+      <div class="cta-wrapper animate-on-scroll">
+        <div class="cta-content">
+          <span class="cta-badge" data-i18n="cta-badge" data-config="cta.title"><i class="fas fa-bolt"></i> Ücretsiz Keşif İçin Hemen Arayın</span>
+          <h2 data-i18n="cta-title">Güvenliğiniz <span class="gradient-text">Emin Ellerde</span></h2>
+          <p data-i18n="cta-desc" data-config="cta.desc">Sitenizdeki güvenlik sistemlerini ücretsiz kontrol edelim, eksikleri raporlayalım. Hemen randevu alın!</p>
+          <div class="cta-actions">
+            <a href="Tel:05060921614" class="cta-phone-btn" data-config="cta.btnLink">
+              <div class="cta-ring"></div>
+              <i class="fas fa-phone-alt"></i>
+              <span data-i18n="cta-btn" data-config="cta.btnText">0506 092 16 14</span>
+            </a>
+            <a href="https://wa.me/90506921614" class="cta-whatsapp-btn" target="_blank" rel="noopener">
+              <i class="fab fa-whatsapp"></i> <span data-i18n="cta-whatsapp">WhatsApp'tan Yazın</span>
+            </a>
+          </div>
+          <div class="cta-trust">
+            <div class="cta-trust-item">
+              <span class="cta-trust-number">100+</span>
+              <span class="cta-trust-label" data-i18n="cta-trust-projects">Tamamlanan Proje</span>
+            </div>
+            <div class="cta-trust-divider"></div>
+            <div class="cta-trust-item">
+              <span class="cta-trust-number">7/24</span>
+              <span class="cta-trust-label" data-i18n="cta-trust-support">Teknik Destek</span>
+            </div>
+            <div class="cta-trust-divider"></div>
+            <div class="cta-trust-item">
+              <span class="cta-trust-number">%100</span>
+              <span class="cta-trust-label" data-i18n="cta-trust-satisfaction">Müşteri Memnuniyeti</span>
+            </div>
+          </div>
+        </div>
+        <div class="cta-visual">
+          <div class="cta-visual-shield">
+            <i class="fas fa-shield-halved"></i>
+          </div>
+          <div class="cta-visual-card cta-visual-card-1">
+            <i class="fas fa-video"></i>
+            <span>Kamera</span>
+          </div>
+          <div class="cta-visual-card cta-visual-card-2">
+            <i class="fas fa-id-card"></i>
+            <span>Giriş</span>
+          </div>
+          <div class="cta-visual-card cta-visual-card-3">
+            <i class="fas fa-laptop"></i>
+            <span>Teknik</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <a href="index.html" class="logo">
+            <i class="fas fa-shield-halved"></i> <span data-i18n="logo-text" data-config="logo.text">A&A Güvenlik</span>
+          </a>
+          <p data-i18n="footer-about-desc" data-config="footer.aboutText">Güvenlik teknolojileri ve bilişim hizmetleri alanında profesyonel çözümler. Kamera sistemleri, çipli giriş sistemleri ve teknik destek.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3 data-i18n="footer-quick-links">Hızlı Linkler</h3>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-home">Ana Sayfa</span></a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-about">Hakkımızda</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-services-link">Hizmetler</span></a></li>
+            <li><a href="free-inspection.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-free-check">Ücretsiz Kontrol</span></a></li>
+            <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-gallery">Galeri</span></a></li>
+            <li><a href="index.html#faq"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-faq">SSS</span></a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-contact-link">İletişim</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 data-i18n="footer-services-title">Hizmetler</h3>
+          <ul class="footer-links">
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-service1">Güvenlik Kamera Sistemleri</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-service2">Çipli Giriş Sistemleri</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-service3">Bilgisayar Satış & Destek</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-service4">Kurulum & Bakım</span></a></li>
+            <li><a href="free-inspection.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-service5">Ücretsiz Kontrol</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-service6">Teknik Destek</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 data-i18n="footer-contact-title">İletişim Bilgileri</h3>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer-addr" data-config="contact.address">Güneştepe 1. Yalıçiftlik Sk. No:46/A, Osmangazi / BURSA</span></li>
+            <li><i class="fas fa-phone-alt"></i> <span data-i18n="footer-phone" data-config="contact.phone">0506 092 16 14</span></li>
+            <li><i class="fas fa-envelope"></i> <span data-i18n="footer-email" data-config="contact.email">info@aguvenlik.com.tr</span></li>
+            <li><i class="fas fa-clock"></i> <span data-i18n="footer-hours" data-config="footer.workingHours">Pazartesi - Cumartesi: 08:00 - 19:00</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p><span data-i18n="footer-copyright">© 2026 A&A Güvenlik Teknolojileri ve Bilişim Hizmetleri.</span></p>
+        <p><span>Site <a href="https://www.efesoftlab.com.tr" target="_blank" rel="noopener" style="color:var(--orange);font-weight:600;">Efesoftlab</a> tarafından yapılmıştır.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+    <img src="" alt="Resim" loading="lazy">
+  </div>
+
+  <button class="back-to-top" id="backToTop" aria-label="Yukarı çık">
+    <i class="fas fa-arrow-up"></i>
+    <svg viewBox="0 0 52 52">
+      <circle cx="26" cy="26" r="24"></circle>
+    </svg>
+  </button>
+
+  <a href="https://wa.me/90506921614" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" aria-label="WhatsApp ile iletişime geçin">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <div class="cookie-consent" id="cookieConsent">
+    <div class="container">
+      <p data-i18n="toast-cookie-msg">Size daha iyi bir deneyim sunmak için çerezler kullanıyoruz.</p>
+      <div class="cookie-actions">
+        <button class="btn btn-primary btn-sm" id="cookieAccept" data-i18n="toast-cookie-btn">Kabul Et</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

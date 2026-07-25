@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin.html
+Disallow: /api/
+Disallow: /img/
+
+Sitemap: https://aguvenlik.com.tr/sitemap.xml

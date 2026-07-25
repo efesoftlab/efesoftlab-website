@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" data-i18n="meta-desc-about" content="A&A Güvenlik Teknolojileri ve Bilişim Hizmetleri olarak Bursa'da güvenlik kamera sistemleri, çipli giriş sistemleri ve teknik destek hizmetleri sunuyoruz. Hikayemizi keşfedin.">
+  <meta name="keywords" data-i18n="meta-keywords-about" content="hakkımızda, güvenlik teknolojileri, kamera sistemleri, giriş sistemleri, bursa güvenlik">
+  <meta name="author" content="A&A Güvenlik">
+  <title data-i18n="about-banner-title">Hakkımızda | A&A Güvenlik</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/site-config.js"></script>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="A&A Güvenlik Teknolojileri ve Bilişim Hizmetleri">
+  <meta property="og:title" content="Hakkımızda - A&A Güvenlik Teknolojileri">
+  <meta property="og:description" content="A&A Güvenlik Teknolojileri ve Bilişim Hizmetleri hakkında. Bursa Osmangazi'de güvenlik sistemleri ve bilişim çözümleri.">
+  <meta property="og:url" content="https://aguvenlik.com.tr/about.html">
+  <meta property="og:image" content="https://aguvenlik.com.tr/img/og-image.jpg">
+  <meta property="og:locale" content="tr_TR">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hakkımızda - A&A Güvenlik Teknolojileri">
+  <meta name="twitter:description" content="A&A Güvenlik Teknolojileri ve Bilişim Hizmetleri hakkında. Bursa Osmangazi'de güvenlik sistemleri ve bilişim çözümleri.">
+  <meta name="twitter:image" content="https://aguvenlik.com.tr/img/og-image.jpg">
+  <!-- Canonical -->
+  <link rel="canonical" href="https://aguvenlik.com.tr/about.html">
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Ana Sayfa",
+      "item": "https://aguvenlik.com.tr"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Hakkımızda",
+      "item": "https://aguvenlik.com.tr/about.html"
+    }]
+  }
+  </script>
+</head>
+<body data-page="about-banner-title" data-meta-desc="meta-desc-about" data-meta-keywords="meta-keywords-about">
+
+  <!-- Sayfa ön yükleyici -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-spinner"></div>
+    <div class="preloader-text" data-i18n="preloader-text">Yükleniyor...</div>
+  </div>
+
+  <!-- Bildirim kapsayıcısı -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- ===== Duyuru Çubuğu Başlangıcı ===== -->
+  <div class="announcement-bar">
+    <div class="announcement-track">
+      <span><i class="fas fa-star"></i> <span data-i18n="marquee1">2026 Yaz Kampanyası: Yeni müşterilere %20 indirim!</span></span>
+      <span><i class="fas fa-circle"></i></span>
+      <span><i class="fas fa-star"></i> <span data-i18n="marquee2">Ücretsiz ön görüşme için hemen arayın: 0506 092 16 14</span></span>
+      <span><i class="fas fa-circle"></i></span>
+      <span><i class="fas fa-star"></i> <span data-i18n="marquee3">Güvenlik teknolojilerinde 5+ yıllık deneyim</span></span>
+      <span><i class="fas fa-circle"></i></span>
+    </div>
+  </div>
+  <!-- ===== Duyuru Çubuğu Bitişi ===== -->
+
+  <!-- ===== Navbar Başlangıcı ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-shield-halved"></i> <span data-i18n="logo-text" data-config="logo.text">A&A Güvenlik</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" data-i18n="nav-home">Ana Sayfa</a></li>
+        <li><a href="about.html" class="active" data-i18n="nav-about">Hakkımızda</a></li>
+        <li><a href="services.html" data-i18n="nav-services">Hizmetler</a></li>
+        <li><a href="contact.html" data-i18n="nav-contact">İletişim</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="lang-btn active-lang" data-lang="tr" aria-label="Türkçe">TR</button>
+        <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Tema değiştir">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menü">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- ===== Navbar Bitişi ===== -->
+
+  <!-- ===== Sayfa Banner Başlangıcı ===== -->
+  <section class="page-banner">
+    <div class="page-banner-bg"></div>
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html" data-i18n="about-breadcrumb-home">Ana Sayfa</a>
+        <i class="fas fa-chevron-right"></i>
+        <span data-i18n="about-breadcrumb-current">Hakkımızda</span>
+      </div>
+      <h1 data-i18n="about-banner-title">Hakkımızda</h1>
+      <p data-i18n="about-banner-desc">Güvenlik teknolojileri ve bilişim hizmetlerinde profesyonel çözüm ortağınız.</p>
+    </div>
+  </section>
+  <!-- ===== Sayfa Banner Bitişi ===== -->
+
+  <!-- ===== Şirket Hikayesi Başlangıcı ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="about-story">
+        <div class="image animate-on-scroll">
+          <img src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?w=800&q=80" alt="A&A Güvenlik Ofis" loading="lazy">
+        </div>
+        <div class="content animate-on-scroll">
+          <h2 data-i18n="about-story-title" data-config="about.storyTitle">Hikayemiz</h2>
+          <p data-i18n="about-story-p1" data-config="about.storyParagraphs.0">A&A Güvenlik Teknolojileri ve Bilişim Hizmetleri, Bursa'da güvenlik ve bilişim alanında faaliyet göstermek üzere kurulmuştur. Kurulduğumuz günden bu yana site yönetimleri, apartmanlar, iş yerleri ve küçük-orta ölçekli işletmelere güvenlik kamera sistemleri, çipli giriş sistemleri ve teknik destek hizmetleri sunuyoruz.</p>
+          <p data-i18n="about-story-p2" data-config="about.storyParagraphs.1">Uzman ekibimizle sahada edindiğimiz deneyim sayesinde her ölçekteki projede profesyonel çözümler üretiyor, müşterilerimizin güvenlik ihtiyaçlarını en üst düzeyde karşılıyoruz. Ücretsiz keşif ve kontrol hizmetimizle mevcut sistemlerinizi değerlendiriyor, eksikleri raporlayarak size özel çözüm önerileri sunuyoruz.</p>
+          <p data-i18n="about-story-p3" data-config="about.storyParagraphs.2">Müşteri memnuniyeti odaklı yaklaşımımız, hızlı ve güvenilir hizmet anlayışımızla Bursa başta olmak üzere çevre bölgelerdeki site yönetimleri ve işletmeler için güvenilir bir iş ortağıyız.</p>
+          <div class="about-stats">
+            <div class="about-stat">
+              <div class="num" data-i18n="about-stat1-num" data-config="stats.0.number">250</div>
+              <div class="label" data-i18n="about-stat1-label" data-config="stats.0.label">Başarılı Proje</div>
+            </div>
+            <div class="about-stat">
+              <div class="num" data-i18n="about-stat2-num" data-config="stats.1.number">80</div>
+              <div class="label" data-i18n="about-stat2-label" data-config="stats.1.label">Mutlu Müşteri</div>
+            </div>
+            <div class="about-stat">
+              <div class="num" data-i18n="about-stat3-num" data-config="stats.2.number">5</div>
+              <div class="label" data-i18n="about-stat3-label" data-config="stats.2.label">Yıl Deneyim</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== Şirket Hikayesi Bitişi ===== -->
+
+  <!-- ===== Misyon & Vizyon Başlangıcı ===== -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-title animate-on-scroll">
+        <span class="subtitle" data-i18n="mission-vision-subtitle">Değerlerimiz</span>
+        <div class="title-line"></div>
+        <h2 data-i18n="mission-vision-title">Misyon & <span class="gradient-text">Vizyon</span></h2>
+        <p data-i18n="mission-vision-desc">Bizi yönlendiren değerler ve ulaşmayı hedeflediğimiz nokta.</p>
+      </div>
+      <div class="mission-vision">
+        <div class="mv-card animate-on-scroll delay-1">
+          <div class="icon"><i class="fas fa-bullseye"></i></div>
+          <h3 data-i18n="mission-title" data-config="about.mission.title">Misyonumuz</h3>
+          <p data-i18n="mission-desc" data-config="about.mission.text">Site yönetimleri ve işletmelere en kaliteli güvenlik teknolojileri ve bilişim hizmetlerini sunmak, ücretsiz keşif ve kontrollerle müşterilerimizin sistemlerini sürekli güncel ve güvende tutmak.</p>
+        </div>
+        <div class="mv-card animate-on-scroll delay-2">
+          <div class="icon"><i class="fas fa-eye"></i></div>
+          <h3 data-i18n="vision-title" data-config="about.vision.title">Vizyonumuz</h3>
+          <p data-i18n="vision-desc" data-config="about.vision.text">Bursa'nın lider güvenlik teknolojileri ve bilişim hizmetleri sağlayıcısı olmak, yenilikçi çözümlerle sektöre yön vermek.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== Misyon & Vizyon Bitişi ===== -->
+
+  <!-- ===== Şirket Değerleri Başlangıcı ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title animate-on-scroll">
+        <div class="title-line"></div>
+        <h2 data-i18n="values-title">Şirket <span class="gradient-text">Değerlerimiz</span></h2>
+        <p data-i18n="values-desc">Bizi biz yapan temel değerlerimizle her projede fark yaratıyoruz.</p>
+      </div>
+      <div class="values-grid">
+        <div class="value-card animate-on-scroll delay-1" data-config="about.values.0">
+          <div class="icon"><i class="fas fa-handshake"></i></div>
+          <h3 data-i18n="value1-title" data-config="about.values.0.title">Güvenilirlik</h3>
+          <p data-i18n="value1-desc" data-config="about.values.0.text">Verdiğimiz sözleri zamanında ve eksiksiz yerine getirir, müşterilerimizin güvenini kazanırız.</p>
+        </div>
+        <div class="value-card animate-on-scroll delay-2" data-config="about.values.1">
+          <div class="icon"><i class="fas fa-microchip"></i></div>
+          <h3 data-i18n="value2-title" data-config="about.values.1.title">Uzmanlık</h3>
+          <p data-i18n="value2-desc" data-config="about.values.1.text">Alanında deneyimli ekibimizle en güncel teknolojileri kullanarak profesyonel çözümler üretiriz.</p>
+        </div>
+        <div class="value-card animate-on-scroll delay-3" data-config="about.values.2">
+          <div class="icon"><i class="fas fa-users"></i></div>
+          <h3 data-i18n="value3-title" data-config="about.values.2.title">Müşteri Odaklılık</h3>
+          <p data-i18n="value3-desc" data-config="about.values.2.text">Her müşterimizin ihtiyacını özel olarak dinler, ona en uygun çözümü sunarız.</p>
+        </div>
+        <div class="value-card animate-on-scroll delay-4" data-config="about.values.3">
+          <div class="icon"><i class="fas fa-bolt"></i></div>
+          <h3 data-i18n="value4-title" data-config="about.values.3.title">Hızlı Destek</h3>
+          <p data-i18n="value4-desc" data-config="about.values.3.text">Arıza durumlarında hızlı müdahale ve çözüm odaklı yaklaşımımızla her zaman yanınızdayız.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== Şirket Değerleri Bitişi ===== -->
+
+  <!-- ===== Ekip Bölümü Başlangıcı ===== -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-title animate-on-scroll">
+        <span class="subtitle" data-i18n="team-subtitle">Ekibimiz</span>
+        <div class="title-line"></div>
+        <h2 data-i18n="team-title">Ekibimizle <span class="gradient-text">Tanışın</span></h2>
+        <p data-i18n="team-desc">Deneyimli ve uzman kadromuzla güvenliğinizde fark yaratıyoruz.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card animate-on-scroll delay-1" data-config="team.0">
+          <div class="photo">
+            <img src="https://i.pravatar.cc/400?img=11" alt="Ali Yılmaz" loading="lazy">
+            <div class="social-overlay">
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="info">
+            <h3 data-i18n="team1-name" data-config="team.0.name">Ali Yılmaz</h3>
+            <div class="title" data-i18n="team1-title" data-config="team.0.title">Kurucu & Teknik Sorumlu</div>
+            <p data-i18n="team1-desc" data-config="team.0.desc">10+ yıl güvenlik teknolojileri ve bilişim alanında deneyim.</p>
+          </div>
+        </div>
+        <div class="team-card animate-on-scroll delay-2" data-config="team.1">
+          <div class="photo">
+            <img src="https://i.pravatar.cc/400?img=12" alt="Ahmet Demir" loading="lazy">
+            <div class="social-overlay">
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="info">
+            <h3 data-i18n="team2-name" data-config="team.1.name">Ahmet Demir</h3>
+            <div class="title" data-i18n="team2-title" data-config="team.1.title">Saha Uzmanı</div>
+            <p data-i18n="team2-desc" data-config="team.1.desc">Kamera ve giriş sistemleri kurulum ve bakım uzmanı.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== Ekip Bölümü Bitişi ===== -->
+
+  <!-- ===== Bölüm Ayracı (Dalga) ===== -->
+  <div class="section-divider">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path class="wave-fill" d="M0,40 C360,80 720,0 1440,40 L1440,80 L0,80 Z"></path>
+    </svg>
+  </div>
+
+  <!-- ===== CTA Bölümü Başlangıcı ===== -->
+  <section class="cta-section" id="cta">
+    <div class="container">
+      <div class="animate-on-scroll">
+        <span class="badge" data-i18n="cta-badge" data-config="cta.title">Ücretsiz Keşif İçin Hemen Arayın</span>
+        <h2 data-i18n="cta-title">Güvenliğinizi <span class="gradient-text">Ücretsiz</span> Kontrol Edelim</h2>
+        <p data-i18n="cta-desc" data-config="cta.desc">Sitenizdeki güvenlik sistemlerini ücretsiz kontrol edelim, eksikleri raporlayalım. Hemen randevu alın!</p>
+        <a href="contact.html" class="btn btn-primary btn-lg" data-config="cta.btnLink"><i class="fas fa-phone-alt"></i> <span data-i18n="cta-btn" data-config="cta.btnText">Hemen Ara</span></a>
+      </div>
+    </div>
+  </section>
+  <!-- ===== CTA Bölümü Bitişi ===== -->
+
+  <!-- ===== Footer Başlangıcı ===== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <a href="index.html" class="logo">
+            <i class="fas fa-shield-halved"></i> <span data-i18n="logo-text" data-config="logo.text">A&A Güvenlik</span>
+          </a>
+          <p data-i18n="footer-about-desc" data-config="footer.aboutText">Güvenlik teknolojileri ve bilişim hizmetleri alanında profesyonel çözümler sunuyoruz. Kamera sistemleri, çipli giriş sistemleri ve teknik destek hizmetlerimizle yanınızdayız.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3 data-i18n="footer-quick-links">Hızlı Linkler</h3>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-home">Ana Sayfa</span></a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-about">Hakkımızda</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-services-link">Hizmetler</span></a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-contact-link">İletişim</span></a></li>
+            <li><a href="index.html#faq"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-faq">SSS</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 data-i18n="footer-services-title">Hizmetler</h3>
+          <ul class="footer-links">
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-service1">Güvenlik Kamera Sistemleri</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-service2">Çipli Giriş Sistemleri</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-service3">Bilgisayar Satış & Teknik Destek</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-service4">Profesyonel Kurulum & Bakım</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-service5">Kamera Açısı Kontrolü</span></a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> <span data-i18n="footer-service6">Giriş Sistemi Kontrolü</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 data-i18n="footer-contact-title">İletişim Bilgileri</h3>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer-addr" data-config="contact.address">Güneştepe 1. Yalıçiftlik Sk. No:46/A, Osmangazi / BURSA</span></li>
+            <li><i class="fas fa-phone-alt"></i> <span data-i18n="footer-phone" data-config="contact.phone">0506 092 16 14</span></li>
+            <li><i class="fas fa-envelope"></i> <span data-i18n="footer-email" data-config="contact.email">info@aguvenlik.com.tr</span></li>
+            <li><i class="fas fa-clock"></i> <span data-i18n="footer-hours" data-config="footer.workingHours">Pazartesi - Cumartesi: 08:00 - 19:00</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p><span data-i18n="footer-copyright">© 2026 A&A Güvenlik Teknolojileri ve Bilişim Hizmetleri.</span></p>
+        <p><span>Site <a href="https://www.efesoftlab.com.tr" target="_blank" rel="noopener" style="color:var(--orange);font-weight:600;">Efesoftlab</a> tarafından yapılmıştır.</span></p>
+      </div>
+    </div>
+  </footer>
+  <!-- ===== Footer Bitişi ===== -->
+
+  <!-- ===== Resim Görüntüleyici ===== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+    <img src="" alt="Resim" loading="lazy">
+  </div>
+
+  <!-- ===== Yukarı Çık Butonu ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Yukarı çık">
+    <i class="fas fa-arrow-up"></i>
+    <svg viewBox="0 0 52 52">
+      <circle cx="26" cy="26" r="24"></circle>
+    </svg>
+  </button>
+
+  <!-- ===== Canlı Ziyaretçi Sayacı ===== -->
+  <div class="visitor-counter">
+    <span class="dot"></span>
+    <span><span class="count" id="visitorCount">847</span> <span data-i18n="visitor-online">çevrimiçi</span></span>
+  </div>
+
+  <!-- ===== WhatsApp Butonu ===== -->
+  <a href="https://wa.me/90506921614" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" aria-label="WhatsApp ile iletişime geçin">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ===== Çerez Onay Kutusu ===== -->
+  <div class="cookie-consent" id="cookieConsent">
+    <div class="container">
+      <p data-i18n="toast-cookie-msg">Size daha iyi bir deneyim sunmak için çerezler kullanıyoruz. Detaylı bilgi için <a href="#">Gizlilik Politikası</a>'nı inceleyebilirsiniz.</p>
+      <div class="cookie-actions">
+        <button class="btn btn-primary btn-sm" id="cookieAccept" data-i18n="toast-cookie-btn">Kabul Et</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
